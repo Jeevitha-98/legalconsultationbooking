@@ -1,0 +1,534 @@
+
+/* --- High-End Legal Tech Branding Design Tokens --- */
+:root {
+    --primary-dark: #090d16;    /* Deep obsidian premium legal navy */
+    --accent-amber: #b45309;    /* Executive warm traditional legal amber */
+    --text-light: #f8fafc;      /* Pure crisp bone white reading typography */
+    --text-muted: #94a3b8;      /* Clean functional secondary slate grey */
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    height: 100vh;
+    overflow: hidden; /* Locks window scrolling until landing page initializes */
+}
+
+/* --- Responsive Layout Architecture --- */
+.preloader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 24px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                visibility 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.preloader-content {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Scalable Dynamic Vector Engine --- */
+.vector-logo-container {
+    width: clamp(100px, 18vw, 150px); /* Responsive fluid scaling constraints across screens */
+    height: clamp(100px, 18vw, 150px);
+    margin-bottom: 24px;
+    animation: scalePulse 2s infinite ease-in-out;
+}
+
+.legal-vector-svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* --- Clean Modern Typography Layout --- */
+.brand-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.2rem, 5.5vw, 3.2rem); /* Dynamic fluid scaling text dimensions */
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.brand-title span {
+    color: var(--accent-amber);
+}
+
+.brand-tagline {
+    font-size: clamp(0.8rem, 2.2vw, 0.95rem);
+    color: var(--text-muted);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+/* --- Linear Progress Performance System --- */
+.loader-track {
+    width: 75%;
+    max-width: 250px;
+    height: 3px;
+    background-color: rgba(148, 163, 184, 0.1);
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.loader-bar {
+    width: 0%;
+    height: 100%;
+    background-color: var(--accent-amber);
+    border-radius: 100px;
+    box-shadow: 0 0 10px var(--accent-amber);
+}
+
+/* --- Content Visibility Target Configurations --- */
+.content-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+}
+
+.content-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* --- Exit State Execution Rule --- */
+.preloader-fade-out {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+/* --- Pulse Micro-Interaction Animation --- */
+@keyframes scalePulse {
+    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0px rgba(180, 83, 9, 0)); }
+    50% { transform: scale(1.02); filter: drop-shadow(0 0 12px rgba(180, 83, 9, 0.25)); }
+}
+
+
+/* --- High-Fidelity Fixed Sticky Top Utility Bar Override --- */
+.stackly-top-utility-strip {
+    position: fixed; /* Enforces sticky tracking mechanics parameters across global scroll paths */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 43px; /* Enforces clean rigid spatial boundary height limits lock tracking */
+    z-index: 1001; /* Layers component securely beneath drawers but above body canvas */
+    background-color: #090d16; /* Guarantees obsidian navy surface isolation profiles */
+    box-sizing: border-box;
+}
+
+/* --- Fixed Nav Offset Adjustments Matrix --- */
+/* Your primary white navigation header must drop down slightly to accommodate the fixed social bar */
+.stackly-primary-header {
+    position: fixed;
+    top: 43px !important; /* Perfect contextual alignment anchor snapping beneath fixed utility bar */
+    transition: top 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- Preloader Lifecycle State Rules Matrix (CRUCIAL FIX) --- */
+/* Ensures the top social bar stays completely hidden during the 2-second preloading cycle */
+.content-hidden .stackly-top-utility-strip {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Exposes the component with instant structural execution updates once the preloader terminates */
+.content-visible .stackly-top-utility-strip {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Your hero section canvas needs to offset its margin layout safely to clear both fixed rows */
+.stackly-hero-workspace,
+.stackly-premium-hero-box {
+    margin-top: calc(43px + 80px) !important; /* Cleans up structural header clippings track bounds */
+}
+
+/* --- Fluid Adaptive Hardware Mobile Breakpoint Matrix --- */
+@media (max-width: 640px) {
+    .stackly-top-utility-strip {
+        position: fixed;
+        height: auto; /* Relaxes rigid locks letting stacked mobile icon sets stretch panel parameters safely */
+    }
+
+    /* Recalculates mobile spatial header offsets dynamically to avoid broken truncations pops layout code */
+    .stackly-primary-header {
+        top: 86px !important; /* Mobile top bar stacks into 2 rows requiring an 86px top anchor parameter */
+    }
+
+    .stackly-hero-workspace,
+    .stackly-premium-hero-box {
+        margin-top: calc(86px + 80px) !important;
+    }
+}
+
+/* --- Core Utility Strip Parameters Architecture --- */
+.stackly-top-utility-strip {
+    width: 100%;
+    background-color: #090d16; /* Deep Obsidian Legal Navy Panel Canvas */
+    border-bottom: 1px solid rgba(148, 163, 184, 0.12); /* Crisp layout separator line */
+    padding: 12px 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    box-sizing: border-box;
+}
+
+.utility-strip-bounds {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* --- Vector Icons Layout Grid Sizing --- */
+.utility-social-links-group {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* High-precision grid layout separation spacing nodes */
+}
+
+.utility-social-node {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    outline: none;
+}
+
+.utility-vector-asset {
+    width: 18px; /* Medium scaling parameters configuration for high visibility */
+    height: 18px;
+    fill: #94a3b8; /* Professional secondary slate gray */
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- Interactive Warm Legal Amber Hover Translation Lift Architecture --- */
+.utility-social-node:hover .utility-vector-asset {
+    fill: #b45309; /* Warm traditional legal amber signature focal state color */
+    transform: translateY(-2px); /* Micro-interaction physical vertical transform lift motion */
+}
+
+.utility-social-node:active .utility-vector-asset {
+    transform: translateY(0);
+}
+
+/* --- Communication Frame Right Side Metric Alignments --- */
+.utility-contact-block {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.utility-contact-tag {
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+.utility-contact-phone {
+    color: #f8fafc; /* Crisp bone white typography rendering block overrides default blue links */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.utility-contact-phone:hover {
+    color: #b45309;
+}
+
+/* --- Scriptless Cascading Fade-In Load Entrance Engine --- */
+.item-stagger-fade {
+    opacity: 0;
+    transform: translateY(6px);
+    animation: barItemSlideUp 0.4s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+    /* Dynamically evaluates delays based on item indices layout tags variables */
+    animation-delay: calc(var(--stagger-index) * 100ms);
+}
+
+@keyframes barItemSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Fluid Responsive Mobile Breakpoints Processing Matrix --- */
+@media (max-width: 640px) {
+    .utility-strip-bounds {
+        flex-direction: column; /* Collapses arrays sets neatly on compact smartphone layout tracking viewports */
+        gap: 12px;
+        text-align: center;
+        padding: 8px 16px;
+    }
+    
+    .utility-social-links-group {
+        gap: 22px; /* Amplifies clear boundaries target spaces for easy smartphone display fingers taps */
+    }
+
+    .utility-contact-block {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* --- Primary Main Sticky Navigation Structural Configurator Design Rules Token --- */
+.stackly-primary-header {
+    position: fixed;
+    top: 43px; /* Offsets exactly to snap perfectly below the Top Social Utility strip height metric */
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff; /* Stark high-contrast solid white panel separation canvas backdrop layer */
+    border-bottom: 1px solid #e2e8f0; /* Crisp subtle layout platform panel outline trace boundaries line */
+    box-shadow: 0 4px 30px rgba(9, 13, 22, 0.02);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    box-sizing: border-box;
+    transition: top 0.25s ease;
+}
+
+.header-fluid-bounds {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Core spatial anchor frame coordinate tracking base bounds metrics setup box */
+    box-sizing: border-box;
+}
+
+/* --- Corporate Branding Alignment Metrics --- */
+.header-logo-anchor {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: opacity 0.25s ease;
+}
+
+.header-logo-anchor:hover {
+    opacity: 0.85;
+}
+
+.header-logo-img {
+    height: 36px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* --- Absolute Grid Exact Center Tracking Alignment Framework Track --- */
+.header-desktop-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #0f172a; /* Clean solid high-visibility charcoal dark links override defaults browser setups */
+    text-decoration: none;
+    padding: 8px 0;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Interaction vector lines indicator arrays tracing underneath links profiles */
+.header-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #b45309; /* Warm Executive Amber Traditional Legal Core Branding Indicator Tones */
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.header-nav-link:hover {
+    color: #b45309;
+}
+
+.header-nav-link:hover::after {
+    width: 100%;
+}
+
+/* --- Right-Aligned Secure Access Portal Controls Trigger Block --- */
+.header-desktop-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-portal-btn {
+    background-color: #b45309; /* Deep Obsidian Legal Navy Signature Layer Panel Tones */
+    color: #ffffff !important; /* Locks links visual parameters from browser base overrides cascades */
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: 1px solid #090d16;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    white-space: nowrap;
+}
+
+.header-portal-btn:hover {
+    background-color: #b45309;
+    border-color: #b45309;
+    box-shadow: 0 4px 14px rgba(180, 83, 9, 0.25);
+    transform: translateY(-1px);
+}
+
+/* --- Adaptive Mobile Screen Size Hamburger Icon Toggle Mechanics Elements --- */
+.header-hamburger-trigger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1010;
+}
+
+.trigger-beam {
+    width: 100%;
+    height: 2px;
+    background-color: #090d16;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Transformation sequencing mechanics forming immediate cross symbols configurations when active */
+.header-hamburger-trigger.triggered .trigger-beam:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.header-hamburger-trigger.triggered .trigger-beam:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+.header-hamburger-trigger.triggered .trigger-beam:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* --- Adaptive Smartphone Mobile Overlay Dropdown Drawer Panel Architecture Rules --- */
+.header-mobile-drawer {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: #ffffff;
+    z-index: 999;
+    padding: 32px 24px;
+    box-sizing: border-box;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.3s linear,
+                visibility 0.3s linear;
+    border-top: 1px solid #e2e8f0;
+}
+
+.header-mobile-drawer.active-view {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header-drawer-link {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #0f172a;
+    text-decoration: none;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.header-drawer-link:hover {
+    color: #b45309;
+    padding-left: 8px;
+}
+
+.header-drawer-action-wrapper {
+    margin-top: 16px;
+}
+
+.drawer-btn-block {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    font-size: 1.05rem;
+}
+
+/* --- Adaptive Hardware Screen Density Breakpoints Fluid Matrix Processing --- */
+@media (max-width: 1024px) {
+    .header-desktop-menu,
+    .header-desktop-action {
+        display: none; /* Safely blocks wider multi-layered text alignments on compact viewport frames */
+    }
+
+    .header-hamburger-trigger {
+        display: flex; /* Exposes adaptive interaction touch button paths controls options keys on touch frames */
+    }
+}
+
+@media (max-width: 640px) {
+    .stackly-primary-header {
+        top: 86px; /* Adjusts structural metric offsets cleanly since mobile top social strip layouts expand height variables bounds stacking vertical sets */
+    }
+    .header-mobile-drawer {
+        top: calc(80px + 86px);
+        height: calc(100vh - (80px + 86px));
+    }
+}

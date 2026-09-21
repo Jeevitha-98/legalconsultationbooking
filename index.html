@@ -1,0 +1,4873 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly | Premium Legal Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Premium Professional Typography -->
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Responsive Preloading Component Layout Layer -->
+    <div id="stackly-preloader" class="preloader-overlay">
+        <div class="preloader-content">
+            
+            <!-- Fluid Scalable Vector Graphic (Justice Scales Framework) -->
+            <div class="vector-logo-container">
+                <svg xmlns="http://w3.org" viewBox="0 0 100 100" class="legal-vector-svg">
+                    <!-- Base Pillar Foundation -->
+                    <path d="M35 85 H65 V88 H35 Z" fill="#b45309" />
+                    <path d="M40 80 H60 V85 H40 Z" fill="#ffffff" opacity="0.1" />
+                    <path d="M48 40 H52 V80 H48 Z" fill="#ffffff" />
+                    <!-- Balance Structural Beam -->
+                    <path d="M20 40 Q50 35 80 40 L80 43 Q50 38 20 43 Z" fill="#ffffff" />
+                    <!-- Left Scale Dish -->
+                    <line x1="20" y1="42" x2="12" y2="60" stroke="#b45309" stroke-width="1.2" />
+                    <line x1="20" y1="42" x2="28" y2="60" stroke="#b45309" stroke-width="1.2" />
+                    <path d="M10 60 Q20 68 30 60 Z" fill="#ffffff" />
+                    <!-- Right Scale Dish -->
+                    <line x1="80" y1="42" x2="72" y2="60" stroke="#b45309" stroke-width="1.2" />
+                    <line x1="80" y1="42" x2="88" y2="60" stroke="#b45309" stroke-width="1.2" />
+                    <path d="M70 60 Q80 68 90 60 Z" fill="#ffffff" />
+                </svg>
+            </div>
+            
+            <!-- Fluid Brand Typography Block -->
+            <h1 class="brand-title">Stackly<span>.</span></h1>
+            <p class="brand-tagline">Securing Your Digital Legal Framework</p>
+            
+            <!-- Progress Tracker Asset -->
+            <div class="loader-track">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Next section placeholder: The top social bar will go right inside here later -->
+    <div id="main-platform-content" class="content-hidden"></div>
+
+  
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.getElementById("stackly-preloader");
+    const loaderBar = document.getElementById("loaderBar");
+    const mainPlatformContent = document.getElementById("main-platform-content");
+
+    const loadingDuration = 2000; // Enforces exactly 2 seconds loading sequence
+    const updateInterval = 20;    // Loop ticks updates refresh interval index (ms)
+    let executionElapsedTime = 0;
+
+    // Smoothly animate progress bar track metrics loading fill
+    const progressTimer = setInterval(() => {
+        executionElapsedTime += updateInterval;
+        const targetPercentage = Math.min((executionElapsedTime / loadingDuration) * 100, 100);
+        
+        loaderBar.style.width = `${targetPercentage}%`;
+
+        // Clear tracking cycle when threshold time barrier hits 2 seconds limit
+        if (executionElapsedTime >= loadingDuration) {
+            clearInterval(progressTimer);
+            terminatePreloaderLifecycle();
+        }
+    }, updateInterval);
+
+    function terminatePreloaderLifecycle() {
+        // Fade out layout preloader surface component layer screen completely
+        preloader.classList.add("preloader-fade-out");
+        
+        // Expose underlying landing framework container safely
+        if(mainPlatformContent) {
+            mainPlatformContent.classList.remove("content-hidden");
+            mainPlatformContent.classList.add("content-visible");
+        }
+        
+        // Re-enable document frame layout scrolling mechanics safely
+        document.body.style.overflow = "visible";
+        document.body.style.height = "auto";
+    }
+});
+
+    </script>
+
+    <!-- Isolated Top Utility Strip Section -->
+<div class="stackly-top-utility-strip">
+    <div class="utility-strip-bounds">
+        
+        <!-- Staggered Entry Vector Social Array (Configured with 404 links) -->
+        <div class="utility-social-links-group">
+            <a href="404.html" class="utility-social-node item-stagger-fade" style="--stagger-index: 1;" aria-label="Stackly LinkedIn Platform profile Link">
+                <svg viewBox="0 0 24 24" class="utility-vector-asset">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            
+            <a href="404.html" class="utility-social-node item-stagger-fade" style="--stagger-index: 2;" aria-label="Stackly YouTube Corporate Platform channel Link">
+                <svg viewBox="0 0 24 24" class="utility-vector-asset">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+            </a>
+            
+            <a href="404.html" class="utility-social-node item-stagger-fade" style="--stagger-index: 3;" aria-label="Stackly Facebook Profile corporate Link">
+                <svg viewBox="0 0 24 24" class="utility-vector-asset">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+            </a>
+            
+            <a href="404.html" class="utility-social-node item-stagger-fade" style="--stagger-index: 4;" aria-label="Stackly X Corporate Microblog platform account Link">
+                <svg viewBox="0 0 24 24" class="utility-vector-asset">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Sequential Intake Infrastructure Contact Number -->
+        <div class="utility-contact-block item-stagger-fade" style="--stagger-index: 5;">
+            <span class="utility-contact-tag">Intake Support Framework:</span>
+            <a href="tel:9292426868" class="utility-contact-phone">929-242-6868</a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Fixed Sticky Navigation Architecture Header -->
+<header class="stackly-primary-header">
+    <div class="header-fluid-bounds">
+        
+        
+        <a href="javascript:window.location.reload()" class="header-logo-anchor" aria-label="Stackly Platform Home, Refresh Workspace Layout">
+            <img src="https://unsplash.com" alt="Stackly Corporate Digital Legal Logo" class="header-logo-img">
+        </a>
+
+        <!-- Desktop Mode Center-Aligned Navigation Options -->
+        <nav class="header-desktop-menu" role="navigation">
+            <a href="#solutions" class="header-nav-link">Solutions</a>
+            <a href="#attorneys" class="header-nav-link">Our Attorneys</a>
+            <a href="#practice-groups" class="header-nav-link">Practice Areas</a>
+            <a href="#compliance" class="header-nav-link">Compliance</a>
+            <a href="#resources" class="header-nav-link">Resources</a>
+        </nav>
+
+        <!-- Right-Aligned Desktop Access Control Point -->
+        <div class="header-desktop-action">
+            <a href="#onboarding" class="header-portal-btn">Secure Portal Access</a>
+        </div>
+
+        <!-- Mobile Layout Hamburger Overlay Menu Activation Toggle Trigger Switch -->
+        <button class="header-hamburger-trigger" id="headerMenuTrigger" aria-label="Toggle Navigation Adaptive Screen Drawer Content View">
+            <span class="trigger-beam"></span>
+            <span class="trigger-beam"></span>
+            <span class="trigger-beam"></span>
+        </button>
+
+    </div>
+</header>
+
+<!-- Responsive Mobile Navigation Layer Drawer Dropdown Panel Menu Surface Area Layout Overlay Context -->
+<div class="header-mobile-drawer" id="headerMobileDrawer">
+    <nav class="header-mobile-menu">
+        <a href="#solutions" class="header-drawer-link">Solutions</a>
+        <a href="#attorneys" class="header-drawer-link">Our Attorneys</a>
+        <a href="#practice-groups" class="header-drawer-link">Practice Areas</a>
+        <a href="#compliance" class="header-drawer-link">Compliance</a>
+        <a href="#resources" class="header-drawer-link">Resources</a>
+        <div class="header-drawer-action-wrapper">
+            <a href="#onboarding" class="header-portal-btn drawer-btn-block">Secure Portal Access</a>
+        </div>
+    </nav>
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const headerMenuTrigger = document.getElementById("headerMenuTrigger");
+    const headerMobileDrawer = document.getElementById("headerMobileDrawer");
+    const mobileDrawerLinks = document.querySelectorAll(".header-drawer-link");
+
+    if (headerMenuTrigger && headerMobileDrawer) {
+        // Intercept action controls taps metrics inputs variables execution loops
+        headerMenuTrigger.addEventListener("click", () => {
+            const isDrawerOpenStateActive = headerMobileDrawer.classList.toggle("active-view");
+            headerMenuTrigger.classList.toggle("triggered");
+
+            // Avoid structural double-layer track viewport scrolling conflicts while mobile overlay is expanded
+            if (isDrawerOpenStateActive) {
+                document.body.style.overflow = "hidden";
+            } else {
+                document.body.style.overflow = "";
+            }
+        });
+
+        // Automatically slide panel up collapse states if target navigation selections complete execution pathing
+        mobileDrawerLinks.forEach(linkItem => {
+            linkItem.addEventListener("click", () => {
+                headerMobileDrawer.classList.remove("active-view");
+                headerMenuTrigger.classList.remove("triggered");
+                document.body.style.overflow = "";
+            });
+        });
+    }
+});
+
+</script>
+
+<!-- Premium Split-Layout White Canvas Hero Component -->
+<section class="stackly-hero-workspace">
+    <div class="hero-fluid-bounds">
+        
+        <!-- Left Column Layout Block: Content & Typography Matrices -->
+        <div class="hero-left-column">
+            <span class="hero-context-eyebrow">Enterprise Legal Tech Infrastructure</span>
+            
+            <!-- Headline Text Block configured for word-by-word staggered side entry -->
+            <h1 class="hero-animated-headline" id="headlineWordTarget">
+                <!-- Injected via JavaScript loop to ensure precise word-by-word animation wrapper targets -->
+                Architecting Enterprise Legal Ecosystems for Modern Regulatory Compliance
+            </h1>
+            
+            <p class="hero-paragraph-description">
+                Deploy secure transactional pipelines, track compliance milestones instantly, and gain on-demand partner-level attorney advisory backing inside Stackly's enterprise framework.
+            </p>
+            
+            <!-- Floating Hover Interaction Actions Group Link Row -->
+            <div class="hero-floating-cta-row">
+                <a href="#booking" class="btn-floating-action btn-gold-fill">Initialize Onboarding</a>
+                <a href="#solutions" class="btn-floating-action btn-slate-outline">View Capabilities Matrix</a>
+            </div>
+        </div>
+
+        <!-- Right Column Layout Block: Native HTML Video Pipeline Frame Grid -->
+        <div class="hero-right-column">
+            <div class="hero-video-wrapper-frame">
+                <!-- Native HTML5 Video Element Block with standard clean interaction parameters -->
+                <video class="hero-native-video-player" autoplay loop muted playsinline poster="https://unsplash.com">
+                    <!-- Replace the src URL with your actual production mp4 legal framework video clip path -->
+                    <source src="https://mixkit.co" type="video/mp4">
+                    Your platform browser architecture configuration variant parameters do not support native video streaming formats tracking loops.
+                </video>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- Core Hero Canvas Interface Design Tokens Configuration Layout --- */
+.stackly-hero-workspace {
+    width: 100%;
+    min-height: calc(100vh - 123px); /* Offsets both utility strip height bounds and primary navbar cleanly */
+    background-color: #ffffff; /* Solid White Canvas Backdrop Surface Texture */
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    padding: 60px 0;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-fluid-bounds {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr; /* Main split ratio balance parameters across rows layout setup */
+    gap: 48px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* --- Left Column Layout Typography Presentation Parameters --- */
+.hero-left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-context-eyebrow {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #b45309; /* Warm Executive Amber Corporate Signature Base Tone */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+/* Base structural parameters for text word strings mapping layers */
+.hero-animated-headline {
+    font-size: 2.85rem; /* Strict uniform medium base size for desktop frames */
+    font-weight: 700;
+    color: #090d16; /* Deep Obsidian Legal Navy */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px; /* Space between processed string components nodes */
+    row-gap: 4px;
+}
+
+/* Span element configuration structures injected dynamically by JavaScript runtime engine */
+.hero-anim-word {
+    display: inline-block;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation-duration: 0.6s;
+    animation-cubic-bezier: 0.16, 1, 0.3, 1;
+    animation-fill-mode: forwards;
+}
+
+/* Word sequence index enters alternatingly from left/right parameters track indices metrics loops */
+.enter-left {
+    transform: translateX(-40px);
+    animation-name: wordSlideFromLeft;
+}
+
+.enter-right {
+    transform: translateX(40px);
+    animation-name: wordSlideFromRight;
+}
+
+@keyframes wordSlideFromLeft {
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes wordSlideFromRight {
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.hero-paragraph-description {
+    font-size: 1.05rem; /* Standard readable medium body font sizing signature scale profile */
+    color: #475569; /* Slate gray neutral informative body font configuration */
+    line-height: 1.6;
+    margin-bottom: 36px;
+    max-width: 580px;
+}
+
+/* --- Floating Key CTA Actions Trigger Layout Rules Configuration --- */
+.hero-floating-cta-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-floating-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    font-size: 0.95rem; /* Strict font scale index locking parameters across actions triggers */
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(9, 13, 22, 0.05);
+}
+
+.btn-gold-fill {
+    background-color: #b45309;
+    color: #ffffff !important;
+    border: 1px solid #b45309;
+}
+
+/* Micro-interaction continuous floating vertical hover offset loop logic actions styling profiles */
+.btn-gold-fill:hover {
+    background-color: #92400e;
+    border-color: #92400e;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(180, 83, 9, 0.22);
+}
+
+.btn-slate-outline {
+    background-color: transparent;
+    color: #090d16 !important;
+    border: 1px solid #e2e8f0;
+}
+
+.btn-slate-outline:hover {
+    background-color: #f8fafc;
+    border-color: #090d16;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(9, 13, 22, 0.08);
+}
+
+/* --- Right Column Video Pipeline Asset Frame Container Layout --- */
+.hero-right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-video-wrapper-frame {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 4 / 3; /* Fixed professional medium canvas video framing parameter layout */
+    background-color: #090d16;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(9, 13, 22, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+.hero-native-video-player {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Locks tracking canvas clipping layers parameters tightly inside layout borders radius profile */
+}
+
+/* --- Fully Responsive Hardware Sizing Density Processing Breakpoints Adaptive Matrix --- */
+@media (max-width: 968px) {
+    .hero-fluid-bounds {
+        grid-template-columns: 1fr; /* Stacks column components cleanly vertically to keep structural limits balanced */
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-left-column {
+        align-items: center;
+    }
+
+    .hero-animated-headline {
+        justify-content: center;
+        font-size: 2.25rem; /* Strict fluid preservation metric adjustments while ensuring no style overlaps */
+    }
+
+    .hero-paragraph-description {
+        font-size: 1.05rem; /* Maintained identical layout metric properties to enforce exact requirements rules */
+    }
+
+    .hero-floating-cta-row {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .btn-floating-action {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-video-wrapper-frame {
+        max-width: 100%; /* Spans full grid width properties comfortably across mobile glass canvases profiles layout code */
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const headlineTarget = document.getElementById("headlineWordTarget");
+
+    if (headlineTarget) {
+        // Retrieve explicit text content value parameters array mapping
+        const originalTextString = headlineTarget.innerText.trim();
+        const splitWordsArray = originalTextString.split(/\s+/);
+        
+        // Wipe target string element base content mapping layer shell clean
+        headlineTarget.innerHTML = "";
+
+        // Iterate through structural tokens split matrix arrays loops indices setup variables tracking
+        splitWordsArray.forEach((word, index) => {
+            const wordSpan = document.createElement("span");
+            wordSpan.innerText = word;
+            wordSpan.classList.add("hero-anim-word");
+
+            // Evaluate alternating indices parameters to configure side entry direction
+            if (index % 2 === 0) {
+                wordSpan.classList.add("enter-left");
+            } else {
+                wordSpan.classList.add("enter-right");
+            }
+
+            // Assign computational stagger increment values dynamically based on item pipeline stack numbers tracking metrics rules loops
+            wordSpan.style.animationDelay = `${(index + 1) * 80}ms`;
+
+            // Append engineered node back cleanly into global DOM workspace trace execution loop paths
+            headlineTarget.appendChild(wordSpan);
+        });
+    }
+});
+
+</script>
+
+<!-- High-Fidelity Free Consultation Carousel Section Wrapper -->
+<section class="stackly-carousel-offer-strip">
+    
+    <!-- Ambient Floating Vector Background Field Layer -->
+    <div class="ambient-vector-field" aria-hidden="true">
+        <!-- Floating Vector Icon 1 (Gavel Shield Shape) -->
+        <svg class="floating-vector icon-pos-a" viewBox="0 0 24 24"><path d="M19 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H7v-2h10v2zm0-4H7V8h10v2z" fill="currentColor"/></svg>
+        <!-- Floating Vector Icon 2 (Balance Scales Silhouette) -->
+        <svg class="floating-vector icon-pos-b" viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" fill="currentColor"/></svg>
+        <!-- Floating Vector Icon 3 (Secure Legal Node Framework Block) -->
+        <svg class="floating-vector icon-pos-c" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 15l-4-4 1.41-1.41L10 13.17l7.59-7.59L19 7l-9 9z" fill="currentColor"/></svg>
+    </div>
+
+    <div class="offer-carousel-container">
+        
+        <!-- Main Interactive Carousel Slider Surface Plane Tracker -->
+        <div class="carousel-window-track" id="carouselOfferTrack">
+            
+            <!-- Slide Instance Node 1 -->
+            <div class="carousel-offer-slide active">
+                <div class="slide-split-grid">
+                    
+                    <!-- Left Side Column: Text content block with integrated hover glow states -->
+                    <div class="offer-text-block-panel">
+                        <span class="offer-badge-label">Limited Advisory Window</span>
+                        <h2 class="offer-headline-glow">Initialize Your Case Evaluation Framework For Free</h2>
+                        <p class="offer-description-text">Connect with specialized senior attorneys to run structural validation audits across your enterprise architecture operations without assuming capital liability matrices.</p>
+                        <div class="offer-action-row">
+                            <a href="#intake" class="btn-offer-action">Claim Free Session</a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side Column: Hard-coded visual image framework panel configuration layout -->
+                    <div class="offer-graphic-wrapper">
+                        <!-- Replace src link with your production corporate framework photography clip file -->
+                        <img src="https://unsplash.com" alt="Stackly Corporate Consultation Executive Session Preview" class="offer-display-img">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Slide Instance Node 2 -->
+            <div class="carousel-offer-slide">
+                <div class="slide-split-grid">
+                    
+                    <div class="offer-text-block-panel">
+                        <span class="offer-badge-label">Strategic Corporate Defense</span>
+                        <h2 class="offer-headline-glow">Deploy Secure Regulatory Compliance Audits At Zero Asset Cost</h2>
+                        <p class="offer-description-text">Mitigate exposure barriers swiftly through early intake session frameworks mapping federal compliance parameters alongside global technology policy matrices.</p>
+                        <div class="offer-action-row">
+                            <a href="#intake" class="btn-offer-action">Lock Corporate Slots</a>
+                        </div>
+                    </div>
+
+                    <div class="offer-graphic-wrapper">
+                        <img src="https://unsplash.com" alt="Attorneys examining documentation briefs safely within framework dashboard environments" class="offer-display-img">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Carousel Step Selection Nav Controllers -->
+        <div class="carousel-controller-dots">
+            <button class="dot-nav active" data-slide-target="0" aria-label="Load Consultation Offer Slide Frame 1"></button>
+            <button class="dot-nav" data-slide-target="1" aria-label="Load Consultation Offer Slide Frame 2"></button>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- Core Presentation Offer Layout Component Tokens --- */
+.stackly-carousel-offer-strip {
+    width: 100%;
+    /* Strict padding limits configured exactly to user configuration rules */
+    padding: 50px 0; 
+    background-color: #090d16; /* Deep obsidian legal navy panel canvas backdrop layer style */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offer-carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+/* --- Ambient Floating Vector Field Animation Infrastructure --- */
+.ambient-vector-field {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.floating-vector {
+    position: absolute;
+    width: clamp(24px, 4vw, 36px);
+    height: clamp(24px, 4vw, 36px);
+    color: rgba(180, 83, 9, 0.12); /* Executive subtle amber vector footprint tracking shadow layers */
+    will-change: transform;
+    animation: driftFloat 8s infinite ease-in-out;
+}
+
+/* Precise spacing matrices allocations for background floating items nodes */
+.icon-pos-a { top: 15%; left: 8%; animation-delay: 0s; }
+.icon-pos-b { bottom: 20%; right: 10%; animation-delay: 2s; }
+.icon-pos-c { top: 70%; left: 45%; animation-delay: 4s; }
+
+@keyframes driftFloat {
+    0%, 100% { transform: translateY(0) scale(1) rotate(0deg); }
+    50% { transform: translateY(-15px) scale(1.05) rotate(8deg); }
+}
+
+/* --- Slider Window Track Layout Configuration --- */
+.carousel-window-track {
+    position: relative;
+    width: 100%;
+    min-height: 380px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.carousel-offer-slide {
+    grid-area: 1 / 1 / 2 / 2;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.98) translateY(10px);
+    transition: opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1),
+                visibility 0.6s cubic-bezier(0.25, 1, 0.5, 1),
+                transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.carousel-offer-slide.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translateY(0);
+}
+
+.slide-split-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; /* Balanced media asset content spacing index parameter */
+    gap: 40px;
+    align-items: center;
+}
+
+/* --- Typography Content Panel Block with Hover Amber Glow Systems --- */
+.offer-text-block-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 1px solid transparent;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Interaction container background shift and glow configuration tracking loops */
+.offer-text-block-panel:hover {
+    background-color: rgba(180, 83, 9, 0.03);
+    border-color: rgba(180, 83, 9, 0.15);
+    box-shadow: inset 0 0 20px rgba(180, 83, 9, 0.05);
+}
+
+.offer-badge-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #b45309; /* Warm Amber traditional legal core signature color indicator */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.offer-headline-glow {
+    font-size: 2.2rem; /* Uniform standard medium display font architecture scale index */
+    font-weight: 700;
+    color: #f8fafc; /* Crisp clean readable high-contrast white text color base layers output */
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Glow transition activation framework triggered when user interaction enters content block */
+.offer-text-block-panel:hover .offer-headline-glow {
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(180, 83, 9, 0.6), 0 0 30px rgba(180, 83, 9, 0.2);
+}
+
+.offer-description-text {
+    font-size: 1rem;
+    color: #94a3b8; /* Slate gray neutral informative explanation paragraphs layout styling */
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+/* --- Floating Button Component Profile --- */
+.btn-offer-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b45309;
+    color: #ffffff !important; /* Locks structural visual links text from page cascades overrides */
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 12px 26px;
+    border-radius: 6px;
+    border: 1px solid #b45309;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.2);
+}
+
+.btn-offer-action:hover {
+    background-color: #92400e;
+    border-color: #92400e;
+    transform: translateY(-3px); /* Modern subtle floating physics lift metric configuration */
+    box-shadow: 0 8px 20px rgba(180, 83, 9, 0.45), 0 0 12px rgba(180, 83, 9, 0.2);
+}
+
+/* --- Native Asset Image Frame Display Panel Block Component --- */
+.offer-graphic-wrapper {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    box-shadow: 0 12px 30px rgba(9, 13, 22, 0.4);
+    background-color: #090d16;
+}
+
+.offer-display-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Micro-interaction image matrix zoom effect trigger tied to component boundary hovers */
+.offer-text-block-panel:hover ~ .offer-graphic-wrapper .offer-display-img,
+.offer-graphic-wrapper:hover .offer-display-img {
+    transform: scale(1.04);
+}
+
+/* --- Carousel Bullet Navigation Indicators Strip --- */
+.carousel-controller-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.dot-nav {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(148, 163, 184, 0.2);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dot-nav.active {
+    background-color: #b45309;
+    width: 24px; /* Morphing track indicator visualization style configuration layout */
+    border-radius: 100px;
+    box-shadow: 0 0 8px #b45309;
+}
+
+/* --- Fully Responsive Hardware Media Adaptive Breakpoints Processing Matrix --- */
+@media (max-width: 968px) {
+    .slide-split-grid {
+        grid-template-columns: 1fr; /* Stacks display components columns vertically cleanly */
+        gap: 32px;
+    }
+
+    .offer-text-block-panel {
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .offer-headline-glow {
+        font-size: 1.85rem; /* Safe proportional scale drop to lock layout frames from broken truncations */
+    }
+
+    .offer-graphic-wrapper {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Strict execution constraint implementation adapting padding bounds down exactly to 30px values */
+    .stackly-carousel-offer-strip {
+        padding: 30px 0;
+    }
+
+    .carousel-window-track {
+        min-height: auto; /* Relaxes rigid window limits allowing content text flows to control dynamic canvas sizing */
+    }
+
+    .offer-headline-glow {
+        font-size: 1.6rem;
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".carousel-offer-slide");
+    const dots = document.querySelectorAll(".dot-nav");
+    let currentActiveIndex = 0;
+    let autoRotationTimer = null;
+
+    if (slides.length > 0 && dots.length > 0) {
+        
+        // Navigation slide switcher framework execution routine
+        const transitionToSlideIndex = (targetIndex) => {
+            slides.forEach(slide => slide.classList.remove("active"));
+            dots.forEach(dot => dot.classList.remove("active"));
+
+            slides[targetIndex].classList.add("active");
+            dots[targetIndex].classList.add("active");
+            currentActiveIndex = targetIndex;
+        };
+
+        // Click intercept execution maps targeting navigation bullet points indicators
+        dots.forEach(dot => {
+            dot.addEventListener("click", (e) => {
+                const targetSlideID = parseInt(e.target.getAttribute("data-slide-target"), 10);
+                transitionToSlideIndex(targetSlideID);
+                resetAutoCycleTimerLoop(); // Halts rotation schedules gracefully when a manual touch occurs
+            });
+        });
+
+        // Background automation loop configuration tracking schedules
+        const startAutoCycleTimerLoop = () => {
+            autoRotationTimer = setInterval(() => {
+                let nextComputedIndex = (currentActiveIndex + 1) % slides.length;
+                transitionToSlideIndex(nextComputedIndex);
+            }, 6000); // 6-second rotation intervals
+        };
+
+        const resetAutoCycleTimerLoop = () => {
+            if (autoRotationTimer) {
+                clearInterval(autoRotationTimer);
+                startAutoCycleTimerLoop();
+            }
+        };
+
+        // Initialize Background Automation Sequence
+        startAutoCycleTimerLoop();
+    }
+});
+
+</script>
+
+<!-- Isolated Domain-Specific About Us Section -->
+<section class="stackly-about-section">
+    <div class="about-section-container">
+        
+        <!-- Left Side Column Layout Block: Content & Animated Typography -->
+        <div class="about-text-column">
+            
+            <div class="about-title-accent-bar" aria-hidden="true"></div>
+            
+            <!-- Headline configured for pure Javascript word-by-word staggered reveal loops -->
+            <h2 class="about-word-by-word-headline" id="aboutHeadlineTarget">
+                Empowering Innovations Safely Behind Scalable Legal Architectures
+            </h2>
+            
+            <span class="about-badge-subtitle">Awarded Legal Technology Infrastructure Provider of the Year</span>
+            
+            <!-- Paragraph configured to entry cleanly from the left side -->
+            <p class="about-paragraph-primary slide-from-side-fade">
+                At Stackly, we redefine standard corporate defense models. By merging deep traditional case mastery with automated governance tracking arrays, our partners manage cross-border operational compliance thresholds cleanly while protecting valuable intellectual property from fluid market risks.
+            </p>
+            
+            <!-- Lower Core Dual Pillars Sub-Grid Grid -->
+            <div class="about-pillars-subgrid slide-from-side-fade">
+                
+                <!-- Sub-Pillar Feature Card Node 1 -->
+                <div class="pillar-feature-card">
+                    <h3 class="pillar-feature-title">Award-Winning Firm</h3>
+                    <p class="pillar-feature-desc">Recognized globally for setting the benchmark in secure transaction pipelines and robust compliance framework delivery.</p>
+                </div>
+
+                <!-- Sub-Pillar Feature Card Node 2 -->
+                <div class="pillar-feature-card">
+                    <h3 class="pillar-feature-title">Best Legal Advice</h3>
+                    <p class="pillar-feature-desc">Immediate access to veteran corporate trial counsel and strategic technology advisory pools on demand.</p>
+                </div>
+
+            </div>
+            
+            <!-- Floating Hover Interaction Action Button Trigger Row Layout entering from bottom -->
+            <div class="about-action-wrapper slide-from-bottom-fade">
+                <a href="#booking" class="btn-about-floating-cta">Tell Us Your Case</a>
+            </div>
+
+        </div>
+
+        <!-- Right Side Column Layout Block -->
+        <div class="about-graphic-column">
+            <div class="about-image-offset-frame">
+                <div class="amber-background-block-layer" aria-hidden="true"></div>
+                <img src="https://unsplash.com" alt="Stackly strategy roundtable session" class="about-production-img">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- High-End About Us Canvas Design Tokens --- */
+.stackly-about-section {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #ffffff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.about-section-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 56px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.about-text-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-title-accent-bar {
+    width: 60px;
+    height: 4px;
+    background-color: #b45309;
+    margin-bottom: 24px;
+    border-radius: 20px;
+}
+
+/* --- TITLE: Pure Word-By-Word Reveal Infrastructure Engine --- */
+.about-word-by-word-headline {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #090d16;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 6px;
+}
+
+/* Base parameters for text tokens injected programmatically via javascript */
+.about-split-word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(15px);
+    will-change: transform, opacity;
+    animation: wordFadeUpReveal 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes wordFadeUpReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-badge-subtitle {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #b45309;
+    letter-spacing: 0.2px;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+/* --- PARAGRAPH & PILLARS: Slide from Side Smooth Entry Engine --- */
+.slide-from-side-fade {
+    opacity: 0;
+    transform: translateX(-40px);
+    animation: layoutSlideLeftIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+}
+
+@keyframes layoutSlideLeftIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about-paragraph-primary {
+    font-size: 0.98rem;
+    color: #475569;
+    line-height: 1.65;
+    margin-bottom: 32px;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: transparent;
+    border-left: 2px solid transparent;
+    transition: all 0.35s ease;
+}
+
+.about-paragraph-primary:hover {
+    color: #0f172a;
+    background-color: #f8fafc;
+    border-left-color: #b45309;
+    padding-left: 16px;
+    box-shadow: 0 4px 12px rgba(9, 13, 22, 0.02);
+}
+
+.about-pillars-subgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 36px;
+}
+
+.pillar-feature-card {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 0;
+}
+
+.pillar-feature-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #090d16;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.pillar-feature-card:hover .pillar-feature-title {
+    color: #b45309;
+    text-shadow: 0 0 10px rgba(180, 83, 9, 0.25);
+}
+
+.pillar-feature-desc {
+    font-size: 0.92rem;
+    color: #64748b;
+    line-height: 1.55;
+}
+
+/* --- BUTTON: Slide From Bottom Initialization Engine --- */
+.slide-from-bottom-fade {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: actionSlideUpIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+}
+
+@keyframes actionSlideUpIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-action-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.btn-about-floating-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b45309;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 28px;
+    border-radius: 4px;
+    border: 1px solid #b45309;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.2);
+}
+
+.btn-about-floating-cta:hover {
+    background-color: #92400e;
+    border-color: #92400e;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(180, 83, 9, 0.38), 0 0 8px rgba(180, 83, 9, 0.15);
+}
+
+/* --- Image Framework Setup --- */
+.about-graphic-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.about-image-offset-frame {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    padding-top: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.amber-background-block-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    background-color: #b45309;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.about-production-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 2;
+    border-radius: 4px;
+    box-shadow: -10px 15px 35px rgba(9, 13, 22, 0.12);
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-image-offset-frame:hover .about-production-img {
+    transform: translate(-6px, 6px);
+}
+
+/* --- Responsive Media Processing Breakpoints Adaptive Matrix --- */
+@media (max-width: 992px) {
+    .about-section-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    .about-image-offset-frame {
+        max-width: 100%;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+    .amber-background-block-layer {
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 640px) {
+    .stackly-about-section {
+        padding: 30px 0;
+    }
+    .about-animated-headline {
+        font-size: 1.95rem;
+    }
+    .about-pillars-subgrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .btn-about-floating-cta {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const aboutHeadline = document.getElementById("aboutHeadlineTarget");
+
+    if (aboutHeadline) {
+        // Strip string clean and break content into arrays elements
+        const textContentString = aboutHeadline.innerText.trim();
+        const splitWordsArray = textContentString.split(/\s+/);
+        
+        // Clear headline target base container
+        aboutHeadline.innerHTML = "";
+
+        // Iterate through loop index elements to attach sequential animation wrappers
+        splitWordsArray.forEach((wordValue, wordIndex) => {
+            const wordSpan = document.createElement("span");
+            wordSpan.innerText = wordValue;
+            wordSpan.classList.add("about-split-word");
+
+            // Adds incremental microsecond intervals delays dynamically to establish the word-by-word sequence
+            wordSpan.style.animationDelay = `${wordIndex * 60}ms`;
+
+            // Push processed typography block back into DOM pipeline
+            aboutHeadline.appendChild(wordSpan);
+        });
+    }
+});
+
+</script>
+
+<!-- Practice Areas Rotating Matrix Layout -->
+<section class="stackly-rotating-cards-strip">
+    <div class="rotating-cards-container">
+        
+        <!-- Section Header Context Array -->
+        <div class="rotating-strip-header">
+            <span class="rotating-eyebrow">Expertise Matrix</span>
+            <h2 class="rotating-main-title">Comprehensive Legal Protection Areas</h2>
+        </div>
+
+        <!-- Dynamic Shift Grid (Positions are updated dynamically via JavaScript index tracking) -->
+        <div class="rotating-cards-grid" id="rotatingCardsGrid">
+            
+            <!-- Rotating Card 1: Money Fraud -->
+            <div class="rotating-square-card" data-position="0" id="card-fraud">
+                <div class="rotating-inner-content">
+                    <div class="rotating-icon-holder">
+                        <!-- Wallet / Money Fraud Icon -->
+                        <svg viewBox="0 0 24 24" class="rotating-svg-icon" aria-hidden="true">
+                            <path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="rotating-card-title">Money Fraud</h3>
+                    <a href="404.html" class="rotating-read-more">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Rotating Card 2: Car Accident -->
+            <div class="rotating-square-card" data-position="1" id="card-car">
+                <div class="rotating-inner-content">
+                    <div class="rotating-icon-holder">
+                        <!-- Compact Car Icon -->
+                        <svg viewBox="0 0 24 24" class="rotating-svg-icon" aria-hidden="true">
+                            <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.27-3.82c.14-.4.51-.68.94-.68h9.54c.43 0 .8.28.94.68L19 11H5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="rotating-card-title">Car Accident</h3>
+                    <a href="404.html" class="rotating-read-more">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Rotating Card 3: Child Custody -->
+            <div class="rotating-square-card" data-position="2" id="card-custody">
+                <div class="rotating-inner-content">
+                    <div class="rotating-icon-holder">
+                        <!-- User / Custody Silhouette Icon -->
+                        <svg viewBox="0 0 24 24" class="rotating-svg-icon" aria-hidden="true">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="rotating-card-title">Child Custody</h3>
+                    <a href="404.html" class="rotating-read-more">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Rotating Card 4: Migration -->
+            <div class="rotating-square-card" data-position="3" id="card-migration">
+                <div class="rotating-inner-content">
+                    <div class="rotating-icon-holder">
+                        <!-- Aircraft / Migration Icon -->
+                        <svg viewBox="0 0 24 24" class="rotating-svg-icon" aria-hidden="true">
+                            <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="rotating-card-title">Migration</h3>
+                    <a href="404.html" class="rotating-read-more">Read More &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    /* --- Core Presentation Tokens Framework Configuration --- */
+.stackly-rotating-cards-strip {
+    width: 100%;
+    /* Strict padding limits configured exactly to user configuration rules */
+    padding: 50px 0;
+    background-color: #090d16; /* Deep Obsidian Premium Legal Tech Navy Base Layer Background */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.rotating-cards-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* --- Section Typography Headers --- */
+.rotating-strip-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.rotating-eyebrow {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #b45309; /* Warm Executive Amber Corporate Focus Highlight Tones */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.rotating-main-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+
+/* --- Shift Grid Engine Layout (Enables hardware accelerated smooth sliding movements) --- */
+.rotating-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Generates the clean uniform 4-column setup seen in the image */
+    gap: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* --- Flat Square Card Components (Clean Slate Profiles Matching Image) --- */
+.rotating-square-card {
+    background-color: #d1d5db; /* Clean grey-blue panel shade from user blueprint sample screenshot */
+    aspect-ratio: 1 / 1; /* Secures absolute uniform square dimensions bounds scaling */
+    border-radius: 4px;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), 
+                background-color 0.4s ease, 
+                box-shadow 0.4s ease;
+    will-change: transform, order; /* Informs browser optimization paths of dynamic spatial swapping routines */
+}
+
+.rotating-inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* --- Vector Icons Positioning Framework --- */
+.rotating-icon-holder {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rotating-svg-icon {
+    width: 100%;
+    height: 100%;
+    fill: #090d16; /* Clean Charcoal layout contrast color index tracking the vector nodes */
+    transition: fill 0.35s ease, filter 0.35s ease;
+}
+
+.rotating-card-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #090d16;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+/* --- Hidden Read More Callout Link --- */
+.rotating-read-more {
+    position: absolute;
+    bottom: -10px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #b45309;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                text-shadow 0.3s ease;
+    white-space: nowrap;
+}
+
+/* --- Master Hover & Glow Interaction Systems --- */
+.rotating-square-card:hover {
+    background-color: #090d16; /* Seamlessly morphs container profile background into dark obsidian branding */
+    box-shadow: 0 15px 30px rgba(180, 83, 9, 0.35), 0 0 20px rgba(180, 83, 9, 0.15);
+    z-index: 5; /* Raises active card layer stacking profile ahead of adjacent elements */
+}
+
+/* Vector path icon conversion illumination tracking hover variables metrics */
+.rotating-square-card:hover .rotating-svg-icon {
+    fill: #b45309; /* Glow accent amber */
+    filter: drop-shadow(0 0 10px rgba(180, 83, 9, 0.75));
+}
+
+.rotating-square-card:hover .rotating-card-title {
+    color: #ffffff;
+    opacity: 0.3; /* Subtle fading opacity allows clear visual breathing space for the reveal text link */
+}
+
+/* Read more slide-up animation trigger */
+.rotating-square-card:hover .rotating-read-more {
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+/* Extra text glow effect on read more hover */
+.rotating-read-more:hover {
+    text-shadow: 0 0 8px rgba(180, 83, 9, 0.5);
+    color: #f59e0b; /* Slightly lighter gold shade on active focus tracking */
+}
+
+/* --- Dynamic Positional Order Re-alignments (Utilized by JavaScript execution script loop tracking) --- */
+.rotating-square-card[data-position="0"] { order: 0; }
+.rotating-square-card[data-position="1"] { order: 1; }
+.rotating-square-card[data-position="2"] { order: 2; }
+.rotating-square-card[data-position="3"] { order: 3; }
+
+/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- */
+@media (max-width: 992px) {
+    .rotating-cards-grid {
+        grid-template-columns: repeat(2, 1fr); /* Grid drops safely down to two columns to maintain clarity */
+        gap: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Strict execution constraint implementation adapting padding bounds down exactly to 30px metrics rules values */
+    .stackly-rotating-cards-strip {
+        padding: 30px 0;
+    }
+
+    .rotating-cards-grid {
+        grid-template-columns: 1fr; /* Stacks display fields entirely vertical on compact phone display glass frames layout */
+        gap: 16px;
+    }
+
+    .rotating-square-card {
+        aspect-ratio: auto; /* Relaxes strict limits letting layout paddings handle symmetrical structural margins safely */
+        padding: 36px 24px;
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const cardsGrid = document.getElementById("rotatingCardsGrid");
+    
+    if (cardsGrid) {
+        const targetCardsArray = Array.from(cardsGrid.querySelectorAll(".rotating-square-card"));
+        const cycleSpeedDuration = 2000; // Enforces a 2-second position rotation lifecycle rule
+
+        // Execution interval clock setting up cyclic tracking transitions
+        setInterval(() => {
+            // Confirm grid state context isn't paused while user cursor focuses on a card element profile boundary
+            const activeHoverPresent = targetCardsArray.some(cardNode => cardNode.matches(":hover"));
+            
+            if (!activeHoverPresent) {
+                targetCardsArray.forEach(cardElement => {
+                    // Extract existing placement mapping values
+                    let currentPositionIndex = parseInt(cardElement.getAttribute("data-position"), 10);
+                    
+                    // Increment track placement index cycle safely rolling back to start at limits barrier boundary
+                    let updatedPositionIndex = (currentPositionIndex + 1) % targetCardsArray.length;
+                    
+                    // Rewrite mapping attributes to instantly reorder CSS arrangement lines smoothly
+                    cardElement.setAttribute("data-position", updatedPositionIndex);
+                });
+            }
+        }, cycleSpeedDuration);
+    }
+});
+
+</script>
+
+<!-- Fully Brand-Aligned Value Propositions Feature Section -->
+<section class="stackly-features-blueprint-pattern">
+    
+    <!-- Ambient Floating Vector Background Field Layer -->
+    <div class="ambient-pattern-vector-field" aria-hidden="true">
+        <!-- Floating Vector Icon 1 (Gavel Silhouette Shape) -->
+        <svg class="floating-pattern-vector pattern-pos-a" viewBox="0 0 24 24"><path d="M19 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H7v-2h10v2zm0-4H7V8h10v2z" fill="currentColor"/></svg>
+        <!-- Floating Vector Icon 2 (Balance Scales Framework Node) -->
+        <svg class="floating-pattern-vector pattern-pos-b" viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" fill="currentColor"/></svg>
+        <!-- Floating Vector Icon 3 (Secure Legal Shield Structure) -->
+        <svg class="floating-pattern-vector pattern-pos-c" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 15l-4-4 1.41-1.41L10 13.17l7.59-7.59L19 7l-9 9z" fill="currentColor"/></svg>
+    </div>
+
+    <div class="features-pattern-container">
+        
+        <!-- Left Side Bar Accent Marker Fragment -->
+        <div class="features-pattern-accent-bar" aria-hidden="true"></div>
+        
+        <!-- Header Typography Block (Configured for scroll line-by-line reveal) -->
+        <div class="features-pattern-header pattern-reveal-slide-up">
+            <h2 class="features-pattern-main-title">
+                Not Just Legal Advice &mdash; Business Strategy With Legal Clarity
+            </h2>
+            <span class="features-pattern-eyebrow-badge">
+                With over 12 years of experience in corporate and commercial law, I help business leaders make confident decisions.
+            </h2>
+        </div>
+
+        <!-- 2-Column Proposition Matrix Layout exactly matching your established split columns system -->
+        <div class="features-pattern-dual-grid">
+            
+            <!-- Value Card 1: Quick Turnarounds -->
+            <div class="feature-proposition-card-node pattern-reveal-stagger" style="--reveal-sequence: 1;">
+                <h3 class="proposition-node-title">Quick Turnarounds</h3>
+                <p class="proposition-node-desc">Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page rapidly without processing delays.</p>
+            </div>
+
+            <!-- Value Card 2: Transparent, Fixed Pricing Options -->
+            <div class="feature-proposition-card-node pattern-reveal-stagger" style="--reveal-sequence: 2;">
+                <h3 class="proposition-node-title">Transparent, Fixed Pricing Options</h3>
+                <p class="proposition-node-desc">Have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop regarding structural asset allocations.</p>
+            </div>
+
+            <!-- Value Card 3: Flexible Support -->
+            <div class="feature-proposition-card-node pattern-reveal-stagger" style="--reveal-sequence: 3;">
+                <h3 class="proposition-node-title">Flexible Support</h3>
+                <p class="proposition-node-desc">Whether you have a team our shared team inboxes keep everyone on the same page and in the loop across fluid cross-border operational requests.</p>
+            </div>
+
+            <!-- Value Card 4: Industry Experience in Startups -->
+            <div class="feature-proposition-card-node pattern-reveal-stagger" style="--reveal-sequence: 4;">
+                <h3 class="proposition-node-title">Industry Experience in Startups</h3>
+                <p class="proposition-node-desc">Whether you have a team of 2 or 200, our shared team inboxe everyone on the same page and in the loop through scaling growth iterations.</p>
+            </div>
+
+        </div>
+
+        <!-- Floating Action CTA Button Row Section matched exactly to bottom left layouts tracking patterns -->
+        <div class="features-pattern-action-row pattern-reveal-slide-up">
+            <a href="#booking" class="btn-features-pattern-floating">Initialize System Audit</a>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- Core Presentation Tokens Framework Configuration Layout --- */
+.stackly-features-blueprint-pattern {
+    width: 100%;
+    /* Strict padding limits matching your structural blueprint rules values */
+    padding: 50px 0;
+    background-color: #ffffff; /* Clean solid pure white backdrop canvas surface layer layout */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.features-pattern-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Preserves absolute clean left alignment matching your pattern screenshot */
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+/* --- Left Accent Bar Fragment Node --- */
+.features-pattern-accent-bar {
+    width: 60px;
+    height: 4px;
+    background-color: #b45309; /* Warm Executive Amber Traditional Legal Core Branding Indicator */
+    margin-bottom: 24px;
+    border-radius: 20px;
+}
+
+/* --- Section Typography Headers Matching Established Pattern --- */
+.features-pattern-header {
+    width: 100%;
+    max-width: 820px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.features-pattern-main-title {
+    font-size: clamp(1.8rem, 4.5vw, 2.4rem); /* Responsive fluid header scaling metrics rules */
+    font-weight: 700;
+    color: #090d16; /* Deep Obsidian high contrast typography base layout text color */
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+}
+
+.features-pattern-eyebrow-badge {
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: #b45309; /* Warm Executive Amber Signature */
+    letter-spacing: 0.2px;
+    display: inline-block;
+}
+
+/* --- Ambient Floating Vector Field Animation Infrastructure --- */
+.ambient-pattern-vector-field {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.floating-pattern-vector {
+    position: absolute;
+    width: clamp(24px, 4vw, 36px);
+    height: clamp(24px, 4vw, 36px);
+    color: rgba(180, 83, 9, 0.08); /* Executive subtle amber vector footprint tracking shadows */
+    will-change: transform;
+    animation: blueprintDriftFloat 8s infinite ease-in-out;
+}
+
+/* Precise spacing matrices allocations for background floating icons array nodes */
+.pattern-pos-a { top: 10%; right: 8%; animation-delay: 0s; }
+.pattern-pos-b { bottom: 15%; left: 5%; animation-delay: 2s; }
+.pattern-pos-c { top: 60%; right: 40%; animation-delay: 4s; }
+
+@keyframes blueprintDriftFloat {
+    0%, 100% { transform: translateY(0) scale(1) rotate(0deg); }
+    50% { transform: translateY(-12px) scale(1.04) rotate(6deg); }
+}
+
+/* --- 2-Column Feature Cards Layout Grid precisely matching your architecture template --- */
+.features-pattern-dual-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr; /* Exact matching content columns spacing parameters split */
+    column-gap: 56px;
+    row-gap: 36px;
+    width: 100%;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+/* --- High-Fidelity Value Proposition Node Blocks --- */
+.feature-proposition-card-node {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: transparent;
+    border-left: 2px solid transparent;
+    transition: all 0.35s ease;
+    box-sizing: border-box;
+}
+
+/* Modern clean card hover shift panel texture lighting tint configurations rules */
+.feature-proposition-card-node:hover {
+    background-color: #f8fafc; /* Subtle modern grey-white panel lift background surface */
+    border-left-color: #b45309; /* Changes frame edge path lines directly to crisp legal amber trace */
+    padding-left: 18px;
+    box-shadow: 0 4px 15px rgba(9, 13, 22, 0.02);
+}
+
+.proposition-node-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #090d16;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Subtle typography legal amber focal text glow shift on feature headings */
+.feature-proposition-card-node:hover .proposition-node-title {
+    color: #b45309;
+    text-shadow: 0 0 10px rgba(180, 83, 9, 0.25);
+}
+
+.proposition-node-desc {
+    font-size: 0.95rem;
+    color: #475569; /* Slate gray neutral informative explanation paragraphs layout styling */
+    line-height: 1.65;
+}
+
+/* --- Floating Key Actions CTA Button Profile Matched to Left Alignment --- */
+.features-pattern-action-row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn-features-pattern-floating {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b45309;
+    color: #ffffff !important; /* Locks structural visual links text from page cascades overrides */
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 28px;
+    border-radius: 4px;
+    border: 1px solid #b45309;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.2);
+}
+
+/* Modern continuous vertical float physical micro-interaction lift loops configuration setup style profiles */
+.btn-features-pattern-floating:hover {
+    background-color: #92400e;
+    border-color: #92400e;
+    transform: translateY(-4px); /* Precision physics spring motion lift execution tracking index */
+    box-shadow: 0 10px 22px rgba(180, 83, 9, 0.38), 0 0 8px rgba(180, 83, 9, 0.15);
+}
+
+.btn-features-pattern-floating:active {
+    transform: translateY(-1px);
+}
+
+/* --- Scroll Intersection Observer Reveal Engine States --- */
+.pattern-reveal-slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pattern-reveal-stagger {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.7s ease, 
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Trigger states initialized dynamically when layout boundaries enter scroll views track indexes */
+.pattern-reveal-slide-up.activated,
+.pattern-reveal-stagger.activated {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* Computes staggered cascading entrance sequence delay windows dynamically via inline style indexes order tags */
+.pattern-reveal-stagger.activated {
+    transition-delay: calc(var(--reveal-sequence) * 100ms);
+}
+
+/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- */
+@media (max-width: 968px) {
+    .features-pattern-dual-grid {
+        grid-template-columns: 1fr; /* Stacks column pairs completely vertical on tablet viewports to avoid overlapping text bounds */
+        row-gap: 24px;
+    }
+
+    .feature-proposition-card-node {
+        padding: 12px 0; /* Flattens internal alignment spacings tracking smaller canvas profiles */
+    }
+}
+
+@media (max-width: 640px) {
+    /* Strict execution constraint implementation adapting padding bounds down exactly to 30px metrics rules values */
+    .stackly-features-blueprint-pattern {
+        padding: 30px 0;
+    }
+
+    .features-pattern-main-title {
+        font-size: 1.85rem;
+    }
+
+    .btn-features-pattern-floating {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    // Collect all element targets requiring scroll visibility tracking entry vectors animations hooks
+    const brandPatternScrollElements = document.querySelectorAll(".pattern-reveal-slide-up, .pattern-reveal-stagger");
+
+    if ('IntersectionObserver' in window && brandPatternScrollElements.length > 0) {
+        
+        // Configuration tokens setup mapping tracking view thresholds markers parameters
+        const patternObserverSettings = {
+            root: null, // Binds tracking maps straight to default native browser window viewport context boxes
+            threshold: 0.12, // Fires activation triggers logic when 12% of the item crosses screen borders
+            rootMargin: "0px 0px -30px 0px" // Offsets execution trigger line slightly for a smoother cascading fluid look
+        };
+
+        const onPatternEntryDetected = (entriesList, observerRef) => {
+            entriesList.forEach(entryItem => {
+                if (entryItem.isIntersecting) {
+                    // Inject active display animation metrics toggle markers properties classes
+                    entryItem.target.classList.add("activated");
+                    // Cease watching active node item completely once entrance cycle completes track paths
+                    observerRef.unobserve(entryItem.target);
+                }
+            });
+        };
+
+        const patternScrollEngine = new IntersectionObserver(onPatternEntryDetected, patternObserverSettings);
+
+        // Deploy observer loops tracking pipelines cleanly across captured elements array sets variables
+        brandPatternScrollElements.forEach(nodeItem => {
+            patternScrollEngine.observe(nodeItem);
+        });
+    } else {
+        // Fallback pipeline execution support loops instantly executing displays views if historical legacy engines lack observer mechanisms support
+        brandPatternScrollElements.forEach(legacyNode => legacyNode.classList.add("activated"));
+    }
+});
+
+</script>
+
+<!-- Fully Responsive Brand Trust & Corporate Positioning Section -->
+<section class="stackly-trust-blueprint-canvas">
+    <div class="trust-blueprint-container">
+        
+        <!-- Continuous Automated Logo Carousel Ticker Strip -->
+        <div class="trust-ticker-window">
+            <div class="trust-ticker-track" aria-label="Partner Corporate Networks Ecosystem Array">
+                
+                <!-- Original Ticker Set (Uses clean inline SVGs matching your referenced brand layouts) -->
+                <div class="ticker-brand-node">
+                    <svg viewBox="0 0 24 24" class="ticker-vector-logo"><path d="M5 2v3h3v2H5v3H3V7H0V5h3V2h2zm14 3h2v2h-2V5zm0 4h2v2h-2V9zm-4-4h2v2h-2V5zm-4 0h2v2h-2V5zm8 8h2v2h-2v-2zm-4 0h2v2h-2v-2zm-4 0h2v2h-2v-2zm-4 4h2v2H7v-2zm8 0h2v2h-2v-2zm-4 0h2v2h-2v-2zm-4 4h2v2H3v-2zm12 0h2v2h-2v-2zm-4 0h2v2h-2v-2z" fill="currentColor"/></svg>
+                    <span>45 Degrees&deg;</span>
+                </div>
+                <div class="ticker-brand-node">
+                    <svg viewBox="0 0 24 24" class="ticker-vector-logo"><path d="M12 2L2 22h20L12 2zm0 4.83L18.8 19H5.2L12 6.83z" fill="currentColor"/></svg>
+                    <span>Acme Corp</span>
+                </div>
+                <div class="ticker-brand-node">
+                    <svg viewBox="0 0 24 24" class="ticker-vector-logo"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z" fill="currentColor"/></svg>
+                    <span>Codecraft_</span>
+                </div>
+                <div class="ticker-brand-node">
+                    <svg viewBox="0 0 24 24" class="ticker-vector-logo"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" fill="currentColor"/></svg>
+                    <span>Convergence</span>
+                </div>
+                <div class="ticker-brand-node">
+                    <svg viewBox="0 0 24 24" class="ticker-vector-logo"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" fill="currentColor"/></svg>
+                    <span>Lightspeed</span>
+                </div>
+                <div class="ticker-brand-node">
+                    <svg viewBox="0 0 24 24" class="ticker-vector-logo"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm1-15h-2v2h2V7zm0 4h-2v6h2v-6z" fill="currentColor"/></svg>
+                    <span>Luminary</span>
+                </div>
+
+                <!-- Duplicate Clone Set (Enables smooth loop wrapping transitions) -->
+                <div class="ticker-brand-node">
+                    <svg viewBox="0 0 24 24" class="ticker-vector-logo"><path d="M5 2v3h3v2H5v3H3V7H0V5h3V2h2zm14 3h2v2h-2V5zm0 4h2v2h-2V9zm-4-4h2v2h-2V5zm-4 0h2v2h-2V5zm8 8h2v2h-2v-2zm-4 0h2v2h-2v-2zm-4 0h2v2h-2v-2zm-4 4h2v2H7v-2zm8 0h2v2h-2v-2zm-4 0h2v2h-2v-2zm-4 4h2v2H3v-2zm12 0h2v2h-2v-2zm-4 0h2v2h-2v-2z" fill="currentColor"/></svg>
+                    <span>45 Degrees&deg;</span>
+                </div>
+                <div class="ticker-brand-node">
+                    <svg viewBox="0 0 24 24" class="ticker-vector-logo"><path d="M12 2L2 22h20L12 2zm0 4.83L18.8 19H5.2L12 6.83z" fill="currentColor"/></svg>
+                    <span>Acme Corp</span>
+                </div>
+                <div class="ticker-brand-node">
+                    <svg viewBox="0 0 24 24" class="ticker-vector-logo"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z" fill="currentColor"/></svg>
+                    <span>Codecraft_</span>
+                </div>
+                <div class="ticker-brand-node">
+                    <svg viewBox="0 0 24 24" class="ticker-vector-logo"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" fill="currentColor"/></svg>
+                    <span>Convergence</span>
+                </div>
+                <div class="ticker-brand-node">
+                    <svg viewBox="0 0 24 24" class="ticker-vector-logo"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" fill="currentColor"/></svg>
+                    <span>Lightspeed</span>
+                </div>
+                <div class="ticker-brand-node">
+                    <svg viewBox="0 0 24 24" class="ticker-vector-logo"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm1-15h-2v2h2V7zm0 4h-2v6h2v-6z" fill="currentColor"/></svg>
+                    <span>Luminary</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Center Positioned Branding Layout Blocks -->
+        <div class="trust-content-wrapper">
+            
+            <!-- Headline configured for pure line-by-line upwards scroll reveals -->
+            <h2 class="trust-scrolling-headline scroll-reveal-line-up" id="scrollHeadlineTarget">
+                TRUSTED. EXPERIENCED. STRATEGIC.
+            </h2>
+            
+            <!-- Paragraph featuring custom high-contrast interactive focus glow transitions -->
+            <p class="trust-paragraph-description scroll-reveal-line-up">
+                With over 12 years of experience in corporate and commercial law, I help business leaders make confident decisions. Known for a no-nonsense, solution-first approach, I support clients in tech, finance, healthcare, and professional services.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- Core Presentation Tokens Framework Configuration Layout --- */
+.stackly-trust-blueprint-canvas {
+    width: 100%;
+    /* Strict padding limits configured exactly to user configuration rules */
+    padding: 50px 0;
+    background-color: #ffffff; /* Clean pure white solid background panel canvas */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.trust-blueprint-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* --- TITLE & CONTENT: Center Arrangement Content Positioning --- */
+.trust-content-wrapper {
+    max-width: 820px;
+    text-align: center;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trust-scrolling-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2.2rem, 5vw, 3.4rem); /* Responsive fluid header scaling metrics rules */
+    font-weight: 700;
+    color: #090d16; /* Deep Obsidian high contrast typography base layout text color */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 24px;
+}
+
+.trust-paragraph-description {
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
+    color: #475569; /* Slate gray neutral informative explanation paragraphs layout styling */
+    line-height: 1.7;
+    font-weight: 400;
+    padding: 16px 24px;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-sizing: border-box;
+}
+
+/* Interactive typography legal amber focal text glow shift on paragraph hover */
+.trust-paragraph-description:hover {
+    color: #090d16;
+    background-color: #f8fafc; /* Subtle light tone texturing layer */
+    box-shadow: 0 10px 25px -5px rgba(9, 13, 22, 0.03);
+    text-shadow: 0 0 1px rgba(9, 13, 22, 0.1);
+    transform: scale(1.01);
+}
+
+/* --- AUTOMATED CAROUSEL TICKER STRIP: Infinite Hardware Accelerated Continuous Loop Engine --- */
+.trust-ticker-window {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 16px 0;
+    border-bottom: 1px solid #e2e8f0; /* Hairline separator parameter texture frame line layout */
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+}
+
+.trust-ticker-track {
+    display: flex;
+    width: max-content;
+    gap: 64px; /* Spacious horizontal buffer node clearance between logos sets */
+    animation: continuousTickerRotate 25s linear infinite; /* Hardware optimized infinite cycle execution loop */
+    will-change: transform;
+}
+
+.ticker-brand-node {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #64748b; /* Neutral gray tone matching standard brand layouts configurations */
+    font-size: 0.95rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.ticker-vector-logo {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* Subtle amber visual transition illumination when mouse checks any scrolling logo nodes */
+.ticker-brand-node:hover {
+    color: #b45309; /* Warm Executive Amber Corporate Focus Highlight Tones */
+}
+
+@keyframes continuousTickerRotate {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 32px)); } /* Shifts exactly past half frame markers loop boundary */
+}
+
+/* Pauses continuous slider movements gracefully during active touch inspection frames */
+.trust-ticker-track:hover {
+    animation-play-state: paused;
+}
+
+/* --- SCROLL ANIMATION: Upward Fade Slide Reveal Matrix System --- */
+.scroll-reveal-line-up {
+    opacity: 0;
+    transform: translateY(35px); /* Clean layout tracking lines starting low */
+    transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Active triggering visibility state initialized dynamically via scroll position calculations */
+.scroll-reveal-line-up.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- */
+@media (max-width: 640px) {
+    /* Strict execution constraint implementation adapting padding bounds down exactly to 30px metrics rules values */
+    .stackly-trust-blueprint-canvas {
+        padding: 30px 0;
+    }
+
+    .trust-content-wrapper {
+        margin-top: 32px;
+    }
+
+    .trust-ticker-track {
+        gap: 40px; /* Contracts spacing boundaries on smaller touch display hardware interfaces */
+    }
+
+    .trust-paragraph-description {
+        padding: 12px 8px;
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    // Collect all element node targets needing automated scroll visibility line upward reveals
+    const lineRevealElements = document.querySelectorAll(".scroll-reveal-line-up");
+
+    if ('IntersectionObserver' in window && lineRevealElements.length > 0) {
+        
+        // Define observer options thresholds mapping layout position parameters
+        const lineObserverConfig = {
+            root: null, // Track viewport context boundaries directly
+            threshold: 0.12, // Fires logic when 12% of the targeted bounding box scale enters view frame indices
+            rootMargin: "0px 0px -25px 0px" // Offsets trigger lines slightly for a clean cascading appearance
+        };
+
+        const onLineEntryObserved = (entriesList, observerInstance) => {
+            entriesList.forEach(entryNode => {
+                if (entryNode.isIntersecting) {
+                    // Inject active display animation markers classes parameters
+                    entryNode.target.classList.add("revealed");
+                    // Cease watching active node item completely once transition lifecycle completes track paths
+                    observerInstance.unobserve(entryNode.target);
+                }
+            });
+        };
+
+        const lineScrollIntersectionEngine = new IntersectionObserver(onLineEntryObserved, lineObserverConfig);
+
+        // Map observer tracking pipelines across execution elements arrays loops
+        lineRevealElements.forEach(elementNode => {
+            lineScrollIntersectionEngine.observe(elementNode);
+        });
+    } else {
+        // Fallback pipeline execution support loops instantly executing displays views if historical legacy engines lack observer mechanisms support
+        lineRevealElements.forEach(legacyNode => legacyNode.classList.add("revealed"));
+    }
+});
+
+</script>
+
+<!-- Full-Width Fluid Legal-Tech Call-To-Action Banner Strip -->
+<section class="stackly-cta-banner-strip-fluid">
+    
+    <!-- Full-Width Scrolling Sliding Entry Card Block Shell -->
+    <div class="cta-banner-card-block-fluid scroll-slide-left-right-fluid" id="ctaBannerCardFluid">
+        
+        <!-- Layer 1: Background Asset Graphic Element -->
+        <img src="https://unsplash.com" alt="Abstract Legal Tech Network Backdrop Grid Overlay" class="cta-card-bg-img-fluid" aria-hidden="true">
+        
+        <!-- Inner container houses content grids within standard readable page limits -->
+        <div class="cta-card-inner-fluid-container">
+            <div class="cta-card-inner-overlay-grid-fluid">
+                
+                <!-- Left Content Column Block: 2 Lines of Typography Matrices -->
+                <div class="cta-card-text-panel-fluid">
+                    <!-- Line 1 Title Configured for Word-by-Word Scrolling Animations -->
+                    <h2 class="cta-banner-word-headline-fluid" id="ctaHeadlineTargetFluid">
+                        Initialize Your Secure Consultation Framework Today
+                    </h2>
+                    
+                    <!-- Line 2 Support Description containing custom text hover glow integrations -->
+                    <p class="cta-banner-support-desc-fluid">
+                        Connect safely with executive partner-level counsel to review your digital regulatory parameters at zero upfront asset liability metrics.
+                    </p>
+                </div>
+
+                <!-- Right Action Column Block: Floating CTA Trigger Button alongside Foreground Image Graphic -->
+                <div class="cta-card-action-panel-fluid">
+                    
+                    <!-- Layer 2: Foreground Digital Shield Safe Icon Graphic Element Image -->
+                    <div class="cta-foreground-graphic-box-fluid">
+                        <img src="https://unsplash.com" alt="Stackly Secure Compliance Encryption Framework Interface Node Visual" class="cta-card-foreground-img-fluid">
+                    </div>
+
+                    <!-- Floating Amber Trigger Action Callout Button Link -->
+                    <div class="cta-button-floating-wrapper-fluid">
+                        <a href="#intake" class="btn-cta-banner-floating-fluid">Claim Free Session &rarr;</a>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- Core CTA Banner Section Fluid Interface Layout Design --- */
+.stackly-cta-banner-strip-fluid {
+    width: 100%;
+    /* Strict execution padding constraints mapped exactly to user layout specs */
+    padding: 50px 0;
+    background-color: #ffffff; 
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* --- Full-Width Master Card Block Container with Left-To-Right Scroll Entry --- */
+.cta-banner-card-block-fluid {
+    position: relative;
+    width: 100%; /* Spans 100% full viewport width edge-to-edge */
+    min-height: 240px;
+    background-color: #090d16; /* Deep obsidian primary backdrop */
+    overflow: hidden;
+    border-top: 1px solid rgba(148, 163, 184, 0.15);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+    box-sizing: border-box;
+}
+
+/* Layer 1: Production background imagery fluid metrics configuration */
+.cta-card-bg-img-fluid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.12; /* Subtle technical backdrop texture watermark overlay line grids */
+    z-index: 1;
+    pointer-events: none;
+    transition: transform 0.6s ease;
+}
+
+/* Content inner width governance tracker bounds container */
+.cta-card-inner-fluid-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.cta-card-inner-overlay-grid-fluid {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0; /* Vertical breathing gap balances within full width bands layout */
+    display: grid;
+    grid-template-columns: 1.32fr 0.68fr; /* Clear split dividing metrics across rows */
+    gap: 40px;
+    align-items: center;
+    z-index: 2; /* Forces layout panels above background texture layer nodes */
+    box-sizing: border-box;
+}
+
+/* --- Left Column Content Alignment System Tracks --- */
+.cta-card-text-panel-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Pure word-by-word reveal typography injection target metrics settings */
+.cta-banner-word-headline-fluid {
+    font-size: 2.25rem; /* Crisp, highly visible headline structure scale */
+    font-weight: 700;
+    color: #ffffff; 
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 4px;
+}
+
+/* Inline text block word targets mapping variables properties fields programmatically */
+.cta-split-word-node-fluid {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(12px);
+    will-change: transform, opacity;
+    animation: ctaWordFadeInFluid 0.45s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes ctaWordFadeInFluid {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.cta-banner-support-desc-fluid {
+    font-size: 0.98rem;
+    color: #94a3b8; /* Slate gray neutral explanatory content description text formatting font */
+    line-height: 1.6;
+    max-width: 720px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Interactive text illumination glow activation state when hovering over content cards fields */
+.cta-banner-card-block-fluid:hover .cta-banner-support-desc-fluid {
+    color: #e2e8f0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+/* --- Right Column Actions & Foreground Image Components Design --- */
+.cta-card-action-panel-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+}
+
+/* Layer 2: Foreground Graphic framing layout configurations mimicking user screenshots asset nodes */
+.cta-foreground-graphic-box-fluid {
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cta-card-foreground-img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Micro-interaction transformations tracking ambient component border boundaries */
+.cta-banner-card-block-fluid:hover .cta-card-bg-img-fluid {
+    transform: scale(1.02); /* Subtle fluid imagery scale zoom track metrics */
+}
+
+.cta-banner-card-block-fluid:hover .cta-foreground-graphic-box-fluid {
+    transform: scale(1.06) rotate(-3deg);
+    border-color: rgba(180, 83, 9, 0.35);
+}
+
+/* --- Floating Key Actions CTA Callout Triggers Row Layout --- */
+.cta-button-floating-wrapper-fluid {
+    display: flex;
+    align-items: center;
+}
+
+.btn-cta-banner-floating-fluid {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b45309; /* Warm Executive Amber Corporate Focus Highlight Tones */
+    color: #ffffff !important; /* Forces solid typography rules blocking layout overrides link cascades */
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 4px;
+    border: 1px solid #b45309;
+    white-space: nowrap;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 14px rgba(180, 83, 9, 0.3);
+}
+
+/* Modern continuous vertical float physical micro-interaction lift loops configuration setup style profiles */
+.btn-cta-banner-floating-fluid:hover {
+    background-color: #92400e;
+    border-color: #92400e;
+    transform: translateY(-4px); /* Precision physics spring motion lift execution tracking index */
+    box-shadow: 0 12px 24px rgba(180, 83, 9, 0.45), 0 0 12px rgba(180, 83, 9, 0.25);
+}
+
+.btn-cta-banner-floating-fluid:active {
+    transform: translateY(-1px);
+}
+
+/* --- SCROLL ANIMATION: Left-To-Right Sliding Block Matrix System --- */
+.scroll-slide-left-right-fluid {
+    opacity: 0;
+    transform: translateX(-100px); /* Extends tracking lines low starting off-screen left margins */
+    transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Active triggering visibility state initialized dynamically via scroll position calculations */
+.scroll-slide-left-right-fluid.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- */
+@media (max-width: 992px) {
+    .cta-card-inner-overlay-grid-fluid {
+        grid-template-columns: 1fr; /* Stacks display fields entirely vertical on tablet viewports to expand tracking bounds */
+        gap: 28px;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .cta-card-text-panel-fluid {
+        align-items: center;
+    }
+
+    .cta-banner-word-headline-fluid {
+        justify-content: center;
+        font-size: 1.95rem; /* Proportional scale drop preventing word splits overlaps layout metrics code */
+    }
+
+    .cta-card-action-panel-fluid {
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .cta-foreground-graphic-box-fluid {
+        display: none; /* Safely hides secondary inline media thumbnail frames on compact touch grids viewport layout frames */
+    }
+
+    .btn-cta-banner-floating-fluid {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Strict execution constraint implementation adapting padding bounds down exactly to 30px metrics rules values */
+    .stackly-cta-banner-strip-fluid {
+        padding: 30px 0;
+    }
+
+    .cta-card-inner-overlay-grid-fluid {
+        padding: 30px 0;
+    }
+
+    .cta-banner-word-headline-fluid {
+        font-size: 1.65rem;
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const ctaBannerCardFluid = document.getElementById("ctaBannerCardFluid");
+    const ctaHeadlineFluid = document.getElementById("ctaHeadlineTargetFluid");
+
+    if ('IntersectionObserver' in window && ctaBannerCardFluid) {
+        
+        // Define observer options thresholds mapping layout position parameters markers
+        const fluidCtaObserverConfig = {
+            root: null, 
+            threshold: 0.1, // Fires logic when 10% of card bounding dimensions enters view frame indices
+            rootMargin: "0px 0px -20px 0px"
+        };
+
+        const onFluidBannerIntersection = (entriesList, observerRef) => {
+            entriesList.forEach(entryNode => {
+                if (entryNode.isIntersecting) {
+                    // 1. Fire Left-to-Right layout block slide fluid transition activation track
+                    entryNode.target.classList.add("revealed");
+                    
+                    // 2. Safely trigger subsequent child Word-By-Word reveal compilation loops routines
+                    initializeFluidWordByWordSequence();
+                    
+                    // Unobserve element node safely once transition lifecycle completes track paths
+                    observerRef.unobserve(entryNode.target);
+                }
+            });
+        };
+
+        const ctaFluidScrollObserver = new IntersectionObserver(onFluidBannerIntersection, fluidCtaObserverConfig);
+        ctaFluidScrollObserver.observe(ctaBannerCardFluid);
+
+        // Fluid Word tokenizer compilation engine execution routine block
+        function initializeFluidWordByWordSequence() {
+            if (ctaHeadlineFluid) {
+                const cleanTextContent = ctaHeadlineFluid.innerText.trim();
+                const splitWordsArray = cleanTextContent.split(/\s+/);
+                
+                // Wipe clean default tracking shell box container surfaces layer panel 
+                ctaHeadlineFluid.innerHTML = "";
+
+                splitWordsArray.forEach((wordValue, itemIndex) => {
+                    const wordSpan = document.createElement("span");
+                    wordSpan.innerText = wordValue;
+                    wordSpan.classList.add("cta-split-word-node-fluid");
+
+                    // Adds incremental microsecond intervals delays dynamically to establish the flowing word reveal
+                    wordSpan.style.animationDelay = `${itemIndex * 50}ms`;
+
+                    // Push processed typography block cleanly back into DOM layout path track loop execution tree
+                    ctaHeadlineFluid.appendChild(wordSpan);
+                });
+            }
+        }
+
+    } else {
+        // Fallback pipeline execution support loops instantly executing displays views if historical legacy engines lack observer mechanisms support
+        if (ctaBannerCardFluid) ctaBannerCardFluid.classList.add("revealed");
+    }
+});
+
+</script>
+
+
+<!-- High-End Legal Tech Blog Posts Feed Section (Slate Gray-Blue Card Variant) -->
+<section class="stackly-blog-feed-strip-slate">
+    <div class="blog-feed-container-slate">
+        
+        <!-- Section Header Context Block configured for Letter-by-Letter reveals -->
+        <div class="blog-feed-header-slate">
+            <h2 class="blog-letter-by-letter-title-slate" id="blogTitleTargetSlate">
+                LATEST BLOG POSTS
+            </h2>
+            <p class="blog-feed-support-tagline-slate scroll-fade-up-slate">
+                Tools and strategies modern teams need to help their companies grow.
+            </p>
+        </div>
+
+        <!-- 3-Column Articles Showcase Grid Layout precisely mirroring user image blueprint -->
+        <div class="blog-posts-grid-slate">
+            
+            <!-- Article Card 1: Startup Law Essentials -->
+            <article class="blog-post-card-slate scroll-fade-up-slate" style="--card-sequence: 1;">
+                <div class="blog-card-thumbnail-box-slate">
+                    <img src="https://unsplash.com" alt="Attorneys reviewing venture structuring document portfolios safely" class="blog-card-img-slate">
+                </div>
+                <div class="blog-card-body-content-slate">
+                    <span class="blog-card-category-tag-slate">Growth-Oriented</span>
+                    <div class="blog-card-title-row-slate">
+                        <h3 class="blog-card-heading-slate"><a href="404.html" class="blog-text-link-cover">Startup Law Essentials</a></h3>
+                        <a href="404.html" class="blog-card-arrow-link-slate" aria-label="Read Startup Law Essentials article detailed documentation">&nearr;</a>
+                    </div>
+                    <p class="blog-card-excerpt-slate">
+                        How do you create compelling presentations that wow your colleagues and impress your managers?
+                    </p>
+                    <div class="blog-card-author-cluster-slate">
+                        <img src="https://unsplash.com" alt="Olivia Rhye Profile Avatar" class="author-avatar-img-slate">
+                        <div class="author-meta-text-slate">
+                            <span class="author-profile-name-slate">Olivia Rhye</span>
+                            <span class="author-publish-date-slate">20 Jan 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article Card 2: Legal Insights for Business Leaders -->
+            <article class="blog-post-card-slate scroll-fade-up-slate" style="--card-sequence: 2;">
+                <div class="blog-card-thumbnail-box-slate">
+                    <img src="https://unsplash.com" alt="Traditional bronze justice scales resting inside executive law office chambers" class="blog-card-img-slate">
+                </div>
+                <div class="blog-card-body-content-slate">
+                    <span class="blog-card-category-tag-slate">Professional</span>
+                    <div class="blog-card-title-row-slate">
+                        <h3 class="blog-card-heading-slate"><a href="404.html" class="blog-text-link-cover">Legal Insights for Business Leaders</a></h3>
+                        <a href="404.html" class="blog-card-arrow-link-slate" aria-label="Read Legal Insights for Business Leaders article detailed documentation">&nearr;</a>
+                    </div>
+                    <p class="blog-card-excerpt-slate">
+                        Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.
+                    </p>
+                    <div class="blog-card-author-cluster-slate">
+                        <img src="https://unsplash.com" alt="Phoenix Baker Profile Avatar" class="author-avatar-img-slate">
+                        <div class="author-meta-text-slate">
+                            <span class="author-profile-name-slate">Phoenix Baker</span>
+                            <span class="author-publish-date-slate">19 Jan 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article Card 3: Smart Law for Smarter Business -->
+            <article class="blog-post-card-slate scroll-fade-up-slate" style="--card-sequence: 3;">
+                <div class="blog-card-thumbnail-box-slate">
+                    <img src="https://unsplash.com" alt="Counselors coordinating regulatory asset alignment workflows inside dashboard system background parameters" class="blog-card-img-slate">
+                </div>
+                <div class="blog-card-body-content-slate">
+                    <span class="blog-card-category-tag-slate">Approachable</span>
+                    <div class="blog-card-title-row-slate">
+                        <h3 class="blog-card-heading-slate"><a href="404.html" class="blog-text-link-cover">Smart Law for Smarter Business</a></h3>
+                        <a href="404.html" class="blog-card-arrow-link-slate" aria-label="Read Smart Law for Smarter Business article detailed documentation">&nearr;</a>
+                    </div>
+                    <p class="blog-card-excerpt-slate">
+                        The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                    </p>
+                    <div class="blog-card-author-cluster-slate">
+                        <img src="https://unsplash.com" alt="Lana Steiner Profile Avatar" class="author-avatar-img-slate">
+                        <div class="author-meta-text-slate">
+                            <span class="author-profile-name-slate">Lana Steiner</span>
+                            <span class="author-publish-date-slate">18 Jan 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    /* --- Core Presentation Tokens Framework Configuration Layout --- */
+.stackly-blog-feed-strip-slate {
+    width: 100%;
+    /* Strict execution padding constraints mapped exactly to user layout specs */
+    padding: 50px 0;
+    background-color: #ffffff; /* Premium Pure Solid White Backdrop Canvas Layer */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.blog-feed-container-slate {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* --- Section Typography Headers --- */
+.blog-feed-header-slate {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 48px auto;
+}
+
+/* --- TITLE: High-Performance Letter-By-Letter Reveal Track Setup --- */
+.blog-letter-by-letter-title-slate {
+    font-size: clamp(1.8rem, 4vw, 2.5rem); 
+    font-weight: 700;
+    color: #090d16; /* Dark Obsidian high contrast typography base text color */
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0; /* Handled smoothly by JS initialization cycle */
+}
+
+/* Character nodes layout properties injected programmatically via runtime engine javascript */
+.blog-char-node-slate {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(14px);
+    will-change: transform, opacity;
+    animation: blogLetterFadeInUpSlate 0.45s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* Treats whitespace tokens cleanly to maintain accurate typographic line spacing flow metrics */
+.blog-char-space-slate {
+    width: 0.28em;
+}
+
+@keyframes blogLetterFadeInUpSlate {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.blog-feed-support-tagline-slate {
+    font-size: 1.05rem;
+    color: #475569; /* Slate gray neutral informative explanation paragraphs layout styling */
+    line-height: 1.6;
+}
+
+/* --- 3-Column Grid Structural Mapping (Precisely replicating snapshot image composition) --- */
+.blog-posts-grid-slate {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Generates 3 layout columns cleanly across rows */
+    gap: 32px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* --- High-Fidelity Article Post Cards Framework Architecture --- */
+.blog-post-card-slate {
+    display: flex;
+    flex-direction: column;
+    /* Clean light gray-blue panels matching requested migration layout profile */
+    background-color: #d1d5db; 
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 24px;
+    border: 4px solid #f3f4f6; /* Outer protective frame line layer tracking your pattern source */
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-sizing: border-box;
+}
+
+/* Modern clean card hover shift panel texture lighting tint configurations rules */
+.blog-post-card-slate:hover {
+    background-color: #090d16; /* Swaps container canvas safely to primary branding tone */
+    border-color: #b45309; /* Changes frame path lines directly to crisp legal amber */
+    transform: translateY(-8px); /* Subtle physics spring vertical lift action */
+    box-shadow: 0 15px 30px rgba(180, 83, 9, 0.25), 0 0 15px rgba(180, 83, 9, 0.15);
+}
+
+/* Fixed composition framing rules enforcing clean asset boundaries layout metrics */
+.blog-card-thumbnail-box-slate {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #090d16;
+    margin-bottom: 20px;
+    border: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.blog-card-img-slate {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.blog-card-body-content-slate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.blog-card-category-tag-slate {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #b45309; /* Warm Executive Amber Corporate Focus Highlight Tones */
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.blog-post-card-slate:hover .blog-card-category-tag-slate {
+    color: #ffffff; /* Shifts categories tags visibility safely on deep dark fill hover frames */
+}
+
+.blog-card-title-row-slate {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.blog-card-heading-slate {
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.2px;
+}
+
+.blog-text-link-cover {
+    color: #090d16; /* Clean Charcoal layout contrast color index tracking the vector nodes */
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.blog-card-arrow-link-slate {
+    font-size: 1.25rem;
+    color: #090d16;
+    text-decoration: none;
+    line-height: 1;
+    font-weight: 500;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.35s ease;
+}
+
+.blog-card-excerpt-slate {
+    font-size: 0.95rem;
+    color: #27272a; /* Balanced deep tone contrast text matching your icon grids templates description profiles */
+    line-height: 1.6;
+    margin-bottom: 24px;
+    transition: color 0.3s ease;
+}
+
+/* --- Card Author Profiling Infrastructure Elements Grid --- */
+.blog-card-author-cluster-slate {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto; /* Pushes signature metadata panels symmetrically straight to card baseline */
+}
+
+.author-avatar-img-slate {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #f1f5f9;
+    border: 1px solid #e2e8f0;
+}
+
+.author-meta-text-slate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.author-profile-name-slate {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #090d16;
+    transition: color 0.3s ease;
+}
+
+.author-publish-date-slate {
+    font-size: 0.8rem;
+    color: #4b5563;
+    margin-top: 2px;
+    transition: color 0.3s ease;
+}
+
+/* --- Master Hover & Glow System Configuration Transformations --- */
+.blog-post-card-slate:hover .blog-card-img-slate {
+    transform: scale(1.03); /* Subtle fluid macro scale zoom tracking */
+}
+
+/* Illuminates title array heading directly to signature accent gold on focus bounds matches */
+.blog-post-card-slate:hover .blog-text-link-cover {
+    color: #b45309;
+    text-shadow: 0 0 10px rgba(180, 83, 9, 0.5);
+}
+
+.blog-post-card-slate:hover .blog-card-excerpt-slate {
+    color: #94a3b8; /* Lights secondary typography slightly ahead of dark filling frame limits */
+}
+
+/* Dynamic arrow rotational push translation vector micro-interaction */
+.blog-post-card-slate:hover .blog-card-arrow-link-slate {
+    transform: translate(3px, -3px);
+    color: #b45309;
+    text-shadow: 0 0 8px rgba(180, 83, 9, 0.4);
+}
+
+.blog-post-card-slate:hover .author-profile-name-slate {
+    color: #ffffff;
+}
+
+.blog-post-card-slate:hover .author-publish-date-slate {
+    color: #64748b;
+}
+
+/* --- Staggered Scroll Base Reveals --- */
+.scroll-fade-up-slate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.75s ease, 
+                transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-fade-up-slate.activated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Sets processing cascade intervals rules values dynamically based on card sequence metrics indexes variable */
+.blog-posts-grid-slate .blog-post-card-slate.activated {
+    transition-delay: calc(var(--card-sequence) * 120ms);
+}
+
+/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- */
+@media (max-width: 1024px) {
+    .blog-posts-grid-slate {
+        grid-template-columns: repeat(2, 1fr); /* Breaks down safely to twin grids avoiding extreme layout narrow compression */
+        gap: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Strict execution constraint implementation adapting padding bounds down exactly to 30px metrics rules values */
+    .stackly-blog-feed-strip-slate {
+        padding: 30px 0;
+    }
+
+    .blog-feed-header-slate {
+        margin-bottom: 32px;
+    }
+
+    .blog-posts-grid-slate {
+        grid-template-columns: 1fr; /* Compresses rows down completely to singular lanes on mobile phones glass canvases */
+        gap: 20px;
+    }
+
+    .blog-post-card-slate {
+        aspect-ratio: auto; /* Relaxes strict limits letting layout paddings handle symmetrical structural margins safely */
+        padding: 36px 24px;
+    }
+
+    .blog-card-thumbnail-box-slate {
+        margin-bottom: 14px;
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const blogTitleSlate = document.getElementById("blogTitleTargetSlate");
+    const blogScrollElementsSlate = document.querySelectorAll(".scroll-fade-up-slate");
+
+    if ('IntersectionObserver' in window) {
+        
+        // Define observer options thresholds mapping layout position parameters markers
+        const blogObserverConfigSlate = {
+            root: null, 
+            threshold: 0.12, 
+            rootMargin: "0px 0px -25px 0px"
+        };
+
+        const onBlogIntersectionObservedSlate = (entriesList, observerRef) => {
+            entriesList.forEach(entryNode => {
+                if (entryNode.isIntersecting) {
+                    
+                    // Check if targeted node correlates directly to the header text compilation array block
+                    if (entryNode.target.id === "blogTitleTargetSlate") {
+                        initializeLetterByLetterSequenceSlate();
+                    } else {
+                        entryNode.target.classList.add("activated");
+                    }
+                    
+                    // Unobserve element node safely once transition lifecycle completes track paths
+                    observerRef.unobserve(entryNode.target);
+                }
+            });
+        };
+
+        const blogScrollObserverSlate = new IntersectionObserver(onBlogIntersectionObservedSlate, blogObserverConfigSlate);
+        
+        // Register observer pipelines across the targeted arrays sets configurations variables tracking loops
+        if (blogTitleSlate) blogScrollObserverSlate.observe(blogTitleSlate);
+        blogScrollElementsSlate.forEach(elementNode => blogScrollObserverSlate.observe(elementNode));
+
+        // Character tokenizer compilation engine execution routine block
+        function initializeLetterByLetterSequenceSlate() {
+            if (blogTitleSlate) {
+                const originalTextContent = blogTitleSlate.innerText.trim();
+                
+                // Wipe clean default tracking shell box container surfaces layer panel 
+                blogTitleSlate.innerHTML = "";
+
+                // Translate raw content index metrics safely character by character
+                Array.from(originalTextContent).forEach((character, charIndex) => {
+                    const charSpan = document.createElement("span");
+                    
+                    // Handle space formatting structural elements to keep reading flows secure
+                    if (character === " ") {
+                        charSpan.classList.add("blog-char-space-slate");
+                        charSpan.innerHTML = "&nbsp;";
+                    } else {
+                        charSpan.innerText = character;
+                        charSpan.classList.add("blog-char-node-slate");
+                    }
+
+                    // Adds incremental microsecond intervals delays dynamically to establish the flowing letter reveal
+                    charSpan.style.animationDelay = `${charIndex * 40}ms`;
+
+                    // Push processed typography block cleanly back into DOM layout path track loop execution tree
+                    blogTitleSlate.appendChild(charSpan);
+                });
+                
+                // Enforce immediate base structural safety parameters visibility metric override values triggers
+                blogTitleSlate.style.opacity = "1";
+            }
+        }
+
+    } else {
+        // Fallback pipeline execution support loops instantly executing displays views if historical legacy engines lack observer mechanisms support
+        if (blogTitleSlate) blogTitleSlate.style.opacity = "1";
+        blogScrollElementsSlate.forEach(legacyNode => legacyNode.classList.add("activated"));
+    }
+});
+
+</script>
+
+<!-- Fully Visible and Fixed FAQ Section -->
+<section class="stackly-fixed-faq-section">
+    
+    <!-- Ambient Floating Vector Background Field Layer -->
+    <div class="fixed-faq-ambient-field" aria-hidden="true">
+        <svg class="fixed-faq-bg-vector vector-pos-1" viewBox="0 0 24 24"><path d="M19 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H7v-2h10v2zm0-4H7V8h10v2z" fill="currentColor"/></svg>
+        <svg class="fixed-faq-bg-vector vector-pos-2" viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" fill="currentColor"/></svg>
+    </div>
+
+    <div class="fixed-faq-inner-bounds">
+        
+        <!-- Left Side Column Layout Block: Content & Interactive Accordions Stack -->
+        <div class="fixed-faq-text-panel">
+            <span class="fixed-faq-eyebrow">Quick Legal Insights</span>
+            
+            <!-- Headline configured for JavaScript word-by-word scrolling reveals -->
+            <h2 class="fixed-faq-main-title" id="fixedFaqHeadlineTarget">
+                Frequently Asked Legal Questions
+            </h2>
+
+            <!-- Accordion Stack List Group (Ensured high visibility stacking profiles) -->
+            <div class="fixed-faq-accordion-stack">
+                
+                <!-- Accordion Row Item 1 -->
+                <div class="fixed-faq-card faq-reveal-item-node" style="--stagger-index: 1;">
+                    <button class="fixed-faq-btn-trigger" aria-expanded="false">
+                        <span class="fixed-faq-question">What services do you offer?</span>
+                        <span class="fixed-faq-plusminus-icon"></span>
+                    </button>
+                    <div class="fixed-faq-drawer-panel">
+                        <div class="fixed-faq-drawer-inner-content">
+                            <p>We provide full-stack technology law counseling, corporate structure initialization, intellectual property protection pipelines, and cross-border data privacy governance compliance frameworks tailored for scaling enterprise ecosystems.</p>
+                            <a href="404.html" class="fixed-faq-link-fallback">Explore detailed service documentation &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Row Item 2 (Active by default) -->
+                <div class="fixed-faq-card faq-reveal-item-node active" style="--stagger-index: 2;">
+                    <button class="fixed-faq-btn-trigger" aria-expanded="true">
+                        <span class="fixed-faq-question">How do you track legal compliance success?</span>
+                        <span class="fixed-faq-plusminus-icon"></span>
+                    </button>
+                    <div class="fixed-faq-drawer-panel">
+                        <div class="fixed-faq-drawer-inner-content">
+                            <p>Stackly implements automated milestone governance tracking matrices. By integrating continuous policy audits directly into your deployment environments, we monitor cross-border regulatory exposure barriers in real-time, providing instant risk mitigation protocols.</p>
+                            <a href="404.html" class="fixed-faq-link-fallback">Review tracking methodologies &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Row Item 3 -->
+                <div class="fixed-faq-card faq-reveal-item-node" style="--stagger-index: 3;">
+                    <button class="fixed-faq-btn-trigger" aria-expanded="false">
+                        <span class="fixed-faq-question">What's your strategy development process?</span>
+                        <span class="fixed-faq-plusminus-icon"></span>
+                    </button>
+                    <div class="fixed-faq-drawer-panel">
+                        <div class="fixed-faq-drawer-inner-content">
+                            <p>Our process initializes with a comprehensive technical asset audit. We isolate structural regulatory compliance gaps, architect secure defensive barriers, and map operational pipelines alongside standard partner-level attorney advisory backing loops.</p>
+                            <a href="404.html" class="fixed-faq-link-fallback">Examine onboarding strategies &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Row Item 4 -->
+                <div class="fixed-faq-card faq-reveal-item-node" style="--stagger-index: 4;">
+                    <button class="fixed-faq-btn-trigger" aria-expanded="false">
+                        <span class="fixed-faq-question">What industries do you specialize in?</span>
+                        <span class="fixed-faq-plusminus-icon"></span>
+                    </button>
+                    <div class="fixed-faq-drawer-panel">
+                        <div class="fixed-faq-drawer-inner-content">
+                            <p>We lock our focus explicitly within high-exposure sectors including fintech asset distribution networks, cloud architecture technology providers, automated healthcare data processing pools, and scaling global startup systems.</p>
+                            <a href="404.html" class="fixed-faq-link-fallback">View industry deployment grids &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Right Side Column Layout Block: Asymmetric Geometry Graphics Frames -->
+        <div class="fixed-faq-graphics-panel">
+            <div class="fixed-faq-images-frame-box">
+                
+                <!-- Concentric Circle Background Texture Elements Ring -->
+                <div class="fixed-faq-concentric-circles" aria-hidden="true"></div>
+
+                <!-- House-shape Crop Mask Frame Area Layer -->
+                <div class="fixed-portrait-clip-container primary-crop-polygon">
+                    <img src="https://unsplash.com" alt="Corporate advisor coordinating intake strategy briefs" class="fixed-faq-img-node">
+                </div>
+
+                <!-- Squared Foreground Offset Overlapping Box Frame Area Layer -->
+                <div class="fixed-portrait-clip-container secondary-offset-square">
+                    <img src="https://unsplash.com" alt="Litigation lead reviewing regulatory compliance records profiles" class="fixed-faq-img-node">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- Core Presentation Tokens Framework Configuration Layout --- */
+.stackly-fixed-faq-section {
+    width: 100%;
+    /* Strict execution padding constraints mapped exactly to user specs */
+    padding: 50px 0;
+    background-color: #ffffff; /* Solid White Canvas Backdrop Surface Texture */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.fixed-faq-inner-bounds {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr; /* Keeps composition ratios balanced */
+    gap: 56px;
+    align-items: flex-start; /* Prevents stretching to ensure text panels never clip */
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+/* --- Ambient Floating Law Vector Icon Field Systems --- */
+.fixed-faq-ambient-field {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.fixed-faq-bg-vector {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    color: rgba(180, 83, 9, 0.06); /* Executive subtle amber vector shadow parameters footprint */
+    will-change: transform;
+    animation: fixedFaqDriftFloat 8s infinite ease-in-out;
+}
+
+.vector-pos-1 { top: 15%; left: 4%; animation-delay: 0s; }
+.vector-pos-2 { bottom: 12%; right: 4%; animation-delay: 3s; }
+
+@keyframes fixedFaqDriftFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(6deg); }
+}
+
+/* --- Left Column Elements Content Presentation Tracks Layout --- */
+.fixed-faq-text-panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fixed-faq-eyebrow {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #b45309; /* Warm Executive Amber Signature Tones */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+/* Pure word-by-word reveal typography text headers layout parameters */
+.fixed-faq-main-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 4.2vw, 2.6rem);
+    font-weight: 700;
+    color: #090d16; /* Deep Obsidian Legal Navy */
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 4px;
+}
+
+/* Inline text items tokens wrappers injected dynamically by runtime javascript */
+.faq-split-word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(14px);
+    will-change: transform, opacity;
+    animation: fixedFaqWordReveal 0.45s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes fixedFaqWordReveal {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Interactive Accordion List Container Panels --- */
+.fixed-faq-accordion-stack {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fixed-faq-card {
+    width: 100%;
+    border-bottom: 1px solid #e2e8f0; /* Hairline separator panel outline trace boundaries line layout */
+    padding: 4px 0;
+    box-sizing: border-box;
+}
+
+.fixed-faq-btn-trigger {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.fixed-faq-question {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #090d16;
+    line-height: 1.4;
+    transition: all 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Status toggle button marker design configuration cleanly mapping the +/- icon shapes */
+.fixed-faq-plusminus-icon {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+
+.fixed-faq-plusminus-icon::before,
+.fixed-faq-plusminus-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #090d16;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
+}
+
+/* Horizontal line component beam */
+.fixed-faq-plusminus-icon::before {
+    top: 6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+/* Vertical line component beam */
+.fixed-faq-plusminus-icon::after {
+    top: 0;
+    left: 6px;
+    width: 2px;
+    height: 100%;
+}
+
+/* --- Hover Glow Interactions Context Systems --- */
+.fixed-faq-btn-trigger:hover .fixed-faq-question {
+    color: #b45309;
+    text-shadow: 0 0 10px rgba(180, 83, 9, 0.2);
+}
+
+.fixed-faq-btn-trigger:hover .fixed-faq-plusminus-icon::before,
+.fixed-faq-btn-trigger:hover .fixed-faq-plusminus-icon::after {
+    background-color: #b45309;
+}
+
+/* --- Expandable Active Drawer Mechanics Layout (Fully Dynamic, Zero Clipping) --- */
+.fixed-faq-drawer-panel {
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                visibility 0.4s linear,
+                opacity 0.3s ease;
+    opacity: 0;
+}
+
+.fixed-faq-card.active .fixed-faq-drawer-panel {
+    max-height: 300px; /* Expands dynamically up to absolute height parameters threshold */
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Rotates the vertical line path block cleanly to transform the tracking icon straight to a minus sign symbol */
+.fixed-faq-card.active .fixed-faq-plusminus-icon::after {
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+.fixed-faq-card.active .fixed-faq-question {
+    color: #b45309;
+}
+
+.fixed-faq-drawer-inner-content {
+    padding: 4px 0 24px 0;
+    font-size: 0.98rem;
+    color: #475569; /* Slate gray neutral informative explanation paragraphs layout styling */
+    line-height: 1.65;
+}
+
+.fixed-faq-link-fallback {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #b45309;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.fixed-faq-link-fallback:hover {
+    color: #92400e;
+    transform: translateX(4px);
+    text-shadow: 0 0 8px rgba(180, 83, 9, 0.25);
+}
+
+/* --- Right Side Column Layout Frame: Precision Dual Portraits Asymmetric Architecture --- */
+.fixed-faq-graphics-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fixed-faq-images-frame-box {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    height: 440px;
+}
+
+/* Geometric concentric vector ring patterns overlapping behind the portraits layout */
+.fixed-faq-concentric-circles {
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: repeating-radial-gradient(circle, transparent, transparent 10px, rgba(148, 163, 184, 0.12) 11px, rgba(148, 163, 184, 0.12) 13px);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.fixed-portrait-clip-container {
+    position: absolute;
+    overflow: hidden;
+    background-color: #090d16;
+    box-shadow: 0 20px 45px rgba(9, 13, 22, 0.08);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Primary Portrait Box Configured for the specialized home-shape corner polygon clip path bounds */
+.primary-crop-polygon {
+    top: 0;
+    left: 20px;
+    width: 230px;
+    height: 310px;
+    z-index: 2;
+    clip-path: polygon(50% 0%, 100% 24%, 100% 100%, 0% 100%, 0% 24%);
+    -webkit-clip-path: polygon(46% 0%, 100% 21%, 100% 100%, 0% 100%, 0% 21%);
+}
+
+/* Secondary Portrait Box offset forward closer to the grid base bounds tracking margins */
+.secondary-offset-square {
+    bottom: 0;
+    right: 10px;
+    width: 190px;
+    height: 190px;
+    z-index: 3;
+    border-radius: 4px;
+    border: 4px solid #ffffff;
+}
+
+.fixed-faq-img-node {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Gentle image micro-interactions */
+.fixed-faq-images-frame-box:hover .primary-crop-polygon .fixed-faq-img-node {
+    transform: scale(1.02) translate(-2px, -2px);
+}
+
+.fixed-faq-images-frame-box:hover .secondary-offset-square .fixed-faq-img-node {
+    transform: scale(1.04) translate(2px, 2px);
+}
+
+/* --- One-by-One Staggered Scroll Base Reveals --- */
+.faq-reveal-item-node {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-reveal-item-node.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fixed-faq-accordion-stack .faq-reveal-item-node.revealed {
+    /* Computes staggered delays dynamically based on item indices tags variables */
+    transition-delay: calc(var(--stagger-index) * 100ms);
+}
+
+/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- */
+@media (max-width: 992px) {
+    .fixed-faq-inner-bounds {
+        grid-template-columns: 1fr; /* Stacks column sets perfectly vertical to prevent any side truncation */
+        gap: 48px;
+    }
+
+    .fixed-faq-graphics-panel {
+        order: -1; /* Shifts image panel to the top of text list on tablets and mobile screens cleanly */
+    }
+
+    .fixed-faq-images-frame-box {
+        max-width: 100%;
+        height: 380px;
+    }
+
+    .primary-crop-polygon {
+        left: 12%;
+        width: 210px;
+        height: 290px;
+    }
+
+    .secondary-offset-square {
+        right: 12%;
+        width: 170px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Strict execution constraint implementation adapting padding bounds down exactly to 30px values */
+    .stackly-fixed-faq-section {
+        padding: 30px 0;
+    }
+
+    .fixed-faq-images-frame-box {
+        height: 310px;
+    }
+
+    .primary-crop-polygon {
+        left: 0;
+        width: 170px;
+        height: 240px;
+    }
+
+    .secondary-offset-square {
+        right: 0;
+        width: 135px;
+        height: 135px;
+    }
+
+    .fixed-faq-question {
+        font-size: 1rem;
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const fixedFaqHeadline = document.getElementById("fixedFaqHeadlineTarget");
+    const fixedFaqScrollItems = document.querySelectorAll(".faq-reveal-item-node");
+    const fixedAccordionCards = document.querySelectorAll(".fixed-faq-card");
+
+    // 1. ANIMS ENGINE: Setup Scroll Intersection Observation Infrastructure Loop Controls
+    if ('IntersectionObserver' in window) {
+        const fixedFaqObserverOptions = {
+            root: null,
+            threshold: 0.1,
+            rootMargin: "0px 0px -20px 0px"
+        };
+
+        const onFixedFaqIntersection = (entriesList, observerInstance) => {
+            entriesList.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.id === "fixedFaqHeadlineTarget") {
+                        initializeFixedFaqWordByWordSequence();
+                    } else {
+                        entry.target.classList.add("revealed");
+                    }
+                    observerInstance.unobserve(entry.target);
+                }
+            });
+        };
+
+        const fixedFaqScrollObserver = new IntersectionObserver(onFixedFaqIntersection, fixedFaqObserverOptions);
+
+        if (fixedFaqHeadline) fixedFaqScrollObserver.observe(fixedFaqHeadline);
+        fixedFaqScrollItems.forEach(cardItem => fixedFaqScrollObserver.observe(cardItem));
+
+        // Word-By-Word reveal processing matrix routine
+        function initializeFixedFaqWordByWordSequence() {
+            if (fixedFaqHeadline) {
+                const rawTextString = fixedFaqHeadline.innerText.trim();
+                const processedWordsArray = rawTextString.split(/\s+/);
+                
+                fixedFaqHeadline.innerHTML = "";
+
+                processedWordsArray.forEach((wordText, wordIndex) => {
+                    const wordSpan = document.createElement("span");
+                    wordSpan.innerText = wordText;
+                    wordSpan.classList.add("faq-split-word");
+                    wordSpan.style.animationDelay = `${wordIndex * 60}ms`;
+                    fixedFaqHeadline.appendChild(wordSpan);
+                });
+            }
+        }
+    } else {
+        // Fallback display toggles if observer mechanisms are unavailable
+        fixedFaqScrollItems.forEach(node => node.classList.add("revealed"));
+    }
+
+    // 2. LOGIC ENGINE: Dynamic Accordion Open/Collapse Drawer Toggle Mechanics
+    fixedAccordionCards.forEach(cardItemNode => {
+        const triggerButtonNode = cardItemNode.querySelector(".fixed-faq-btn-trigger");
+
+        if (triggerButtonNode) {
+            triggerButtonNode.addEventListener("click", () => {
+                const isCurrentlyActiveState = cardItemNode.classList.contains("active");
+
+                // Gracefully collapse all expanded sister elements to maintain single container view tracking loops
+                fixedAccordionCards.forEach(siblingNode => {
+                    siblingNode.classList.remove("active");
+                    siblingNode.querySelector(".fixed-faq-btn-trigger").setAttribute("aria-expanded", "false");
+                });
+
+                // Toggle target active parameters state cleanly
+                if (!isCurrentlyActiveState) {
+                    cardItemNode.classList.add("active");
+                    triggerButtonNode.setAttribute("aria-expanded", "true");
+                }
+            });
+        }
+    });
+});
+
+</script>
+
+<!-- Fully Functional Client Testimonials Slider Component -->
+<section class="stackly-testimonials-blueprint">
+    <div class="testimonials-blueprint-container">
+        
+        <!-- Header Typography & Navigation Arrow Controls Block Row -->
+        <div class="testimonials-blueprint-header">
+            <h2 class="testimonials-word-side-headline" id="testimonialTitleTarget">
+                Our Clients' Success Stories
+            </h2>
+            
+            <!-- Interactive Slider Trigger Navigation Button Array -->
+            <div class="testimonials-slider-navigation-group">
+                <button class="testimonial-nav-arrow-btn" id="testimonialPrevTrigger" aria-label="Slide to previous testimonials pool layer">&larr;</button>
+                <button class="testimonial-nav-arrow-btn" id="testimonialNextTrigger" aria-label="Slide to next testimonials pool layer">&rarr;</button>
+            </div>
+        </div>
+
+        <!-- Slider Viewport Window Wrapper Container Area -->
+        <div class="testimonials-viewport-carousel">
+            <!-- Dynamic Translation Sliding Track Core -->
+            <div class="testimonials-slider-window-track" id="testimonialWindowTrack">
+                
+                <!-- PAGE 1: First Pair of Testimonials -->
+                <div class="testimonial-carousel-page active">
+                    <!-- Left Card: Jenny Wilson -->
+                    <div class="testimonial-feedback-card testimonial-scroll-reveal" style="--stagger-order: 1;">
+                        <div class="testimonial-card-inner-split">
+                            <div class="testimonial-client-avatar-frame">
+                                <img src="https://unsplash.com" alt="Jenny Wilson profile case file asset preview" class="testimonial-avatar-img">
+                            </div>
+                            <div class="testimonial-review-content-panel">
+                                <div class="testimonial-vector-stars-row" aria-label="Rated 5 out of 5 stars">
+                                    <span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span>
+                                </div>
+                                <p class="testimonial-client-quote-text">
+                                    "Stackly completely transformed our enterprise regulatory strategy pipelines. By merging robust traditional case parameters with their secure automated tracking dashboard layer, our governance workflows operate smoothly at zero asset liability risks."
+                                </p>
+                                <div class="testimonial-author-meta-box">
+                                    <h3 class="testimonial-author-fullname">Jenny Wilson</h3>
+                                    <span class="testimonial-author-title-tag">CEO & Founder, FinTech Distribution</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Card: Kori Anderson -->
+                    <div class="testimonial-feedback-card testimonial-scroll-reveal" style="--stagger-order: 2;">
+                        <div class="testimonial-card-inner-split">
+                            <div class="testimonial-client-avatar-frame">
+                                <img src="https://unsplash.com" alt="Kori Anderson profile case file asset preview" class="testimonial-avatar-img">
+                            </div>
+                            <div class="testimonial-review-content-panel">
+                                <div class="testimonial-vector-stars-row" aria-label="Rated 5 out of 5 stars">
+                                    <span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span>
+                                </div>
+                                <p class="testimonial-client-quote-text">
+                                    "Accessing real-time partner-level attorney advisory backing inside a unified system allowed our venture startup iterations to expand cross-border compliance safely. Their no-nonsense solution-first approach delivers absolute clarity."
+                                </p>
+                                <div class="testimonial-author-meta-box">
+                                    <h3 class="testimonial-author-fullname">Kori Anderson</h3>
+                                    <span class="testimonial-author-title-tag">Corporate General Counsel, Lightspeed Systems</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAGE 2: Next 2 Testimonials (Injected cleanly behind layout framework) -->
+                <div class="testimonial-carousel-page">
+                    <!-- Left Card: Sarah Jenkins -->
+                    <div class="testimonial-feedback-card" style="--stagger-order: 1;">
+                        <div class="testimonial-card-inner-split">
+                            <div class="testimonial-client-avatar-frame">
+                                <img src="https://unsplash.com" alt="Sarah Jenkins case preview" class="testimonial-avatar-img">
+                            </div>
+                            <div class="testimonial-review-content-panel">
+                                <div class="testimonial-vector-stars-row" aria-label="Rated 5 out of 5 stars">
+                                    <span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span>
+                                </div>
+                                <p class="testimonial-client-quote-text">
+                                    "The data compliance framework deployed by Stackly safeguarded our operations during cross-border scaling metrics expansion loops. Their risk analysis vectors are incredibly high fidelity and simple to read."
+                                </p>
+                                <div class="testimonial-author-meta-box">
+                                    <h3 class="testimonial-author-fullname">Sarah Jenkins</h3>
+                                    <span class="testimonial-author-title-tag">Director of Operations, HealthVault Bio</span>
+                                }</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Card: Marcus Vance -->
+                    <div class="testimonial-feedback-card" style="--stagger-order: 2;">
+                        <div class="testimonial-card-inner-split">
+                            <div class="testimonial-client-avatar-frame">
+                                <img src="https://unsplash.com" alt="Marcus Vance case preview" class="testimonial-avatar-img">
+                            </div>
+                            <div class="testimonial-review-content-panel">
+                                <div class="testimonial-vector-stars-row" aria-label="Rated 5 out of 5 stars">
+                                    <span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span>
+                                </div>
+                                <p class="testimonial-client-quote-text">
+                                    "Negotiating critical venture capital restructuring terms became fluid once Stackly integrated their active partner pool advisory backup into our workspace panel. Exceptional, precise execution loops."
+                                </p>
+                                <div class="testimonial-author-meta-box">
+                                    <h3 class="testimonial-author-fullname">Marcus Vance</h3>
+                                    <span class="testimonial-author-title-tag">Managing Director, Vanguard Alpha Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- Core Presentation Tokens Framework Configuration Layout --- */
+.stackly-testimonials-blueprint {
+    width: 100%;
+    /* Strict padding limits configured exactly to user configuration rules */
+    padding: 50px 0;
+    background-color: #ffffff; /* Clean Solid Pure White Canvas Backdrop Panel Surface Layer Layout */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.testimonials-blueprint-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* --- Section Header Arrangement Content Positioning Row --- */
+.testimonials-blueprint-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    gap: 24px;
+}
+
+.testimonials-word-side-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 4.5vw, 2.8rem);
+    font-weight: 700;
+    color: #090d16; /* Deep Obsidian Legal Navy text color */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 4px;
+    max-width: 720px;
+}
+
+/* Inline text items tokens wrappers injected programmatically by runtime javascript */
+.testimonial-split-word-node {
+    display: inline-block;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    animation-fill-mode: forwards;
+}
+
+.slide-word-left { transform: translateX(-35px); animation-name: testimonialEntryFromLeft; }
+.slide-word-right { transform: translateX(35px); animation-name: testimonialEntryFromRight; }
+
+@keyframes testimonialEntryFromLeft { to { opacity: 1; transform: translateX(0); } }
+@keyframes testimonialEntryFromRight { to { opacity: 1; transform: translateX(0); } }
+
+/* --- Navigation Arrow Interaction Controls --- */
+.testimonials-slider-navigation-group {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+}
+
+.testimonial-nav-arrow-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0; /* Crisp thin round border ring matching layout reference */
+    color: #090d16;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    outline: none;
+    box-shadow: 0 2px 4px rgba(9, 13, 22, 0.02);
+}
+
+.testimonial-nav-arrow-btn:hover {
+    border-color: #b45309; /* Executive Warm Amber traditional legal accent signature color */
+    color: #b45309;
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.15);
+    transform: scale(1.05);
+}
+
+.testimonial-nav-arrow-btn:active {
+    transform: scale(0.98);
+}
+
+/* --- Viewport Slide Windows Masking Box --- */
+.testimonials-viewport-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonials-slider-window-track {
+    display: flex;
+    width: 100%;
+    position: relative;
+    min-height: 340px; /* Locks structural bounds against layout pops */
+}
+
+/* --- Page Layer Management Engine Layout --- */
+.testimonial-carousel-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Exact clean 2-card system side-by-side matching screenshot */
+    gap: 32px;
+    width: 100%;
+    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(50px) scale(0.98);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1;
+}
+
+/* Active view layout state layer profiles */
+.testimonial-carousel-page.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0) scale(1);
+    position: relative; /* Restores flow boundaries height parameters constraints safely */
+    z-index: 2;
+}
+
+/* Handles exit transform directions cleanly */
+.testimonial-carousel-page.exit-left {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50px) scale(0.98);
+}
+
+/* --- High-Fidelity Testimonial Feed Card Components Design --- */
+.testimonial-feedback-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+}
+
+.testimonial-card-inner-split {
+    display: grid;
+    grid-template-columns: 0.72fr 1.28fr; /* Accurate spatial distribution scale partitioning image / data text boxes */
+    width: 100%;
+    height: 100%;
+}
+
+.testimonial-client-avatar-frame {
+    width: 100%;
+    height: 100%;
+    background-color: #090d16;
+    overflow: hidden;
+}
+
+.testimonial-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-review-content-panel {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.testimonial-vector-stars-row {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 18px;
+}
+
+.amber-vector-star {
+    font-size: 1.15rem;
+    color: #b45309; /* Warm Executive Amber Corporate Core Indicator Stars Fill */
+    line-height: 1;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-client-quote-text {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.6;
+    font-style: normal;
+    margin-bottom: 24px;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.testimonial-author-meta-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.testimonial-author-fullname {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #090d16;
+    margin: 0 0 4px 0;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.testimonial-author-title-tag {
+    font-size: 0.82rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* --- Master Hover & Glow Interaction System Configurations --- */
+.testimonial-feedback-card:hover {
+    border-color: #b45309; /* Changes frame path lines directly to crisp legal amber trace index lines */
+    transform: translateY(-6px); /* Subtle physics spring vertical lift action */
+    box-shadow: 0 15px 35px -5px rgba(180, 83, 9, 0.12), 0 0 15px rgba(180, 83, 9, 0.05);
+}
+
+.testimonial-feedback-card:hover .testimonial-avatar-img { transform: scale(1.04); }
+.testimonial-feedback-card:hover .testimonial-client-quote-text { color: #0f172a; }
+.testimonial-feedback-card:hover .amber-vector-star { transform: scale(1.1); }
+
+.testimonial-feedback-card:hover .testimonial-author-fullname {
+    color: #b45309;
+    text-shadow: 0 0 8px rgba(180, 83, 9, 0.15);
+}
+
+/* --- One-by-One Staggered Scroll Animation Reveals --- */
+.testimonial-scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.65s ease, transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.testimonial-scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.testimonial-carousel-page.active .testimonial-scroll-reveal.revealed {
+    /* Computes delay windows dynamically using structural tags variables sequence */
+    transition-delay: calc(var(--stagger-order) * 120ms);
+}
+
+/* --- Fully Responsive Hardware Media Breakpoints Matrix --- */
+@media (max-width: 1024px) {
+    .testimonial-carousel-page {
+        grid-template-columns: 1fr; /* Compresses page layouts completely down to a singular card node channel on tablets */
+        gap: 24px;
+        position: absolute;
+    }
+    
+    .testimonial-carousel-page.active {
+        position: relative;
+    }
+
+    .testimonial-card-inner-split {
+        grid-template-columns: 0.6fr 1.4fr;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Strict execution constraint implementation adapting padding bounds down exactly to 30px values markers */
+    .stackly-testimonials-blueprint { padding: 30px 0; }
+
+    .testimonials-blueprint-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 28px;
+    }
+
+    .testimonial-card-inner-split { grid-template-columns: 1fr; }
+    .testimonial-client-avatar-frame { height: 220px; }
+    .testimonial-review-content-panel { padding: 24px 20px; }
+    .testimonials-slider-navigation-group { width: 100%; justify-content: flex-end; }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const testimonialTitle = document.getElementById("testimonialTitleTarget");
+    const testimonialCards = document.querySelectorAll(".testimonial-scroll-reveal");
+    
+    // Slider Page Element Navigation Nodes Targets
+    const pages = document.querySelectorAll(".testimonial-carousel-page");
+    const nextArrowTrigger = document.getElementById("testimonialNextTrigger");
+    const prevArrowTrigger = document.getElementById("testimonialPrevTrigger");
+    let currentPageIndex = 0;
+
+    // 1. CAROUSEL ENGINE: Controls sliding active page array transitions loops
+    if (pages.length > 0 && nextArrowTrigger && prevArrowTrigger) {
+        
+        const transitionToPage = (targetPageIndex, direction) => {
+            const currentPageNode = pages[currentPageIndex];
+            const targetPageNode = pages[targetPageIndex];
+
+            // Setup exit vectors animation layout flags directions
+            if (direction === "next") {
+                currentPageNode.classList.add("exit-left");
+            }
+            
+            currentPageNode.classList.remove("active");
+            
+            // Clean slate delayed clear loops tracking exit states parameters
+            setTimeout(() => {
+                currentPageNode.classList.remove("exit-left");
+            }, 600);
+
+            // Active transition setup target node profiles variables
+            targetPageNode.classList.add("active");
+            currentPageIndex = targetPageIndex;
+        };
+
+        nextArrowTrigger.addEventListener("click", () => {
+            // Compute index limits rolling back loops safely to initial sequence frames markers bounds
+            let nextIndex = (currentPageIndex + 1) % pages.length;
+            transitionToPage(nextIndex, "next");
+        });
+
+        prevArrowTrigger.addEventListener("click", () => {
+            let prevIndex = (currentPageIndex - 1 + pages.length) % pages.length;
+            transitionToPage(prevIndex, "prev");
+        });
+    }
+
+    // 2. ANIMS ENGINE: Setup Scroll Intersection Observation Infrastructure Loop Controls
+    if ('IntersectionObserver' in window) {
+        const testimonialObserverConfig = {
+            root: null,
+            threshold: 0.12,
+            rootMargin: "0px 0px -25px 0px"
+        };
+
+        const onTestimonialIntersectionObserved = (entriesList, observerRef) => {
+            entriesList.forEach(entryNode => {
+                if (entryNode.isIntersecting) {
+                    if (entryNode.target.id === "testimonialTitleTarget") {
+                        initializeTestimonialWordByWordSequence();
+                    } else {
+                        entryNode.target.classList.add("revealed");
+                    }
+                    observerRef.unobserve(entryNode.target);
+                }
+            });
+        };
+
+        const testimonialScrollObserver = new IntersectionObserver(onTestimonialIntersectionObserved, testimonialObserverConfig);
+
+        if (testimonialTitle) testimonialScrollObserver.observe(testimonialTitle);
+        testimonialCards.forEach(cardItem => testimonialScrollObserver.observe(cardItem));
+
+        function initializeTestimonialWordByWordSequence() {
+            if (testimonialTitle) {
+                const cleanTextContent = testimonialTitle.innerText.trim();
+                const splitWordsArray = cleanTextContent.split(/\s+/);
+                
+                testimonialTitle.innerHTML = "";
+
+                splitWordsArray.forEach((wordValue, itemIndex) => {
+                    const wordSpan = document.createElement("span");
+                    wordSpan.innerText = wordValue;
+                    wordSpan.classList.add("testimonial-split-word-node");
+
+                    if (itemIndex % 2 === 0) {
+                        wordSpan.classList.add("slide-word-left");
+                    } else {
+                        wordSpan.classList.add("slide-word-right");
+                    }
+
+                    wordSpan.style.animationDelay = `${itemIndex * 60}ms`;
+                    testimonialTitle.appendChild(wordSpan);
+                });
+            }
+        }
+    } else {
+        testimonialCards.forEach(legacyCard => legacyCard.classList.add("revealed"));
+    }
+});
+
+</script>
+
+<!-- Full-Width Fluid Legal-Tech 1-Line Call-To-Action Banner Component -->
+<section class="stackly-headline-banner-fluid-strip">
+    
+    <!-- Full-Width Master Banner Card Box with Scroll Entry Reveal Fade Up -->
+    <div class="headline-banner-card-box-fluid scroll-revealed-fade-up" id="ctaBannerCardFluid1Line">
+        
+        <!-- Layer 1: Background Asset Graphic Element Image -->
+        <img src="https://unsplash.com" alt="Abstract Corporate Grid Network Blueprint Texture" class="headline-card-bg-asset-fluid" aria-hidden="true">
+        
+        <!-- Inner container houses content grids within standard readable page limits -->
+        <div class="headline-card-inner-fluid-container">
+            <div class="headline-card-inner-overlay-flex-fluid">
+                
+                <!-- Left Structural Layout Row Alignment: Combines Image and Headline into 1 Unified Line Frame -->
+                <div class="headline-combo-alignment-row-fluid">
+                    
+                    <!-- Layer 2: Foreground Graphic Shape Framing Layout Concept -->
+                    <div class="headline-foreground-thumbnail-frame-fluid">
+                        <img src="https://unsplash.com" alt="Stackly Secure Privacy Platform Node Interface Preview" class="headline-card-foreground-asset-fluid">
+                    </div>
+
+                    <!-- Single Line Main Title Configured for Word-by-Word Side Entry Scrolling Animations -->
+                    <h2 class="headline-banner-word-track-fluid" id="bannerLineHeadlineTargetFluid">
+                        Protect Your Enterprise Governance Pipelines Safely
+                    </h2>
+
+                </div>
+
+                <!-- Right Structural Layout Row Alignment: Floating Action CTA Trigger Key Button Link -->
+                <div class="headline-action-floating-box-fluid">
+                    <a href="#intake" class="btn-headline-banner-floating-fluid">Initialize Consultation &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- Core Banner Section Fluid Interface Layout Design --- */
+.stackly-headline-banner-fluid-strip {
+    width: 100%;
+    /* Strict execution padding constraints mapped exactly to user layout specs */
+    padding: 50px 0;
+    background-color: #ffffff; /* Solid White Backdrop Canvas Layer */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* --- Full-Width Master Banner Card Block Container with Scroll Entry --- */
+.headline-banner-card-box-fluid {
+    position: relative;
+    width: 100%; /* Spans 100% full viewport width edge-to-edge */
+    min-height: 140px; /* Specialized slim 1-line framing boundary scale footprint layout */
+    background-color: #090d16; /* Deep obsidian primary backdrop */
+    overflow: hidden;
+    border-top: 1px solid rgba(148, 163, 184, 0.15);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+    box-sizing: border-box;
+    opacity: 0; /* Managed smoothly by Scroll entry observer hooks triggers */
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.headline-banner-card-box-fluid.activated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Layer 1: Production background imagery fluid metrics configuration */
+.headline-card-bg-asset-fluid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1; /* Subtle technical backdrop texture watermark overlay line grids */
+    z-index: 1;
+    pointer-events: none;
+    transition: transform 0.5s ease;
+}
+
+/* Content inner width governance tracker bounds container */
+.headline-card-inner-fluid-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.headline-card-inner-overlay-flex-fluid {
+    position: relative;
+    width: 100%;
+    padding: 40px 0; /* Vertical breathing gap balances within full width bands layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Locks 1-line rows content elements symmetrical along center axes tracking */
+    gap: 32px;
+    z-index: 2; /* Forces layout panels above background texture layer nodes */
+    box-sizing: border-box;
+}
+
+/* --- Left Column Content Alignment System Tracks --- */
+.headline-combo-alignment-row-fluid {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex: 1;
+}
+
+/* Layer 2: Foreground Graphic framing layout configurations mimicking user screenshots asset nodes */
+.headline-foreground-thumbnail-frame-fluid {
+    width: 56px;
+    height: 56px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.headline-card-foreground-asset-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Pure word-by-word reveal typography text strings entries settings from alternating sides */
+.headline-banner-word-track-fluid {
+    font-size: 1.75rem; /* Proportional locked compact medium text scale headline architecture scaling */
+    font-weight: 700;
+    color: #ffffff; /* Crisp high contrast white typography text headers layers */
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 4px;
+}
+
+/* Inline text items tokens wrappers injected programmatically via runtime javascript */
+.headline-split-word-span-fluid {
+    display: inline-block;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation-duration: 0.55s;
+    animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    animation-fill-mode: forwards;
+}
+
+.word-enter-left-slide-fluid { transform: translateX(-30px); animation-name: headlineSlideFromLeftFluid; }
+.word-enter-right-slide-fluid { transform: translateX(30px); animation-name: headlineSlideFromRightFluid; }
+
+@keyframes headlineSlideFromLeftFluid { to { opacity: 1; transform: translateX(0); } }
+@keyframes headlineSlideFromRightFluid { to { opacity: 1; transform: translateX(0); } }
+
+/* --- Right Column Actions: Floating Key CTA Action Trigger Component Profile --- */
+.headline-action-floating-box-fluid {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.btn-headline-banner-floating-fluid {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b45309; /* Warm Executive Amber Corporate Focus Highlight Tones */
+    color: #ffffff !important; /* Forces solid typography rules blocking layout overrides link cascades */
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 4px;
+    border: 1px solid #b45309;
+    white-space: nowrap;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 14px rgba(180, 83, 9, 0.3);
+}
+
+/* Modern continuous vertical float physical micro-interaction lift loops configuration setup style profiles */
+.btn-headline-banner-floating-fluid:hover {
+    background-color: #92400e;
+    border-color: #92400e;
+    transform: translateY(-4px); /* Precision physics spring motion lift execution tracking index */
+    box-shadow: 0 12px 24px rgba(180, 83, 9, 0.45), 0 0 12px rgba(180, 83, 9, 0.25);
+}
+
+.btn-headline-banner-floating-fluid:active {
+    transform: translateY(-1px);
+}
+
+/* --- Interactive Card Boundary Hover Macro Glow Transforms --- */
+.headline-banner-card-box-fluid:hover .headline-card-bg-asset-fluid {
+    transform: scale(1.02); /* Subtle fluid imagery scale zoom track metrics */
+}
+
+.headline-banner-card-box-fluid:hover .headline-foreground-thumbnail-frame-fluid {
+    transform: scale(1.06) rotate(-3deg);
+    border-color: rgba(180, 83, 9, 0.35);
+}
+
+/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- */
+@media (max-width: 992px) {
+    .headline-card-inner-overlay-flex-fluid {
+        flex-direction: column; /* Stacks display fields entirely vertical on tablet viewports to expand tracking bounds */
+        gap: 24px;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .headline-combo-alignment-row-fluid {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .headline-banner-word-track-fluid {
+        justify-content: center;
+        font-size: 1.45rem; /* Proportional scale drop preventing word splits overlaps layout metrics code */
+    }
+
+    .headline-foreground-thumbnail-frame-fluid {
+        display: none; /* Safely hides secondary inline media thumbnail frames on compact touch grids viewport layout frames */
+    }
+
+    .headline-action-floating-box-fluid,
+    .btn-headline-banner-floating-fluid {
+        width: 100%;
+    }
+
+    .btn-headline-banner-floating-fluid {
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Strict execution constraint implementation adapting padding bounds down exactly to 30px metrics rules values */
+    .stackly-headline-banner-fluid-strip {
+        padding: 30px 0;
+    }
+
+    .headline-card-inner-overlay-flex-fluid {
+        padding: 30px 0;
+    }
+
+    .headline-banner-word-track-fluid {
+        font-size: 1.35rem;
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const fluidBannerCard1Line = document.getElementById("ctaBannerCardFluid1Line");
+    const fluidHeadline1Line = document.getElementById("bannerLineHeadlineTargetFluid");
+
+    if ('IntersectionObserver' in window && fluidBannerCard1Line) {
+        
+        // Define observer options thresholds mapping layout position parameters markers
+        const fluidBannerObserverOptions = {
+            root: null, 
+            threshold: 0.15, // Fires logic when 15% of box dimensions cross screen borders tracking views
+            rootMargin: "0px 0px -20px 0px"
+        };
+
+        const onFluidBannerIntersectionDetected = (entriesList, observerRef) => {
+            entriesList.forEach(entryNode => {
+                if (entryNode.isIntersecting) {
+                    // 1. Trigger parent card panel frame base fade-up slide entrance track fluid
+                    entryNode.target.classList.add("activated");
+                    
+                    // 2. Trigger subsequently child word-by-word reveal compilation loops routines fluid
+                    initializeFluid1LineWordSequence();
+                    
+                    // Unobserve element node safely once transition lifecycle completes track paths
+                    observerRef.unobserve(entryNode.target);
+                }
+            });
+        };
+
+        const fluidBannerScrollObserver = new IntersectionObserver(onFluidBannerIntersectionDetected, fluidBannerObserverOptions);
+        fluidBannerScrollObserver.observe(fluidBannerCard1Line);
+
+        // Word tokenizer compilation engine execution routine block fluid 1-line
+        function initializeFluid1LineWordSequence() {
+            if (fluidHeadline1Line) {
+                const rawStringText = fluidHeadline1Line.innerText.trim();
+                const splitWordsMatrix = rawStringText.split(/\s+/);
+                
+                // Wipe clean default tracking shell box container surfaces layer panel 
+                fluidHeadline1Line.innerHTML = "";
+
+                splitWordsMatrix.forEach((wordValue, itemIndex) => {
+                    const wordSpanNode = document.createElement("span");
+                    wordSpanNode.innerText = wordValue;
+                    wordSpanNode.classList.add("headline-split-word-span-fluid");
+
+                    // Direct sequence elements to load entry paths from alternating sides based on odd/even index evaluations
+                    if (itemIndex % 2 === 0) {
+                        wordSpanNode.classList.add("word-enter-left-slide-fluid");
+                    } else {
+                        wordSpanNode.classList.add("word-enter-right-slide-fluid");
+                    }
+
+                    // Adds incremental microsecond intervals delays dynamically to establish the flowing side word reveal
+                    wordSpanNode.style.animationDelay = `${itemIndex * 60}ms`;
+
+                    // Push processed typography block cleanly back into DOM layout path track loop execution tree
+                    fluidHeadline1Line.appendChild(wordSpanNode);
+                });
+            }
+        }
+
+    } else {
+        // Fallback pipeline execution support loops instantly executing displays views if historical legacy engines lack observer mechanisms support
+        if (fluidBannerCard1Line) fluidBannerCard1Line.classList.add("activated");
+    }
+});
+
+</script>
+
+<!-- Isolated Brand-Aligned Corporate Footer Component Section -->
+<footer class="stackly-corporate-footer-fresh">
+    <div class="footer-fluid-bounds-fresh">
+        
+        <!-- Four Column Layout Matrix precisely mirroring user layout blueprint -->
+        <div class="footer-columns-grid-fresh">
+            
+            
+            <div class="footer-brand-column-fresh">
+                <!-- Brand logo anchor configured to trigger the scroll-to-top routine -->
+                
+                    <img src="https://unsplash.com" alt="Stackly Corporate Digital Legal Logo" class="footer-logo-img-fresh">
+                </a>
+                <p class="footer-brand-description-fresh">
+                    Engineering premium macro-balanced regulatory compliance setups and secure decentralized legal frameworks designed to fuel enterprise hardware workspace productivity and legal compute nodes alike.
+                </p>
+                <!-- 5 Vector Social Icons Array Group (Configured for 404 navigation) -->
+                <div class="footer-social-icons-row-fresh">
+                    <a href="404.html" class="footer-social-node-fresh" aria-label="Instagram Platform Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 4 0 100 2.881 1.44 4 0 000-2.881z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-node-fresh" aria-label="Facebook Platform Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-node-fresh" aria-label="X Brand Profile Platform Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-node-fresh" aria-label="LinkedIn Professional Matrix Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-node-fresh" aria-label="Secure Messenger Pipeline Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Explore Fleets Links Pool -->
+            <div class="footer-links-column-fresh">
+                <h3 class="footer-section-heading-fresh">EXPLORE FLEETS</h3>
+                <nav class="footer-links-nav-fresh">
+                    <a href="404.html" class="footer-nav-link-item-fresh">Logistics AGV</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">Kinematic Arms</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">Quadruped Sentinel</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">Bionic Rover Systems</a>
+                </nav>
+            </div>
+
+            <!-- Column 3: Network Support Pool -->
+            <div class="footer-links-column-fresh">
+                <h3 class="footer-section-heading-fresh">NETWORK SUPPORT</h3>
+                <nav class="footer-links-nav-fresh">
+                    <a href="404.html" class="footer-nav-link-item-fresh">Node Telemetry Matrices</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">Fleet Delivery Tracks</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">Help & Diagnostics Center</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">PoPW Verifications</a>
+                </nav>
+            </div>
+
+            <!-- Column 4: Headquarters Geographical Address and Input Form -->
+            <div class="footer-links-column-fresh">
+                <h3 class="footer-section-heading-fresh">HEADQUARTERS</h3>
+                
+                <div class="footer-address-block-row-fresh">
+                    <svg viewBox="0 0 24 24" class="footer-address-marker-icon-fresh" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <p class="footer-address-text-fresh">MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</p>
+                </div>
+
+                <!-- Interactive Newsletter Form Matrix Panel Layer -->
+                <form class="footer-subscription-form-panel-fresh" id="footerSubscribeFormFresh" novalidate>
+                    <div class="footer-input-field-relative-fresh">
+                        <input type="email" id="footerNodeEmailInputFresh" placeholder="Enter node operator email..." class="footer-subscribe-input-field-fresh" required>
+                        <span class="footer-validation-bubble-alert-fresh" id="footerValidationAlertTextFresh">Please fill the subscribe field</span>
+                    </div>
+                    <button type="submit" class="btn-footer-subscribe-action-fresh">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Lower Baseline Symmetrical Copyright and Compliance Layout Strip Rows Links Line -->
+        <div class="footer-baseline-strip-row-fresh">
+            <p class="footer-copyright-text-fresh">&copy; 2026 Stackly Industries. All computational hardware rights reserved.</p>
+            <div class="footer-compliance-links-group-fresh">
+                <a href="404.html" class="footer-compliance-anchor-item-fresh">Privacy Policy</a>
+                <a href="404.html" class="footer-compliance-anchor-item-fresh">Terms of Service</a>
+                <a href="404.html" class="footer-compliance-anchor-item-fresh">Cookie Governance</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<style>
+    /* --- High-End Stackly Corporate Footer Presentation Tokens Configuration Layout --- */
+.stackly-corporate-footer-fresh {
+    width: 100%;
+    background-color: #000000; /* Solid Black Backdrop Canvas Panel Surface Layer Layout */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #f8fafc; 
+    padding-top: 60px;
+    padding-bottom: 30px; 
+    box-sizing: border-box;
+    position: relative;
+    
+    /* CRITICAL FIX: Erases padding, offsets, and margin voids to tightly bind with upper section block panels */
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    display: block;
+    vertical-align: top;
+}
+
+/* Global resetting architecture block overrides adjacent element gaps */
+.stackly-headline-banner-fluid-strip,
+.stackly-cta-banner-strip-fluid,
+.stackly-corporate-footer-fresh {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+
+.footer-fluid-bounds-fresh {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* --- Four Column Structural Master Framework Layout Grid --- */
+.footer-columns-grid-fresh {
+    display: grid;
+    grid-template-columns: 1.35fr 0.85fr 0.9fr 1.15fr;
+    gap: 40px;
+    width: 100%;
+    padding-bottom: 50px; 
+    border-bottom: 1px solid rgba(148, 163, 184, 0.08); /* Clean hairline texture trace dividers boundary */
+    box-sizing: border-box;
+}
+
+/* --- Column 1: Brand Logotype Area Setup Properties --- */
+.footer-brand-column-fresh {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo-link-fresh {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    margin-bottom: 24px;
+}
+
+.footer-logo-link-fresh:hover {
+    transform: scale(0.975);
+}
+
+.footer-logo-img-fresh {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Forces white icon over black backdrop canvas */
+}
+
+.footer-brand-description-fresh {
+    font-size: 0.92rem; 
+    color: #94a3b8; /* Slate gray neutral explanatory content description */
+    line-height: 1.6;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+/* --- Sizing For 5 Vector Social Nodes Set Track Matrix --- */
+.footer-social-icons-row-fresh {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-social-node-fresh {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(148, 163, 184, 0.05);
+    border: 1px solid rgba(148, 163, 184, 0.12); /* Subtle wire ring outer framework tracing border visible in image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #94a3b8;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.footer-svg-icon-fresh {
+    width: 15px; 
+    height: 15px;
+    fill: currentColor;
+}
+
+.footer-social-node-fresh:hover {
+    background-color: #b45309; /* Warm Amber traditional legal accent */
+    border-color: #b45309;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.3);
+}
+
+/* --- Columns 2 & 3: Standard Section Header Layout Framework Navigation Link Columns --- */
+.footer-links-column-fresh {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-section-heading-fresh {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+/* Horizontal Red Sections Accent Track Line Tracer directly mirroring user blueprint layout screenshot rules */
+.footer-section-heading-fresh::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #b45309; 
+    border-radius: 4px;
+}
+
+.footer-links-nav-fresh {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+}
+
+.footer-nav-link-item-fresh {
+    font-size: 0.92rem;
+    color: #94a3b8;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    text-align: left;
+    width: max-content;
+}
+
+.footer-nav-link-item-fresh:hover {
+    color: #b45309; 
+    padding-left: 4px;
+}
+
+/* --- Column 4: Geographical Marker Alignment Elements Context System --- */
+.footer-address-block-row-fresh {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.footer-address-marker-icon-fresh {
+    width: 16px;
+    height: 16px;
+    fill: #b45309; 
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.footer-address-text-fresh {
+    font-size: 0.92rem;
+    color: #94a3b8;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* --- Interactive Newsletter Input Panel Field Systems Architecture --- */
+.footer-subscription-form-panel-fresh {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(148, 163, 184, 0.04);
+    border: 1px solid rgba(148, 163, 184, 0.12); /* Clean horizontal inner border block casing layout */
+    border-radius: 6px;
+    padding: 4px;
+    box-sizing: border-box;
+    position: relative;
+    transition: border-color 0.3s ease;
+}
+
+.footer-subscription-form-panel-fresh:focus-within {
+    border-color: #b45309;
+}
+
+.footer-input-field-relative-fresh {
+    flex: 1;
+    position: relative;
+}
+
+.footer-subscribe-input-field-fresh {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 10px 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #ffffff;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.footer-subscribe-input-field-fresh::placeholder {
+    color: #4b5563; 
+}
+
+/* Dynamic Field Form Validation Prompt Dialog Alert Bubble */
+.footer-validation-bubble-alert-fresh {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 4px;
+    background-color: #ef4444; 
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+    z-index: 100;
+}
+
+.footer-validation-bubble-alert-fresh::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 14px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ef4444 transparent transparent transparent;
+}
+
+.footer-validation-bubble-alert-fresh.display-prompt {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.btn-footer-subscribe-action-fresh {
+    background-color: #ffffff; /* Stark solid white layout fill matching screenshot blueprint */
+    color: #000000 !important; 
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-footer-subscribe-action-fresh:hover {
+    background-color: #b45309;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.3);
+}
+
+/* --- Lower Baseline Copyright and Compliance Matrix Layout Strip Row --- */
+.footer-baseline-strip-row-fresh {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.footer-copyright-text-fresh {
+    font-size: 0.85rem;
+    color: #4b5563; 
+    margin: 0;
+}
+
+.footer-compliance-links-group-fresh {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-compliance-anchor-item-fresh {
+    font-size: 0.85rem;
+    color: #4b5563;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.footer-compliance-anchor-item-fresh:hover {
+    color: #b45309;
+}
+
+/* --- Fully Responsive Hardware Media Breakpoints Matrix Processing --- */
+@media (max-width: 1024px) {
+    .footer-columns-grid-fresh {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    .stackly-corporate-footer-fresh {
+        padding-top: 50px; 
+        padding-bottom: 30px;
+    }
+
+    .footer-columns-grid-fresh {
+        grid-template-columns: 1fr; 
+        gap: 28px;
+        padding-bottom: 36px;
+    }
+
+    .footer-brand-column-fresh { align-items: center; text-align: center; }
+    .footer-brand-description-fresh { text-align: center; }
+    .footer-links-column-fresh { align-items: center; }
+    .footer-section-heading-fresh::after { left: 50%; transform: translateX(-50%); }
+    .footer-nav-link-item-fresh { text-align: center; width: 100%; }
+    .footer-address-block-row-fresh { justify-content: center; }
+    .footer-address-text-fresh { text-align: center; }
+
+    .footer-baseline-strip-row-fresh {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding-top: 24px;
+    }
+
+    .footer-compliance-links-group-fresh {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const footerBackToTopFresh = document.getElementById("footerBackToTopTriggerFresh");
+    const subscribeFormFresh = document.getElementById("footerSubscribeFormFresh");
+    const emailInputFieldFresh = document.getElementById("footerNodeEmailInputFresh");
+    const validationAlertBubbleFresh = document.getElementById("footerValidationAlertTextFresh");
+
+    // 1. BACK TO TOP: Triggers hardware accelerated window smooth scroll transition
+    if (footerBackToTopFresh) {
+        footerBackToTopFresh.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
+
+    // 2. VALIDATION ENGINE: Form Check Conditions before 404 routing updates
+    if (subscribeFormFresh && emailInputFieldFresh && validationAlertBubbleFresh) {
+        
+        emailInputFieldFresh.addEventListener("input", () => {
+            validationAlertBubbleFresh.classList.remove("display-prompt");
+        });
+
+        subscribeFormFresh.addEventListener("submit", (e) => {
+            e.preventDefault();
+            
+            const rawEmailValue = emailInputFieldFresh.value.trim();
+
+            if (!rawEmailValue || !emailInputFieldFresh.checkValidity()) {
+                validationAlertBubbleFresh.classList.add("display-prompt");
+                emailInputFieldFresh.focus();
+            } else {
+                validationAlertBubbleFresh.classList.remove("display-prompt");
+                subscribeFormFresh.reset();
+                window.location.href = "404.html";
+            }
+        });
+    }
+});
+
+</script>
+</body>
+</html>
