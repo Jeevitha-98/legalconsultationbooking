@@ -1,0 +1,669 @@
+<!-- Fully Rebuilt Centralized Brand-Aligned Authentication Portal -->
+<main class="verdicta-auth-viewport">
+    <div class="auth-panel-container">
+        
+        <!-- Top Navigation Workspace Element Block -->
+        <div class="auth-top-navigation">
+            <a href="404.html" class="btn-auth-back-home">
+                <svg viewBox="0 0 24 24" class="auth-back-arrow-vector" aria-hidden="true"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+                <span>Back to Home</span>
+            </a>
+        </div>
+
+        <!-- Form Context Header Block -->
+        <div class="auth-panel-header">
+            <span class="auth-eyebrow-badge">&mdash; VERDICTA VAULT SECURE ACCESS &mdash;</span>
+            <h1 class="auth-main-title">Account <em>Login</em></h1>
+            <p class="auth-subtitle-guidance">Select your designated profile tier parameters to initialize your custom workspace dashboard track.</p>
+        </div>
+
+        <!-- Core Authentication Action Engine Form Element -->
+        <form class="auth-form-element" id="verdictaAuthForm" novalidate>
+            
+            <!-- STEP 1: Profile Tier Toggler Matrix Selectors precisely mirroring your design template -->
+            <div class="auth-field-stack-group">
+                <label class="auth-static-field-label">SELECT OPERATIONAL TIER ACCESS</label>
+                <div class="auth-role-selector-grid">
+                    
+                    <!-- Option A: Atelier Owner / Managing Partner Track -->
+                    <div class="auth-role-toggle-card active-tier" id="tierBtnPartner" data-tier-profile="partner" role="radio" aria-checked="true" tabindex="0">
+                        <div class="role-card-inner-split">
+                            <div class="role-vector-circle-shell">
+                                <svg viewBox="0 0 24 24" class="role-inline-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <div class="role-meta-typography">
+                                <span class="role-label-title">Managing Partner</span>
+                                <span class="role-label-subtitle">FIRM DASHBOARD</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Option B: Private Client / Corporate Counsel Track -->
+                    <div class="auth-role-toggle-card" id="tierBtnClient" data-tier-profile="client" role="radio" aria-checked="false" tabindex="0">
+                        <div class="role-card-inner-split">
+                            <div class="role-vector-circle-shell">
+                                <svg viewBox="0 0 24 24" class="role-inline-svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-4h-2V7h2v2z"/></svg>
+                            </div>
+                            <div class="role-meta-typography">
+                                <span class="role-label-title">Private Client</span>
+                                <span class="role-label-subtitle">SECURE REGISTRY</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- STEP 2: Email Address Input Module Box -->
+            <div class="auth-input-field-relative">
+                <label class="auth-static-field-label" for="authEmailInput">EMAIL ADDRESS</label>
+                <input type="email" id="authEmailInput" placeholder="name@firm-domain.com" class="auth-form-input-control" required>
+                <span class="auth-validation-alert-bubble" id="emailValidationBubble">Please fill the email address field</span>
+            </div>
+
+            <!-- STEP 3: Security Password Key Module Box with Dynamic Text Masking Eye Toggler -->
+            <div class="auth-input-field-relative">
+                <label class="auth-static-field-label" for="authPasswordInput">SECURITY PASSWORD KEY</label>
+                <div class="auth-password-wrapper">
+                    <input type="password" id="authPasswordInput" placeholder="••••••••" class="auth-form-input-control" required>
+                    
+                    <!-- Inline Visibility Eye Toggler Icon Button -->
+                    <button type="button" class="btn-auth-password-toggle-eye" id="authPasswordVisibilityToggler" aria-label="Toggle password text parameters layer visibility">
+                        <svg viewBox="0 0 24 24" class="eye-inline-svg-icon"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                    </button>
+                </div>
+                <span class="auth-validation-alert-bubble" id="passwordValidationBubble">Please fill the security password field</span>
+            </div>
+
+            <!-- STEP 4: Remember Option Checks & Forgot Password Anchor Row -->
+            <div class="auth-options-baseline-row">
+                <label class="auth-checkbox-label-control">
+                    <input type="checkbox" id="authRememberCheckbox" class="auth-native-hidden-checkbox">
+                    <span class="auth-custom-checkbox-square"></span>
+                    <span class="auth-checkbox-label-text">Remember selection</span>
+                </label>
+                <a href="404.html" class="auth-forgot-password-link">Forgot Password?</a>
+            </div>
+
+            <!-- STEP 5: Main Submission Action Button Trigger (Styled precisely to match your signature layout button) -->
+            <div class="auth-submit-action-row">
+                <button type="submit" class="btn-verdicta-portal-submit">
+                    LOG IN SECURELY &mdash;&rarr;
+                </button>
+            </div>
+
+            
+            <div class="auth-oauth-divider-bar">
+                <span class="oauth-divider-string-text">OR SIGN IN WITH</span>
+            </div>
+
+            <div class="auth-oauth-grid-stack">
+                <!-- FIXED ROW: Google and Facebook aligned horizontally side-by-side on the same line -->
+                <div class="oauth-side-by-side-row-block">
+                    <!-- Google Link Anchor (routes safely to 404) -->
+                  <a href="404.html" class="btn-auth-oauth-provider">
+    <!-- Brand-Accurate Multi-Color Geometric Google Vector Icon -->
+    <svg viewBox="0 0 24 24" class="oauth-brand-svg-vector" aria-hidden="true">
+        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.18 1-.78 1.85-1.63 2.42v2.84h2.64c1.55-1.42 2.63-3.51 2.63-6.02z"/>
+        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-2.64-2.84c-.73.49-1.66.78-2.64.78-2.85 0-5.26-1.92-6.12-4.51H1.24v2.95C3.05 19.83 7.25 23 12 23z"/>
+        <path fill="#FBBC05" d="M5.88 13.77c-.22-.66-.35-1.37-.35-2.11s.13-1.45.35-2.11V6.6H1.24C.45 8.18 0 9.94 0 11.82c0 1.88.45 3.64 1.24 5.22l4.64-2.27z"/>
+        <path fill="#EA4335" d="M12 4.75c1.62 0 3.07.56 4.21 1.64l3.15-3.15C17.45 1.44 14.96 0 12 0 7.25 0 3.05 3.17 1.24 7.02l4.64 2.27c.86-2.59 3.27-4.51 6.12-4.51z"/>
+    </svg>
+    <span>Google</span>
+</a>
+
+                    
+                    <!-- Facebook Link Anchor (routes safely to 404) -->
+                    <a href="404.html" class="btn-auth-oauth-provider">
+                        <svg viewBox="0 0 24 24" class="oauth-brand-svg-vector" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        <span>Facebook</span>
+                    </a>
+                </div>
+
+                <!-- Microsoft Full-Width OAuth Provider link button below -->
+                <a href="404.html" class="btn-auth-oauth-provider full-width-oauth-provider">
+                    <svg viewBox="0 0 24 24" class="oauth-brand-svg-vector" fill="currentColor"><path d="M0 0h11.4v11.4H0zm12.6 0H24v11.4H12.6zM0 12.6h11.4V24H0zm12.6 0H24V24H12.6z"/></svg>
+                    <span>Microsoft Account Login</span>
+                </a>
+            </div>
+
+            <!-- STEP 7: Sub-level Onboarding registration link context -->
+            <div class="auth-panel-footer-links">
+                <span class="auth-footer-meta-text">Don't have an account?</span>
+                <a href="signup.html" class="auth-footer-action-link">Create Account</a>
+            </div>
+
+        </form>
+    </div>
+</main>
+
+<style>
+    /* --- Core Presentation Tokens Framework Configuration Layout --- */
+.verdicta-auth-viewport {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff; /* Premium Pure Solid White Section Background Canvas Layer */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 60px 24px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.auth-panel-container {
+    width: 100%;
+    max-width: 480px; /* Constrains input lines fields area cleanly to ensure scannability across mobile view glass frames */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Floating Navigation Header Back Link Area */
+.auth-top-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+}
+
+.btn-auth-back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0; 
+    padding: 8px 16px;
+    border-radius: 100px; /* Symmetrical capsule shape profile button */
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #090d16;
+    letter-spacing: 0.5px;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 2px 4px rgba(9, 13, 22, 0.02);
+}
+
+.auth-back-arrow-vector {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+}
+
+.btn-auth-back-home:hover {
+    border-color: #b45309; /* Dynamic amber brand tone focus edge matches */
+    color: #b45309;
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.12);
+    transform: translateX(-2px);
+}
+
+/* Form Heading Context Titles Matrix */
+.auth-panel-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.auth-eyebrow-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #b45309; /* Signature warm brand amber focus highlight text string */
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.auth-main-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2.2rem, 5vw, 2.85rem);
+    font-weight: 400; 
+    color: #090d16; /* Deep Obsidian Legal Navy primary title color tone index */
+    line-height: 1.15;
+    margin: 0 0 12px 0;
+    letter-spacing: -0.5px;
+}
+
+.auth-main-title em {
+    font-style: italic;
+    font-weight: 700; /* Replicates the exact strong emphasis italic style tracking your original layout form */
+}
+
+.auth-subtitle-guidance {
+    font-size: 0.94rem;
+    color: #475569; /* Slate gray neutral informative explanation paragraphs layout styling */
+    line-height: 1.55;
+    margin: 0;
+}
+
+.auth-form-element {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.auth-field-stack-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.auth-static-field-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #090d16;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* --- High-Fidelity Asymmetric Profile Tier Toggler Split-Grid Cards Layout Design --- */
+.auth-role-selector-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Forms binary card toggle fields setup track */
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.auth-role-toggle-card {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1; /* Initial clean standard state parameter frame wire outline tracing */
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    user-select: none;
+    outline: none;
+}
+
+.role-card-inner-split {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+}
+
+.role-vector-circle-shell {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    transition: all 0.35s ease;
+}
+
+.role-inline-svg {
+    width: 14px;
+    height: 14px;
+    fill: #475569;
+    transition: fill 0.35s ease;
+}
+
+.role-meta-typography {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.role-label-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #090d16;
+    transition: color 0.35s ease;
+}
+
+.role-label-subtitle {
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: #64748b;
+    letter-spacing: 0.2px;
+}
+
+/* Active Highlight Role Overrides (Wired programmatically on toggle clicks) */
+.auth-role-toggle-card.active-tier {
+    border-color: #b45309; /* Changes frame edge line path cleanly to signature legal amber trace */
+    background-color: rgba(180, 83, 9, 0.01);
+    box-shadow: 0 4px 14px rgba(180, 83, 9, 0.06);
+}
+
+.auth-role-toggle-card.active-tier .role-vector-circle-shell {
+    background-color: #090d16; /* Inverts indicator sphere container backdrop panel forward directly */
+}
+
+.auth-role-toggle-card.active-tier .role-inline-svg {
+    fill: #b45309; /* Illuminates icon paths straight to signature brand amber color tokens */
+}
+
+.auth-role-toggle-card:not(.active-tier):hover {
+    border-color: #090d16;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(9, 13, 22, 0.03);
+}
+
+/* --- Input Fields Casing Controls Baseline States Layout Design --- */
+.auth-input-field-relative {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative; /* Anchor tracking space enabling absolute alert bubbles alignment coordinates */
+}
+
+.auth-form-input-control {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1; /* Replicates crisp field wireframe border visible in your screenshot mockup */
+    border-radius: 6px;
+    padding: 14px 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #090d16;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.auth-form-input-control::placeholder {
+    color: #94a3b8; 
+}
+
+/* Active field boundaries illumination on interactive focus matches triggers */
+.auth-form-input-control:focus {
+    border-color: #b45309; /* Illuminates parameters bounds instantly to warm executive legal amber focus indicators */
+    box-shadow: 0 0 0 3px rgba(180, 83, 9, 0.06);
+}
+
+/* Secure Password Wrapper Group Node Area */
+.auth-password-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.auth-password-wrapper .auth-form-input-control {
+    padding-right: 48px; /* Reserves spacing clearance so password layer text strings do not run below visibility toggle eye */
+}
+
+.btn-auth-password-toggle-eye {
+    position: absolute;
+    right: 16px;
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #94a3b8; 
+    outline: none;
+    transition: color 0.25s ease;
+}
+
+.eye-vector-svg-icon {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.btn-auth-password-toggle-eye:hover {
+    color: #b45309; /* Lights masking indicator eye straight to signature amber upon mouse focuses */
+}
+
+/* --- Remember Selection Options & Forgot Passwords Controls Baseline --- */
+.auth-options-baseline-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.auth-checkbox-label-control {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.auth-native-hidden-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+.auth-custom-checkbox-square {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid #cbd5e1;
+    background-color: #ffffff;
+    display: inline-block;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.auth-custom-checkbox-square::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 4px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(0);
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.auth-native-hidden-checkbox:checked + .auth-custom-checkbox-square {
+    background-color: #b45309;
+    border-color: #b45309;
+}
+
+.auth-native-hidden-checkbox:checked + .auth-custom-checkbox-square::after {
+    transform: rotate(45deg) scale(1);
+}
+
+.auth-checkbox-label-text {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: #475569;
+}
+
+.auth-forgot-password-link {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #475569;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.auth-forgot-password-link:hover {
+    color: #b45309;
+    text-shadow: 0 0 6px rgba(180, 83, 9, 0.12);
+}
+
+/* --- Submission Action Button Profile Component Architecture (Matching screenshot buttons geometry shape) --- */
+.auth-submit-action-row {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.btn-verdicta-portal-submit {
+    width: 100%;
+    background-color: #d1c4b7; /* Balanced legal taupe solid fill panel texture matching your screenshot layout [IMAGE] */
+    color: #090d16 !important; /* Stark charcoal absolute high contrast text fonts */
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    border-radius: 100px; /* Complete continuous round capsule profile button precisely matching image [IMAGE] */
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-sizing: border-box;
+}
+
+.btn-verdicta-portal-submit:hover {
+    background-color: #090d16; 
+
+    color: #b45309 !important; transform: translateY(-3px); box-shadow: 0 10px 22px rgba(180, 83, 9, 0.25);}
+   .auth-oauth-divider-bar {width: 100%;text-align: center;position: relative;margin: 12px 0 4px 0;}.auth-oauth-divider-bar::before 
+   {content: '';position: absolute;top: 50%;left: 0;width: 100%;height: 1px;background-color: #e2e8f0;z-index: 1;}
+   .oauth-divider-string-text {font-size: 0.68rem;font-weight: 700;color: #64748b;letter-spacing: 1px;background-color: #ffffff; 
+   padding: 0 12px;position: relative;z-index: 5;}.auth-oauth-grid-stack {display: flex;flex-direction: column;gap: 12px;width: 100%;}
+    .oauth-side-by-side-row-block {display: grid;grid-template-columns: 1fr 1fr;gap: 12px;width: 100%;}
+.btn-auth-oauth-provider {width: 100%;display: flex;align-items: center;justify-content: center;gap: 12px;background-color: #ffffff;
+    border: 1px solid #cbd5e1;padding: 14px 16px;border-radius: 6px;font-size: 0.92rem;font-weight: 600;color: #090d16;
+    text-decoration: none;box-sizing: border-box;transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);}
+.full-width-oauth-provider {padding: 14px 24px;}.oauth-brand-svg-vector {width: 16px;height: 16px;flex-shrink: 0;}
+.btn-auth-oauth-provider:hover {border-color: #b45309;color: #b45309;transform: translateY(-2px);box-shadow: 0 6px 16px rgba(180, 83, 9, 0.08);}/* Sub-level footer registration links */.auth-panel-footer-links {width: 100%;text-align: center;margin-top: 12px;font-size: 0.88rem;}.auth-footer-meta-text {color: #64748b;}.auth-footer-action-link {font-weight: 700;color: #090d16;text-decoration: none;margin-left: 6px;transition: color 0.25s ease;}
+.auth-footer-action-link:hover {color: #b45309;}.auth-validation-alert-bubble {position: absolute;bottom: calc(100% + 6px);left: 4px;
+    background-color: #ef4444; color: #ffffff;font-size: 0.76rem;font-weight: 600;padding: 5px 12px;border-radius: 4px;white-space: nowrap;opacity: 0;visibility: hidden;transform: translateY(5px);transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);z-index: 100;}.auth-validation-alert-bubble::after {content: '';position: absolute;top: 100%;left: 14px;border-width: 5px;border-style: solid;border-color: #ef4444 transparent transparent transparent;}.auth-validation-alert-bubble.display-prompt {opacity: 1;visibility: visible;transform: translateY(0);}
+    .auth-static-field-label + .auth-form-input-control + .auth-validation-alert-bubble,.auth-static-field-label + .auth-password-wrapper + .auth-validation-alert-bubble {bottom: calc(100% - 14px);}
+ @media (max-width: 640px) {.verdicta-auth-viewport {padding: 40px 16px; }.auth-role-selector-grid {grid-template-columns: 1fr; 
+  gap: 12px;}.oauth-side-by-side-row-block {grid-template-columns: 1fr;
+    
+    gap: 12px;}.btn-verdicta-portal-submit {font-size: 0.82rem;padding: 14px 20px;}}
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    // 1. TRACKING ENGINE: Manage active configuration parameters tier selection switches loops
+    const roleToggleCards = document.querySelectorAll(".auth-role-toggle-card");
+    let activeTierTrackProfile = "partner"; // Managing Partner tier is initialized active state profile by default matches image [IMAGE]
+
+    roleToggleCards.forEach(toggleCardNode => {
+        toggleCardNode.addEventListener("click", () => {
+            // Clear existing indicator highlight layout layers properties
+            roleToggleCards.forEach(node => {
+                node.classList.remove("active-tier");
+                node.setAttribute("aria-checked", "false");
+            });
+
+            // Anchor active indicator pointers to target selected card node item match
+            toggleCardNode.classList.add("active-tier");
+            toggleCardNode.setAttribute("aria-checked", "true");
+            activeTierTrackProfile = toggleCardNode.getAttribute("data-tier-profile");
+            
+            // Wipe open validation alert bubbles prompts during tier role manual adjustments fields modifications
+            const alertBubbles = document.querySelectorAll(".auth-validation-alert-bubble");
+            alertBubbles.forEach(bubble => alertBubble.classList.remove("display-prompt"));
+        });
+
+        // Map keyboard spacing enter checking to safeguard assistive accessibility hooks loop standards
+        toggleCardNode.addEventListener("keydown", (e) => {
+            if (e.key === " " || e.key === "Enter") {
+                e.preventDefault();
+                toggleCardNode.click();
+            }
+        });
+    });
+
+    // 2. MASKING ENGINE: Security Password clear text parameters mask toggler visibility check module routine
+    const passwordInputControl = document.getElementById("authPasswordInput");
+    const eyeVisibilityButton = document.getElementById("authPasswordVisibilityToggler");
+
+    if (eyeVisibilityButton && passwordInputControl) {
+        eyeVisibilityButton.addEventListener("click", () => {
+            const isCurrentlyMaskedType = passwordInputControl.getAttribute("type") === "password";
+            
+            if (isCurrentlyMaskedType) {
+                passwordInputControl.setAttribute("type", "text");
+                eyeVisibilityButton.style.color = "#b45309"; // Pin highlight indication indicators over unmasked text layers frames
+            } else {
+                passwordInputControl.setAttribute("type", "password");
+                eyeVisibilityButton.style.color = "#94a3b8"; // Restore standard state grey configurations values markers
+            }
+        });
+    }
+
+    // 3. VALIDATION & STORE ENGINE: Form checking verification conditions check loops persistence script hooks
+    const authFormElement = document.getElementById("verdictaAuthForm");
+    const emailInputField = document.getElementById("authEmailInput");
+    const passwordInputField = document.getElementById("authPasswordInput");
+    
+    const emailValidationBubble = document.getElementById("emailValidationBubble");
+    const passwordValidationBubble = document.getElementById("passwordValidationBubble");
+
+    if (authFormElement && emailInputField && passwordInputField) {
+        
+        // Clear active validation tags immediately when the user starts typing adjustments entries
+        emailInputField.addEventListener("input", () => emailValidationBubble.classList.remove("display-prompt"));
+        passwordInputField.addEventListener("input", () => passwordValidationBubble.classList.remove("display-prompt"));
+
+        authFormElement.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const rawEmailTextString = emailInputField.value.trim();
+            const rawPasswordTextString = passwordInputField.value.trim();
+            
+            let portalValidationPassedFlag = true;
+
+            // Condition Check A: Evaluate if email text string line matches remain empty parameters index markers fields limits
+            if (!rawEmailTextString || !emailInputField.checkValidity()) {
+                emailValidationBubble.classList.add("display-prompt");
+                portalValidationPassedFlag = false;
+            }
+
+            // Condition Check B: Evaluate if security password input text remains empty boundaries limits checking rules
+            if (!rawPasswordTextString) {
+                passwordValidationBubble.classList.add("display-prompt");
+                portalValidationPassedFlag = false;
+            }
+
+            // 4. PERSISTENCE & DYNAMIC WORKSPACE ROUTER ROUTINES: Compile final authorization endpoints pathways directions
+            if (!portalValidationPassedFlag) {
+                // Focus the cursor target cleanly straight back into the primary failing input cell field bounds
+                const visibleBubblePrompt = document.querySelector(".auth-validation-alert-bubble.display-prompt");
+                if (visibleBubblePrompt) {
+                    const focusedInputNode = visibleBubblePrompt.parentElement.querySelector(".auth-form-input-control");
+                    if (focusedInputNode) focusedInputNode.focus();
+                }
+            } else {
+                // Clear active validation error bubble triggers cleanly
+                emailValidationBubble.classList.remove("display-prompt");
+                passwordValidationBubble.classList.remove("display-prompt");
+
+                // EXTRACT USER MAIL IDENTITY PREFIX (e.g. isolates "partner-advocate" from "partner-advocate@verdicta-law.com")
+                const brokenEmailArray = rawEmailTextString.split("@");
+                const extractedUserNamePrefix = brokenEmailArray[0]; 
+
+                // LOCAL STORAGE BIND: Stores email username key data records into local persistence cache
+                localStorage.setItem("stacklyActiveUserEmailIdentity", extractedUserNamePrefix);
+                localStorage.setItem("stacklyActiveUserRoleTrackIndex", activeTierTrackProfile);
+
+                authFormElement.reset();
+
+                // DYNAMIC WORKSPACE ROUTER: Routes user explicitly based on active tracked select toggle cards profiles
+                if (activeTierTrackProfile === "partner") {
+                    // Route 1: Direct Firm Managing Partner straight forward onto specific studio dashboard tracking pipeline page template layout
+                    window.location.href = "partner-dashboard.html"; 
+                } else if (activeTierTrackProfile === "client") {
+                    // Route 2: Direct Private Client straight forward onto specific registry dashboard tracking pipeline page template layout
+                    window.location.href = "client-dashboard.html";
+                }
+            }
+        });
+    }
+});
+</script>

@@ -1,0 +1,2415 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly | Premium Legal Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Premium Professional Typography -->
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Responsive Preloading Component Layout Layer -->
+    <div id="stackly-preloader" class="preloader-overlay">
+        <div class="preloader-content">
+            
+            <!-- Fluid Scalable Vector Graphic (Justice Scales Framework) -->
+            <div class="vector-logo-container">
+                <svg xmlns="http://w3.org" viewBox="0 0 100 100" class="legal-vector-svg">
+                    <!-- Base Pillar Foundation -->
+                    <path d="M35 85 H65 V88 H35 Z" fill="#b45309" />
+                    <path d="M40 80 H60 V85 H40 Z" fill="#ffffff" opacity="0.1" />
+                    <path d="M48 40 H52 V80 H48 Z" fill="#ffffff" />
+                    <!-- Balance Structural Beam -->
+                    <path d="M20 40 Q50 35 80 40 L80 43 Q50 38 20 43 Z" fill="#ffffff" />
+                    <!-- Left Scale Dish -->
+                    <line x1="20" y1="42" x2="12" y2="60" stroke="#b45309" stroke-width="1.2" />
+                    <line x1="20" y1="42" x2="28" y2="60" stroke="#b45309" stroke-width="1.2" />
+                    <path d="M10 60 Q20 68 30 60 Z" fill="#ffffff" />
+                    <!-- Right Scale Dish -->
+                    <line x1="80" y1="42" x2="72" y2="60" stroke="#b45309" stroke-width="1.2" />
+                    <line x1="80" y1="42" x2="88" y2="60" stroke="#b45309" stroke-width="1.2" />
+                    <path d="M70 60 Q80 68 90 60 Z" fill="#ffffff" />
+                </svg>
+            </div>
+            
+            <!-- Fluid Brand Typography Block -->
+            <h1 class="brand-title">Stackly<span>.</span></h1>
+            <p class="brand-tagline">Securing Your Digital Legal Framework</p>
+            
+            <!-- Progress Tracker Asset -->
+            <div class="loader-track">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Next section placeholder: The top social bar will go right inside here later -->
+    <div id="main-platform-content" class="content-hidden"></div>
+
+  
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.getElementById("stackly-preloader");
+    const loaderBar = document.getElementById("loaderBar");
+    const mainPlatformContent = document.getElementById("main-platform-content");
+
+    const loadingDuration = 2000; // Enforces exactly 2 seconds loading sequence
+    const updateInterval = 20;    // Loop ticks updates refresh interval index (ms)
+    let executionElapsedTime = 0;
+
+    // Smoothly animate progress bar track metrics loading fill
+    const progressTimer = setInterval(() => {
+        executionElapsedTime += updateInterval;
+        const targetPercentage = Math.min((executionElapsedTime / loadingDuration) * 100, 100);
+        
+        loaderBar.style.width = `${targetPercentage}%`;
+
+        // Clear tracking cycle when threshold time barrier hits 2 seconds limit
+        if (executionElapsedTime >= loadingDuration) {
+            clearInterval(progressTimer);
+            terminatePreloaderLifecycle();
+        }
+    }, updateInterval);
+
+    function terminatePreloaderLifecycle() {
+        // Fade out layout preloader surface component layer screen completely
+        preloader.classList.add("preloader-fade-out");
+        
+        // Expose underlying landing framework container safely
+        if(mainPlatformContent) {
+            mainPlatformContent.classList.remove("content-hidden");
+            mainPlatformContent.classList.add("content-visible");
+        }
+        
+        // Re-enable document frame layout scrolling mechanics safely
+        document.body.style.overflow = "visible";
+        document.body.style.height = "auto";
+    }
+});
+
+    </script>
+
+    <!-- Isolated Top Utility Strip Section -->
+<div class="stackly-top-utility-strip">
+    <div class="utility-strip-bounds">
+        
+        <!-- Staggered Entry Vector Social Array (Configured with 404 links) -->
+        <div class="utility-social-links-group">
+            <a href="404.html" class="utility-social-node item-stagger-fade" style="--stagger-index: 1;" aria-label="Stackly LinkedIn Platform profile Link">
+                <svg viewBox="0 0 24 24" class="utility-vector-asset">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            
+            <a href="404.html" class="utility-social-node item-stagger-fade" style="--stagger-index: 2;" aria-label="Stackly YouTube Corporate Platform channel Link">
+                <svg viewBox="0 0 24 24" class="utility-vector-asset">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+            </a>
+            
+            <a href="404.html" class="utility-social-node item-stagger-fade" style="--stagger-index: 3;" aria-label="Stackly Facebook Profile corporate Link">
+                <svg viewBox="0 0 24 24" class="utility-vector-asset">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+            </a>
+            
+            <a href="404.html" class="utility-social-node item-stagger-fade" style="--stagger-index: 4;" aria-label="Stackly X Corporate Microblog platform account Link">
+                <svg viewBox="0 0 24 24" class="utility-vector-asset">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Sequential Intake Infrastructure Contact Number -->
+        <div class="utility-contact-block item-stagger-fade" style="--stagger-index: 5;">
+            <span class="utility-contact-tag">Intake Support Framework:</span>
+            <a href="tel:9292426868" class="utility-contact-phone">929-242-6868</a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Fixed Sticky Navigation Architecture Header -->
+<header class="stackly-primary-header">
+    <div class="header-fluid-bounds">
+        
+        
+        <a href="javascript:window.location.reload()" class="header-logo-anchor" aria-label="Stackly Platform Home, Refresh Workspace Layout">
+            <img src="https://unsplash.com" alt="Stackly Corporate Digital Legal Logo" class="header-logo-img">
+        </a>
+
+        <!-- Desktop Mode Center-Aligned Navigation Options -->
+        <nav class="header-desktop-menu" role="navigation">
+            <a href="index.html" class="header-nav-link">Home</a>
+            <a href="attorney.html" class="header-nav-link">Our Attorneys</a>
+            <a href="practice.html" class="header-nav-link">Practice Areas</a>
+            <a href="blog.html" class="header-nav-link">Blogs</a>
+            <a href="contact.html" class="header-nav-link">Contact Us</a>
+        </nav>
+
+        <!-- Right-Aligned Desktop Access Control Point -->
+        <div class="header-desktop-action">
+            <a href="login.html" class="header-portal-btn">Secure Portal Access</a>
+        </div>
+
+        <!-- Mobile Layout Hamburger Overlay Menu Activation Toggle Trigger Switch -->
+        <button class="header-hamburger-trigger" id="headerMenuTrigger" aria-label="Toggle Navigation Adaptive Screen Drawer Content View">
+            <span class="trigger-beam"></span>
+            <span class="trigger-beam"></span>
+            <span class="trigger-beam"></span>
+        </button>
+
+    </div>
+</header>
+
+<!-- Responsive Mobile Navigation Layer Drawer Dropdown Panel Menu Surface Area Layout Overlay Context -->
+<div class="header-mobile-drawer" id="headerMobileDrawer">
+    <nav class="header-mobile-menu">
+        <a href="index.html" class="header-drawer-link">Home</a>
+        <a href="attorney.html" class="header-drawer-link">Our Attorneys</a>
+        <a href="practice.html" class="header-drawer-link">Practice Areas</a>
+        <a href="blog.html" class="header-drawer-link">Blogs</a>
+        <a href="contact.html" class="header-drawer-link">Contact Us</a>
+        <div class="header-drawer-action-wrapper">
+            <a href="login.html" class="header-portal-btn drawer-btn-block">Secure Portal Access</a>
+        </div>
+    </nav>
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const headerMenuTrigger = document.getElementById("headerMenuTrigger");
+    const headerMobileDrawer = document.getElementById("headerMobileDrawer");
+    const mobileDrawerLinks = document.querySelectorAll(".header-drawer-link");
+
+    if (headerMenuTrigger && headerMobileDrawer) {
+        // Intercept action controls taps metrics inputs variables execution loops
+        headerMenuTrigger.addEventListener("click", () => {
+            const isDrawerOpenStateActive = headerMobileDrawer.classList.toggle("active-view");
+            headerMenuTrigger.classList.toggle("triggered");
+
+            // Avoid structural double-layer track viewport scrolling conflicts while mobile overlay is expanded
+            if (isDrawerOpenStateActive) {
+                document.body.style.overflow = "hidden";
+            } else {
+                document.body.style.overflow = "";
+            }
+        });
+
+        // Automatically slide panel up collapse states if target navigation selections complete execution pathing
+        mobileDrawerLinks.forEach(linkItem => {
+            linkItem.addEventListener("click", () => {
+                headerMobileDrawer.classList.remove("active-view");
+                headerMenuTrigger.classList.remove("triggered");
+                document.body.style.overflow = "";
+            });
+        });
+    }
+});
+
+</script>
+
+<!-- High-End Contact Page Hero Section -->
+<section class="stackly-contact-hero-canvas">
+    <div class="contact-hero-bounds">
+        
+        <!-- Main Split Frame Grid Architecture Layout Block -->
+        <div class="contact-hero-split-grid">
+            
+            <!-- Left Side Column Block: Content Typography & Operational Contact Triggers -->
+            <div class="contact-hero-text-panel">
+                <span class="contact-hero-eyebrow-tag">Get In Touch</span>
+                
+                <!-- TITLE: High-Performance Letter-By-Letter Scroll Reveal Engine Matrix -->
+                <h1 class="contact-hero-letter-title" id="contactHeroTitleTarget">
+                    Let's Connect Safely
+                </h1>
+                
+                <p class="contact-hero-description">
+                    Have questions about corporate compliance setups or litigation counseling? Reach out directly to initiate your enterprise onboarding sequence layout. Our advisory teams respond within 24 operational tracking hours.
+                </p>
+                
+                <!-- Call-to-Action Group Row (Configured to slide upward from the bottom on scroll entry) -->
+                <div class="contact-hero-action-row contact-scroll-reveal-bottom">
+                    <a href="#contactForm" class="btn-contact-hero btn-contact-amber-fill">Initialize Intake Form &rarr;</a>
+                    <a href="tel:0420240420" class="btn-contact-hero btn-contact-outline-link">Call Direct Support</a>
+                </div>
+            </div>
+
+            <!-- Right Side Column Block: Geographical Presenter Photo (Slides inward from side layout margins) -->
+            <div class="contact-hero-graphic-panel contact-scroll-reveal-side">
+                <div class="contact-hero-image-frame-box">
+                    <img src="https://unsplash.com" alt="Corporate client intake desk panels area layout workspace" class="contact-hero-img">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- Core Presentation Tokens Framework Configuration Layout --- */
+.stackly-contact-hero-canvas {
+    width: 100%;
+    /* Strict padding limits configured exactly to user layout specs */
+    padding-top: 130px; /* Precise top clearance constraint positioning beneath header rows */
+    padding-bottom: 50px;
+    background-color: #ffffff; /* Premium Pure Solid White Canvas Backdrop Surface Texture */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.contact-hero-bounds {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* --- Row 1: Split Content Section Panel Assembly --- */
+.contact-hero-split-grid {
+    display: grid;
+    /* Precise asymmetric columns balance split matching your established website patterns ratio */
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 56px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.contact-hero-text-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contact-hero-eyebrow-tag {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #b45309; /* Warm Executive Amber Signature Focus Highlights Tones */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+}
+
+/* --- TITLE: High-Performance Letter-By-Letter Scroll Reveal Engine --- */
+.contact-hero-letter-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2.4rem, 5.5vw, 3.8rem); /* Fluid responsive typography scale metric rules value */
+    font-weight: 700;
+    color: #090d16; /* Deep Obsidian Legal Navy text color output */
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin: 0 0 24px 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    opacity: 0; /* Handled programmatically via internal compilation loop tokenizer streams */
+}
+
+/* Letter item tokens placeholders styles profiles configuration codes */
+.contact-char-node {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(14px);
+    will-change: transform, opacity;
+    animation: contactHeroLetterReveal 0.45s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.contact-char-space {
+    width: 0.26em; /* Safeguards consistent structural spaces flow across row partitions bounds */
+}
+
+@keyframes contactHeroLetterReveal {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.contact-hero-description {
+    font-size: 1.05rem;
+    color: #475569; /* Slate gray neutral informative explanation paragraphs layout styling */
+    line-height: 1.65;
+    margin-bottom: 32px;
+    text-align: left;
+    max-width: 560px;
+    transition: color 0.3s ease;
+}
+
+/* --- Floating Actions Row Elements (Slides upward cleanly from the bottom on scroll entry) --- */
+.contact-hero-action-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-scroll-reveal-bottom {
+    opacity: 0;
+    transform: translateY(30px); /* Starts pushed low toward base window limits boundaries */
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contact-scroll-reveal-bottom.activated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-contact-hero {
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-contact-amber-fill {
+    background-color: #b45309;
+    color: #ffffff !important; /* Prevents visual links style inheritance updates overrides */
+    padding: 14px 28px;
+    border-radius: 4px; /* Squared block bounding boxes matching your starting site structure buttons */
+    border: 1px solid #b45309;
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.25);
+}
+
+/* Modern continuous vertical float physical micro-interaction lift loops configuration */
+.btn-contact-amber-fill:hover {
+    background-color: #92400e;
+    border-color: #92400e;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(180, 83, 9, 0.4), 0 0 12px rgba(180, 83, 9, 0.15);
+}
+
+.btn-contact-outline-link {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #090d16 !important;
+    padding: 14px 28px;
+    border-radius: 4px;
+}
+
+.btn-contact-outline-link:hover {
+    border-color: #b45309;
+    color: #b45309 !important;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(9, 13, 22, 0.03);
+}
+
+/* --- Master Hover & Glow Interactions Matrix --- */
+.stackly-contact-hero-canvas:hover .contact-hero-description {
+    color: #0f172a; /* Sharpens paragraph readability text on section mouse enters focus fields */
+}
+
+/* --- Right Side Column Block Presenter Frame Box Layout (Slides inward from side) --- */
+.contact-hero-graphic-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-scroll-reveal-side {
+    opacity: 0;
+    transform: translateX(60px); /* Starts pushed deep towards right side window margin boundaries */
+    transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contact-scroll-reveal-side.activated {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.contact-hero-image-frame-box {
+    width: 100%;
+    aspect-ratio: 1.35 / 1; /* Crisp modern landscape aspect ratio locking dimensions layout */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #090d16;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 15px 35px rgba(9, 13, 22, 0.04);
+}
+
+.contact-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* Custom rich image glow micro-interaction setup tracks requested feature */
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+                filter 0.4s ease;
+}
+
+/* Hardware-accelerated transformation imagery glow adjustments triggered directly over hovers */
+.contact-hero-image-frame-box:hover .contact-hero-img {
+    transform: scale(1.025);
+    filter: brightness(1.03) contrast(1.01);
+}
+
+/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- */
+@media (max-width: 1024px) {
+    .stackly-contact-hero-canvas {
+        padding-top: 110px; /* Proportional padding drop preventing truncation clipping on medium tablets */
+    }
+
+    .contact-hero-split-grid {
+        grid-template-columns: 1fr; /* Stacks column sets perfectly vertical on mobile and intermediate views */
+        gap: 40px;
+    }
+
+    .contact-hero-graphic-panel {
+        max-width: 580px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .stackly-contact-hero-canvas {
+        padding-top: 100px; /* Smartphone responsive padding parameters adjustments codes */
+        padding-bottom: 30px;
+    }
+
+    .contact-hero-letter-title {
+        font-size: 2rem;
+    }
+
+    .contact-hero-action-row {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 14px;
+    }
+
+    .btn-contact-hero {
+        width: 100%;
+        justify-content: center; /* Expands buttons layout to 100% full bounds width lanes over phone view glass windows */
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const contactTitleNode = document.getElementById("contactHeroTitleTarget");
+    const contactScrollRevealElements = document.querySelectorAll(".contact-scroll-reveal-bottom, .contact-scroll-reveal-side");
+
+    if ('IntersectionObserver' in window) {
+        
+        // Define observer options thresholds mapping layout position parameters markers
+        const contactHeroObserverOptions = {
+            root: null, 
+            threshold: 0.1,
+            rootMargin: "0px 0px -25px 0px"
+        };
+
+        const onContactHeroIntersectionObserved = (entriesList, observerInstance) => {
+            entriesList.forEach(entryNode => {
+                if (entryNode.isIntersecting) {
+                    
+                    // Route 1: Trigger High Performance Letter-by-Letter compilation tokenizer stream
+                    if (entryNode.target.id === "contactHeroTitleTarget") {
+                        initializeContactLetterRevealStream();
+                    } 
+                    // Route 2: Trigger Bottom CTAs Slide and Side Graphic Panel Inward Sweep
+                    else {
+                        entryNode.target.classList.add("activated");
+                    }
+                    
+                    observerInstance.unobserve(entryNode.target);
+                }
+            });
+        };
+
+        const contactHeroScrollObserver = new IntersectionObserver(onContactHeroIntersectionObserved, contactHeroObserverOptions);
+        
+        if (contactTitleNode) contactHeroScrollObserver.observe(contactTitleNode);
+        contactScrollRevealElements.forEach(elementNode => contactHeroScrollObserver.observe(elementNode));
+
+        // Character tokenizer compiler engine execution routine block
+        function initializeContactLetterRevealStream() {
+            const originalStringText = contactTitleNode.innerText.trim();
+            
+            contactTitleNode.innerHTML = "";
+
+            // Translate raw content index metrics character by character cleanly
+            Array.from(originalStringText).forEach((characterToken, charIndex) => {
+                const charSpan = document.createElement("span");
+                
+                if (characterToken === " ") {
+                    charSpan.classList.add("contact-char-space");
+                    charSpan.innerHTML = "&nbsp;";
+                } else {
+                    charSpan.innerText = characterToken;
+                    charSpan.classList.add("contact-char-node");
+                }
+
+                // Adds incremental microsecond intervals delays dynamically to establish the flowing letter reveal
+                charSpan.style.animationDelay = `${charIndex * 35}ms`;
+                contactTitleNode.appendChild(charSpan);
+            });
+            
+            // Enforce immediate base structural safety parameters visibility metric override values triggers
+            contactTitleNode.style.opacity = "1";
+        }
+
+    } else {
+        // Fallback display toggles if observer mechanisms are unavailable
+        if (contactTitleNode) contactTitleNode.style.opacity = "1";
+        contactScrollRevealElements.forEach(legacyNode => legacyNode.classList.add("activated"));
+    }
+});
+
+</script>
+
+<!-- High-End Split-Grid Contact Intake Form Section with Centered Layout Mechanics -->
+<section class="stackly-contact-intake-section-centered">
+    <div class="contact-intake-fluid-bounds-centered">
+        
+        <!-- Symmetrical Dual-Column Layout Workspace Arena -->
+        <div class="contact-intake-split-arena-centered">
+            
+            <!-- LEFT COLUMN: Corporate Contact Information Matrices (FIXED: Absolutely Center-Aligned) -->
+            <div class="contact-info-matrix-panel-centered">
+                <div class="info-interior-alignment-wrapper">
+                    <span class="info-top-eyebrow-tag-centered">FLAGSHIP ATELIER</span>
+                    
+                    <h2 class="info-panel-main-title-centered">
+                        Reach Our <br>Sugar Architects.
+                    </h2>
+
+                    <!-- Information Badges Stacking Group Array -->
+                    <div class="info-badges-stack-container-centered">
+                        
+                        <!-- Badge 1: Geographical HQ Address Mapping Coordinates -->
+                        <div class="info-coordinates-badge-centered">
+                            <div class="badge-icon-left-shell-centered">
+                                <svg viewBox="0 0 24 24" class="badge-vector-svg-centered"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            </div>
+                            <div class="badge-meta-content-right-centered">
+                                <span class="badge-label-subtitle-centered">VISIT OUR STUDIO</span>
+                                <p class="badge-primary-text-string-centered">MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</p>
+                            </div>
+                        </div>
+
+                        <!-- Badge 2: Direct Telephony Hotlines -->
+                        <div class="info-coordinates-badge-centered">
+                            <div class="badge-icon-left-shell-centered">
+                                <svg viewBox="0 0 24 24" class="badge-vector-svg-centered"><path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            </div>
+                            <div class="badge-meta-content-right-centered">
+                                <span class="badge-label-subtitle-centered">DIRECT HOTLINES</span>
+                                <a href="tel:+917010792745" class="badge-interactive-link-item-centered">+91 7010792745</a>
+                            </div>
+                        </div>
+
+                        <!-- Badge 3: Electronic Mail Integration Route (Outlook redirection) -->
+                        <div class="info-coordinates-badge-centered">
+                            <div class="badge-icon-left-shell-centered">
+                                <svg viewBox="0 0 24 24" class="badge-vector-svg-centered"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </div>
+                            <div class="badge-meta-content-right-centered">
+                                <span class="badge-label-subtitle-centered">ELECTRONIC MAIL</span>
+                                <a href="mailto:design@stacklystudio.com" class="badge-interactive-link-item-centered outlook-redirect-trigger" title="Launch Microsoft Outlook directly pre-filling this target recipient">design@stacklystudio.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Badge 4: Calendar Availability Telemetry Metrics -->
+                        <div class="info-coordinates-badge-centered">
+                            <div class="badge-icon-left-shell-centered">
+                                <svg viewBox="0 0 24 24" class="badge-vector-svg-centered"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zM12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                            </div>
+                            <div class="badge-meta-content-right-centered">
+                                <span class="badge-label-subtitle-centered">ATELIER AVAILABILITY</span>
+                                <p class="badge-primary-text-string-centered">Mon - Sun: 9:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Secure High-Fidelity Intake Form Panel Layout -->
+            <div class="contact-form-wrapper-panel-centered">
+                <div class="form-panel-header-casing-centered">
+                    <h3 class="form-panel-title-centered">Send Us a Message &#128221;</h3>
+                    <p class="form-panel-subtitle-guidance-centered">Submit your celebration parameters. Form boundaries illuminate on active focus.</p>
+                </div>
+
+                <!-- Main Interactive Action Submission Engine Wrapper Container Field -->
+                <form class="contact-intake-form-element-centered" id="contactIntakeFormCentered" novalidate>
+                    
+                    <!-- Input 1: Client Fullname Field -->
+                    <div class="intake-field-group-relative-centered">
+                        <input type="text" id="intakeClientName" placeholder="Your elegant name..." class="intake-form-input-control-centered" required>
+                        <span class="intake-field-alert-bubble-centered" id="alertNameNode">Please fill the name field</span>
+                    </div>
+
+                    <!-- Input 2: Electronic Node Operator Email Address -->
+                    <div class="intake-field-group-relative-centered">
+                        <label class="intake-field-static-label-centered">EMAIL ADDRESS</label>
+                        <input type="email" id="intakeClientEmail" placeholder="name@example.com" class="intake-form-input-control-centered" required>
+                        <span class="intake-field-alert-bubble-centered" id="alertEmailNode">Please fill the email address field</span>
+                    </div>
+
+                    <!-- Input 3: Mobile Phone Core Matrix Parameters -->
+                    <div class="intake-field-group-relative-centered">
+                        <input type="tel" id="intakeClientPhone" placeholder="10-digit mobile number" pattern="[0-9]{10}" class="intake-form-input-control-centered" required>
+                        <span class="intake-field-alert-bubble-centered" id="alertPhoneNode">Please fill the valid 10-digit mobile number</span>
+                    </div>
+
+                    <!-- Input 4: Selection Dropdown Discipline Selector Categories -->
+                    <div class="intake-field-group-relative-centered">
+                        <label class="intake-field-static-label-centered">PROJECT DISCIPLINE CATEGORY</label>
+                        <div class="intake-dropdown-select-shell-centered">
+                            <select id="intakeProjectCategory" class="intake-form-select-control-centered" required>
+                                <option value="" disabled selected hidden>Select a discipline category...</option>
+                                <option value="corporate-consultation">Corporate Legal Consultation</option>
+                                <option value="venture-structuring">Venture Restructuring Audit</option>
+                                <option value="compliance-telemetry">Compliance Telemetry Setup</option>
+                                <option value="litigation-counsel">Courtroom Litigation Counsel</option>
+                            </select>
+                            <span class="intake-field-alert-bubble-centered" id="alertCategoryNode">Please select a discipline category</span>
+                        </div>
+                    </div>
+
+                    <!-- Input 5: Broad Narrative Context Textarea Box Node -->
+                    <div class="intake-field-group-relative-centered">
+                        <label class="intake-field-static-label-centered">YOUR PROJECT NARRATIVE</label>
+                        <textarea id="intakeProjectNarrative" placeholder="Tell us about your project footprint size, timeline metrics, and flavor preferences..." class="intake-form-textarea-control-centered" rows="4" required></textarea>
+                        <span class="intake-field-alert-bubble-centered" id="alertNarrativeNode">Please fill the project narrative field</span>
+                    </div>
+
+                    <!-- Submission Action Button Key Profile Trigger -->
+                    <div class="intake-submission-action-row-centered">
+                        <button type="submit" class="btn-intake-form-submit-trigger-centered">
+                            RESERVE TASTING CONSULTATION &mdash;&rarr;
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- Core Presentation Tokens Framework Configuration Layout --- */
+.stackly-contact-intake-section-centered {
+    width: 100%;
+    /* Strict padding limits configured exactly to user requirements values */
+    padding: 50px 0;
+    background-color: #ffffff; /* Premium solid pure white backdrop canvas layout surface */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.contact-intake-fluid-bounds-centered {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* --- Symmetrical Dual-Column Structural Layout Arena Area --- */
+.contact-intake-split-arena-centered {
+    display: grid;
+    /* Precise asymmetric columns balance split matching your reference blueprint photo grid layout fractions */
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 56px;
+    align-items: center; /* FIXED: Enforces perfect absolute vertical center alignment across both column assets */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* --- LEFT COLUMN: Corporate Information Presentation Matrix Tracks --- */
+.contact-info-matrix-panel-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.info-interior-alignment-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.info-top-eyebrow-tag-centered {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #64748b; /* Professional neutral secondary slate gray standard fill color */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.info-panel-main-title-centered {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2.2rem, 5vw, 3.4rem); /* Responsive fluid header scaling metrics rules value */
+    font-weight: 700;
+    color: #090d16; /* Deep Obsidian Legal Navy primary title color tone index */
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin: 0 0 32px 0;
+    text-transform: none;
+    text-align: left;
+}
+
+.info-badges-stack-container-centered {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+/* Rounded minimal capsule badges track mapping your reference picture fields composition precisely */
+.info-coordinates-badge-centered {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 24px;
+    background-color: #f8fafc; /* Crisp clean off-white background panel separation contrast base layer */
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.badge-icon-left-shell-centered {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1; /* Replicates thin wire frame circle outline visible in your blueprint picture */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    transition: all 0.4s ease;
+}
+
+.badge-vector-svg-centered {
+    width: 18px;
+    height: 18px;
+    fill: #090d16; /* Clean crisp charcoal base vector graphics paths selector */
+    transition: fill 0.35s ease;
+}
+
+.badge-meta-content-right-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.badge-label-subtitle-centered {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.badge-primary-text-string-centered,
+.badge-interactive-link-item-centered {
+    font-size: 0.94rem;
+    font-weight: 500;
+    color: #090d16;
+    margin: 0;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* --- Master Hover & Glow System Configuration Transformations on Left Badges --- */
+.info-coordinates-badge-centered:hover {
+    background-color: #090d16; /* Swaps background canvas safely to primary branding obsidian tone */
+    border-color: #b45309; /* Changes frame edge path lines directly to crisp legal amber trace line index */
+    transform: translateX(6px); /* Interactive horizontal vector slide push transition */
+    box-shadow: 0 10px 22px rgba(180, 83, 9, 0.15);
+}
+
+.info-coordinates-badge-centered:hover .badge-icon-left-shell-centered {
+    background-color: #b45309;
+    border-color: #b45309;
+    transform: scale(1.05) rotate(10deg);
+}
+
+.info-coordinates-badge-centered:hover .badge-vector-svg-centered {
+    fill: #ffffff;
+}
+
+.info-coordinates-badge-centered:hover .badge-primary-text-string-centered,
+.info-coordinates-badge-centered:hover .badge-interactive-link-item-centered {
+    color: #b45309; /* Illuminates links content text instantly to signature executive legal amber text glow */
+    text-shadow: 0 0 8px rgba(180, 83, 9, 0.2);
+}
+
+/* --- RIGHT COLUMN: Secure High-Fidelity Intake Form Panel Layout --- */
+.contact-form-wrapper-panel-centered {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 20px 45px rgba(9, 13, 22, 0.04);
+    box-sizing: border-box;
+}
+
+.form-panel-header-casing-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.form-panel-title-centered {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #090d16;
+    margin: 0 0 6px 0;
+}
+
+.form-panel-subtitle-guidance-centered {
+    font-size: 0.92rem;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.contact-intake-form-element-centered {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.intake-field-group-relative-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative; /* Anchor tracking hooks space enabling proper positioning coordinates of dynamic alert bubbles */
+}
+
+.intake-field-static-label-centered {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #090d16;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+/* --- Precision Input Controls Baseline States (Matching reference photo boundaries) --- */
+.intake-form-input-control-centered,
+.intake-form-select-control-centered,
+.intake-form-textarea-control-centered {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1; /* Replicates the field border trace visible in your screenshot mockup */
+    border-radius: 6px;
+    padding: 14px 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #090d16;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.intake-form-textarea-control-centered {
+    resize: vertical;
+}
+
+.intake-form-input-control-centered::placeholder,
+.intake-form-textarea-control-centered::placeholder {
+    color: #94a3b8; /* Balanced neutral gray placeholder text strings parameters profiles styling code */
+}
+
+/* --- Active Input Focus Boundaries Illumination --- */
+.intake-form-input-control-centered:focus,
+.intake-form-select-control-centered:focus,
+.intake-form-textarea-control-centered:focus {
+    border-color: #b45309; /* Illuminates parameters bounds instantly to rich warm signature amber on active focus */
+    box-shadow: 0 0 0 3px rgba(180, 83, 9, 0.08), 0 4px 12px rgba(180, 83, 9, 0.04);
+    background-color: #ffffff;
+}
+
+/* Dropdown native arrow alignment wrapper container field matrix */
+.intake-dropdown-select-shell-centered {
+    position: relative;
+    width: 100%;
+}
+
+/* --- HIGH-VISIBILITY FORM VALIDATION ALERT BUBBLE PROMPTS --- */
+.intake-field-alert-bubble-centered {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 4px;
+    background-color: #ef4444; /* High visibility alert indicator red structural fill index color */
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+    z-index: 100;
+}
+
+/* Speech indicator triangle vector pointer point element track */
+.intake-field-alert-bubble-centered::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 14px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ef4444 transparent transparent transparent;
+}
+
+/* Trigger class rule injected dynamically by Javascript validation loops checking routines */
+.intake-field-alert-bubble-centered.display-prompt {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Adjusts alert coordinates placements for fields carrying upper static descriptive text labels header strings */
+.intake-field-static-label-centered + .intake-form-input-control-centered + .intake-field-alert-bubble-centered,
+.intake-field-static-label-centered + .intake-dropdown-select-shell-centered .intake-field-alert-bubble-centered,
+.intake-field-static-label-centered + .intake-form-textarea-control-centered + .intake-field-alert-bubble-centered {
+    bottom: calc(100% - 14px); /* Offsets baseline alignments dynamically to clear space labels gaps pop */
+}
+
+/* --- Submission Action Button Profile Component Architecture (Matching screenshot buttons geometry shape) --- */
+.intake-submission-action-row-centered {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.btn-intake-form-submit-trigger-centered {
+    width: 100%;
+    background-color: transparent;
+    color: #090d16; /* Charcoal baseline high contrast states tracking your starting website patterns layout rules */
+    border: 1px solid #cbd5e1; /* Flat structural outline profile matching the lower boundary container row from reference photo */
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+letter-spacing: 1px;text-transform: uppercase;padding: 16px 32px;border-radius: 100px; /* Complete absolute rounded continuous capsule tracker layout frame visible in mockup photo */cursor: pointer;transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);box-sizing: border-box;}/* Interactive transitions illuminating submit triggers forward directly to solid signature amber values /.btn-intake-form-submit-trigger-centered:hover {background-color: #b45309;border-color: #b45309;color: #ffffff;transform: translateY(-3px); / Modern subtle physics spring vertical lift action */box-shadow: 0 10px 22px rgba(180, 83, 9, 0.35);}.btn-intake-form-submit-trigger-centered:active {transform: translateY(-1px);}/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- /@media (max-width: 1024px) {.contact-intake-split-arena-centered {grid-template-columns: 1fr; / Stacks column pairs completely vertical on tablet viewports to expand layout tracking bounds */gap: 40px;}.contact-form-wrapper-panel-centered {padding: 32px 24px;}}@media (max-width: 640px) {/* Strict execution padding constraints mapped down exactly to 30px requirements values markers rules */.stackly-contact-intake-section-centered {padding: 30px 0;}.info-panel-main-title-centered {font-size: 1.85rem; /* Safe proportional scale drop avoiding word splits truncations overlays code */margin-bottom: 24px;}.info-coordinates-badge-centered {padding: 16px;gap: 14px;}.btn-intake-form-submit-trigger-centered {font-size: 0.82rem;padding: 14px 20px; /* Recalculates mobile spatial formatting to avoid row wraps overrides */}}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const intakeFormCentered = document.getElementById("contactIntakeFormCentered");
+    
+    // Select input controls target streams matching fields variables loops
+    const centeredFieldsMatrix = [
+        { control: document.getElementById("intakeClientName"), alert: document.getElementById("alertNameNode") },
+        { control: document.getElementById("intakeClientEmail"), alert: document.getElementById("alertEmailNode") },
+        { control: document.getElementById("intakeClientPhone"), alert: document.getElementById("alertPhoneNode") },
+        { control: document.getElementById("intakeProjectCategory"), alert: document.getElementById("alertCategoryNode") },
+        { control: document.getElementById("intakeProjectNarrative"), alert: document.getElementById("alertNarrativeNode") }
+    ];
+
+    if (intakeFormCentered) {
+        
+        // 1. ACTIVE LISTENER CODES: Wipe active validation alert bubble prompts cleanly upon manual focus input adjustments updates loops
+        centeredFieldsMatrix.forEach(fieldRow => {
+            if (fieldRow.control) {
+                fieldRow.control.addEventListener("input", () => {
+                    if (fieldRow.alert) fieldRow.alert.classList.remove("display-prompt");
+                });
+                fieldRow.control.addEventListener("change", () => {
+                    if (fieldRow.alert) fieldRow.alert.classList.remove("display-prompt");
+                });
+            }
+        });
+
+        // 2. VALIDATION ENGINE: Form submission check conditions lifecycle evaluation tracking pipelines
+        intakeFormCentered.addEventListener("submit", (e) => {
+            e.preventDefault();
+            
+            let centeredFormPassedFlag = true;
+            let firstInvalidControlNode = null;
+
+            // Run structural loop routine assessing field values state lines
+            for (let i = 0; i < centeredFieldsMatrix.length; i++) {
+                const currentField = centeredFieldsMatrix[i];
+                
+                if (currentField.control && currentField.alert) {
+                    const rawInputValueString = currentField.control.value.trim();
+                    let isFieldConditionInvalid = false;
+
+                    // Evaluate matching criteria rules conditions sets variables fields checking support
+                    if (!rawInputValueString) {
+                        isFieldConditionInvalid = true;
+                    } 
+                    // Specialized companion check verifying specific phone length numbers boundaries context
+                    else if (currentField.control.id === "intakeClientPhone") {
+                        const numericRegexValidator = /^[0-9]{10}$/;
+                        if (!numericRegexValidator.test(rawInputValueString)) {
+                            isFieldConditionInvalid = true;
+                        }
+                    }
+                    // Specialized companion check verifying email pattern rules
+                    else if (currentField.control.id === "intakeClientEmail") {
+                        if (!currentField.control.checkValidity()) {
+                            isFieldConditionInvalid = true;
+                        }
+                    }
+
+                    if (isFieldConditionInvalid) {
+                        // Injects the custom validation alert bubble prompt dynamically over failing target nodes elements rows
+                        currentField.alert.classList.add("display-prompt");
+                        centeredFormPassedFlag = false;
+                        
+                        if (!firstInvalidControlNode) {
+                            firstInvalidControlNode = currentField.control;
+                        }
+                    } else {
+                        currentField.alert.classList.remove("display-prompt");
+                    }
+                }
+            }
+
+            // 3. ROUTING ENGINE: Evaluate final conditions to map success paths directions
+            if (!centeredFormPassedFlag && firstInvalidControlNode) {
+                firstInvalidControlNode.focus();
+            } else {
+                // Wipe forms inputs datasets states parameters indexes cleanly
+                intakeFormCentered.reset();
+                
+                // Absolute structural routing redirection link mapping straight into 404 landing page
+                window.location.href = "404.html";
+            }
+        });
+
+    }
+});
+</script>
+
+<!-- High-End Corporate Headquarters Office Map Location Section -->
+<section class="stackly-contact-map-section">
+    <div class="contact-map-fluid-bounds">
+        
+        <!-- Symmetrical Split-Grid Layout Workspace Arena -->
+        <div class="contact-map-split-arena">
+            
+            <!-- LEFT COLUMN: Location Address Details, Accessibility Insights, & Map Actions Triggers -->
+            <div class="contact-map-text-panel-box scroll-reveal-left-side">
+                <div class="map-eyebrow-row-wrapper">
+                    <span class="map-accent-dash-line"></span>
+                    <span class="map-eyebrow-text-label">Our Location</span>
+                </div>
+                
+                <!-- TITLE: High-Performance Word-by-Word Scroll Reveal Engine Matrix -->
+                <h2 class="map-section-main-title" id="mapTitleRevealTarget">
+                    Visit Our Flagship Legal Atelier Studio
+                </h2>
+
+                <div class="map-address-card-hull">
+                    <p class="map-address-primary-string">
+                        MMR Complex, Periyakollappatty,<br>
+                        Chinna Thirupathi, Salem,<br>
+                        Tamil Nadu 636008, India
+                    </p>
+                    <p class="map-accessibility-notes">
+                        <strong>Atelier Access Points:</strong> Ground floor entrance, adjacent public parking lanes available. Located exactly opposite the central landmark tracking hub.
+                    </p>
+                </div>
+
+                <!-- Navigation Action Button Trigger Row Block -->
+                <div class="map-action-control-row">
+                    <!-- Fully functional capsule shape button connecting directly to Google Maps coordinates tracker -->
+                    <a href="https://google.com" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="btn-contact-open-map-trigger" 
+                       title="Launch external browser tab mapping absolute Google Maps navigation directions to our studio location">
+                        <span>OPEN IN GOOGLE MAPS</span>
+                        <span class="map-btn-vector-arrow">&nearr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Graphical Office Map Media Canvas Frame (Slides inward from right side layout margins) -->
+            <div class="contact-map-graphic-panel-box scroll-reveal-right-side">
+                <div class="contact-map-image-frame-hull">
+                    <!-- High resolution map layout canvas vector imagery overlay tagging the studio coordinates -->
+                    <img src="https://unsplash.com" alt="Geographical regional roadmap satellite layout tracking corporate headquarters coordinates location lanes bounds" class="contact-office-map-img">
+                    
+                    <!-- Dynamic Glowing Location Pointer Node Indicator pinned over the core coordinates marker space -->
+                    <div class="map-glowing-pointer-coordinate-node" aria-hidden="true">
+                        <div class="pointer-core-dot"></div>
+                        <div class="pointer-pulse-gargantuan-ring"></div>
+                        <div class="pointer-pulse-colossal-ring"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- Core Presentation Tokens Framework Configuration Layout --- */
+.stackly-contact-map-section {
+    width: 100%;
+    /* Strict padding limits configured exactly to user configuration rules values specifications */
+    padding: 50px 0;
+    background-color: #ffffff; /* Premium solid pure white backdrop canvas layout surface */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.contact-map-fluid-bounds {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* --- Symmetrical Dual-Column Structural Layout Arena Area --- */
+.contact-map-split-arena {
+    display: grid;
+    /* Precise side split layout replication matching your source website design patterns fractions ratios */
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 56px;
+    align-items: center; /* Enforces absolute center layout boundaries along vertical stack track */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* --- LEFT COLUMN: Typography Block content, Details cards, & Actions Triggers --- */
+.contact-map-text-panel-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.map-eyebrow-row-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.map-accent-dash-line {
+    width: 24px;
+    height: 2px;
+    background-color: #b45309; /* Warm Executive Amber Corporate Branding Tones */
+    border-radius: 4px;
+}
+
+.map-eyebrow-text-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #b45309;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* --- TITLE: Multi-Directional Alternating Side Word Sliding Reveals --- */
+.map-section-main-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 4.5vw, 2.8rem); /* Strict uniform standard medium font scale index profile layout */
+    font-weight: 700;
+    color: #090d16; /* Deep Obsidian Legal Navy text color output */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin: 0 0 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    row-gap: 4px;
+    text-align: left;
+}
+
+/* Inline text items tokens wrappers injected dynamically by runtime javascript tokenizer loops */
+.map-split-word-node {
+    display: inline-block;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation-duration: 0.65s;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    animation-fill-mode: forwards;
+}
+
+.map-word-slide-left-in { transform: translateX(-35px); animation-name: mapWordFromLeft; }
+.map-word-slide-right-in { transform: translateX(35px); animation-name: mapWordFromRight; }
+
+@keyframes mapWordFromLeft { to { opacity: 1; transform: translateX(0); } }
+@keyframes mapWordFromRight { to { opacity: 1; transform: translateX(0); } }
+
+.map-address-card-hull {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.map-address-primary-string {
+    font-size: 1.25rem; /* Proportional locked medium text scale typography mapping features headings */
+    font-weight: 700;
+    color: #090d16;
+    line-height: 1.45;
+    margin: 0 0 12px 0;
+    text-align: left;
+    transition: color 0.35s ease, text-shadow 0.35s ease;
+}
+
+.map-accessibility-notes {
+    font-size: 0.94rem;
+    color: #475569; /* Slate gray neutral informative explanation paragraphs layout styling */
+    line-height: 1.6;
+    margin: 0;
+    text-align: left;
+}
+
+/* --- Interactive Content Hovers Glow Interactions Matrix Overrides --- */
+.contact-map-text-panel-box:hover .map-address-primary-string {
+    color: #b45309; /* Illuminates content text instantly to signature executive legal amber focus indicators */
+    text-shadow: 0 0 8px rgba(180, 83, 9, 0.12);
+}
+
+/* --- Custom Capsule Shape Action Button Profile matching blueprint geometry perfectly --- */
+.map-action-control-row {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.btn-contact-open-map-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #b45309; 
+    border: 1px solid #b45309;
+    padding: 6px 6px 6px 24px; /* Spacious left side textual clearance padding framing arrow bubble right */
+    border-radius: 100px; /* Forces round capsule shape matching image button blueprint specifications */
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.2);
+}
+
+.btn-contact-open-map-trigger span:first-child {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #ffffff !important; /* Locks crisp white text links color fields from page cascades overrides */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.map-btn-vector-arrow {
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff; /* Solid white sphere circle containing icon arrow seen in snapshot buttons */
+    color: #b45309;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.95rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-contact-open-map-trigger:hover {
+    background-color: #92400e;
+    border-color: #92400e;
+    transform: translateY(-4px); /* Modern continuous vertical float physical micro-interaction lift loops configuration */
+    box-shadow: 0 10px 22px rgba(180, 83, 9, 0.4), 0 0 12px rgba(180, 83, 9, 0.15);
+}
+
+.btn-contact-open-map-trigger:hover .map-btn-vector-arrow {
+    transform: scale(1.05) translate(2px, -2px); /* Linear push translation offset macro vector trigger */
+}
+
+/* --- RIGHT COLUMN: Graphical Map Canvas Framing Layout System (Slides up/inward) --- */
+.contact-map-graphic-panel-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-map-image-frame-hull {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.35 / 1; /* Crisp modern landscape aspect ratio locking dimensions layout metrics safely */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 15px 35px rgba(9, 13, 22, 0.04);
+}
+
+.contact-office-map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(0.1) contrast(1.02); /* Clean high-contrast mapping aesthetic visibility tint overrides */
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contact-map-image-frame-hull:hover .contact-office-map-img {
+    transform: scale(1.03);
+}
+
+/* --- Dynamic Glowing Location Pointer Node Indicator Systems --- */
+.map-glowing-pointer-coordinate-node {
+    position: absolute;
+    top: 48%; /* Centers tracking pointer parameters values directly matching Salem MMR Complex coordinates layout offsets */
+    left: 52%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 20;
+}
+
+.pointer-core-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #b45309; /* Warm Executive Amber node marker base */
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px rgba(180, 83, 9, 0.8);
+    position: relative;
+    z-index: 5;
+}
+
+.pointer-pulse-gargantuan-ring,
+.pointer-pulse-colossal-ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(180, 83, 9, 0.3);
+    animation: mapNodeRingPulseAnimation 2.4s infinite ease-out;
+    z-index: 1;
+}
+
+.pointer-pulse-colossal-ring {
+    animation-delay: 1.2s;
+}
+
+@keyframes mapNodeRingPulseAnimation {
+    0% { transform: scale(0.6); opacity: 1; }
+    100% { transform: scale(4.5); opacity: 0; }
+}
+
+/* --- SIDE SLIDING ENTRANCE MATRIX: Modern Scroll observer Reveal Engine States --- */
+.scroll-reveal-left-side {
+    opacity: 0;
+    transform: translateX(-50px); /* Starts shifted deep towards left window margin boundaries variables */
+    transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-reveal-right-side {
+    opacity: 0;
+    transform: translateX(50px); /* Starts shifted deep towards right window margin boundaries variables */
+    transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Active triggering states controlled via intersection observer */
+.scroll-reveal-left-side.activated,
+.scroll-reveal-right-side.activated {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- */
+@media (max-width: 992px) {
+    .contact-map-split-arena {
+        grid-template-columns: 1fr; /* Stacks column layout containers vertically on tablet displays viewports */
+        gap: 40px;
+    }
+    
+    .contact-map-text-panel-box,
+    .contact-map-graphic-panel-box {
+        align-items: center;
+        text-align: center;
+    }
+
+    .map-section-main-title {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .map-address-card-hull {
+        align-items: center;
+    }
+
+    .map-address-primary-string {
+        text-align: center;
+    }
+
+    .map-accessibility-notes {
+        text-align: center;
+        max-width: 580px;
+    }
+
+    .map-action-control-row {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Strict execution constraint implementation adapting padding bounds down exactly to user requirements parameters rules values */
+    .stackly-contact-map-section {
+        padding: 30px 0;
+    }
+
+    .map-section-main-title {
+        font-size: 1.85rem;
+    }
+
+    .map-address-primary-string {
+        font-size: 1.12rem;
+    }
+
+.btn-contact-open-map-trigger {width: 100%;justify-content: space-between; /* Spans items to borders edge boundaries cleanly over mobile phone display views */}}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const mapHeadlineNode = document.getElementById("mapTitleRevealTarget");
+    const mapSideRevealElements = document.querySelectorAll(".scroll-reveal-left-side, .scroll-reveal-right-side");
+
+    if ('IntersectionObserver' in window) {
+        
+        // Define observer options thresholds mapping layout position parameters markers configuration parameters
+        const mapObserverConfig = {
+            root: null, // Scans native browser viewport context windows directly
+            threshold: 0.12, // Fires layout initialization when 12% of target enters visibility area
+            rootMargin: "0px 0px -25px 0px"
+        };
+
+        const onMapIntersectionObserved = (entriesList, observerRef) => {
+            entriesList.forEach(entryNode => {
+                if (entryNode.isIntersecting) {
+                    
+                    // Route 1: Trigger High Performance Word-by-Word compilation tokenizer stream from sides
+                    if (entryNode.target.id === "mapTitleRevealTarget") {
+                        initializeMapTitleWordByWordSequence();
+                    } 
+                    // Route 2: Trigger Left Details Panel and Right Graphic Map Panel Inward Sweeps
+                    else {
+                        entryNode.target.classList.add("activated");
+                    }
+                    
+                    observerRef.unobserve(entryNode.target);
+                }
+            });
+        };
+
+        const mapScrollObserverEngine = new IntersectionObserver(onMapIntersectionObserved, mapObserverConfig);
+        
+        if (mapHeadlineNode) mapScrollObserverEngine.observe(mapHeadlineNode);
+        mapSideRevealElements.forEach(elementNode => mapScrollObserverEngine.observe(elementNode));
+
+        function initializeMapTitleWordByWordSequence() {
+            if (mapHeadlineNode) {
+                const rawContentTextString = mapHeadlineNode.innerText.trim();
+                const splitWordsArray = rawContentTextString.split(/\s+/);
+                
+                mapHeadlineNode.innerHTML = "";
+
+                splitWordsArray.forEach((wordValue, itemIndex) => {
+                    const wordSpan = document.createElement("span");
+                    wordSpan.innerText = wordValue;
+                    wordSpan.classList.add("map-split-word-node");
+
+                    // Direct sequence elements to load entry paths from alternating sides based on odd/even index evaluations
+                    if (itemIndex % 2 === 0) {
+                        wordSpan.classList.add("map-word-slide-left-in");
+                    } else {
+                        wordSpan.classList.add("map-word-slide-right-in");
+                    }
+
+                    // Assign computation stagger delays dynamically to establish fluid flows entry lines
+                    wordSpan.style.animationDelay = `${itemIndex * 60}ms`;
+                    mapHeadlineNode.appendChild(wordSpan);
+                });
+            }
+        }
+
+    } else {
+        // Fallback display toggles if observer mechanisms are unavailable
+        if (mapHeadlineNode) mapHeadlineNode.style.opacity = "1";
+        mapSideRevealElements.forEach(legacyNode => legacyNode.classList.add("activated"));
+    }
+});
+</script>
+
+<!-- Full-Width Fluid Legal-Tech 1-Line Call-To-Action Banner Component -->
+<section class="stackly-headline-banner-fluid-strip">
+    
+    <!-- Full-Width Master Banner Card Box with Scroll Entry Reveal Fade Up -->
+    <div class="headline-banner-card-box-fluid scroll-revealed-fade-up" id="ctaBannerCardFluid1Line">
+        
+        <!-- Layer 1: Background Asset Graphic Element Image -->
+        <img src="https://unsplash.com" alt="Abstract Corporate Grid Network Blueprint Texture" class="headline-card-bg-asset-fluid" aria-hidden="true">
+        
+        <!-- Inner container houses content grids within standard readable page limits -->
+        <div class="headline-card-inner-fluid-container">
+            <div class="headline-card-inner-overlay-flex-fluid">
+                
+                <!-- Left Structural Layout Row Alignment: Combines Image and Headline into 1 Unified Line Frame -->
+                <div class="headline-combo-alignment-row-fluid">
+                    
+                    <!-- Layer 2: Foreground Graphic Shape Framing Layout Concept -->
+                    <div class="headline-foreground-thumbnail-frame-fluid">
+                        <img src="https://unsplash.com" alt="Stackly Secure Privacy Platform Node Interface Preview" class="headline-card-foreground-asset-fluid">
+                    </div>
+
+                    <!-- Single Line Main Title Configured for Word-by-Word Side Entry Scrolling Animations -->
+                    <h2 class="headline-banner-word-track-fluid" id="bannerLineHeadlineTargetFluid">
+                        Protect Your Enterprise Governance Pipelines Safely
+                    </h2>
+
+                </div>
+
+                <!-- Right Structural Layout Row Alignment: Floating Action CTA Trigger Key Button Link -->
+                <div class="headline-action-floating-box-fluid">
+                    <a href="#intake" class="btn-headline-banner-floating-fluid">Initialize Consultation &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- Core Banner Section Fluid Interface Layout Design --- */
+.stackly-headline-banner-fluid-strip {
+    width: 100%;
+    /* Strict execution padding constraints mapped exactly to user layout specs */
+    padding: 50px 0;
+    background-color: #ffffff; /* Solid White Backdrop Canvas Layer */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* --- Full-Width Master Banner Card Block Container with Scroll Entry --- */
+.headline-banner-card-box-fluid {
+    position: relative;
+    width: 100%; /* Spans 100% full viewport width edge-to-edge */
+    min-height: 140px; /* Specialized slim 1-line framing boundary scale footprint layout */
+    background-color: #090d16; /* Deep obsidian primary backdrop */
+    overflow: hidden;
+    border-top: 1px solid rgba(148, 163, 184, 0.15);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+    box-sizing: border-box;
+    opacity: 0; /* Managed smoothly by Scroll entry observer hooks triggers */
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.headline-banner-card-box-fluid.activated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Layer 1: Production background imagery fluid metrics configuration */
+.headline-card-bg-asset-fluid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1; /* Subtle technical backdrop texture watermark overlay line grids */
+    z-index: 1;
+    pointer-events: none;
+    transition: transform 0.5s ease;
+}
+
+/* Content inner width governance tracker bounds container */
+.headline-card-inner-fluid-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.headline-card-inner-overlay-flex-fluid {
+    position: relative;
+    width: 100%;
+    padding: 40px 0; /* Vertical breathing gap balances within full width bands layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Locks 1-line rows content elements symmetrical along center axes tracking */
+    gap: 32px;
+    z-index: 2; /* Forces layout panels above background texture layer nodes */
+    box-sizing: border-box;
+}
+
+/* --- Left Column Content Alignment System Tracks --- */
+.headline-combo-alignment-row-fluid {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex: 1;
+}
+
+/* Layer 2: Foreground Graphic framing layout configurations mimicking user screenshots asset nodes */
+.headline-foreground-thumbnail-frame-fluid {
+    width: 56px;
+    height: 56px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.headline-card-foreground-asset-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Pure word-by-word reveal typography text strings entries settings from alternating sides */
+.headline-banner-word-track-fluid {
+    font-size: 1.75rem; /* Proportional locked compact medium text scale headline architecture scaling */
+    font-weight: 700;
+    color: #ffffff; /* Crisp high contrast white typography text headers layers */
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 4px;
+}
+
+/* Inline text items tokens wrappers injected programmatically via runtime javascript */
+.headline-split-word-span-fluid {
+    display: inline-block;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation-duration: 0.55s;
+    animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    animation-fill-mode: forwards;
+}
+
+.word-enter-left-slide-fluid { transform: translateX(-30px); animation-name: headlineSlideFromLeftFluid; }
+.word-enter-right-slide-fluid { transform: translateX(30px); animation-name: headlineSlideFromRightFluid; }
+
+@keyframes headlineSlideFromLeftFluid { to { opacity: 1; transform: translateX(0); } }
+@keyframes headlineSlideFromRightFluid { to { opacity: 1; transform: translateX(0); } }
+
+/* --- Right Column Actions: Floating Key CTA Action Trigger Component Profile --- */
+.headline-action-floating-box-fluid {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.btn-headline-banner-floating-fluid {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b45309; /* Warm Executive Amber Corporate Focus Highlight Tones */
+    color: #ffffff !important; /* Forces solid typography rules blocking layout overrides link cascades */
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 4px;
+    border: 1px solid #b45309;
+    white-space: nowrap;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 14px rgba(180, 83, 9, 0.3);
+}
+
+/* Modern continuous vertical float physical micro-interaction lift loops configuration setup style profiles */
+.btn-headline-banner-floating-fluid:hover {
+    background-color: #92400e;
+    border-color: #92400e;
+    transform: translateY(-4px); /* Precision physics spring motion lift execution tracking index */
+    box-shadow: 0 12px 24px rgba(180, 83, 9, 0.45), 0 0 12px rgba(180, 83, 9, 0.25);
+}
+
+.btn-headline-banner-floating-fluid:active {
+    transform: translateY(-1px);
+}
+
+/* --- Interactive Card Boundary Hover Macro Glow Transforms --- */
+.headline-banner-card-box-fluid:hover .headline-card-bg-asset-fluid {
+    transform: scale(1.02); /* Subtle fluid imagery scale zoom track metrics */
+}
+
+.headline-banner-card-box-fluid:hover .headline-foreground-thumbnail-frame-fluid {
+    transform: scale(1.06) rotate(-3deg);
+    border-color: rgba(180, 83, 9, 0.35);
+}
+
+/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- */
+@media (max-width: 992px) {
+    .headline-card-inner-overlay-flex-fluid {
+        flex-direction: column; /* Stacks display fields entirely vertical on tablet viewports to expand tracking bounds */
+        gap: 24px;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .headline-combo-alignment-row-fluid {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .headline-banner-word-track-fluid {
+        justify-content: center;
+        font-size: 1.45rem; /* Proportional scale drop preventing word splits overlaps layout metrics code */
+    }
+
+    .headline-foreground-thumbnail-frame-fluid {
+        display: none; /* Safely hides secondary inline media thumbnail frames on compact touch grids viewport layout frames */
+    }
+
+    .headline-action-floating-box-fluid,
+    .btn-headline-banner-floating-fluid {
+        width: 100%;
+    }
+
+    .btn-headline-banner-floating-fluid {
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Strict execution constraint implementation adapting padding bounds down exactly to 30px metrics rules values */
+    .stackly-headline-banner-fluid-strip {
+        padding: 30px 0;
+    }
+
+    .headline-card-inner-overlay-flex-fluid {
+        padding: 30px 0;
+    }
+
+    .headline-banner-word-track-fluid {
+        font-size: 1.35rem;
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const fluidBannerCard1Line = document.getElementById("ctaBannerCardFluid1Line");
+    const fluidHeadline1Line = document.getElementById("bannerLineHeadlineTargetFluid");
+
+    if ('IntersectionObserver' in window && fluidBannerCard1Line) {
+        
+        // Define observer options thresholds mapping layout position parameters markers
+        const fluidBannerObserverOptions = {
+            root: null, 
+            threshold: 0.15, // Fires logic when 15% of box dimensions cross screen borders tracking views
+            rootMargin: "0px 0px -20px 0px"
+        };
+
+        const onFluidBannerIntersectionDetected = (entriesList, observerRef) => {
+            entriesList.forEach(entryNode => {
+                if (entryNode.isIntersecting) {
+                    // 1. Trigger parent card panel frame base fade-up slide entrance track fluid
+                    entryNode.target.classList.add("activated");
+                    
+                    // 2. Trigger subsequently child word-by-word reveal compilation loops routines fluid
+                    initializeFluid1LineWordSequence();
+                    
+                    // Unobserve element node safely once transition lifecycle completes track paths
+                    observerRef.unobserve(entryNode.target);
+                }
+            });
+        };
+
+        const fluidBannerScrollObserver = new IntersectionObserver(onFluidBannerIntersectionDetected, fluidBannerObserverOptions);
+        fluidBannerScrollObserver.observe(fluidBannerCard1Line);
+
+        // Word tokenizer compilation engine execution routine block fluid 1-line
+        function initializeFluid1LineWordSequence() {
+            if (fluidHeadline1Line) {
+                const rawStringText = fluidHeadline1Line.innerText.trim();
+                const splitWordsMatrix = rawStringText.split(/\s+/);
+                
+                // Wipe clean default tracking shell box container surfaces layer panel 
+                fluidHeadline1Line.innerHTML = "";
+
+                splitWordsMatrix.forEach((wordValue, itemIndex) => {
+                    const wordSpanNode = document.createElement("span");
+                    wordSpanNode.innerText = wordValue;
+                    wordSpanNode.classList.add("headline-split-word-span-fluid");
+
+                    // Direct sequence elements to load entry paths from alternating sides based on odd/even index evaluations
+                    if (itemIndex % 2 === 0) {
+                        wordSpanNode.classList.add("word-enter-left-slide-fluid");
+                    } else {
+                        wordSpanNode.classList.add("word-enter-right-slide-fluid");
+                    }
+
+                    // Adds incremental microsecond intervals delays dynamically to establish the flowing side word reveal
+                    wordSpanNode.style.animationDelay = `${itemIndex * 60}ms`;
+
+                    // Push processed typography block cleanly back into DOM layout path track loop execution tree
+                    fluidHeadline1Line.appendChild(wordSpanNode);
+                });
+            }
+        }
+
+    } else {
+        // Fallback pipeline execution support loops instantly executing displays views if historical legacy engines lack observer mechanisms support
+        if (fluidBannerCard1Line) fluidBannerCard1Line.classList.add("activated");
+    }
+});
+
+</script>
+
+<!-- Isolated Brand-Aligned Corporate Footer Component Section -->
+<footer class="stackly-corporate-footer-fresh">
+    <div class="footer-fluid-bounds-fresh">
+        
+        <!-- Four Column Layout Matrix precisely mirroring user layout blueprint -->
+        <div class="footer-columns-grid-fresh">
+            
+            
+            <div class="footer-brand-column-fresh">
+                <!-- Brand logo anchor configured to trigger the scroll-to-top routine -->
+                
+                    <img src="https://unsplash.com" alt="Stackly Corporate Digital Legal Logo" class="footer-logo-img-fresh">
+                </a>
+                <p class="footer-brand-description-fresh">
+                    Engineering premium macro-balanced regulatory compliance setups and secure decentralized legal frameworks designed to fuel enterprise hardware workspace productivity and legal compute nodes alike.
+                </p>
+                <!-- 5 Vector Social Icons Array Group (Configured for 404 navigation) -->
+                <div class="footer-social-icons-row-fresh">
+                    <a href="404.html" class="footer-social-node-fresh" aria-label="Instagram Platform Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 4 0 100 2.881 1.44 4 0 000-2.881z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-node-fresh" aria-label="Facebook Platform Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-node-fresh" aria-label="X Brand Profile Platform Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-node-fresh" aria-label="LinkedIn Professional Matrix Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-node-fresh" aria-label="Secure Messenger Pipeline Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Explore Fleets Links Pool -->
+            <div class="footer-links-column-fresh">
+                <h3 class="footer-section-heading-fresh">EXPLORE FLEETS</h3>
+                <nav class="footer-links-nav-fresh">
+                    <a href="404.html" class="footer-nav-link-item-fresh">Logistics AGV</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">Kinematic Arms</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">Quadruped Sentinel</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">Bionic Rover Systems</a>
+                </nav>
+            </div>
+
+            <!-- Column 3: Network Support Pool -->
+            <div class="footer-links-column-fresh">
+                <h3 class="footer-section-heading-fresh">NETWORK SUPPORT</h3>
+                <nav class="footer-links-nav-fresh">
+                    <a href="404.html" class="footer-nav-link-item-fresh">Node Telemetry Matrices</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">Fleet Delivery Tracks</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">Help & Diagnostics Center</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">PoPW Verifications</a>
+                </nav>
+            </div>
+
+            <!-- Column 4: Headquarters Geographical Address and Input Form -->
+            <div class="footer-links-column-fresh">
+                <h3 class="footer-section-heading-fresh">HEADQUARTERS</h3>
+                
+                <div class="footer-address-block-row-fresh">
+                    <svg viewBox="0 0 24 24" class="footer-address-marker-icon-fresh" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <p class="footer-address-text-fresh">MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</p>
+                </div>
+
+                <!-- Interactive Newsletter Form Matrix Panel Layer -->
+                <form class="footer-subscription-form-panel-fresh" id="footerSubscribeFormFresh" novalidate>
+                    <div class="footer-input-field-relative-fresh">
+                        <input type="email" id="footerNodeEmailInputFresh" placeholder="Enter node operator email..." class="footer-subscribe-input-field-fresh" required>
+                        <span class="footer-validation-bubble-alert-fresh" id="footerValidationAlertTextFresh">Please fill the subscribe field</span>
+                    </div>
+                    <button type="submit" class="btn-footer-subscribe-action-fresh">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Lower Baseline Symmetrical Copyright and Compliance Layout Strip Rows Links Line -->
+        <div class="footer-baseline-strip-row-fresh">
+            <p class="footer-copyright-text-fresh">&copy; 2026 Stackly Industries. All computational hardware rights reserved.</p>
+            <div class="footer-compliance-links-group-fresh">
+                <a href="404.html" class="footer-compliance-anchor-item-fresh">Privacy Policy</a>
+                <a href="404.html" class="footer-compliance-anchor-item-fresh">Terms of Service</a>
+                <a href="404.html" class="footer-compliance-anchor-item-fresh">Cookie Governance</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<style>
+    /* --- High-End Stackly Corporate Footer Presentation Tokens Configuration Layout --- */
+.stackly-corporate-footer-fresh {
+    width: 100%;
+    background-color: #000000; /* Solid Black Backdrop Canvas Panel Surface Layer Layout */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #f8fafc; 
+    padding-top: 60px;
+    padding-bottom: 30px; 
+    box-sizing: border-box;
+    position: relative;
+    
+    /* CRITICAL FIX: Erases padding, offsets, and margin voids to tightly bind with upper section block panels */
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    display: block;
+    vertical-align: top;
+}
+
+/* Global resetting architecture block overrides adjacent element gaps */
+.stackly-headline-banner-fluid-strip,
+.stackly-cta-banner-strip-fluid,
+.stackly-corporate-footer-fresh {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+
+.footer-fluid-bounds-fresh {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* --- Four Column Structural Master Framework Layout Grid --- */
+.footer-columns-grid-fresh {
+    display: grid;
+    grid-template-columns: 1.35fr 0.85fr 0.9fr 1.15fr;
+    gap: 40px;
+    width: 100%;
+    padding-bottom: 50px; 
+    border-bottom: 1px solid rgba(148, 163, 184, 0.08); /* Clean hairline texture trace dividers boundary */
+    box-sizing: border-box;
+}
+
+/* --- Column 1: Brand Logotype Area Setup Properties --- */
+.footer-brand-column-fresh {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo-link-fresh {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    margin-bottom: 24px;
+}
+
+.footer-logo-link-fresh:hover {
+    transform: scale(0.975);
+}
+
+.footer-logo-img-fresh {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Forces white icon over black backdrop canvas */
+}
+
+.footer-brand-description-fresh {
+    font-size: 0.92rem; 
+    color: #94a3b8; /* Slate gray neutral explanatory content description */
+    line-height: 1.6;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+/* --- Sizing For 5 Vector Social Nodes Set Track Matrix --- */
+.footer-social-icons-row-fresh {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-social-node-fresh {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(148, 163, 184, 0.05);
+    border: 1px solid rgba(148, 163, 184, 0.12); /* Subtle wire ring outer framework tracing border visible in image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #94a3b8;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.footer-svg-icon-fresh {
+    width: 15px; 
+    height: 15px;
+    fill: currentColor;
+}
+
+.footer-social-node-fresh:hover {
+    background-color: #b45309; /* Warm Amber traditional legal accent */
+    border-color: #b45309;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.3);
+}
+
+/* --- Columns 2 & 3: Standard Section Header Layout Framework Navigation Link Columns --- */
+.footer-links-column-fresh {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-section-heading-fresh {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+/* Horizontal Red Sections Accent Track Line Tracer directly mirroring user blueprint layout screenshot rules */
+.footer-section-heading-fresh::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #b45309; 
+    border-radius: 4px;
+}
+
+.footer-links-nav-fresh {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+}
+
+.footer-nav-link-item-fresh {
+    font-size: 0.92rem;
+    color: #94a3b8;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    text-align: left;
+    width: max-content;
+}
+
+.footer-nav-link-item-fresh:hover {
+    color: #b45309; 
+    padding-left: 4px;
+}
+
+/* --- Column 4: Geographical Marker Alignment Elements Context System --- */
+.footer-address-block-row-fresh {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.footer-address-marker-icon-fresh {
+    width: 16px;
+    height: 16px;
+    fill: #b45309; 
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.footer-address-text-fresh {
+    font-size: 0.92rem;
+    color: #94a3b8;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* --- Interactive Newsletter Input Panel Field Systems Architecture --- */
+.footer-subscription-form-panel-fresh {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(148, 163, 184, 0.04);
+    border: 1px solid rgba(148, 163, 184, 0.12); /* Clean horizontal inner border block casing layout */
+    border-radius: 6px;
+    padding: 4px;
+    box-sizing: border-box;
+    position: relative;
+    transition: border-color 0.3s ease;
+}
+
+.footer-subscription-form-panel-fresh:focus-within {
+    border-color: #b45309;
+}
+
+.footer-input-field-relative-fresh {
+    flex: 1;
+    position: relative;
+}
+
+.footer-subscribe-input-field-fresh {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 10px 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #ffffff;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.footer-subscribe-input-field-fresh::placeholder {
+    color: #4b5563; 
+}
+
+/* Dynamic Field Form Validation Prompt Dialog Alert Bubble */
+.footer-validation-bubble-alert-fresh {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 4px;
+    background-color: #ef4444; 
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+    z-index: 100;
+}
+
+.footer-validation-bubble-alert-fresh::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 14px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ef4444 transparent transparent transparent;
+}
+
+.footer-validation-bubble-alert-fresh.display-prompt {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.btn-footer-subscribe-action-fresh {
+    background-color: #ffffff; /* Stark solid white layout fill matching screenshot blueprint */
+    color: #000000 !important; 
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-footer-subscribe-action-fresh:hover {
+    background-color: #b45309;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.3);
+}
+
+/* --- Lower Baseline Copyright and Compliance Matrix Layout Strip Row --- */
+.footer-baseline-strip-row-fresh {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.footer-copyright-text-fresh {
+    font-size: 0.85rem;
+    color: #4b5563; 
+    margin: 0;
+}
+
+.footer-compliance-links-group-fresh {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-compliance-anchor-item-fresh {
+    font-size: 0.85rem;
+    color: #4b5563;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.footer-compliance-anchor-item-fresh:hover {
+    color: #b45309;
+}
+
+/* --- Fully Responsive Hardware Media Breakpoints Matrix Processing --- */
+@media (max-width: 1024px) {
+    .footer-columns-grid-fresh {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    .stackly-corporate-footer-fresh {
+        padding-top: 50px; 
+        padding-bottom: 30px;
+    }
+
+    .footer-columns-grid-fresh {
+        grid-template-columns: 1fr; 
+        gap: 28px;
+        padding-bottom: 36px;
+    }
+
+    .footer-brand-column-fresh { align-items: center; text-align: center; }
+    .footer-brand-description-fresh { text-align: center; }
+    .footer-links-column-fresh { align-items: center; }
+    .footer-section-heading-fresh::after { left: 50%; transform: translateX(-50%); }
+    .footer-nav-link-item-fresh { text-align: center; width: 100%; }
+    .footer-address-block-row-fresh { justify-content: center; }
+    .footer-address-text-fresh { text-align: center; }
+
+    .footer-baseline-strip-row-fresh {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding-top: 24px;
+    }
+
+    .footer-compliance-links-group-fresh {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const footerBackToTopFresh = document.getElementById("footerBackToTopTriggerFresh");
+    const subscribeFormFresh = document.getElementById("footerSubscribeFormFresh");
+    const emailInputFieldFresh = document.getElementById("footerNodeEmailInputFresh");
+    const validationAlertBubbleFresh = document.getElementById("footerValidationAlertTextFresh");
+
+    // 1. BACK TO TOP: Triggers hardware accelerated window smooth scroll transition
+    if (footerBackToTopFresh) {
+        footerBackToTopFresh.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
+
+    // 2. VALIDATION ENGINE: Form Check Conditions before 404 routing updates
+    if (subscribeFormFresh && emailInputFieldFresh && validationAlertBubbleFresh) {
+        
+        emailInputFieldFresh.addEventListener("input", () => {
+            validationAlertBubbleFresh.classList.remove("display-prompt");
+        });
+
+        subscribeFormFresh.addEventListener("submit", (e) => {
+            e.preventDefault();
+            
+            const rawEmailValue = emailInputFieldFresh.value.trim();
+
+            if (!rawEmailValue || !emailInputFieldFresh.checkValidity()) {
+                validationAlertBubbleFresh.classList.add("display-prompt");
+                emailInputFieldFresh.focus();
+            } else {
+                validationAlertBubbleFresh.classList.remove("display-prompt");
+                subscribeFormFresh.reset();
+                window.location.href = "404.html";
+            }
+        });
+    }
+});
+
+</script>
+</body>
+</html>

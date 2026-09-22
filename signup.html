@@ -1,0 +1,597 @@
+
+<!-- High-End Centralized Brand-Aligned Sign Up Portal -->
+<main class="verdicta-signup-viewport">
+    <div class="signup-panel-container">
+        
+        <!-- Top Floating Navigation Back Link Area -->
+        <div class="signup-top-navigation">
+            <a href="login.html" class="btn-signup-back-login" aria-label="Return back to the account authorization login portal panel screen">
+                <svg viewBox="0 0 24 24" class="signup-back-arrow-vector" aria-hidden="true"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+                <span>Back to Log In</span>
+            </a>
+        </div>
+
+        <!-- Form Context Header Titles Matrix Block -->
+        <div class="signup-panel-header">
+            <span class="signup-eyebrow-badge">&mdash; VERDICTA REGISTER &mdash;</span>
+            <h1 class="signup-main-title">Create <em>Account.</em></h1>
+            <p class="signup-subtitle-guidance">Register your profile to open your customized legal case and project registry deck.</p>
+        </div>
+
+        <!-- Main Registration Action Engine Form Grid Node -->
+        <form class="signup-action-form-element" id="verdictaSignupForm" novalidate>
+            
+            <!-- Input 1: Full Name Field (Strictly Bars Numbers) -->
+            <div class="signup-input-group-relative">
+                <label class="signup-static-field-label" for="signupFullNameInput">FULL NAME</label>
+                <input type="text" id="signupFullNameInput" placeholder="Enter your full name..." class="signup-form-input-control" required>
+                <span class="signup-validation-alert-bubble" id="alertNameNode">Please fill the name field</span>
+            </div>
+
+            <!-- Input 2: Email Address Module Box -->
+            <div class="signup-input-group-relative">
+                <label class="signup-static-field-label" for="signupEmailInput">EMAIL ADDRESS</label>
+                <input type="email" id="signupEmailInput" placeholder="you@example.com" class="signup-form-input-control" required>
+                <span class="signup-validation-alert-bubble" id="alertEmailNode">Please fill the email address field</span>
+            </div>
+
+            <!-- Input 3: Mobile Phone Number Field (Strictly Bars Alphabet Letters) -->
+            <div class="signup-input-group-relative">
+                <label class="signup-static-field-label" for="signupPhoneInput">MOBILE NUMBER</label>
+                <input type="tel" id="signupPhoneInput" placeholder="Enter 10-digit mobile number" maxlength="10" class="signup-form-input-control" required>
+                <span class="signup-validation-alert-bubble" id="alertPhoneNode">Please fill the valid mobile number</span>
+            </div>
+
+            <!-- Input 4: Security Password Key Module Box with Eye Text Masking Toggler -->
+            <div class="signup-input-group-relative">
+                <label class="signup-static-field-label" for="signupPasswordInput">PASSWORD</label>
+                <div class="signup-password-wrapper">
+                    <input type="password" id="signupPasswordInput" placeholder="••••••••" class="signup-form-input-control" required>
+                    <button type="button" class="btn-signup-password-toggle-eye" data-target-input="signupPasswordInput" aria-label="Toggle password text visibility parameters masking">
+                        <svg viewBox="0 0 24 24" class="eye-inline-vector-icon"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                    </button>
+                </div>
+                <span class="signup-validation-alert-bubble" id="alertPasswordNode">Please fill the password field</span>
+            </div>
+
+            <!-- Input 5: Confirm Security Password Key Module Box with Eye Text Masking Toggler -->
+            <div class="signup-input-group-relative">
+                <label class="signup-static-field-label" for="signupConfirmPasswordInput">CONFIRM PASSWORD</label>
+                <div class="signup-password-wrapper">
+                    <input type="password" id="signupConfirmPasswordInput" placeholder="••••••••" class="signup-form-input-control" required>
+                    <button type="button" class="btn-signup-password-toggle-eye" data-target-input="signupConfirmPasswordInput" aria-label="Toggle confirm password text visibility parameters masking">
+                        <svg viewBox="0 0 24 24" class="eye-inline-vector-icon"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                    </button>
+                </div>
+                <span class="signup-validation-alert-bubble" id="alertConfirmPasswordNode">Please fill the matching confirm password field</span>
+            </div>
+
+            <!-- Main Sign Up Action Button Trigger (Replicating exact geometric profile shape from image layout) -->
+            <div class="signup-submit-action-row">
+                <button type="submit" class="btn-verdicta-signup-submit">
+                    SIGN UP &mdash;&rarr;
+                </button>
+            </div>
+
+            <!-- Sub-level alternate routing text lines navigation elements links -->
+            <div class="signup-panel-footer-links">
+                <span class="signup-footer-meta-text">Already have an account?</span>
+                <a href="login.html" class="signup-footer-action-link">Log In</a>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Dynamic Success Feedback Dialog Box Notification Center Toast (Fires cleanly on successful submissions) -->
+    <div class="signup-success-dialog-toast" id="successToastNotificationCasing" role="alert" aria-live="assertive" aria-hidden="true">
+        <div class="success-toast-content-split">
+            <div class="success-toast-icon-badge">&#10004;</div>
+            <div class="success-toast-meta-typography">
+                <span class="toast-headline-title">Successfully Signed Up</span>
+                <p class="toast-support-desc">Your legal profile registry has been compiled. Routing back to lock your login details parameters fields...</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<style>
+    /* --- Core Presentation Tokens Framework Configuration Layout --- */
+.verdicta-signup-viewport {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff; /* FIXED: Premium Pure Solid White Section Background Canvas Layer Layout */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 60px 24px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.signup-panel-container {
+    width: 100%;
+    max-width: 480px; /* Constrains input lines fields area cleanly to protect reading widths bounds across layouts */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Floating Navigation Header Back Link Area Layout */
+.signup-top-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 28px;
+}
+
+.btn-signup-back-login {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0; 
+    padding: 8px 18px;
+    border-radius: 100px; /* Symmetrical capsule button shape precisely transcribing image token layout style */
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #090d16;
+    letter-spacing: 0.5px;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 2px 4px rgba(9, 13, 22, 0.02);
+}
+
+.signup-back-arrow-vector {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+}
+
+.btn-signup-back-login:hover {
+    border-color: #b45309; /* Dynamic amber brand tone focus edge matches your style specs */
+    color: #b45309;
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.12);
+    transform: translateX(-2px);
+}
+
+/* Form Headings Context Typography Layout Titles Matrix */
+.signup-panel-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 28px;
+}
+
+.signup-eyebrow-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #b45309; /* Signature warm brand amber focus highlight text string indicator */
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.signup-main-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2.2rem, 5vw, 2.85rem);
+    font-weight: 400; 
+    color: #090d16; /* Deep Obsidian Legal Navy primary title color tone index */
+    line-height: 1.15;
+    margin: 0 0 12px 0;
+    letter-spacing: -0.5px;
+}
+
+.signup-main-title em {
+    font-style: italic;
+    font-weight: 700; /* High contrast emphasis italic token weighting precisely transcribing reference image text */
+}
+
+.signup-subtitle-guidance {
+    font-size: 0.94rem;
+    color: #475569; /* Slate gray neutral informative explanation paragraphs layout styling */
+    line-height: 1.55;
+    margin: 0;
+}
+
+.signup-action-form-element {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+}
+
+.signup-input-group-relative {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative; /* Anchor tracking space enabling absolute alert bubbles alignment coordinates */
+}
+
+.signup-static-field-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #090d16;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+/* --- Input Fields Casing Controls Baseline States Layout Design --- */
+.signup-form-input-control {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1; /* Replicates crisp field wireframe border visible in your uploaded reference image mockup */
+    border-radius: 6px;
+    padding: 14px 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #090d16;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.signup-form-input-control::placeholder {
+    color: #94a3b8; 
+}
+
+/* Active input boundaries illumination on interactive focus matches triggers */
+.signup-form-input-control:focus {
+    border-color: #b45309; /* Illuminates parameters bounds instantly to warm executive legal amber focus indicators */
+    box-shadow: 0 0 0 3px rgba(180, 83, 9, 0.06);
+}
+
+/* Secure Password Wrapper Group Node Area */
+.signup-password-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.signup-password-wrapper .signup-form-input-control {
+    padding-right: 48px; /* Reserves spacing clearance so password layer text strings do not run below visibility toggle eye */
+}
+
+.btn-signup-password-toggle-eye {
+    position: absolute;
+    right: 16px;
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #94a3b8; 
+    outline: none;
+    transition: color 0.25s ease;
+}
+
+.eye-inline-vector-icon {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.btn-signup-password-toggle-eye:hover {
+    color: #b45309; /* Lights masking indicator eye straight to signature amber upon mouse focuses */
+}
+
+/* --- Submission Action Button Profile Component Architecture (Matching image button precisely) --- */
+.signup-submit-action-row {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-verdicta-signup-submit {
+    width: 100%;
+    background-color: #d1c4b7; /* Balanced legal taupe solid fill panel texture matching your screenshot button layout [IMAGE] */
+    color: #090d16 !important; /* Stark charcoal absolute high contrast text fonts */
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    border-radius: 100px; /* Complete continuous round capsule profile button precisely transcribing reference mockup [IMAGE] */
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-sizing: border-box;
+}
+
+/* Hover glow transitions illuminating submit actions triggers straight to signature brand amber color tokens focus */
+.btn-verdicta-signup-submit:hover {
+    background-color: #090d16; 
+    color: #b45309 !important; /* Transforms text indicators text strings forward directly to amber glow indicators */
+    transform: translateY(-3px); /* Modern physics spring vertical lift action execution */
+    box-shadow: 0 10px 22px rgba(180, 83, 9, 0.25);
+}
+
+.btn-verdicta-signup-submit:active {
+    transform: translateY(-1px);
+}
+
+/* Sub-level footer navigation text area alignment clear profiles links */
+.signup-panel-footer-links {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 0.88rem;
+}
+
+.signup-footer-meta-text {
+    color: #64748b;
+}
+
+.signup-footer-action-link {
+    font-weight: 700;
+    color: #090d16;
+    text-decoration: none;
+    margin-left: 6px;
+    transition: color 0.25s ease;
+}
+
+.signup-footer-action-link:hover {
+    color: #b45309;
+}
+
+/* --- HIGH-VISIBILITY REGISTRY FIELD VALIDATION PROMPT ALERT BUBBLES --- */
+.signup-validation-alert-bubble {
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 4px;
+    background-color: #ef4444; /* High visibility alert indicator red structural fill index color */
+    color: #ffffff;
+    font-size: 0.76rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+    z-index: 100;
+}
+
+.signup-validation-alert-bubble::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 14px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ef4444 transparent transparent transparent;
+}
+
+.signup-validation-alert-bubble.display-prompt {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.signup-static-field-label + .signup-form-input-control + .signup-validation-alert-bubble,
+.signup-static-field-label + .signup-password-wrapper + .signup-validation-alert-bubble {
+    bottom: calc(100% - 14px);
+}
+
+/* --- DYNAMIC SUCCESS NOTIFICATION TOAST OVERLAY COMPONENT DIALOG --- */
+.signup-success-dialog-toast {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    background-color: #090d16; /* Clean rich high contrast obsidian backdrop casing layer layout */
+    border: 1px solid rgba(180, 83, 9, 0.3); /* Framed with your executive legal amber index mark */
+    border-radius: 8px;
+    padding: 20px 24px;
+    max-width: 380px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 15px rgba(180, 83, 9, 0.1);
+    z-index: 9999; /* Keeps the success notification sitting cleanly forward over everything */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px) scale(0.95);
+    transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.signup-success-dialog-toast.display-toast {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.success-toast-content-split {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.success-toast-icon-badge {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #b45309; /* Core branding amber badge casing indicator */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    box-shadow: 0 0 10px rgba(180, 83, 9, 0.4);
+}
+
+.success-toast-meta-typography {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.toast-headline-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.toast-support-desc {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin: 0;
+}
+
+/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix --- */
+@media (max-width: 640px) {.verdicta-signup-viewport {padding: 40px 16px; /* Optimized tight mobile margins container padding boundaries */}.signup-success-dialog-toast {top: auto;bottom: 20px;right: 16px;left: 16px; /* Stretches toast notification across baseline center on smartphones view glass screens */max-width: none;}.btn-verdicta-signup-submit {font-size: 0.82rem;padding: 14px 20px;}}
+
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const signupFormTarget = document.getElementById("verdictaSignupForm");
+    
+    // Select input controls target lines matching fields rows loops variables
+    const nameInputNode = document.getElementById("signupFullNameInput");
+    const emailInputNode = document.getElementById("signupEmailInput");
+    const phoneInputNode = document.getElementById("signupPhoneInput");
+    const passwordInputNode = document.getElementById("signupPasswordInput");
+    const confirmPasswordInputNode = document.getElementById("signupConfirmPasswordInput");
+
+    const alertNameBubble = document.getElementById("alertNameNode");
+    const alertEmailBubble = document.getElementById("alertEmailNode");
+    const alertPhoneBubble = document.getElementById("alertPhoneNode");
+    const alertPasswordBubble = document.getElementById("alertPasswordNode");
+    const alertConfirmPasswordBubble = document.getElementById("alertConfirmPasswordNode");
+    
+    const successToastCasing = document.getElementById("successToastNotificationCasing");
+
+    // --- CRUCIAL INPUT ENTRY FILTERS CORE LOGIC (Direct Requirement) ---
+    if (nameInputNode) {
+        // STRICT RULE: Full Name field completely blocks numeric symbols from entry character streams
+        nameInputNode.addEventListener("input", () => {
+            const rawValue = nameInputNode.value;
+            // Sanitizes immediately by stripping out any number patterns indexes dynamically
+            nameInputNode.value = rawValue.replace(/[0-9]/g, "");
+            alertNameBubble.classList.remove("display-prompt");
+        });
+    }
+
+    if (phoneInputNode) {
+        // STRICT RULE: Mobile Number field completely blocks alphabetical letters from entry character streams
+        phoneInputNode.addEventListener("input", () => {
+            const rawValue = phoneInputNode.value;
+            // Sanitizes immediately by stripping out any alphabetical character lines dynamically
+            phoneInputNode.value = rawValue.replace(/[^0-9]/g, "");
+            alertPhoneBubble.classList.remove("display-prompt");
+        });
+    }
+
+    // --- PASSWORD UNMASKING EYE ENGINE TOOL ---
+    const eyeToggleButtons = document.querySelectorAll(".btn-signup-password-toggle-eye");
+    eyeToggleButtons.forEach(btnEye => {
+        btnEye.addEventListener("click", () => {
+            const associatedInputId = btnEye.getAttribute("data-target-input");
+            const targetInputControl = document.getElementById(associatedInputId);
+
+            if (targetInputControl) {
+                const isMaskedState = targetInputControl.getAttribute("type") === "password";
+                if (isMaskedState) {
+                    targetInputControl.setAttribute("type", "text");
+                    btnEye.style.color = "#b45309"; // Pin highlight indication indicators over unmasked text layers
+                } else {
+                    targetInputControl.setAttribute("type", "password");
+                    btnEye.style.color = "#94a3b8"; // Restore neutral grey tokens value markers
+                }
+            }
+        });
+    });
+
+    // --- SECURE LIFECYCLE FORM VALIDATION SUBMISSION ROUTINE ---
+    if (signupFormTarget && emailInputNode && passwordInputNode && confirmPasswordInputNode) {
+        
+        // Clear active validation prompt bubbles upon manual typing input modifications loops adjustments
+        emailInputNode.addEventListener("input", () => alertEmailBubble.classList.remove("display-prompt"));
+        passwordInputNode.addEventListener("input", () => alertPasswordBubble.classList.remove("display-prompt"));
+        confirmPasswordInputNode.addEventListener("input", () => alertConfirmPasswordBubble.classList.remove("display-prompt"));
+
+        signupFormTarget.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const finalStringName = nameInputNode.value.trim();
+            const finalStringEmail = emailInputNode.value.trim();
+            const finalStringPhone = phoneInputNode.value.trim();
+            const finalStringPassword = passwordInputNode.value.trim();
+            const finalStringConfirmPassword = confirmPasswordInputNode.value.trim();
+
+            let registrationPassedFlag = true;
+            let firstInvalidInputAnchor = null;
+
+            // Trigger Bubble Helper
+            const fireAlertBubble = (bubbleNode, inputNode) => {
+                bubbleNode.classList.add("display-prompt");
+                registrationPassedFlag = false;
+                if (!firstInvalidInputAnchor) firstInvalidInputAnchor = inputNode;
+            };
+
+            // Validate full name cell boundary limits
+            if (!finalStringName) {
+                fireAlertBubble(alertNameBubble, nameInputNode);
+            }
+
+            // Validate email address pattern verification checks
+            if (!finalStringEmail || !emailInputNode.checkValidity()) {
+                fireAlertBubble(alertEmailBubble, emailInputNode);
+            }
+
+            // Validate 10-digit mobile lengths parameters bounds
+            if (!finalStringPhone || finalStringPhone.length !== 10) {
+                fireAlertBubble(alertPhoneBubble, phoneInputNode);
+            }
+
+            // Validate security primary password presence
+            if (!finalStringPassword) {
+                fireAlertBubble(alertPasswordBubble, passwordInputNode);
+            }
+
+            // Validate if password text parameters matches match identically across confirm entry cells fields
+            if (!finalStringConfirmPassword || finalStringPassword !== finalStringConfirmPassword) {
+                fireAlertBubble(alertConfirmPasswordBubble, confirmPasswordInputNode);
+            }
+
+            // Evaluate conditional checks to assess if all registry fields have passed checks safely
+            if (!registrationPassedFlag && firstInvalidInputAnchor) {
+                firstInvalidInputAnchor.focus();
+            } else {
+                // Wipe active error indicators from display layout completely
+                const alertsList = document.querySelectorAll(".signup-validation-alert-bubble");
+                alertsList.forEach(bubble => bubble.classList.remove("display-prompt"));
+
+                // Injects the custom 'Successfully Signed Up' message feedback dialog center toast overlay (Direct Requirement)
+                if (successToastCasing) {
+                    successToastCasing.classList.add("display-toast");
+                    successToastCasing.setAttribute("aria-hidden", "false");
+                }
+
+                signupFormTarget.reset();
+
+                // Setup automated temporal scheduler loop routing back safely onto Login interface lines (Direct Requirement)
+                setTimeout(() => {
+                    if (successToastCasing) {
+                        successToastCasing.classList.remove("display-toast");
+                        successToastCasing.setAttribute("aria-hidden", "true");
+                    }
+                    // Absolute structural routing redirection link mapping straight back into log in panel screen
+                    window.location.href = "login.html";
+                }, 3000); // Leaves toast overlay visible for 3 seconds before navigation executes smoothly
+            }
+        });
+    }
+});
+</script>

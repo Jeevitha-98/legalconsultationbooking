@@ -1,0 +1,2859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly | Legal Consultation Client Portal</title>
+    <link rel="stylesheet" href="client-styles.css">
+    <!-- Clean, crisp vector icons library asset -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- Overlay Mask for responsive mobile sidebars -->
+    <div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+    <div id="dashboard-screen" class="dashboard-wrapper">
+        
+        <!-- Header Banner Panel -->
+        <header class="dash-header">
+            <div class="header-left">
+                <!-- Programmatic Pure HTML/CSS Black 3-Line Hamburger Vector Button Toggle -->
+                <button class="hamburger-menu" id="hamburger" onclick="toggleSidebar()" aria-label="Toggle Navigation Menu">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+                <div class="brand-logo" onclick="refreshDashboard()" title="Refresh Dashboard">
+                    <img src="https://unsplash.com" alt="Stackly Legal Logo" class="brand-img">
+                    <span class="brand-text">Stackly<span>Client</span></span>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <!-- SVG Vector Bell Icon with explicit click navigation redirection to 404.html -->
+                <div class="notifications-bell" onclick="navigateToErrorPage()" title="View Notifications">
+                    <svg xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-bell">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                    <span class="badge"></span>
+                </div>
+                
+                <!-- Profile Image Component Node with dynamic backup SVG vector system -->
+                <div class="profile-pill">
+                    <div class="profile-avatar">
+                        <img src="https://unsplash.com" 
+                             alt="Client Profile Photo" 
+                             class="profile-img"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <svg xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="profile-svg-fallback" style="display: none;">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <span class="user-greeting" id="user-display-name">Jeevi</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-container">
+            <!-- Sidebar Navigation Panel with Bounding Vector Icon Boxes -->
+            <aside class="dash-sidebar" id="sidebar">
+                <nav class="sidebar-nav">
+                    <button class="nav-item active" onclick="switchSection('book-consult')">
+                        <i class="fa-solid fa-calendar-plus"></i>
+                        <span>Book Consultation</span>
+                    </button>
+                    <button class="nav-item" onclick="switchSection('my-appointments')">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>My Appointments</span>
+                    </button>
+                    <button class="nav-item" onclick="switchSection('my-cases')">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span>Active Case Status</span>
+                    </button>
+                    <button class="nav-item" onclick="switchSection('invoices')">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                        <span>Invoices & Payments</span>
+                    </button>
+                    <button class="nav-item" onclick="switchSection('support')">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>Help & Support</span>
+                    </button>
+                </nav>
+                
+                <div class="sidebar-footer">
+                    <button class="logout-btn" onclick="navigateToErrorPage()">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </button>
+                </div>
+            </aside>
+
+            <!-- Main Content Presentation Viewports -->
+            <main class="content-viewport">
+             <!-- Enhanced Live Intake Consultation Scheduling Section -->
+<section id="section-book-consult" class="dash-section">
+    <div class="section-header-meta">
+        <h2>Schedule a New Legal Consultation</h2>
+        <p class="section-desc">Select your legal matter domain, pick an available calendar window, and reserve immediate dedicated counsel from our verified attorney network network.</p>
+    </div>
+
+    <div class="booking-grid-layout">
+        
+        <!-- Left Column: Interactive Selection Workspace Steps -->
+        <div class="booking-flow-panel">
+            
+            <!-- Step 1: Legal Domain Specialty Chips Grid -->
+            <div class="form-step-card">
+                <div class="step-badge">Step 1</div>
+                <h3>Select Area of Law Practice Specialty</h3>
+                <p class="step-subtext">Choose the primary operational legal classification matching your advisory inquiry needs.</p>
+                
+                <div class="specialty-chips-grid">
+                    <div class="specialty-chip active" onclick="selectSpecialty(this, 'Corporate & Commercial')">
+                        <i class="fa-solid fa-building"></i>
+                        <span>Corporate Law</span>
+                    </div>
+                    <div class="specialty-chip" onclick="selectSpecialty(this, 'Intellectual Property')">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <span>Patent & IP Rights</span>
+                    </div>
+                    <div class="specialty-chip" onclick="selectSpecialty(this, 'Civil Litigation')">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <span>Civil Litigation</span>
+                    </div>
+                    <div class="specialty-chip" onclick="selectSpecialty(this, 'Employment & Labor')">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Employment Law</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Date and Calendar Slot Selections Container Matrix -->
+            <div class="form-step-card">
+                <div class="step-badge">Step 2</div>
+                <h3>Secure Consultation Calendar Window</h3>
+                <p class="step-subtext">Select an open legal advisory operations date frame slot for your virtual meeting intake appointment.</p>
+                
+                <div class="date-picker-row">
+                    <div class="input-date-wrapper">
+                        <label for="consult-date"><i class="fa-regular fa-calendar"></i> Target Date Selection</label>
+                        <input type="date" id="consult-date" class="custom-date-input" value="2026-09-23" onchange="updateBookingSummary()">
+                    </div>
+                </div>
+
+                <h4 class="time-slots-header">Available Intake Time Slots (IST)</h4>
+                <div class="time-slots-grid">
+                    <div class="time-slot active" onclick="selectTimeSlot(this, '09:00 AM - 10:00 AM')">09:00 AM</div>
+                    <div class="time-slot" onclick="selectTimeSlot(this, '11:30 AM - 12:30 PM')">11:30 AM</div>
+                    <div class="time-slot" onclick="selectTimeSlot(this, '02:00 PM - 03:00 PM')">02:00 PM</div>
+                    <div class="time-slot" onclick="selectTimeSlot(this, '04:30 PM - 05:30 PM')">04:30 PM</div>
+                </div>
+            </div>
+
+            <!-- Step 3: Matter Description Intake Area Textbox -->
+            <div class="form-step-card">
+                <div class="step-badge">Step 3</div>
+                <h3>Case Matter Background Summary</h3>
+                <p class="step-subtext">Briefly outline your structural legal dilemma inquiry context details to prepare counsel.</p>
+                <textarea id="case-notes" class="custom-textarea" rows="4" placeholder="Describe critical deadlines, involved parties, or specific advice targets here..." oninput="updateBookingSummary()"></textarea>
+            </div>
+
+        </div>
+
+        <!-- Right Column: Sticky Retainer Receipt & Confirmation Summary Block -->
+        <div class="booking-sidebar-panel">
+            <div class="summary-sticky-card">
+                <h3>Consultation Summary</h3>
+                <div class="summary-divider"></div>
+                
+                <div class="summary-item">
+                    <span class="summary-label">Practice Focus:</span>
+                    <span class="summary-value" id="summary-specialty">Corporate & Commercial</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Selected Date:</span>
+                    <span class="summary-value" id="summary-date">2026-09-23</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-label">Intake Window:</span>
+                    <span class="summary-value" id="summary-time">09:00 AM - 10:00 AM</span>
+                </div>
+                
+                <div class="summary-divider"></div>
+                
+                <div class="fee-breakdown-row">
+                    <div>
+                        <h4>Initial Intake Session Fee</h4>
+                        <p class="fee-subtext">Includes 1-hr privileged advice</p>
+                    </div>
+                    <div class="fee-amount">$250.00</div>
+                </div>
+
+                <button class="primary-booking-btn" onclick="executeConsultationBooking()">
+                    <i class="fa-solid fa-lock-keyhole"></i> Confirm & Book Consultation
+                </button>
+                <p class="compliance-footer-text"><i class="fa-solid fa-shield-halved"></i> Attends strictly via standard attorney-client privilege non-disclosure agreements safeguards rules.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<style>
+    /* Consultation Booking Advanced Component Workspace Styles */
+.booking-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px; /* Locked explicit desktop sidebar configuration grid track width */
+    gap: 32px;
+    align-items: start;
+    margin-top: 12px;
+}
+
+.booking-flow-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Step Wrapper Cards Blueprint Properties */
+.form-step-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+}
+
+.step-badge {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background-color: var(--brand-primary);
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.form-step-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    color: var(--text-main);
+}
+
+.step-subtext {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+/* Practice Focus Specialty Selector Chips Setup Grid */
+.specialty-chips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+}
+
+.specialty-chip {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px;
+    background: var(--bg-light);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.specialty-chip i {
+    font-size: 20px;
+    color: var(--text-muted);
+    width: 24px;
+    text-align: center;
+}
+
+.specialty-chip span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.specialty-chip:hover {
+    background: #FFFBEB;
+    border-color: rgba(180, 83, 9, 0.2);
+}
+
+.specialty-chip.active {
+    background: #FFFBEB;
+    border-color: var(--brand-accent);
+}
+
+.specialty-chip.active i {
+    color: var(--brand-accent);
+}
+
+/* Date and Time Pickers Precision Inputs Formatting */
+.date-picker-row {
+    margin-bottom: 24px;
+}
+
+.input-date-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-date-wrapper label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.custom-date-input {
+    width: 100%;
+    max-width: 260px;
+    padding: 12px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    color: var(--text-main);
+    background: var(--bg-light);
+}
+
+.custom-date-input:focus {
+    border-color: var(--brand-accent);
+}
+
+.time-slots-header {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--text-muted);
+}
+
+.time-slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 12px;
+}
+
+.time-slot {
+    text-align: center;
+    padding: 12px 8px;
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.time-slot:hover {
+    background: #FFFBEB;
+    border-color: var(--brand-accent);
+}
+
+.time-slot.active {
+    background: var(--brand-accent);
+    color: #FFFFFF;
+    border-color: var(--brand-accent);
+}
+
+/* Matter Background Content textareas styling rules */
+.custom-textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    resize: vertical;
+    background: var(--bg-light);
+}
+
+.custom-textarea:focus {
+    border-color: var(--brand-accent);
+}
+
+/* Right Column Summary Sidebar Floating Stack */
+.booking-sidebar-panel {
+    position: sticky;
+    top: calc(var(--header-height) + 24px);
+    z-index: 10;
+}
+
+.summary-sticky-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.03);
+}
+
+.summary-sticky-card h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.summary-divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 16px 0;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+    font-size: 13px;
+    gap: 8px;
+}
+
+.summary-label {
+    color: var(--text-muted);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.summary-value {
+    color: var(--text-main);
+    font-weight: 700;
+    text-align: right;
+    word-break: break-word;
+}
+
+.fee-breakdown-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+    margin-bottom: 24px;
+}
+
+.fee-breakdown-row h4 {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.fee-subtext {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.fee-amount {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--brand-accent);
+}
+
+.primary-booking-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--brand-accent);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.primary-booking-btn:hover {
+    background-color: #92400E; /* Darker amber shade block */
+}
+
+.primary-booking-btn:active {
+    transform: scale(0.98);
+}
+
+.compliance-footer-text {
+    font-size: 11px;
+    color: var(--text-muted);
+    line-height: 1.4;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.compliance-footer-text i {
+    color: #10B981;
+}
+
+/* Absolute Media Breakpoints Overrides Query Matrix Layouts */
+@media (max-width: 1200px) {
+    .booking-grid-layout {
+        grid-template-columns: 1fr; /* Drop tracking track bounds to 1 column layout on narrow monitor footprints */
+        gap: 24px;
+    }
+    
+    .booking-sidebar-panel {
+        position: static; /* Flatten sticky alignment behaviors so summary card falls into linear row beneath flows */
+    }
+}
+
+@media (max-width: 600px) {
+    .specialty-chips-grid {
+        grid-template-columns: 1fr; /* Single column specialty select cards layout on narrow smartphone sizes */
+    }
+    
+    .custom-date-input {
+        max-width: 100%; /* Date field inherits natural matching device widths */
+    }
+}
+
+</style>
+
+<script>
+    // State configurations variables initialization elements tracking details
+let chosenSpecialtyText = "Corporate & Commercial";
+let chosenTimeWindowText = "09:00 AM - 10:00 AM";
+
+/**
+ * Handles target selections logic updates on specialty focus items array grid layout
+ */
+function selectSpecialty(chipElement, specialtyName) {
+    // Strips active styles layer from neighboring specialty element arrays
+    chipElement.parentNode.querySelectorAll('.specialty-chip').forEach(chip => {
+        chip.classList.remove('active');
+    });
+    
+    // Toggle targeted highlight tag states active programmatically
+    chipElement.classList.add('active');
+    
+    // Update structural data store tracking parameters
+    chosenSpecialtyText = specialtyName;
+    updateBookingSummary();
+}
+
+/**
+ * Handles target click selections adjustments on time slots grids
+ */
+function selectTimeSlot(slotElement, timeWindowString) {
+    slotElement.parentNode.querySelectorAll('.time-slot').forEach(slot => {
+        slot.classList.remove('active');
+    });
+    
+    slotElement.classList.add('active');
+    chosenTimeWindowText = timeWindowString;
+    updateBookingSummary();
+}
+
+/**
+ * Flushes active data selections values programmatically into the sticky preview receipt panel widget
+ */
+function updateBookingSummary() {
+    const dateInput = document.getElementById('consult-date').value;
+    
+    // Bind current framework parameters properties into target summary nodes layout fields
+    document.getElementById('summary-specialty').innerText = chosenSpecialtyText;
+    document.getElementById('summary-time').innerText = chosenTimeWindowText;
+    
+    if (dateInput) {
+        document.getElementById('summary-date').innerText = dateInput;
+    } else {
+        document.getElementById('summary-date').innerText = "Not selected";
+    }
+}
+
+/**
+ * Submits finalized intake details logs to booking validation pipelines
+ */
+function executeConsultationBooking() {
+    const finalDate = document.getElementById('consult-date').value;
+    const notesInput = document.getElementById('case-notes').value;
+    
+    if (!finalDate) {
+        alert("Please assign a valid calendar date frame target block.");
+        return;
+    }
+    
+    // Fire user transaction status validation alert box confirm modules popup
+    alert(`Success!\n\nYour ${chosenSpecialtyText} Initial Consultation intake slot is reserved for ${finalDate} during the ${chosenTimeWindowText} interval.\n\nPrivileged confirmation credentials have been logged under your account reference folder.`);
+    
+    // Clear out intake area textbox fields
+    document.getElementById('case-notes').value = "";
+    updateBookingSummary();
+}
+
+</script>
+              <!-- Enhanced My Appointments Section Workspace -->
+<section id="section-my-appointments" class="dash-section hidden">
+    <div class="section-header-meta">
+        <h2>Your Booked Appointments</h2>
+        <p class="section-desc">Review your scheduled strategy briefings, track corporate retainer availability blocks, or access your secure virtual digital consultation room links.</p>
+    </div>
+
+    <!-- Active Structural Filtering Status Headers -->
+    <div class="appointments-filter-bar">
+        <button class="status-tab active" onclick="filterAppointments(this, 'upcoming')">Upcoming Hearings & Consultations (2)</button>
+        <button class="status-tab" onclick="filterAppointments(this, 'past')">Archived Case History (1)</button>
+    </div>
+
+    <!-- Appointments Stack View Grid -->
+    <div class="appointments-list-container" id="appointments-wrapper">
+        
+        <!-- Live Consultation Item Card 1 -->
+        <div class="appointment-card upcoming">
+            <div class="card-left-meta">
+                <div class="date-badge-box">
+                    <span class="month-txt">SEP</span>
+                    <span class="day-txt">25</span>
+                    <span class="year-txt">2026</span>
+                </div>
+                <div class="case-domain-badge specialty-corporate">
+                    <i class="fa-solid fa-building"></i> Corporate Law
+                </div>
+            </div>
+
+            <div class="card-center-details">
+                <span class="urgency-tag high-priority"><i class="fa-solid fa-circle-exclamation"></i> Contract Review</span>
+                <h3>Initial Structural Shareholder Intake</h3>
+                <p class="time-meta-string"><i class="fa-regular fa-clock"></i> 09:00 AM - 10:00 AM (IST) | Virtual Room Strategy Session</p>
+                
+                <div class="assigned-lawyer-row">
+                    <img src="https://unsplash.com" alt="Attorney Portrait" class="lawyer-avatar">
+                    <div>
+                        <h4 class="lawyer-name">Senior Counsel Alexander Vance, Esq.</h4>
+                        <p class="lawyer-meta-title">Corporate Securities Specialist | Managing Partner</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-right-actions">
+                <!-- Action triggers video conference portal fallback which routes directly into 404 navigation layout -->
+                <button class="launch-video-btn" onclick="navigateToErrorPage()">
+                    <i class="fa-solid fa-video"></i> Join Virtual Consultation Room
+                </button>
+                <button class="secondary-action-btn" onclick="triggerRescheduleDialog('Appt #L-9982')">
+                    <i class="fa-regular fa-calendar-minus"></i> Reschedule Slot
+                </button>
+            </div>
+        </div>
+
+        <!-- Live Consultation Item Card 2 -->
+        <div class="appointment-card upcoming">
+            <div class="card-left-meta">
+                <div class="date-badge-box">
+                    <span class="month-txt">OCT</span>
+                    <span class="day-txt">02</span>
+                    <span class="year-txt">2026</span>
+                </div>
+                <div class="case-domain-badge specialty-ip">
+                    <i class="fa-solid fa-lightbulb"></i> Patent & IP Rights
+                </div>
+            </div>
+
+            <div class="card-center-details">
+                <span class="urgency-tag normal-priority"><i class="fa-solid fa-circle-info"></i> Advisory Briefing</span>
+                <h3>Trademark Infringement Compliance Discovery</h3>
+                <p class="time-meta-string"><i class="fa-regular fa-clock"></i> 02:00 PM - 03:00 PM (IST) | Preliminary Audit Assessment</p>
+                
+                <div class="assigned-lawyer-row">
+                    <img src="https://unsplash.com" alt="Attorney Portrait" class="lawyer-avatar">
+                    <div>
+                        <h4 class="lawyer-name">Elena Rostova, Esq.</h4>
+                        <p class="lawyer-meta-title">Senior Intellectual Property Advisory Counsel</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-right-actions">
+                <button class="launch-video-btn waiting-state" onclick="navigateToErrorPage()">
+                    <i class="fa-solid fa-lock"></i> Room Locks Until Oct 02
+                </button>
+                <button class="secondary-action-btn" onclick="triggerRescheduleDialog('Appt #L-4410')">
+                    <i class="fa-regular fa-calendar-minus"></i> Reschedule Slot
+                </button>
+            </div>
+        </div>
+
+        <!-- Archived Historical Consultation Item Card 3 (Hidden until 'Past' button clicked) -->
+        <div class="appointment-card past hidden">
+            <div class="card-left-meta">
+                <div class="date-badge-box historical">
+                    <span class="month-txt">AUG</span>
+                    <span class="day-txt">14</span>
+                    <span class="year-txt">2026</span>
+                </div>
+                <div class="case-domain-badge specialty-civil">
+                    <i class="fa-solid fa-scale-balanced"></i> Civil Litigation
+                </div>
+            </div>
+
+            <div class="card-center-details">
+                <span class="urgency-tag completed-priority"><i class="fa-solid fa-circle-check"></i> Session Closed</span>
+                <h3>Civil Settlement Agreement Review</h3>
+                <p class="time-meta-string"><i class="fa-regular fa-clock"></i> Terminated Aug 14, 2026 | 1 hour billable hour exhausted</p>
+                
+                <div class="assigned-lawyer-row">
+                    <img src="https://unsplash.com" alt="Attorney Portrait" class="lawyer-avatar">
+                    <div>
+                        <h4 class="lawyer-name">Senior Counsel Alexander Vance, Esq.</h4>
+                        <p class="lawyer-meta-title">Corporate Securities Specialist | Managing Partner</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-right-actions">
+                <button class="secondary-action-btn complete-receipt-btn" onclick="navigateToErrorPage()">
+                    <i class="fa-solid fa-file-pdf"></i> Download Privileged Brief Notes
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* My Appointments Interactive Layout Cards */
+.appointments-filter-bar {
+    display: flex;
+    gap: 12px;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 28px;
+    padding-bottom: 2px;
+}
+
+.status-tab {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: -3px;
+}
+
+.status-tab:hover {
+    color: var(--brand-accent);
+}
+
+.status-tab.active {
+    color: var(--brand-accent);
+    border-bottom-color: var(--brand-accent);
+}
+
+.appointments-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Appointment Matrix List Item Blueprint Grid */
+.appointment-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.appointment-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.03);
+}
+
+/* Column Area 1: Left Meta Indicators */
+.card-left-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    min-width: 130px;
+    flex-shrink: 0;
+}
+
+.date-badge-box {
+    background-color: var(--brand-primary);
+    color: #FFFFFF;
+    width: 76px;
+    padding: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(15, 23, 42, 0.08);
+}
+
+.date-badge-box.historical {
+    background-color: var(--text-muted);
+}
+
+.month-txt {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    opacity: 0.8;
+}
+
+.day-txt {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 2px 0;
+}
+
+.year-txt {
+    font-size: 10px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.case-domain-badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.specialty-corporate { background-color: #EFF6FF; color: #1E40AF; }
+.specialty-ip { background-color: #FEF3C7; color: #92400E; }
+.specialty-civil { background-color: #F1F5F9; color: #475569; }
+
+/* Column Area 2: Core Details Content Textblock */
+.card-center-details {
+    flex: 1;
+}
+
+.urgency-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.high-priority { color: #EF4444; }
+.normal-priority { color: #B45309; }
+.completed-priority { color: #10B981; }
+
+.card-center-details h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.time-meta-string {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.assigned-lawyer-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.lawyer-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.5px solid var(--border-color);
+}
+
+.lawyer-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.lawyer-meta-title {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+/* Column Area 3: Right Actions Control Hub Elements */
+.card-right-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 240px;
+    flex-shrink: 0;
+}
+
+.launch-video-btn {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: var(--brand-accent);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 10px rgba(180, 83, 9, 0.15);
+    transition: all 0.2s ease;
+}
+
+.launch-video-btn:hover {
+    background-color: #92400E;
+    box-shadow: 0 6px 14px rgba(180, 83, 9, 0.25);
+}
+
+.launch-video-btn.waiting-state {
+    background-color: #E2E8F0;
+    color: #94A3B8;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+.secondary-action-btn {
+    width: 100%;
+    padding: 10px 16px;
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.secondary-action-btn:hover {
+    background-color: var(--bg-light);
+    border-color: var(--text-muted);
+}
+
+.complete-receipt-btn {
+    border-color: var(--brand-accent);
+    color: var(--brand-accent);
+}
+
+.complete-receipt-btn:hover {
+    background-color: #FFFBEB;
+    border-color: var(--brand-accent);
+}
+
+/* Absolute Media Rule Query Overrides for Mobile Presentation Frameworks */
+@media (max-width: 992px) {
+    .appointment-card {
+        flex-direction: column; /* Flattens columns down to linear flowing lists layout items stack */
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card-left-meta {
+        flex-direction: row; /* Horizontal alignment for badges instead of vertical stack on tiny devices */
+        justify-content: space-between;
+        width: 100%;
+        min-width: auto;
+    }
+
+    .date-badge-box {
+        flex-direction: row; /* Converts date cube element into flat micro ribbon row line profile */
+        width: auto;
+        padding: 4px 12px;
+        gap: 6px;
+    }
+
+    .day-txt {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .month-txt, .year-txt {
+        font-size: 11px;
+    }
+
+    .card-right-actions {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+</style>
+<script>
+    /**
+ * Programmatic State Filtration Engine
+ * Switches visibility between active consultations and historical closed ledger item sets
+ */
+function filterAppointments(tabButtonElement, filterCriteriaKeyword) {
+    // Strip parent navigation highlighting from tab headers
+    tabButtonElement.parentNode.querySelectorAll('.status-tab').forEach(button => {
+        button.classList.remove('active');
+    });
+    
+    // Assign active state accent border to current selection target
+    tabButtonElement.classList.add('active');
+    
+    // Select all child appointment card blocks inside wrapper matrix
+    const totalAppointmentCards = document.querySelectorAll('.appointment-card');
+    
+    totalAppointmentCards.forEach(card => {
+        if (filterCriteriaKeyword === 'all') {
+            card.classList.remove('hidden');
+        } else if (card.classList.contains(filterCriteriaKeyword)) {
+            // Uncover matched target block profiles
+            card.classList.remove('hidden');
+        } else {
+            // Securely layer hide unmatched options programmatically
+            card.classList.add('hidden');
+        }
+    });
+}
+
+/**
+ * Handles appointment reschedule actions
+ * Triggers safe modal notification pipelines to prompt user context options logs
+ */
+function triggerRescheduleDialog(appointmentReferenceId) {
+    alert(`Portal Notification:\n\nTo securely alter your slot configuration framework for [${appointmentReferenceId}], please dispatch an amendment brief request to your assigned attorney's support team using the Help & Support page or contact the firm's trust desk clerk directly.`);
+}
+
+</script>
+
+               <!-- Enhanced Active Case Status Workspace -->
+<section id="section-my-cases" class="dash-section hidden">
+    <div class="section-header-meta">
+        <h2>Your Ongoing Legal Matters</h2>
+        <p class="section-desc">Track real-time litigation milestones, verify court filing calendar steps, and view secure evidentiary documents shared by your legal defense firm team.</p>
+    </div>
+
+    <!-- Active Matter Profile Overview Card -->
+    <div class="case-profile-card">
+        <div class="case-meta-header">
+            <div>
+                <span class="case-id-tag">MATTER #2026-CV-9941</span>
+                <h3>Vance Tech Corp vs. Apex Global Solutions</h3>
+                <p class="court-jurisdiction"><i class="fa-solid fa-gavel"></i> U.S. District Court | Southern District | Civil Action Docket No. 441-2A</p>
+            </div>
+            <div class="case-status-indicator active-litigation">
+                <span class="pulse-dot"></span> In Discovery Phase
+            </div>
+        </div>
+
+        <!-- Visual Multi-Stage Progress Pipeline Tracker -->
+        <div class="pipeline-progress-container">
+            <div class="pipeline-step completed">
+                <div class="step-icon-circle"><i class="fa-solid fa-file-signature"></i></div>
+                <span class="step-label">1. Pleadings Filed</span>
+            </div>
+            <div class="pipeline-line completed"></div>
+            
+            <div class="pipeline-step active">
+                <div class="step-icon-circle"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <span class="step-label">2. Discovery Phase</span>
+            </div>
+            <div class="pipeline-line"></div>
+            
+            <div class="pipeline-step">
+                <div class="step-icon-circle"><i class="fa-solid fa-comments-dollar"></i></div>
+                <span class="step-label">3. Pre-Trial / Settlement</span>
+            </div>
+            <div class="pipeline-line"></div>
+            
+            <div class="pipeline-step">
+                <div class="step-icon-circle"><i class="fa-solid fa-scale-balanced"></i></div>
+                <span class="step-label">4. Trial Calendar</span>
+            </div>
+        </div>
+
+        <!-- Key Matter Details Sub-Grid -->
+        <div class="case-details-subgrid">
+            <div class="detail-card">
+                <h5>Primary Trial Counsel</h5>
+                <p>Alexander Vance, Esq.</p>
+            </div>
+            <div class="detail-card">
+                <h5>Opposing Party Counsel</h5>
+                <p>Harrington & Associates LLP</p>
+            </div>
+            <div class="detail-card">
+                <h5>Next Court Filing Milestone</h5>
+                <p>Motion to Compel — Oct 14, 2026</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privileged Document Repository File Section Container -->
+    <div class="document-repository-section">
+        <div class="repository-header">
+            <h3><i class="fa-solid fa-folder-closed"></i> Privileged Document Repository</h3>
+            <button class="upload-trigger-btn" onclick="triggerSimulatedUpload()">
+                <i class="fa-solid fa-cloud-arrow-up"></i> Upload Evidence PDF
+            </button>
+        </div>
+        
+        <!-- Hidden file input node for simulated action triggers -->
+        <input type="file" id="secure-hidden-file-input" style="display: none;" onchange="handleSimulatedFileSelection(this)">
+
+        <div class="document-files-table-wrapper">
+            <div class="repo-table-header-row">
+                <div class="col-name">File Attachment Name</div>
+                <div class="col-date">Uploaded Date</div>
+                <div class="col-type">Security Classification</div>
+                <div class="col-action">Action</div>
+            </div>
+            
+            <!-- Document Row 1 -->
+            <div class="repo-table-data-row">
+                <div class="col-name">
+                    <i class="fa-solid fa-file-pdf pdf-color"></i> 
+                    <div>
+                        <strong>Executed_Shareholder_Agreement_Stamped.pdf</strong>
+                        <span class="file-size-meta">4.2 MB | Verified Exhibit A</span>
+                    </div>
+                </div>
+                <div class="col-date">Sep 04, 2026</div>
+                <div class="col-type"><span class="class-tag atty-client">Attorney-Client Privilege</span></div>
+                <div class="col-action">
+                    <button class="row-download-btn" onclick="navigateToErrorPage()" title="Download File"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+
+            <!-- Document Row 2 -->
+            <div class="repo-table-data-row">
+                <div class="col-name">
+                    <i class="fa-solid fa-file-word word-color"></i> 
+                    <div>
+                        <strong>Draft_Amended_Answer_and_Counterclaims.docx</strong>
+                        <span class="file-size-meta">840 KB | Review Copy</span>
+                    </div>
+                </div>
+                <div class="col-date">Sep 18, 2026</div>
+                <div class="col-type"><span class="class-tag work-product">Work Product Confidential</span></div>
+                <div class="col-action">
+                    <button class="row-download-btn" onclick="navigateToErrorPage()" title="Download File"><i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Active Case Management Workspace Design Archetypes */
+.case-profile-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+}
+
+.case-meta-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.case-id-tag {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--brand-accent);
+    letter-spacing: 0.05em;
+    background-color: #FFFBEB;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.case-meta-header h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    color: var(--text-main);
+}
+
+.court-jurisdiction {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.case-status-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+
+.active-litigation {
+    background-color: #EFF6FF;
+    color: #1E40AF;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #2563EB;
+    border-radius: 50%;
+    animation: simplePulse 2s infinite ease-in-out;
+}
+
+@keyframes simplePulse {
+    0% { transform: scale(0.9); opacity: 0.6; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.6; }
+}
+
+/* 4-Stage Visual Milestones Pipeline Flow */
+.pipeline-progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    position: relative;
+    padding: 0 10px;
+}
+
+.pipeline-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+}
+
+.step-icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--bg-light);
+    border: 2px solid var(--border-color);
+    color: var(--text-muted);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.step-label {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+/* Status Layer Alterations Across Pipeline Steps */
+.pipeline-step.completed .step-icon-circle {
+    background-color: #10B981;
+    border-color: #10B981;
+    color: #FFFFFF;
+}
+
+.pipeline-step.completed .step-label {
+    color: #10B981;
+}
+
+.pipeline-step.active .step-icon-circle {
+    background-color: var(--brand-accent);
+    border-color: var(--brand-accent);
+    color: #FFFFFF;
+    box-shadow: 0 0 0 4px #FEF3C7;
+}
+
+.pipeline-step.active .step-label {
+    color: var(--brand-accent);
+}
+
+.pipeline-line {
+    flex: 1;
+    height: 3px;
+    background-color: var(--border-color);
+    margin: 0 12px;
+    margin-top: -24px; /* Pulls connectors up to intersect icon loops center paths */
+    z-index: 1;
+}
+
+.pipeline-line.completed {
+    background-color: #10B981;
+}
+
+/* Metadata Sub-Grid Elements */
+.case-details-subgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 24px;
+}
+
+.detail-card h5 {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+}
+
+.detail-card p {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+/* Document Filing Registry Module Layout */
+.document-repository-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.repository-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 16px;
+}
+
+.repository-header h3 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.upload-trigger-btn {
+    padding: 10px 18px;
+    background-color: var(--brand-primary);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.upload-trigger-btn:hover {
+    background-color: var(--brand-accent);
+}
+
+/* Custom Table Layout Rows Configuration */
+.document-files-table-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.repo-table-header-row, .repo-table-data-row {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    gap: 16px;
+}
+
+.repo-table-header-row {
+    background-color: var(--bg-light);
+    border-bottom: 1px solid var(--border-color);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-muted);
+}
+
+.repo-table-data-row {
+    border-bottom: 1px solid var(--border-color);
+    font-size: 14px;
+    background-color: #FFFFFF;
+}
+
+.repo-table-data-row:last-child {
+    border-bottom: none;
+}
+
+/* Field Grid Columns Tracking Dimensions allocations desktop */
+.col-name { flex: 2; display: flex; align-items: center; gap: 14px; }
+.col-date { width: 140px; color: var(--text-muted); font-weight: 500; }
+.col-type { width: 220px; }
+.col-action { width: 60px; text-align: right; }
+
+.file-size-meta {
+    display: block;
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+.pdf-color { color: #EF4444; font-size: 22px; }
+.word-color { color: #2563EB; font-size: 22px; }
+
+/* Custom Badge Security Classifications Tag Shields */
+.class-tag {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.atty-client { background-color: #FEE2E2; color: #991B1B; }
+.work-product { background-color: #F8FAFC; border: 1px solid var(--border-color); color: #334155; }
+
+.row-download-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.row-download-btn:hover {
+    background-color: #FFFBEB;
+    color: var(--brand-accent);
+    border-color: var(--brand-accent);
+}
+
+/* Absolute Media Rule Query Overrides for Mobile Presentation Frameworks */
+@media (max-width: 992px) {
+    .case-meta-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    /* Converts multi-step pipeline timeline blocks into stacked vertical layout arrays on tablet and mobile viewports */
+    .pipeline-progress-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 28px;
+        padding-left: 20px;
+    }
+
+    .pipeline-progress-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 41px;
+        width: 3px;
+        background-color: var(--border-color);
+        z-index: 1;
+    }
+
+    .pipeline-step {
+        flex-direction: row;
+        gap: 16px;
+        text-align: left;
+    }
+
+    .step-label {
+        margin-top: 0;
+    }
+
+    .pipeline-line {
+        display: none; /* Strip programmatic spacer connector loops from drawing overhead */
+    }
+
+    /* Convert Document Repo grid lists structure down to cards logic profiles */
+    .repo-table-header-row {
+        display: none; /* Hide tabular column fields headers text completely */
+    }
+
+    .repo-table-data-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 20px;
+    }
+
+    .col-date, .col-type, .col-action {
+        width: 100%;
+        text-align: left;
+        padding-left: 36px; /* Offsets labels tracking neatly under document naming fields boundaries */
+    }
+
+    .row-download-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .row-download-btn::after {
+        content: 'Download Privileged Document';
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
+
+</style>
+<script>
+    /**
+ * Unlocks the file selection subsystem overlay manually via hidden nodes links triggers
+ */
+function triggerSimulatedUpload() {
+    const hiddenFileInputNode = document.getElementById('secure-hidden-file-input');
+    if (hiddenFileInputNode) {
+        hiddenFileInputNode.click();
+    }
+}
+
+/**
+ * Validates simulated file drop metrics and notifies clients securely
+ */
+function handleSimulatedFileSelection(inputElementReference) {
+    const targetedFileAsset = inputElementReference.files[0];
+    
+    if (targetedFileAsset) {
+        // Safe check block confirmation popup mock workflow alert templates
+        alert(`Security Validation Registry:\n\n"${targetedFileAsset.name}" has been routed into your firm's document pipeline safely.\n\nOur legal clerk team will review this evidence artifact and cross-verify file contents against court filing guidelines before updating your docket index log.`);
+        
+        // Reset element parameters to clear system buffers
+        inputElementReference.value = "";
+    }
+}
+
+</script>
+
+               <!-- Enhanced Retainers & Billing Invoices Workspace -->
+<section id="section-invoices" class="dash-section hidden">
+    <div class="section-header-meta">
+        <h2>Invoices & Retainer Statements</h2>
+        <p class="section-desc">Monitor your trust account balances, review legal hourly fee statements, and allocate escrow replenishment funds safely.</p>
+    </div>
+
+    <!-- Tier 1: Trust Metric Status Dashboard Row Cards -->
+    <div class="financial-metrics-strip">
+        <div class="metric-block-card accent-trust">
+            <div class="metric-icon-box"><i class="fa-solid fa-vault"></i></div>
+            <div>
+                <h5>Escrow Retainer Balance</h5>
+                <h3>$3,450.00</h3>
+                <p class="metric-meta-desc">Secured funds active in trust ledger</p>
+            </div>
+        </div>
+        
+        <div class="metric-block-card accent-due">
+            <div class="metric-icon-box"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+            <div>
+                <h5>Outstanding Unbilled Fees</h5>
+                <h3>$480.00</h3>
+                <p class="metric-meta-desc">6.4 hours accrued (Alexander Vance)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tier 2: Payment Execution & Billing Statements Sub-Grid -->
+    <div class="billing-workspace-grid">
+        
+        <!-- Left Sub-Column: Statement Invoices Registry List Table -->
+        <div class="billing-ledger-panel">
+            <h4 class="subpanel-title"><i class="fa-solid fa-receipt"></i> Statement Settlement History</h4>
+            <div class="billing-ledger-list">
+                
+                <!-- Invoice Row Item 1 -->
+                <div class="ledger-item-card status-paid">
+                    <div class="item-primary-meta">
+                        <div class="bill-type-icon"><i class="fa-solid fa-file-lines"></i></div>
+                        <div>
+                            <strong>INV #STK-2026-089</strong>
+                            <span class="ledger-meta-sub">Pre-Trial Drafting & Pleading Filings</span>
+                        </div>
+                    </div>
+                    <div class="item-secondary-meta">
+                        <div class="ledger-date-txt">Sep 15, 2026</div>
+                        <div class="ledger-price-amt">$1,250.00</div>
+                        <span class="invoice-badge pill-paid">Settled from Trust</span>
+                    </div>
+                </div>
+
+                <!-- Invoice Row Item 2 -->
+                <div class="ledger-item-card status-pending">
+                    <div class="item-primary-meta">
+                        <div class="bill-type-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+                        <div>
+                            <strong>INV #STK-2026-074</strong>
+                            <span class="ledger-meta-sub">Initial Intake Consultation Fee</span>
+                        </div>
+                    </div>
+                    <div class="item-secondary-meta">
+                        <div class="ledger-date-txt">Aug 24, 2026</div>
+                        <div class="ledger-price-amt">$250.00</div>
+                        <span class="invoice-badge pill-pending">Payment Due</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Right Sub-Column: Secure Escrow Retainer Top-Up Form Portal -->
+        <div class="escrow-portal-panel">
+            <div class="secure-form-card">
+                <h4 class="subpanel-title"><i class="fa-solid fa-shield-halved"></i> Trust Escrow Replenishment</h4>
+                <p class="form-instruction-txt">Replenish your balance to sustain your active legal defense workflow pipeline seamlessly.</p>
+                
+                <form id="escrow-payment-form" onsubmit="executeSimulatedTrustDeposit(event)">
+                    <div class="form-input-group">
+                        <label for="escrow-amount">Replenishment Amount ($)</label>
+                        <div class="currency-input-wrapper">
+                            <span class="currency-symbol">$</span>
+                            <input type="number" id="escrow-amount" class="form-text-input" placeholder="e.g., 1000" min="100" required>
+                        </div>
+                    </div>
+
+                    <div class="form-input-group">
+                        <label for="card-num-mock">Credit Card Reference Number</label>
+                        <div class="input-icon-wrapper">
+                            <i class="fa-solid fa-credit-card input-prefix-icon"></i>
+                            <input type="text" id="card-num-mock" class="form-text-input prefix-spaced" placeholder="•••• •••• •••• 4410" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row-dual">
+                        <div class="form-input-group">
+                            <label for="card-expiry-mock">Expiry</label>
+                            <input type="text" id="card-expiry-mock" class="form-text-input" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-input-group">
+                            <label for="card-cvv-mock">CVV</label>
+                            <input type="password" id="card-cvv-mock" class="form-text-input" placeholder="•••" maxlength="4" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="execute-payment-btn">
+                        <i class="fa-solid fa-lock"></i> Authorize Secure Deposit
+                    </button>
+                </form>
+
+                <div class="trust-compliance-seal">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <span>Funds are maintained under absolute structural IOLTA trust compliance rules safeguards.</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* Financial Trust Ledger System Dashboard Styles */
+.financial-metrics-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.metric-block-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+}
+
+.metric-icon-box {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.accent-trust .metric-icon-box { background-color: #ECFDF5; color: #10B981; }
+.accent-due .metric-icon-box { background-color: #FFF7ED; color: #F97316; }
+
+.metric-block-card h5 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.metric-block-card h3 {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--text-main);
+}
+
+.metric-meta-desc {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+/* Base Multi-Column Workspace Framework Layout */
+.billing-workspace-grid {
+    display: grid;
+    grid-template-columns: 1fr 360px; /* Locked explicit layout balance width for checkout widgets */
+    gap: 32px;
+    align-items: start;
+}
+
+.subpanel-title {
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--text-main);
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.subpanel-title i {
+    color: var(--brand-accent);
+}
+
+/* Left Sub-Column: Billing Ledger Item Lists */
+.billing-ledger-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.ledger-item-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.ledger-item-card:hover {
+    background-color: var(--bg-light);
+}
+
+.item-primary-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.bill-type-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-light);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: var(--text-muted);
+}
+
+.item-primary-meta strong {
+    font-size: 14px;
+    color: var(--text-main);
+    display: block;
+}
+
+.ledger-meta-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.item-secondary-meta {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    text-align: right;
+}
+
+.ledger-date-txt {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.ledger-price-amt {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--text-main);
+    min-width: 80px;
+}
+
+/* Structural Payment Badges Tag Shields */
+.invoice-badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.pill-paid { background-color: #D1FAE5; color: #065F46; }
+.pill-pending { background-color: #FEE2E2; color: #991B1B; }
+
+/* Right Sub-Column: Secure Payment Input Controls Panel */
+.secure-form-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01);
+}
+
+.form-instruction-txt {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
+
+.form-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.form-input-group label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.form-text-input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+}
+
+.form-text-input:focus {
+    border-color: var(--brand-accent);
+    background-color: #FFFFFF;
+}
+
+/* Custom Compound Prefix Icons Wrappers Formatting */
+.currency-input-wrapper, .input-icon-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.currency-symbol {
+    position: absolute;
+    left: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-muted);
+}
+
+.currency-input-wrapper .form-text-input {
+    padding-left: 28px;
+}
+
+.input-prefix-icon {
+    position: absolute;
+    left: 14px;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.prefix-spaced {
+    padding-left: 38px;
+}
+
+.form-row-dual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.execute-payment-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--brand-accent);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.execute-payment-btn:hover {
+    background-color: #92400E;
+}
+
+.trust-compliance-seal {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 18px;
+    font-size: 11px;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+.trust-compliance-seal i {
+    color: #10B981;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+/* Absolute Media Rule Query Overrides for Mobile Presentation Frameworks */
+@media (max-width: 1100px) {
+    .billing-workspace-grid {
+        grid-template-columns: 1fr; /* Stack panels vertically on tablet boundaries */
+        gap: 32px;
+    }
+}
+
+@media (max-width: 680px) {
+    .ledger-item-card {
+        flex-direction: column; /* Flatten invoice items to rows lists stack */
+        align-items: flex-start;
+        gap: 14px;
+        padding: 16px;
+    }
+
+    .item-secondary-meta {
+        width: 100%;
+        justify-content: space-between;
+        text-align: left;
+        padding-left: 56px; /* Offsets alignments neatly under parent tags boundaries */
+    }
+    
+    .ledger-price-amt {
+        min-width: auto;
+    }
+}
+
+</style>
+
+<script>
+    /**
+ * Processes a simulated secure escrow deposit transaction pipeline
+ */
+function executeSimulatedTrustDeposit(paymentEventInstance) {
+    paymentEventInstance.preventDefault();
+    
+    const depositAmountValue = document.getElementById('escrow-amount').value;
+    const cardNumberValue = document.getElementById('card-num-mock').value;
+    
+    if (!depositAmountValue || depositAmountValue < 100) {
+        alert("Minimum replenishment value threshold is \$100.00.");
+        return;
+    }
+
+    // Mask string logging parameters securely
+    const trailingDigits = cardNumberValue.slice(-4) || "4410";
+
+    // Trigger clear system processing validation modal overlay alert configurations
+    alert(`Trust Transaction Authorization:\n\nSuccess! An amount of $${parseFloat(depositAmountValue).toFixed(2)} has been allocated via card entry ending in ****${trailingDigits}.\n\nEscrow funds will register instantly within your client profile ledger balance parameters.`);
+    
+    // Flush transaction input values clean post transaction loop execution
+    document.getElementById('escrow-payment-form').reset();
+}
+
+</script>
+
+              <!-- Enhanced Client Assistance Center Workspace -->
+<section id="section-support" class="dash-section hidden">
+    <div class="section-header-meta">
+        <h2>Client Assistance Center</h2>
+        <p class="section-desc">Submit high-priority operational requests directly to your assigned attorney's designated paralegal team or explore secure self-service legal tech troubleshooting materials.</p>
+    </div>
+
+    <div class="support-workspace-grid">
+        
+        <!-- Left Sub-Column: Secure Paralegal Intake Request Ticket Form -->
+        <div class="support-form-panel">
+            <div class="support-intake-card">
+                <h4><i class="fa-solid fa-paper-plane"></i> Submit Support Request</h4>
+                <p class="panel-instruction-text">Have questions regarding docket deadlines, unbilled invoice items, or missing case files? Open a secure firm tracking ticket below.</p>
+                
+                <form id="firm-support-ticket-form" onsubmit="submitClientSupportTicket(event)">
+                    <div class="support-input-group">
+                        <label for="support-urgency">Priority Urgency Level</label>
+                        <select id="support-urgency" class="support-select-input" required>
+                            <option value="Standard / General Enquiry">Standard / General Enquiry</option>
+                            <option value="Urgent — Upcoming Court Deadline">Urgent — Upcoming Court Deadline</option>
+                            <option value="Billing / Trust Escrow Discrepancy">Billing / Trust Escrow Discrepancy</option>
+                        </select>
+                    </div>
+
+                    <div class="support-input-group">
+                        <label for="support-subject">Inquiry Subject Header</label>
+                        <input type="text" id="support-subject" class="support-text-input" placeholder="e.g., Request for extension copy or case file breakdown" required>
+                    </div>
+
+                    <div class="support-input-group">
+                        <label for="support-message">Detailed Narrative Request</label>
+                        <textarea id="support-message" class="support-textarea-input" rows="5" placeholder="Provide background parameters, relevant exhibit file names, or invoice numbers to accelerate processing..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-ticket-btn">
+                        <i class="fa-solid fa-shield-halved"></i> Dispatch Secure Request
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Right Sub-Column: FAQ Accordion & Quick Troubleshooting Guides Stack -->
+        <div class="support-resources-panel">
+            
+            <!-- Interactive FAQ Component Accordion Card Stack -->
+            <h4 class="resource-panel-title"><i class="fa-solid fa-circle-question"></i> Frequent Client Queries</h4>
+            <div class="faq-accordion-stack">
+                
+                <div class="faq-item-wrapper" onclick="toggleAccordionItem(this)">
+                    <div class="faq-trigger-header">
+                        <span>How are hourly billable parameters verified?</span>
+                        <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                    </div>
+                    <div class="faq-content-body">
+                        <p>All time spent on your matter is logged in 1/10th of an hour increments (6-minute blocks) by counsel. These notes are audited against your physical retainer contract prior to monthly statement updates.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item-wrapper" onclick="toggleAccordionItem(this)">
+                    <div class="faq-trigger-header">
+                        <span>Is evidence data uploaded here fully protected?</span>
+                        <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                    </div>
+                    <div class="faq-content-body">
+                        <p>Yes. Every asset dropped into the <strong>Privileged Document Repository</strong> uses end-to-end multi-layer masking protocols governed strictly by statutory attorney-client privilege data shield constraints rules.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item-wrapper" onclick="toggleAccordionItem(this)">
+                    <div class="faq-trigger-header">
+                        <span>What is the response turn-around timing?</span>
+                        <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                    </div>
+                    <div class="faq-content-body">
+                        <p>High-priority court timeline briefs trigger responses within 2 to 4 business hours. General structural account evaluations are processed by paralegals within 24 business hours maximum.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Troubleshooting Resource Anchor Guide Links Card -->
+            <div class="troubleshooting-links-card">
+                <h4><i class="fa-solid fa-laptop-code"></i> Troubleshooting Library</h4>
+                <p class="resource-card-subtext">Quick documentation blueprints to resolve portal file formatting issues immediately.</p>
+                
+                <div class="resource-links-grid">
+                    <a href="javascript:void(0)" class="resource-anchor-row" onclick="navigateToErrorPage()">
+                        <i class="fa-solid fa-file-pdf pdf-accent-color"></i>
+                        <div>
+                            <strong>PDF Digital Signature Requirements</strong>
+                            <span>Learn how to sign court-ready affidavits natively.</span>
+                        </div>
+                    </a>
+                    
+                    <a href="javascript:void(0)" class="resource-anchor-row" onclick="navigateToErrorPage()">
+                        <i class="fa-solid fa-triangle-exclamation warning-accent-color"></i>
+                        <div>
+                            <strong>Filing Error Code Resolve Directory</strong>
+                            <span>Fix browser file drop timeout anomalies instantly.</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* Client Assistance Center Master Grid Workspace Component Styles */
+.support-workspace-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px; /* Explicit structural layout column allocation balance */
+    gap: 32px;
+    align-items: start;
+}
+
+/* Left Column Panel Forms Properties */
+.support-intake-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+}
+
+.support-intake-card h4 {
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--text-main);
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.support-intake-card h4 i {
+    color: var(--brand-accent);
+}
+
+.panel-instruction-text {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.support-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+.support-input-group label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.support-select-input, .support-text-input, .support-textarea-input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    font-family: inherit;
+}
+
+.support-select-input:focus, .support-text-input:focus, .support-textarea-input:focus {
+    border-color: var(--brand-accent);
+    background-color: #FFFFFF;
+}
+
+.support-textarea-input {
+    resize: vertical;
+}
+
+.submit-ticket-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--brand-accent);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.submit-ticket-btn:hover {
+    background-color: #92400E;
+}
+
+/* Right Column Resources Panel Elements */
+.resource-panel-title {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.resource-panel-title i {
+    color: var(--brand-accent);
+}
+
+.faq-accordion-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.faq-item-wrapper {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.faq-item-wrapper:hover {
+    border-color: var(--brand-accent);
+}
+
+.faq-trigger-header {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-main);
+    user-select: none;
+}
+
+.accordion-arrow {
+    font-size: 12px;
+    color: var(--text-muted);
+    transition: transform 0.2s ease-in-out;
+}
+
+.faq-content-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--bg-light);
+}
+
+.faq-content-body p {
+    padding: 16px 20px;
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Accordion Active Interactive Class Modifiers via Script Engine toggle hooks */
+.faq-item-wrapper.active .accordion-arrow {
+    transform: rotate(180deg);
+    color: var(--brand-accent);
+}
+
+.faq-item-wrapper.active .faq-content-body {
+    max-height: 180px; /* Safety tracking ceiling height expands smoothly */
+}
+
+/* Troubleshooting Reference Links Block */
+.troubleshooting-links-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.troubleshooting-links-card h4 {
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.troubleshooting-links-card h4 i {
+    color: var(--brand-primary);
+}
+
+.resource-card-subtext {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 18px;
+}
+
+.resource-links-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.resource-anchor-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: var(--bg-light);
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.resource-anchor-row:hover {
+    background-color: #FFFBEB;
+    border-color: rgba(180, 83, 9, 0.15);
+}
+
+.resource-anchor-row i {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.pdf-accent-color { color: #EF4444; }
+.warning-accent-color { color: #F59E0B; }
+
+.resource-anchor-row strong {
+    display: block;
+    font-size: 13px;
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.resource-anchor-row span {
+    display: block;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 2px;
+    line-height: 1.3;
+}
+
+/* Absolute Media Rule Query Overrides for Mobile Presentation Frameworks */
+@media (max-width: 1100px) {
+    .support-workspace-grid {
+        grid-template-columns: 1fr; /* Drop tracking track layout limits down to 1 vertical stack column block */
+        gap: 32px;
+    }
+}
+
+</style>
+
+<script>
+    /**
+ * Toggles the expanded status criteria values on the FAQ accordion item rows array cleanly
+ */
+function toggleAccordionItem(accordionElementReference) {
+    const isCurrentlyActive = accordionElementReference.classList.contains('active');
+    
+    // Programmatically collapse neighboring item states open indices 
+    accordionElementReference.parentNode.querySelectorAll('.faq-item-wrapper').forEach(item => {
+        item.classList.remove('active');
+    });
+    
+    // If targeted box row was closed, switch its active state toggled visible layer parameters
+    if (!isCurrentlyActive) {
+        accordionElementReference.classList.add('active');
+    }
+}
+
+/**
+ * Handles simulated client assistance firm ticket dispatches pipelines
+ */
+function submitClientSupportTicket(formSubmitEventInstance) {
+    formSubmitEventInstance.preventDefault();
+    
+    const selectedUrgencyValue = document.getElementById('support-urgency').value;
+    const inputtedSubjectValue = document.getElementById('support-subject').value;
+    
+    // Fire transaction status verification popup confirmations 
+    alert(`Firm Assistance Dispatch Registry:\n\nSuccess! Your high-security tracking ticket has been securely routed into your assigned attorney's support workflow matrix.\n\n[Classification]: ${selectedUrgencyValue}\n[Subject]: ${inputtedSubjectValue}\n\nOur structural legal assistant team will follow up via your secure portal profile repository channel.`);
+    
+    // Flush form layout values clean post-execution process loop parameters
+    document.getElementById('firm-support-ticket-form').reset();
+}
+
+</script>
+            </main>
+        </div>
+    </div>
+
+    <style>
+        /* Core Custom Root Variables - Executive Client Premium Theme Architecture */
+:root {
+    --brand-primary: #0F172A; /* Midnight Slate Dark Core */
+    --brand-accent: #b45309;  /* Warm Legal Amber/Gold Tone Accent */
+    --bg-light: #F8FAFC;
+    --bg-card: #FFFFFF;
+    --text-main: #0F172A;
+    --text-muted: #64748B;
+    --border-color: #E2E8F0;
+    --sidebar-width: 260px;
+    --header-height: 70px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Master Platform Grid Layout */
+.dashboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* App Header Panel Layout */
+.dash-header {
+    height: var(--header-height);
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Desktop Hidden Hamburger Rules */
+.hamburger-menu {
+    display: none; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hamburger-bar {
+    width: 100%;
+    height: 2.5px;
+    background-color: #000000; /* Pure black metric definition */
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+    flex-shrink: 0; /* Protects logo wrapping artifacts */
+}
+
+.brand-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.brand-text {
+    font-size: 20px;
+    font-weight: 800;
+    color: #0F172A;
+    white-space: nowrap;
+}
+
+.brand-text span {
+    color: var(--brand-accent);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Notifications SVG Wrapper Anchor */
+.notifications-bell {
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.notifications-bell:hover {
+    background-color: #F1F5F9;
+}
+
+.vector-bell {
+    width: 22px;
+    height: 22px;
+    color: var(--text-muted);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.notifications-bell:hover .vector-bell {
+    color: var(--brand-accent);
+    transform: rotate(15deg);
+}
+
+.notifications-bell .badge {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #EF4444;
+    border: 1.5px solid var(--bg-card);
+    border-radius: 50%;
+}
+
+/* Profile Image Pill Formats */
+.profile-pill {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+
+.profile-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F5F9;
+    border: 2px solid var(--border-color);
+    transition: border-color 0.2s ease;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-svg-fallback {
+    width: 20px;
+    height: 20px;
+    color: var(--text-muted);
+}
+
+.user-greeting {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Layout Framework Core Body Panels */
+.main-container {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - var(--header-height));
+    overflow: hidden;
+}
+
+.dash-sidebar {
+    width: var(--sidebar-width);
+    background: var(--bg-card);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 90;
+}
+
+.sidebar-nav {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    border-radius: 8px;
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.nav-item i {
+    font-size: 18px;
+    width: 24px;
+    text-align: center;
+}
+
+.nav-item:hover, .nav-item.active {
+    background: #FFFBEB;
+    color: var(--brand-accent);
+}
+
+.sidebar-footer {
+    padding: 24px 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+.logout-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    color: #EF4444;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.logout-btn i {
+    font-size: 18px;
+    width: 24px;
+    text-align: center;
+}
+
+.logout-btn:hover {
+    background: #FEF2F2;
+}
+
+.content-viewport {
+    flex: 1;
+    overflow-y: auto;
+    padding: 32px;
+}
+
+.dash-section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.section-desc {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.placeholder-card {
+    background: var(--bg-card);
+    border: 2px dashed var(--border-color);
+    border-radius: 12px;
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.placeholder-card i {
+    font-size: 48px;
+    color: #CBD5E1;
+    margin-bottom: 16px;
+}
+
+/* Translucent dim-mask background layout layer */
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 23, 42, 0.4);
+    z-index: 85;
+    backdrop-filter: blur(2px);
+}
+
+/* Absolute Media Rule Query Systems Matrix for Responsive UI Checks */
+@media (max-width: 992px) {
+    .dash-header {
+        padding: 0 16px;
+    }
+
+    .header-left {
+        gap: 12px;
+    }
+
+    /* SOLID BLOCK DEFINITION: Clear 3-Line Solid Black Hamburger Trigger visibility configuration */
+    .hamburger-menu {
+        display: flex !important;
+        z-index: 100;
+    }
+
+    .dash-sidebar {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        bottom: 0;
+        height: 90%;
+        transform: translateX(-100%);
+        box-shadow: 5px 0 25px rgba(0,0,0,0.15);
+    }
+
+    .dash-sidebar.open {
+        transform: translateX(0);
+    }
+
+    .sidebar-overlay.open {
+        display: block;
+    }
+    
+    .content-viewport {
+        padding: 24px 16px;
+    }
+
+    /* Minimize username string greeting display footprint safely to insulate tiny screens */
+    .user-greeting {
+        display: none;
+    }
+}
+
+    </style>
+
+    <script>
+        let activeSectionId = 'book-consult';
+
+function refreshDashboard() {
+    const brandElement = document.querySelector('.brand-logo');
+    brandElement.style.opacity = '0.4';
+    setTimeout(() => {
+        brandElement.style.opacity = '1';
+        switchSection('book-consult');
+    }, 250);
+}
+
+function switchSection(sectionId) {
+    document.querySelectorAll('.dash-section').forEach(section => {
+        section.classList.add('hidden');
+    });
+    
+    const targetSection = document.getElementById(`section-${sectionId}`);
+    if (targetSection) {
+        targetSection.classList.remove('hidden');
+    }
+    
+    document.querySelectorAll('.nav-item').forEach(button => {
+        button.classList.remove('active');
+    });
+    
+    const activeItem = Array.from(document.querySelectorAll('.nav-item')).find(btn => 
+        btn.getAttribute('onclick').includes(`'${sectionId}'`)
+    );
+    if (activeItem) {
+        activeItem.classList.add('active');
+    }
+    
+    // Auto collapse slideouts and overlay states after routing transitions complete
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    if (sidebar && sidebar.classList.contains('open')) {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('open');
+    }
+}
+
+function toggleSidebar() {
+    const sidebarElement = document.getElementById('sidebar');
+    const overlayElement = document.getElementById('sidebar-overlay');
+    if (sidebarElement) {
+        sidebarElement.classList.toggle('open');
+        overlayElement.classList.toggle('open');
+    }
+}
+
+function navigateToErrorPage() {
+    window.location.href = "404.html";
+}
+
+    </script>
+</body>
+</html>

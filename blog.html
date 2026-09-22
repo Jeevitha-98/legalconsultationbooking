@@ -1,0 +1,3332 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly | Premium Legal Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Premium Professional Typography -->
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Responsive Preloading Component Layout Layer -->
+    <div id="stackly-preloader" class="preloader-overlay">
+        <div class="preloader-content">
+            
+            <!-- Fluid Scalable Vector Graphic (Justice Scales Framework) -->
+            <div class="vector-logo-container">
+                <svg xmlns="http://w3.org" viewBox="0 0 100 100" class="legal-vector-svg">
+                    <!-- Base Pillar Foundation -->
+                    <path d="M35 85 H65 V88 H35 Z" fill="#b45309" />
+                    <path d="M40 80 H60 V85 H40 Z" fill="#ffffff" opacity="0.1" />
+                    <path d="M48 40 H52 V80 H48 Z" fill="#ffffff" />
+                    <!-- Balance Structural Beam -->
+                    <path d="M20 40 Q50 35 80 40 L80 43 Q50 38 20 43 Z" fill="#ffffff" />
+                    <!-- Left Scale Dish -->
+                    <line x1="20" y1="42" x2="12" y2="60" stroke="#b45309" stroke-width="1.2" />
+                    <line x1="20" y1="42" x2="28" y2="60" stroke="#b45309" stroke-width="1.2" />
+                    <path d="M10 60 Q20 68 30 60 Z" fill="#ffffff" />
+                    <!-- Right Scale Dish -->
+                    <line x1="80" y1="42" x2="72" y2="60" stroke="#b45309" stroke-width="1.2" />
+                    <line x1="80" y1="42" x2="88" y2="60" stroke="#b45309" stroke-width="1.2" />
+                    <path d="M70 60 Q80 68 90 60 Z" fill="#ffffff" />
+                </svg>
+            </div>
+            
+            <!-- Fluid Brand Typography Block -->
+            <h1 class="brand-title">Stackly<span>.</span></h1>
+            <p class="brand-tagline">Securing Your Digital Legal Framework</p>
+            
+            <!-- Progress Tracker Asset -->
+            <div class="loader-track">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Next section placeholder: The top social bar will go right inside here later -->
+    <div id="main-platform-content" class="content-hidden"></div>
+
+  
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.getElementById("stackly-preloader");
+    const loaderBar = document.getElementById("loaderBar");
+    const mainPlatformContent = document.getElementById("main-platform-content");
+
+    const loadingDuration = 2000; // Enforces exactly 2 seconds loading sequence
+    const updateInterval = 20;    // Loop ticks updates refresh interval index (ms)
+    let executionElapsedTime = 0;
+
+    // Smoothly animate progress bar track metrics loading fill
+    const progressTimer = setInterval(() => {
+        executionElapsedTime += updateInterval;
+        const targetPercentage = Math.min((executionElapsedTime / loadingDuration) * 100, 100);
+        
+        loaderBar.style.width = `${targetPercentage}%`;
+
+        // Clear tracking cycle when threshold time barrier hits 2 seconds limit
+        if (executionElapsedTime >= loadingDuration) {
+            clearInterval(progressTimer);
+            terminatePreloaderLifecycle();
+        }
+    }, updateInterval);
+
+    function terminatePreloaderLifecycle() {
+        // Fade out layout preloader surface component layer screen completely
+        preloader.classList.add("preloader-fade-out");
+        
+        // Expose underlying landing framework container safely
+        if(mainPlatformContent) {
+            mainPlatformContent.classList.remove("content-hidden");
+            mainPlatformContent.classList.add("content-visible");
+        }
+        
+        // Re-enable document frame layout scrolling mechanics safely
+        document.body.style.overflow = "visible";
+        document.body.style.height = "auto";
+    }
+});
+
+    </script>
+
+    <!-- Isolated Top Utility Strip Section -->
+<div class="stackly-top-utility-strip">
+    <div class="utility-strip-bounds">
+        
+        <!-- Staggered Entry Vector Social Array (Configured with 404 links) -->
+        <div class="utility-social-links-group">
+            <a href="404.html" class="utility-social-node item-stagger-fade" style="--stagger-index: 1;" aria-label="Stackly LinkedIn Platform profile Link">
+                <svg viewBox="0 0 24 24" class="utility-vector-asset">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            
+            <a href="404.html" class="utility-social-node item-stagger-fade" style="--stagger-index: 2;" aria-label="Stackly YouTube Corporate Platform channel Link">
+                <svg viewBox="0 0 24 24" class="utility-vector-asset">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+            </a>
+            
+            <a href="404.html" class="utility-social-node item-stagger-fade" style="--stagger-index: 3;" aria-label="Stackly Facebook Profile corporate Link">
+                <svg viewBox="0 0 24 24" class="utility-vector-asset">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+            </a>
+            
+            <a href="404.html" class="utility-social-node item-stagger-fade" style="--stagger-index: 4;" aria-label="Stackly X Corporate Microblog platform account Link">
+                <svg viewBox="0 0 24 24" class="utility-vector-asset">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Sequential Intake Infrastructure Contact Number -->
+        <div class="utility-contact-block item-stagger-fade" style="--stagger-index: 5;">
+            <span class="utility-contact-tag">Intake Support Framework:</span>
+            <a href="tel:9292426868" class="utility-contact-phone">929-242-6868</a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Fixed Sticky Navigation Architecture Header -->
+<header class="stackly-primary-header">
+    <div class="header-fluid-bounds">
+        
+        
+        <a href="javascript:window.location.reload()" class="header-logo-anchor" aria-label="Stackly Platform Home, Refresh Workspace Layout">
+            <img src="https://unsplash.com" alt="Stackly Corporate Digital Legal Logo" class="header-logo-img">
+        </a>
+
+        <!-- Desktop Mode Center-Aligned Navigation Options -->
+        <nav class="header-desktop-menu" role="navigation">
+            <a href="index.html" class="header-nav-link">Home</a>
+            <a href="sttorney.html" class="header-nav-link">Our Attorneys</a>
+            <a href="practice.html" class="header-nav-link">Practice Areas</a>
+            <a href="blogs.html" class="header-nav-link">Blogs</a>
+            <a href="contact.html" class="header-nav-link">Contact Us</a>
+        </nav>
+
+        <!-- Right-Aligned Desktop Access Control Point -->
+        <div class="header-desktop-action">
+            <a href="login.html" class="header-portal-btn">Secure Portal Access</a>
+        </div>
+
+        <!-- Mobile Layout Hamburger Overlay Menu Activation Toggle Trigger Switch -->
+        <button class="header-hamburger-trigger" id="headerMenuTrigger" aria-label="Toggle Navigation Adaptive Screen Drawer Content View">
+            <span class="trigger-beam"></span>
+            <span class="trigger-beam"></span>
+            <span class="trigger-beam"></span>
+        </button>
+
+    </div>
+</header>
+
+<!-- Responsive Mobile Navigation Layer Drawer Dropdown Panel Menu Surface Area Layout Overlay Context -->
+<div class="header-mobile-drawer" id="headerMobileDrawer">
+    <nav class="header-mobile-menu">
+        <a href="index.html" class="header-drawer-link">Home</a>
+        <a href="attorney.html" class="header-drawer-link">Our Attorneys</a>
+        <a href="practice.html" class="header-drawer-link">Practice Areas</a>
+        <a href="blogs.html" class="header-drawer-link">Blogs</a>
+        <a href="contact.html" class="header-drawer-link">Contact Us</a>
+        <div class="header-drawer-action-wrapper">
+            <a href="login.html" class="header-portal-btn drawer-btn-block">Secure Portal Access</a>
+        </div>
+    </nav>
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const headerMenuTrigger = document.getElementById("headerMenuTrigger");
+    const headerMobileDrawer = document.getElementById("headerMobileDrawer");
+    const mobileDrawerLinks = document.querySelectorAll(".header-drawer-link");
+
+    if (headerMenuTrigger && headerMobileDrawer) {
+        // Intercept action controls taps metrics inputs variables execution loops
+        headerMenuTrigger.addEventListener("click", () => {
+            const isDrawerOpenStateActive = headerMobileDrawer.classList.toggle("active-view");
+            headerMenuTrigger.classList.toggle("triggered");
+
+            // Avoid structural double-layer track viewport scrolling conflicts while mobile overlay is expanded
+            if (isDrawerOpenStateActive) {
+                document.body.style.overflow = "hidden";
+            } else {
+                document.body.style.overflow = "";
+            }
+        });
+
+        // Automatically slide panel up collapse states if target navigation selections complete execution pathing
+        mobileDrawerLinks.forEach(linkItem => {
+            linkItem.addEventListener("click", () => {
+                headerMobileDrawer.classList.remove("active-view");
+                headerMenuTrigger.classList.remove("triggered");
+                document.body.style.overflow = "";
+            });
+        });
+    }
+});
+
+</script>
+
+<!-- High-End Legal Tech Blog Page Hero Section -->
+<section class="stackly-blog-hero-fixed-canvas">
+    <div class="blog-fixed-hero-bounds">
+        
+        <!-- Main Split Frame Grid Architecture Layout Block -->
+        <div class="blog-fixed-hero-split-grid">
+            
+            <!-- Left Side Column Column Block: Content Matrices & Call-To-Action Triggers -->
+            <div class="blog-fixed-hero-text-panel">
+                <span class="blog-fixed-hero-eyebrow-tag">Legal Insights & Global Updates</span>
+                
+                <!-- Headline text block configured for multi-directional side word sliding reveals -->
+                <h1 class="blog-fixed-hero-word-headline" id="fixedBlogHeadlineTarget">
+                    Navigating Complex Modern Law with Absolute Clarity
+                </h1>
+                
+                <p class="blog-fixed-hero-description">
+                    Explore our latest editorial analysis, federal compliance directories, and strategic corporate risk guidance designed to safeguard transaction pipelines and shield enterprise growth metrics.
+                </p>
+                
+                <!-- Call-to-Action Action Rows Group Block (Wired for 404 navigation targets) -->
+                <div class="blog-fixed-hero-action-row">
+                    <a href="404.html" class="btn-blog-fixed-hero btn-fixed-amber-fill">Explore Directory &rarr;</a>
+                    <a href="404.html" class="btn-blog-fixed-hero btn-fixed-outline-link">Subscribe to Node Feed</a>
+                </div>
+            </div>
+
+            <!-- Right Side Column Block: Presenter Professional Media Frame (Slides up from bottom) -->
+            <div class="blog-fixed-hero-graphic-panel fixed-hero-reveal-bottom">
+                <div class="blog-fixed-hero-image-frame-box">
+                    <img src="https://unsplash.com" alt="Attorneys conducting strategic domestic dispute mediation session" class="blog-fixed-hero-img">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<style>
+/* --- Core Presentation Tokens Framework Configuration Layout --- */
+.stackly-blog-hero-fixed-canvas {
+    width: 100%;
+    /* Strict padding limits configured exactly to user configuration rules values */
+    padding-top: 130px; /* Precise top clearance from header rows */
+    padding-bottom: 30px; /* Specialized low baseline edge footprint layout */
+    background-color: #ffffff; /* Premium Pure Solid White Canvas Backdrop Surface Texture */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.blog-fixed-hero-bounds {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* --- Row 1: Split Content Section Panel Assembly --- */
+.blog-fixed-hero-split-grid {
+    display: grid;
+    /* Precise asymmetric columns balance split matching your established website patterns ratio */
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 56px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.blog-fixed-hero-text-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.blog-fixed-hero-eyebrow-tag {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #b45309; /* Warm Executive Amber Signature Focus Highlights Tones */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+}
+
+/* --- TITLE: Multi-Directional Alternating Side Word Sliding Reveals --- */
+.blog-fixed-hero-word-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2.2rem, 5vw, 3.4rem); /* Fluid responsive typography scale metric rules value */
+    font-weight: 700;
+    color: #090d16; /* Deep Obsidian Legal Navy text color output */
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin: 0 0 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    row-gap: 6px;
+    text-align: left;
+}
+
+/* Character/word node structures injected dynamically via JavaScript runtime engine code block */
+.blog-hero-split-word-node {
+    display: inline-block;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation-duration: 0.65s;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    animation-fill-mode: forwards;
+}
+
+.blog-hero-word-left-in { transform: translateX(-35px); animation-name: blogFixedWordFromLeft; }
+.blog-hero-word-right-in { transform: translateX(35px); animation-name: blogFixedWordFromRight; }
+
+@keyframes blogFixedWordFromLeft { to { opacity: 1; transform: translateX(0); } }
+@keyframes blogFixedWordFromRight { to { opacity: 1; transform: translateX(0); } }
+
+.blog-fixed-hero-description {
+    font-size: 1.02rem;
+    color: #475569; /* Slate gray neutral informative explanation paragraphs layout styling */
+    line-height: 1.65;
+    margin-bottom: 32px;
+    text-align: left;
+    max-width: 560px;
+    transition: color 0.3s ease;
+}
+
+/* --- Floating Actions Row Elements (Wired for 404 targets and text glow hovers) --- */
+.blog-fixed-hero-action-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.btn-blog-fixed-hero {
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-fixed-amber-fill {
+    background-color: #b45309;
+    color: #ffffff !important; /* Prevents visual links style inheritance updates overrides */
+    padding: 14px 28px;
+    border-radius: 4px; /* Squared block bounding boxes matching your starting site structure buttons */
+    border: 1px solid #b45309;
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.25);
+}
+
+/* Modern continuous vertical float physical micro-interaction lift loops configuration */
+.btn-fixed-amber-fill:hover {
+    background-color: #92400e;
+    border-color: #92400e;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(180, 83, 9, 0.4), 0 0 12px rgba(180, 83, 9, 0.15);
+}
+
+.btn-fixed-outline-link {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #090d16 !important;
+    padding: 14px 28px;
+    border-radius: 4px;
+}
+
+.btn-fixed-outline-link:hover {
+    border-color: #b45309;
+    color: #b45309 !important;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(9, 13, 22, 0.03);
+}
+
+/* --- Master Hover & Glow Interactions Matrix --- */
+.stackly-blog-hero-fixed-canvas:hover .blog-fixed-hero-description {
+    color: #0f172a; /* Sharpens paragraph readability text on section mouse enters focus fields */
+}
+
+/* --- Right Side Column Block Presenter Frame Box Layout (Slides up from bottom) --- */
+.blog-fixed-hero-graphic-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.blog-fixed-hero-image-frame-box {
+    width: 100%;
+    aspect-ratio: 1.35 / 1; /* Crisp modern landscape aspect ratio locking dimensions layout */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #090d16;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 15px 35px rgba(9, 13, 22, 0.04);
+}
+
+.blog-fixed-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* Custom rich image glow micro-interaction setup tracks requested feature */
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+                filter 0.4s ease;
+}
+
+/* Hardware-accelerated transformation imagery glow adjustments triggered directly over hovers */
+.blog-fixed-hero-image-frame-box:hover .blog-fixed-hero-img {
+    transform: scale(1.03) rotate(0.2deg);
+    filter: brightness(1.04) contrast(1.01);
+}
+
+/* --- BOTTOM REVEAL KEYFRAMES: Rises up from base parameters seamlessly on window load --- */
+.fixed-hero-reveal-bottom {
+    opacity: 0;
+    transform: translateY(40px); /* Starts pushed low toward base windows limits boundaries */
+    animation: blogFixedImageRiseUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 200ms; /* Lets text line entry cascades initialise slightly forward ahead of visuals */
+}
+
+@keyframes blogFixedImageRiseUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- */
+@media (max-width: 1024px) {
+    .stackly-blog-hero-fixed-canvas {
+        padding-top: 110px; /* Proportional padding drop preventing truncation clipping on medium tablets */
+    }
+
+    .blog-fixed-hero-split-grid {
+        grid-template-columns: 1fr; /* Stacks column sets perfectly vertical on mobile and intermediate views */
+        gap: 40px;
+    }
+
+    .blog-fixed-hero-graphic-panel {
+        max-width: 580px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .stackly-blog-hero-fixed-canvas {
+        padding-top: 100px; /* Smartphone responsive padding parameters adjustments codes */
+        padding-bottom: 30px;
+    }
+
+    .blog-fixed-hero-action-row {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 14px;
+    }
+
+    .btn-blog-fixed-hero {
+        width: 100%;
+        justify-content: center; /* Expands buttons layout to 100% full bounds width lanes over phone view glass windows */
+    }
+}
+
+</style>
+
+<script>
+ document.addEventListener("DOMContentLoaded", () => {
+    const fixedBlogHeadline = document.getElementById("fixedBlogHeadlineTarget");
+
+    // ANIMS ENGINE: Setup Scroll Intersection Observation Infrastructure Loop Controls
+    if ('IntersectionObserver' in window && fixedBlogHeadline) {
+        
+        // Define observer options thresholds mapping layout position parameters markers
+        const fixedBlogHeroObserverOptions = {
+            root: null, 
+            threshold: 0.1,
+            rootMargin: "0px 0px -25px 0px"
+        };
+
+        const onFixedBlogHeroIntersection = (entriesList, observerInstance) => {
+            entriesList.forEach(entryNode => {
+                if (entryNode.isIntersecting) {
+                    // Trigger alternating word-by-word sequence reveal compiler loop routine
+                    initializeFixedBlogHeroWordSequence();
+                    observerInstance.unobserve(entryNode.target);
+                }
+            });
+        };
+
+        const fixedBlogHeroScrollObserver = new IntersectionObserver(onFixedBlogHeroIntersection, fixedBlogHeroObserverOptions);
+        fixedBlogHeroScrollObserver.observe(fixedBlogHeadline);
+
+        // Word tokenizer compiler engine execution routine block
+        function initializeFixedBlogHeroWordSequence() {
+            const rawTextString = fixedBlogHeadline.innerText.trim();
+            const processedWordsMatrix = rawTextString.split(/\s+/);
+            
+            fixedBlogHeadline.innerHTML = "";
+
+            processedWordsMatrix.forEach((wordValue, itemIndex) => {
+                const wordSpanNode = document.createElement("span");
+                wordSpanNode.innerText = wordValue;
+                wordSpanNode.classList.add("blog-hero-split-word-node");
+
+                // Direct sequence elements to load entry paths from alternating sides based on odd/even index evaluations
+                if (itemIndex % 2 === 0) {
+                    wordSpanNode.classList.add("blog-hero-word-left-in");
+                } else {
+                    wordSpanNode.classList.add("blog-hero-word-right-in");
+                }
+
+                // Assign computation stagger delays dynamically to establish fluid flowing entry lines
+                wordSpanNode.style.animationDelay = `${itemIndex * 60}ms`;
+                fixedBlogHeadline.appendChild(wordSpanNode);
+            });
+        }
+
+    }
+});
+
+</script>
+
+<!-- High-End Legal Services Showcase Section -->
+<section class="stackly-services-showcase-strip">
+    <div class="services-showcase-container">
+        
+        <!-- Header Row Split Layout Matrix -->
+        <div class="services-showcase-header">
+            <div class="services-header-left">
+                <div class="services-eyebrow-row">
+                    <span class="services-accent-dash"></span>
+                    <span class="services-eyebrow-text">Our Service</span>
+                </div>
+                <!-- Headline text block configured for word-by-word reveal rising from bottom -->
+                <h2 class="services-main-title" id="servicesTitleRiseTarget">
+                    Comprehensive legal support crafted for every need
+                </h2>
+            </div>
+            <div class="services-header-right">
+                <p class="services-header-desc-copy">
+                    Tailor-made legal guidance designed to protect your interests with clarity and confidence.
+                </p>
+            </div>
+        </div>
+
+        <!-- Four-Column Media Card Layout Grid precisely mirroring user layout blueprint -->
+        <div class="services-cards-grid">
+            
+            <!-- CARD 1: Immigration & Visa Assistance -->
+            <div class="services-profile-card service-scroll-stagger" style="--card-index: 1;">
+                <div class="service-card-media-box">
+                    <img src="https://unsplash.com" alt="Immigration consultation briefing case portfolios" class="service-card-img">
+                    
+                    <!-- Dark Gradient Overlay Box Housing Text Elements Content -->
+                    <div class="service-card-text-overlay">
+                        <h3 class="service-card-heading">Immigration & Visa Assistance</h3>
+                        <p class="service-card-description">Providing seamless visa support, corporate relocation matrices, and solid legal paths for international talent pipelines.</p>
+                        <a href="404.html" class="service-card-link">Learn more &mdash;&rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2: Family Law & Mediation -->
+            <div class="services-profile-card service-scroll-stagger" style="--card-index: 2;">
+                <div class="service-card-media-box">
+                    <img src="https://unsplash.com" alt="Attorneys conducting strategic domestic dispute mediation session" class="service-card-img">
+                    
+                    <div class="service-card-text-overlay">
+                        <h3 class="service-card-heading">Family Law & Mediation</h3>
+                        <p class="service-card-description">Supporting families through domestic operations, asset preservation frameworks, and compassionate legal resolution loops.</p>
+                        <a href="404.html" class="service-card-link">Learn more &mdash;&rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3: Corporate & Business Legal -->
+            <div class="services-profile-card service-scroll-stagger" style="--card-index: 3;">
+                <div class="service-card-media-box">
+                    <img src="https://unsplash.com" alt="Corporate general counsel examining commercial risk parameters" class="service-card-img">
+                    
+                    <div class="service-card-text-overlay">
+                        <h3 class="service-card-heading">Corporate & Business Legal</h3>
+                        <p class="service-card-description">Building secure agreements, commercial compliance setups, and structured defense protocols for scaling entities.</p>
+                        <a href="404.html" class="service-card-link">Learn more &mdash;&rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4: Property & Real Estate Legal -->
+            <div class="services-profile-card service-scroll-stagger" style="--card-index: 4;">
+                <div class="service-card-media-box">
+                    <img src="https://unsplash.com" alt="Litigation leads completing transaction closings briefs" class="service-card-img">
+                    
+                    <div class="service-card-text-overlay">
+                        <h3 class="service-card-heading">Property & Real Estate Legal</h3>
+                        <p class="service-card-description">Assisting with transaction verifications, zoning compliance, lease architectures, and property rights protection matrices.</p>
+                        <a href="404.html" class="service-card-link">Learn more &mdash;&rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- Core Presentation Tokens Framework Configuration Layout --- */
+.stackly-services-showcase-strip {
+    width: 100%;
+    /* Strict execution padding constraints mapped exactly to user input specifications values */
+    padding: 50px 0;
+    background-color: #ffffff; /* Premium Pure Solid White Section Background Canvas Layer */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.services-showcase-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* --- Section Header Row Layout Matrix --- */
+.services-showcase-header {
+    display: grid;
+    /* Two column split matching snapshot architecture layout proportions */
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 48px;
+    align-items: flex-end;
+    margin-bottom: 48px;
+    box-sizing: border-box;
+}
+
+.services-header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.services-eyebrow-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.services-accent-dash {
+    width: 24px;
+    height: 2px;
+    background-color: #b45309; /* Warm Executive Amber Traditional Legal Core Branding Indicator */
+    border-radius: 4px;
+}
+
+.services-eyebrow-text {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #b45309;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* --- TITLE: Word-by-word reveal typography text headers rising from bottom --- */
+.services-main-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 4.5vw, 2.8rem);
+    font-weight: 700;
+    color: #090d16; /* Deep Obsidian Legal Navy text color output */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    row-gap: 4px;
+    text-align: left;
+}
+
+/* Inline text items tokens wrappers injected dynamically by runtime javascript */
+.service-split-word-node {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(24px); /* Pushes elements lower to rise up smoothly from bottom */
+    will-change: transform, opacity;
+    animation: serviceWordRiseReveal 0.55s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes serviceWordRiseReveal {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.services-header-right {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.services-header-desc-copy {
+    font-size: 0.98rem;
+    color: #475569; /* Slate gray neutral informative explanation paragraphs layout styling */
+    line-height: 1.6;
+    margin: 0;
+    text-align: left;
+    max-width: 440px;
+}
+
+/* --- Four-Column Media Card Layout Grid (Replicating exact layout context screenshot) --- */
+.services-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Forms direct identical 4 column stack layout from screenshot [INDEX] */
+    gap: 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* --- High-Fidelity Professional Media Profile Card Components Design --- */
+.services-profile-card {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.service-card-media-box {
+    width: 100%;
+    aspect-ratio: 0.8 / 1; /* Locked crisp portrait aspect ratio matching image blueprint cards proportions [INDEX] */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #090d16;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 20px rgba(9, 13, 22, 0.02);
+    position: relative;
+}
+
+.service-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* High-fidelity hardware-accelerated transformation transition lines values */
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+                filter 0.4s ease;
+}
+
+/* --- Integrated Linear Gradient Box Housing Content --- */
+.service-card-text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 32px 24px 24px 24px;
+    /* Rich continuous multi-layered dark linear gradient protecting card readability scales safely */
+    background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.65) 55%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 5;
+    box-sizing: border-box;
+}
+
+.service-card-heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.3;
+    margin: 0 0 10px 0;
+    text-align: left;
+    transition: color 0.35s ease, text-shadow 0.35s ease;
+}
+
+.service-card-description {
+    font-size: 0.88rem;
+    color: #cbd5e1; /* Lights card paragraph description context readability over dark gradients */
+    line-height: 1.5;
+    margin: 0 0 18px 0;
+    text-align: left;
+}
+
+.service-card-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #b45309; /* Initial warm executive legal amber button link profile style */
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* --- Master Hover & Glow System Configuration Transformations --- */
+.services-profile-card:hover .service-card-img {
+    transform: scale(1.04) rotate(0.2deg);
+    filter: brightness(0.9); /* Deepens backdrop space slightly to separate illuminated typography content forwards */
+}
+
+/* Swaps internal header text nodes indicators focus directly onto amber text glow states */
+.services-profile-card:hover .service-card-heading {
+    color: #b45309;
+    text-shadow: 0 0 10px rgba(180, 83, 9, 0.4);
+}
+
+.services-profile-card:hover .service-card-link {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* --- One-by-One Staggered Scroll Base Entry Reveals --- */
+.service-scroll-stagger {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.65s ease, transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-scroll-stagger.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Computes staggered cascading entrance sequence delay windows dynamically via inline order index variables */
+.services-cards-grid .service-scroll-stagger.revealed {
+    transition-delay: calc(var(--card-index) * 120ms);
+}
+
+/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- */
+@media (max-width: 1024px) {
+    .services-showcase-header {
+        grid-template-columns: 1fr; /* Stacks column pairs vertical to prevent overlapping text compression pops */
+        gap: 20px;
+    }
+
+    .services-header-desc-copy {
+        max-width: 100%;
+    }
+
+    .services-cards-grid {
+        grid-template-columns: repeat(2, 1fr); /* Breaks down grid layer down safely to binary column stacks tablet viewports */
+        gap: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Strict execution constraint implementation adapting padding bounds down exactly to 30px metrics rules values */
+    .stackly-services-showcase-strip {
+        padding: 30px 0;
+    }
+
+    .services-main-title {
+        font-size: 1.85rem;
+    }
+
+    .services-cards-grid {
+        grid-template-columns: 1fr; /* Compresses media cards layer straight down to a singular clean lane thread on smartphones */
+        gap: 20px;
+    }
+
+    .service-card-media-box {
+        aspect-ratio: 0.85 / 1; /* Relaxes strict limits letting layout elements scale cleanly across mobile view glass areas */
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const servicesTitle = document.getElementById("servicesTitleRiseTarget");
+    const serviceCardsPool = document.querySelectorAll(".service-scroll-stagger");
+
+    // ANIMS ENGINE: Setup Scroll Intersection Observation Infrastructure Loop Controls
+    if ('IntersectionObserver' in window) {
+        const servicesObserverOptions = {
+            root: null, // Scans native window viewport boxes directly
+            threshold: 0.12, // Fires logic when 12% of the item limits enter view boundaries
+            rootMargin: "0px 0px -25px 0px"
+        };
+
+        const onServicesIntersectionObserved = (entriesList, observerRef) => {
+            entriesList.forEach(entryItem => {
+                if (entryItem.isIntersecting) {
+                    
+                    // Route A: Main Title line-by-line word compilation rise from bottom
+                    if (entryItem.target.id === "servicesTitleRiseTarget") {
+                        initializeServicesWordRiseSequence();
+                    } 
+                    // Route B: Secondary profile cards group cascade one-by-one sequential entry
+                    else {
+                        entryItem.target.classList.add("revealed");
+                    }
+                    
+                    observerRef.unobserve(entryItem.target);
+                }
+            });
+        };
+
+        const servicesScrollObserver = new IntersectionObserver(onServicesIntersectionObserved, servicesObserverOptions);
+        
+        if (servicesTitle) servicesScrollObserver.observe(servicesTitle);
+        serviceCardsPool.forEach(cardItem => servicesScrollObserver.observe(cardItem));
+
+        function initializeServicesWordRiseSequence() {
+            if (servicesTitle) {
+                const rawStringContentText = servicesTitle.innerText.trim();
+                const splitWordsArray = rawStringContentText.split(/\s+/);
+                
+                servicesTitle.innerHTML = "";
+
+                splitWordsArray.forEach((wordValue, itemIndex) => {
+                    const wordSpan = document.createElement("span");
+                    wordSpan.innerText = wordValue;
+                    wordSpan.classList.add("service-split-word-node");
+
+                    // Adds incremental microsecond intervals delays dynamically to establish the cascading word lift
+                    wordSpan.style.animationDelay = `${itemIndex * 60}ms`;
+                    servicesTitle.appendChild(wordSpan);
+                });
+            }
+        }
+    } else {
+        // Fallback pipeline execution support support loops instantly executing displays views if historical legacy engines lack observer mechanisms
+        serviceCardsPool.forEach(legacyCard => legacyCard.classList.add("revealed"));
+    }
+});
+
+</script>
+
+<!-- High-End Staggered Blog Grid Section -->
+<section class="stackly-creative-blog-feed">
+    <div class="blog-feed-fluid-bounds">
+        
+        <!-- Topology Section Header Arrangement Row -->
+        <div class="blog-feed-header-row">
+            <div class="blog-feed-header-left">
+                <div class="blog-feed-eyebrow-box">
+                    <span class="blog-feed-accent-bar"></span>
+                    <span class="blog-feed-eyebrow-text">Editorial Insights</span>
+                </div>
+                <!-- Headline text block configured for multi-directional word-by-word side sliding reveals -->
+                <h2 class="blog-feed-main-marquee-title" id="blogFeedHeadlineTarget">
+                    Latest Editorial Analysis & Regulatory Intelligence
+                </h2>
+            </div>
+            
+            <!-- Category Filtering Shortcuts Tag Cloud Row Block -->
+            <div class="blog-feed-header-right">
+                <div class="blog-filter-tag-cloud">
+                    <a href="404.html" class="filter-shortcut-tag active-tag">All Posts</a>
+                    <a href="404.html" class="filter-shortcut-tag">Corporate</a>
+                    <a href="404.html" class="filter-shortcut-tag">Compliance</a>
+                    <a href="404.html" class="filter-shortcut-tag">Litigation</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Creative Staggered Grid Stack Pipeline (Revealed card-by-card from bottom on scroll) -->
+        <div class="blog-editorial-staggered-masonry">
+            
+            <!-- ARTICLE CARD 1: Corporate Governance -->
+            <article class="blog-editorial-post-card feed-scroll-cascade-rise" style="--card-sequence-index: 1;">
+                <div class="post-card-inner-hull">
+                    <!-- High resolution thumbnail wrapper box -->
+                    <div class="post-card-media-hull">
+                        <img src="https://unsplash.com" alt="Attorneys examining corporate risk compliance briefs portfolios" class="post-card-thumbnail-img">
+                        <span class="post-card-floating-category-badge">Corporate</span>
+                    </div>
+                    <div class="post-card-content-envelope">
+                        <div class="post-card-meta-timeline-line">
+                            <span class="meta-date-stamp">September 18, 2026</span>
+                            <span class="meta-divider-bullet">&bull;</span>
+                            <span class="meta-reading-duration-tag">5 min read</span>
+                        </div>
+                        <h3 class="post-card-heading-title">Navigating Corporate Restructuring Operations Frameworks</h3>
+                        <p class="post-card-summary-excerpt">A comprehensive strategic deep dive into asset preservation mechanics, corporate reorganizations, and cross-border liability shield parameters.</p>
+                        
+                        <!-- Interactive Extended Footer Trigger Group Layer (Points directly to 404 fallback code path) -->
+                        <div class="post-card-interactive-footer-row">
+                            <a href="404.html" class="post-card-read-anchor-link">Read Full Analysis</a>
+                            <span class="post-card-arrow-vector-indicator">&rarr;</span>
+                        </div>
+                    </div>
+                    <!-- Hidden horizontal amber line trace expanding cleanly from center on user touch hovers -->
+                    <div class="post-card-hover-underline-tracer"></div>
+                </div>
+            </article>
+
+            <!-- ARTICLE CARD 2: Data Privacy Safeguards -->
+            <article class="blog-editorial-post-card feed-scroll-cascade-rise" style="--card-sequence-index: 2;">
+                <div class="post-card-inner-hull">
+                    <div class="post-card-media-hull">
+                        <img src="https://unsplash.com" alt="Counsel conducting digital telemetry privacy audits within cloud nodes dashboard" class="post-card-thumbnail-img">
+                        <span class="post-card-floating-category-badge">Compliance</span>
+                    </div>
+                    <div class="post-card-content-envelope">
+                        <div class="post-card-meta-timeline-line">
+                            <span class="meta-date-stamp">September 14, 2026</span>
+                            <span class="meta-divider-bullet">&bull;</span>
+                            <span class="meta-reading-duration-tag">7 min read</span>
+                        </div>
+                        <h3 class="post-card-heading-title">Data Privacy Compliance Matrices for Scaling Enterprises</h3>
+                        <p class="post-card-summary-excerpt">Isolating critical risk parameters, sovereign encryption guidelines, and automated governance tracking modules for decentralized cloud architecture.</p>
+                        
+                        <div class="post-card-interactive-footer-row">
+                            <a href="404.html" class="post-card-read-anchor-link">Read Full Analysis</a>
+                            <span class="post-card-arrow-vector-indicator">&rarr;</span>
+                        </div>
+                    </div>
+                    <div class="post-card-hover-underline-tracer"></div>
+                </div>
+            </article>
+
+            <!-- ARTICLE CARD 3: IP Litigation -->
+            <article class="blog-editorial-post-card feed-scroll-cascade-rise" style="--card-sequence-index: 3;">
+                <div class="post-card-inner-hull">
+                    <div class="post-card-media-hull">
+                        <img src="https://unsplash.com" alt="lady justice bronze balance scales statue on legal advice roundtable desk panel" class="post-card-thumbnail-img">
+                        <span class="post-card-floating-category-badge">Litigation</span>
+                    </div>
+                    <div class="post-card-content-envelope">
+                        <div class="post-card-meta-timeline-line">
+                            <span class="meta-date-stamp">September 09, 2026</span>
+                            <span class="meta-divider-bullet">&bull;</span>
+                            <span class="meta-reading-duration-tag">4 min read</span>
+                        </div>
+                        <h3 class="post-card-heading-title">Intellectual Property Protection Loops in Venture Startups</h3>
+                        <p class="post-card-summary-excerpt">Tactical coordination methods to secure international trademark assets and establish impenetrable defense boundaries before capital funding rounds launch.</p>
+                        
+                        <div class="post-card-interactive-footer-row">
+                            <a href="404.html" class="post-card-read-anchor-link">Read Full Analysis</a>
+                            <span class="post-card-arrow-vector-indicator">&rarr;</span>
+                        </div>
+                    </div>
+                    <div class="post-card-hover-underline-tracer"></div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    /* --- Core Presentation Tokens Framework Configuration Layout --- */
+.stackly-creative-blog-feed {
+    width: 100%;
+    /* Strict padding limits configured exactly to user configuration rules values */
+    padding: 50px 0;
+    background-color: #ffffff; /* Premium Pure Solid White Section Background Canvas Layer */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.blog-feed-fluid-bounds {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* --- Section Header Row Layout Block --- */
+.blog-feed-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 48px;
+    gap: 32px;
+    box-sizing: border-box;
+}
+
+.blog-feed-header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 800px;
+}
+
+.blog-feed-eyebrow-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.blog-feed-accent-bar {
+    width: 24px;
+    height: 2px;
+    background-color: #b45309; /* Warm Executive Amber Corporate Branding Tones */
+    border-radius: 4px;
+}
+
+.blog-feed-eyebrow-text {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #b45309;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* --- TITLE: Multi-Directional Alternating Side Word Sliding Reveals --- */
+.blog-feed-main-marquee-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 4.5vw, 2.8rem); /* Strict uniform standard medium font scale profile layout */
+    font-weight: 700;
+    color: #090d16; /* Deep Obsidian Legal Navy text color output */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    row-gap: 4px;
+    text-align: left;
+}
+
+/* Inline text items tokens wrappers injected programmatically by runtime javascript */
+.feed-split-word-node {
+    display: inline-block;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation-duration: 0.65s;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    animation-fill-mode: forwards;
+}
+
+.feed-word-left-in { transform: translateX(-35px); animation-name: feedWordFromLeft; }
+.feed-word-right-in { transform: translateX(35px); animation-name: feedWordFromRight; }
+
+@keyframes feedWordFromLeft { to { opacity: 1; transform: translateX(0); } }
+@keyframes feedWordFromRight { to { opacity: 1; transform: translateX(0); } }
+
+/* Right Aligned Category Filtering Pill Shortcut Tags Row */
+.blog-feed-header-right {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.blog-filter-tag-cloud {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-shortcut-tag {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #475569;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 100px; /* Capsule filter shape profiles */
+    background-color: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.filter-shortcut-tag:hover,
+.filter-shortcut-tag.active-tag {
+    background-color: #090d16; /* Fills instantly into primary obsidian navy on active states */
+    border-color: #090d16;
+    color: #ffffff !important;
+}
+
+/* --- Creative 3-Column Staggered Masonry Grid Stack Framework --- */
+.blog-editorial-staggered-masonry {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Forms direct identical 3-column article track alignment */
+    gap: 32px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* --- High-Fidelity Professional Editorial Post Card Components Design --- */
+.blog-editorial-post-card {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    /* Migration directory pattern profile: clean slate gray-blue layout cards backdrop texturing */
+    background-color: #d1d5db; 
+    border-radius: 8px;
+    border: 4px solid #f3f4f6; /* Outer protective framing path line tracking layer */
+    overflow: hidden;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                background-color 0.45s ease,
+                border-color 0.45s ease,
+                box-shadow 0.45s ease;
+    cursor: pointer;
+}
+
+.post-card-inner-hull {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Fixed composition framing image boxes rules */
+.post-card-media-hull {
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    overflow: hidden;
+    background-color: #090d16;
+    position: relative;
+    border-bottom: 1px solid rgba(9, 13, 22, 0.05);
+}
+
+.post-card-thumbnail-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+}
+
+/* Micro floating classification pill item anchored directly within upper right thumbnail boundary spaces */
+.post-card-floating-category-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #b45309; /* Warm Executive Amber corporate focus badge */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.post-card-content-envelope {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.post-card-meta-timeline-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    color: #4b5563; /* Subtitle informational copy formatting parameters */
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.meta-divider-bullet {
+    color: rgba(9, 13, 22, 0.2);
+}
+
+.post-card-heading-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #090d16;
+    line-height: 1.3;
+    margin: 0 0 12px 0;
+    text-align: left;
+    /* Employs a rigid triple-line clamp limit framework keeping heights perfectly balanced across column cards entries */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 80px; 
+    transition: color 0.35s ease, text-shadow 0.35s ease;
+}
+
+.post-card-summary-excerpt {
+    font-size: 0.94rem;
+    color: #27272a; /* Deep balanced tone contrast copy text */
+    line-height: 1.55;
+    margin: 0 0 24px 0;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 65px;
+    transition: color 0.35s ease;
+}
+
+/* Interactive Footer Control Row Actions Anchor Links */
+.post-card-interactive-footer-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Drops actions line down cleanly into cards baseline matrix paths */
+    border-top: 1px solid rgba(9, 13, 22, 0.08);
+    padding-top: 14px;
+    transition: border-color 0.35s ease;
+}
+
+.post-card-read-anchor-link {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #090d16;
+    text-decoration: none;
+    transition: color 0.35s ease;
+}
+
+.post-card-arrow-vector-indicator {
+    font-size: 1.15rem;
+    color: #090d16;
+    line-height: 1;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.35s ease;
+}
+
+/* Linear active indicator trace line layout collapsed along the center midline base of cards */
+.post-card-hover-underline-tracer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background-color: #b45309;
+    transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                left 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- Creative Card Hover Glow Interactions Override Engine --- */
+.blog-editorial-post-card:hover {
+    background-color: #090d16; /* Swaps container backdrop canvas safely to primary branding obsidian tone */
+    border-color: #b45309; /* Changes frame edge path lines directly to crisp legal amber trace index lines */
+    transform: translateY(-6px); /* Subtle physics spring vertical lift action */
+    box-shadow: 0 15px 30px rgba(180, 83, 9, 0.22);
+}
+
+.blog-editorial-post-card:hover .post-card-thumbnail-img {
+    transform: scale(1.03) rotate(0.2deg);
+    filter: brightness(0.92);
+}
+
+.blog-editorial-post-card:hover .post-card-meta-timeline-line {
+    color: #94a3b8;
+}
+
+/* Swaps internal text titles focus indicators directly onto legal-amber text glow states */
+.blog-editorial-post-card:hover .post-card-heading-title {
+    color: #b45309;
+    text-shadow: 0 0 8px rgba(180, 83, 9, 0.15);
+}
+
+.blog-editorial-post-card:hover .post-card-summary-excerpt {
+    color: #cbd5e1;
+}
+
+.blog-editorial-post-card:hover .post-card-interactive-footer-row {
+    border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.blog-editorial-post-card:hover .post-card-read-anchor-link {
+    color: #b45309;
+}
+
+.blog-editorial-post-card:hover .post-card-arrow-vector-indicator {
+    color: #b45309;
+    transform: translateX(4px); /* Arrow horizontal translation push interaction link */
+}
+
+/* Expands horizontal linear legal-amber base indicator line traces out cleanly from center outwards */
+.blog-editorial-post-card:hover .post-card-hover-underline-tracer {
+    width: 100%;
+    left: 0;
+}
+
+/* --- SCROLL REVEAL ENGINE: Staggered Upward Entrance Card-By-Card From Bottom --- */
+.feed-scroll-cascade-rise {
+    opacity: 0;
+    transform: translateY(32px); /* Starts pushed low down below viewport boundary limits */
+    transition: opacity 0.75s ease, 
+                transform 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+                background-color 0.45s ease,
+                border-color 0.45s ease,
+                box-shadow 0.45s ease;
+}
+
+.feed-scroll-cascade-rise.activated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.blog-editorial-staggered-masonry .feed-scroll-cascade-rise.activated {transition-delay: calc(var(--card-sequence-index) * 120ms);}/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- */@media (max-width: 1024px) {.blog-feed-header-row {align-items: flex-start;flex-direction: column;gap: 20px;margin-bottom: 36px;}.blog-feed-header-right,.blog-filter-tag-cloud {width: 100%;justify-content: flex-start;}.blog-editorial-staggered-masonry {grid-template-columns: repeat(2, 1fr); /* Breaks grid down safely to binary column stacks over tablet hardware frames */gap: 24px;}}@media (max-width: 640px) {/* Strict execution constraint implementation adapting padding bounds down exactly to 30px values markers */.stackly-creative-blog-feed {padding: 30px 0;}.blog-feed-main-marquee-title {font-size: 1.85rem;}.blog-editorial-staggered-masonry {grid-template-columns: 1fr; /* Compresses blog post grid straight down to a singular clean lane thread on smartphones */gap: 20px;}.blog-editorial-post-card {aspect-ratio: auto;}.post-card-heading-title,.post-card-summary-excerpt {height: auto; /* Relaxes rigid text block boundaries constraints on small touch screens layout clear pop */-webkit-line-clamp: unset;}}
+
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const feedHeadlineNode = document.getElementById("blogFeedHeadlineTarget");
+    const feedScrollCardsPool = document.querySelectorAll(".feed-scroll-cascade-rise");
+
+    // ANIMS ENGINE: Setup Scroll Intersection Observation Infrastructure Loop Controls
+    if ('IntersectionObserver' in window && feedScrollCardsPool.length > 0) {
+        
+        // Define observer options thresholds mapping layout position parameters markers
+        const feedObserverConfig = {
+            root: null, // Scans native window viewports frames directly
+            threshold: 0.12, // Fires logic when 12% of item dimensions cross borders tracking views
+            rootMargin: "0px 0px -25px 0px"
+        };
+
+        const onFeedIntersectionObserved = (entriesList, observerRef) => {
+            entriesList.forEach(entryNode => {
+                if (entryNode.isIntersecting) {
+                    
+                    // Route A: Main Title alternating word-by-word reveal compilation loops from sides
+                    if (entryNode.target.id === "blogFeedHeadlineTarget") {
+                        initializeFeedWordByWordSequence();
+                    } 
+                    // Route B: Secondary article cards cascade rose card-by-card from bottom sequentially
+                    else {
+                        entryNode.target.classList.add("activated");
+                    }
+                    
+                    observerRef.unobserve(entryNode.target);
+                }
+            });
+        };
+
+        const feedScrollObserverEngine = new IntersectionObserver(onFeedIntersectionObserved, feedObserverConfig);
+        
+        if (feedHeadlineNode) feedScrollObserverEngine.observe(feedHeadlineNode);
+        feedScrollCardsPool.forEach(cardItem => feedScrollObserverEngine.observe(cardItem));
+
+        function initializeFeedWordByWordSequence() {
+            if (feedHeadlineNode) {
+                const rawContentTextString = feedHeadlineNode.innerText.trim();
+                const splitWordsArray = rawContentTextString.split(/\s+/);
+                
+                feedHeadlineNode.innerHTML = "";
+
+                splitWordsArray.forEach((wordValue, itemIndex) => {
+                    const wordSpan = document.createElement("span");
+                    wordSpan.innerText = wordValue;
+                    wordSpan.classList.add("feed-split-word-node");
+
+                    // Direct sequence elements to load entry paths from alternating sides based on odd/even index evaluations
+                    if (itemIndex % 2 === 0) {
+                        wordSpan.classList.add("feed-word-left-in");
+                    } else {
+                        wordSpan.classList.add("feed-word-right-in");
+                    }
+
+                    // Assign computation stagger delays dynamically to establish fluid flows entry lines
+                    wordSpan.style.animationDelay = `${itemIndex * 60}ms`;
+                    feedHeadlineNode.appendChild(wordSpan);
+                });
+            }
+        }
+
+    } else {
+        // Fallback pipeline support loops instantly executing displays views if historical legacy engines lack observer mechanisms support
+        feedScrollCardsPool.forEach(legacyCard => legacyCard.classList.add("activated"));
+    }
+});
+</script>
+
+<!-- Corrected Asymmetric Media Directory Section with Synchronized Heights -->
+<section class="stackly-media-strip-synchronized">
+    <div class="media-strip-fluid-bounds-fixed">
+        
+        <!-- Topology Section Header Arrangement Row Block -->
+        <div class="media-strip-header-row-fixed">
+            <div class="media-strip-header-left-fixed">
+                <div class="media-eyebrow-box-row-fixed">
+                    <span class="media-accent-dash-line-fixed"></span>
+                    <span class="media-eyebrow-text-label-fixed">Global Coverage</span>
+                </div>
+                <!-- Headline text block configured for multi-directional word-by-word side sliding reveals -->
+                <h2 class="media-main-marquee-title-fixed" id="synchronizedMediaHeadline">
+                    Featured Legal Analysis & Industry Press Publications
+                </h2>
+            </div>
+            
+            <!-- Desktop Right Aligned View All Links Action Button -->
+            <div class="media-strip-header-right-fixed">
+                <a href="404.html" class="btn-media-global-archive-view-fixed">View All Publications &rarr;</a>
+            </div>
+        </div>
+
+        <!-- FIXED HEIGHT SYNCHRONIZATION ENGINE GRID CORE -->
+        <div class="media-asymmetric-split-arena-fixed">
+            
+            <!-- LEFT COLUMN: Master Feature Showcase Card -->
+            <div class="media-showcase-master-left-grid-fixed media-scroll-cascade-rise-fixed" style="--item-sequence-order: 1;">
+                <div class="media-master-inner-hull-fixed">
+                    <div class="media-master-thumbnail-frame-fixed">
+                        <img src="https://unsplash.com" alt="Legal partner coordinating structural regulatory audits metrics variables" class="media-master-img-node-fixed">
+                        <span class="media-floating-category-tag-fixed">Featured Analysis</span>
+                    </div>
+                    <div class="media-master-content-envelope-fixed">
+                        <div class="media-meta-timeline-line-row-fixed">
+                            <span class="media-date-stamp-tag-fixed">September 22, 2026</span>
+                            <span class="media-divider-bullet-dot-fixed">&bull;</span>
+                            <span class="media-reading-duration-tag-fixed">9 min read</span>
+                        </div>
+                        <h3 class="media-master-heading-title-fixed">Unifying Global Compliance Infrastructure Vectors Across Scaling Cloud Technology Providers</h3>
+                        <p class="media-master-summary-excerpt-fixed">
+                            An expert partner-level strategic analysis detailing decentralized server sovereignty laws, automated continuous policy validation loops, and multi-jurisdictional financial transaction protection parameters.
+                        </p>
+                        <div class="media-master-interactive-footer-fixed">
+                            <a href="404.html" class="media-read-anchor-link-node-fixed">Read Enterprise Guide</a>
+                            <span class="media-arrow-vector-indicator-icon-fixed">&rarr;</span>
+                        </div>
+                    </div>
+                    <!-- Hidden horizontal amber line trace expanding cleanly from center on user touch hovers -->
+                    <div class="media-master-hover-underline-tracer-fixed"></div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Stacked Compact Case Rows Sub-Directory Framework -->
+            <!-- FIXED: Dynamically matches the height profile of the left block via flex distribution math -->
+            <div class="media-stacked-rows-right-grid-fixed">
+                
+                <!-- COMPACT ROW CARD 1 -->
+                <div class="media-compact-row-card-fixed media-scroll-cascade-rise-fixed" style="--item-sequence-order: 2;">
+                    <div class="media-row-card-inner-split-fixed">
+                        <div class="media-row-thumbnail-frame-fixed">
+                            <img src="https://unsplash.com" alt="Attorneys examining corporate risk compliance briefs portfolios" class="media-row-img-node-fixed">
+                        </div>
+                        <div class="media-row-content-envelope-fixed">
+                            <div class="media-meta-timeline-line-row-fixed">
+                                <span class="media-date-stamp-tag-fixed">September 19, 2026</span>
+                                <span class="media-divider-bullet-dot-fixed">&bull;</span>
+                                <span class="media-reading-duration-tag-fixed">4 min read</span>
+                            </div>
+                            <h3 class="media-row-heading-title-fixed">Venture Restructuring Tactics For Startup Formations</h3>
+                            <a href="404.html" class="media-row-minimal-action-link-fixed">View insights &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COMPACT ROW CARD 2 -->
+                <div class="media-compact-row-card-fixed media-scroll-cascade-rise-fixed" style="--item-sequence-order: 3;">
+                    <div class="media-row-card-inner-split-fixed">
+                        <div class="media-row-thumbnail-frame-fixed">
+                            <img src="https://unsplash.com" alt="Traditional Lady Justice balance scales on legal desk panel" class="media-row-img-node-fixed">
+                        </div>
+                        <div class="media-row-content-envelope-fixed">
+                            <div class="media-meta-timeline-line-row-fixed">
+                                <span class="media-date-stamp-tag-fixed">September 15, 2026</span>
+                                <span class="media-divider-bullet-dot-fixed">&bull;</span>
+                                <span class="media-reading-duration-tag-fixed">5 min read</span>
+                            </div>
+                            <h3 class="media-row-heading-title-fixed">Mediation Guidelines In Civil Commercial Disputes</h3>
+                            <a href="404.html" class="media-row-minimal-action-link-fixed">View insights &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COMPACT ROW CARD 3 -->
+                <div class="media-compact-row-card-fixed media-scroll-cascade-rise-fixed" style="--item-sequence-order: 4;">
+                    <div class="media-row-card-inner-split-fixed">
+                        <div class="media-row-thumbnail-frame-fixed">
+                            <img src="https://unsplash.com" alt="Litigation leads completing transaction closings briefs" class="media-row-img-node-fixed">
+                        </div>
+                        <div class="media-row-content-envelope-fixed">
+                            <div class="media-meta-timeline-line-row-fixed">
+                                <span class="media-date-stamp-tag-fixed">September 08, 2026</span>
+                                <span class="media-divider-bullet-dot-fixed">&bull;</span>
+                                <span class="media-reading-duration-tag-fixed">6 min read</span>
+                            </div>
+                            <h3 class="media-row-heading-title-fixed">Property Asset Protection & Zoning Compliance Codes</h3>
+                            <a href="404.html" class="media-row-minimal-action-link-fixed">View insights &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    /* --- Core Presentation Tokens Framework Configuration Layout --- */
+.stackly-media-strip-synchronized {
+    width: 100%;
+    /* Strict padding limits configured exactly to user configuration rules values */
+    padding: 50px 0;
+    background-color: #ffffff; /* Premium Pure Solid White Section Background Canvas Layer Layout */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.media-strip-fluid-bounds-fixed {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* --- Section Header Row Layout Block --- */
+.media-strip-header-row-fixed {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 48px;
+    gap: 32px;
+    box-sizing: border-box;
+}
+
+.media-strip-header-left-fixed {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 840px;
+}
+
+.media-eyebrow-box-row-fixed {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.media-accent-dash-line-fixed {
+    width: 24px;
+    height: 2px;
+    background-color: #b45309; /* Warm Executive Amber Corporate Branding Tones */
+    border-radius: 4px;
+}
+
+.media-eyebrow-text-label-fixed {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #b45309;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* --- TITLE: Multi-Directional Alternating Side Word Sliding Reveals --- */
+.media-main-marquee-title-fixed {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 4.5vw, 2.8rem); /* Strict uniform standard medium font scale profile layout */
+    font-weight: 700;
+    color: #090d16; /* Deep Obsidian Legal Navy text color output */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    row-gap: 4px;
+    text-align: left;
+}
+
+/* Inline text items tokens wrappers injected programmatically by runtime javascript */
+.media-split-word-node-fixed {
+    display: inline-block;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation-duration: 0.65s;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    animation-fill-mode: forwards;
+}
+
+.media-word-slide-left-in-fixed { transform: translateX(-35px); animation-name: fixedMediaWordFromLeft; }
+.media-word-slide-right-in-fixed { transform: translateX(35px); animation-name: fixedMediaWordFromRight; }
+
+@keyframes fixedMediaWordFromLeft { to { opacity: 1; transform: translateX(0); } }
+@keyframes fixedMediaWordFromRight { to { opacity: 1; transform: translateX(0); } }
+
+/* Desktop Right Aligned View All Links Action Buttons Layout */
+.media-strip-header-right-fixed {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.btn-media-global-archive-view-fixed {
+    background-color: #090d16; /* Deep Obsidian panel background text blocks fill */
+    color: #ffffff !important; /* Locks structural visual links text from page cascades overrides */
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid #090d16;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    white-space: nowrap;
+}
+
+.btn-media-global-archive-view-fixed:hover {
+    background-color: #b45309;
+    border-color: #b45309;
+    box-shadow: 0 4px 14px rgba(180, 83, 9, 0.25);
+    transform: translateY(-2px);
+}
+
+/* --- FIXED ASYMMETRIC GRID HEIGHT SYNCHRONIZATION ENGINE --- */
+.media-asymmetric-split-arena-fixed {
+    display: grid;
+    /* Implements creative spatial partition distribution splitting showcase master left vs compact listings right */
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 32px;
+    width: 100%;
+    align-items: stretch; /* FIXED: Forces left and right master column fields to maintain absolute equal vertical limits */
+    box-sizing: border-box;
+}
+
+/* --- LEFT COLUMN: Showcase Master Feature Block Elements --- */
+.media-showcase-master-left-grid-fixed {
+    width: 100%;
+    /* Clean slate gray-blue card texture from your verified directory patterns to isolate over white canvas backdrops */
+    background-color: #d1d5db;
+    border: 4px solid #f3f4f6; /* Outer protective framing path line tracking border layout */
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Spans the entire stretch profile height limits cleanly */
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                background-color 0.45s ease,
+                border-color 0.45s ease,
+                box-shadow 0.45s ease;
+    cursor: pointer;
+}
+
+.media-master-inner-hull-fixed {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+    position: relative;
+}
+
+.media-master-thumbnail-frame-fixed {
+    width: 100%;
+    flex: 1; /* FIXED: Let's the upper image window auto-calculate height constraints to balance typography panels text heights */
+    min-height: 260px;
+    overflow: hidden;
+    background-color: #090d16;
+    position: relative;
+}
+
+.media-master-img-node-fixed {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+}
+
+.media-floating-category-tag-fixed {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #b45309; /* Amber corporate highlight badge label indicator tags */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 14px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.media-master-content-envelope-fixed {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f8fafc; /* Crisp clean texture separation */
+    border-top: 1px solid #e2e8f0;
+}
+
+.media-meta-timeline-line-row-fixed {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    color: #4b5563; /* Subtitle informational copy formatting parameters rules */
+    margin-bottom: 14px;
+    transition: color 0.35s ease;
+}
+
+.media-divider-bullet-dot-fixed {
+    color: rgba(9, 13, 22, 0.2);
+}
+
+.media-master-heading-title-fixed {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #090d16;
+    line-height: 1.35;
+    margin: 0 0 14px 0;
+    text-align: left;
+    transition: color 0.35s ease, text-shadow 0.35s ease;
+}
+
+.media-master-summary-excerpt-fixed {
+    font-size: 0.95rem;
+    color: #475569; /* Balanced deep tone contrast description copy text */
+    line-height: 1.6;
+    margin: 0 0 24px 0;
+    text-align: left;
+    transition: color 0.35s ease;
+}
+
+.media-master-interactive-footer-fixed {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(9, 13, 22, 0.08);
+    padding-top: 18px;
+    transition: border-color 0.35s ease;
+}
+
+.media-read-anchor-link-node-fixed {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #090d16;
+    text-decoration: none;
+    transition: color 0.35s ease;
+}
+
+.media-arrow-vector-indicator-icon-fixed {
+    font-size: 1.2rem;
+    color: #090d16;
+    line-height: 1;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.35s ease;
+}
+
+/* Linear active indicator trace line layout collapsed along the center midline base of showcase blocks */
+.media-master-hover-underline-tracer-fixed {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background-color: #b45309;
+    transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                left 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Master Left Showcase Hover Glow Interaction Matrix Trigger Overrides */
+.media-showcase-master-left-grid-fixed:hover {
+    border-color: #b45309; /* Changes frame edge path lines directly to crisp legal amber trace index lines */
+    transform: translateY(-4px); /* Modern subtle physics spring vertical lift action */
+    box-shadow: 0 15px 35px rgba(180, 83, 9, 0.15);
+}
+
+.media-showcase-master-left-grid-fixed:hover .media-master-img-node-fixed { transform: scale(1.025); filter: brightness(0.92); }
+.media-showcase-master-left-grid-fixed:hover .media-master-heading-title-fixed { color: #b45309; }
+.media-showcase-master-left-grid-fixed:hover .media-read-anchor-link-node-fixed { color: #b45309; }
+.media-showcase-master-left-grid-fixed:hover .media-arrow-vector-indicator-icon-fixed { color: #b45309; transform: translateX(5px); }
+.media-showcase-master-left-grid-fixed:hover .media-master-hover-underline-tracer-fixed { width: 100%; left: 0; }
+
+/* --- RIGHT COLUMN: Stacked Compact Case Rows Sub-Directory Framework --- */
+.media-stacked-rows-right-grid-fixed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* FIXED: Symmetrically partitions column spans spacing to match left height rules perfectly */
+    gap: 16px;
+    width: 100%;
+}
+
+.media-compact-row-card-fixed {
+    width: 100%;
+    background-color: #f8fafc; /* Synchronized clean surface panel matching the master card details panel layout texture */
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 18px;
+    flex: 1; /* FIXED: Distributed fraction math loops enforces cards heights match left card totals boundaries */
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+                background-color 0.4s ease,
+                border-color 0.4s ease,
+                box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.media-row-card-inner-split-fixed {
+    display: grid;
+    grid-template-columns: 110px 1fr; /* Rigid spatial columns layout parameters dividing thumbnail vs text headers details */
+    gap: 20px;
+align-items: center;width: 100%;}.media-row-thumbnail-frame-fixed {width: 100%;aspect-ratio: 1.2 / 1;border-radius: 6px;overflow: hidden;background-color: #090d16;border: 1px solid #e2e8f0;}.media-row-img-node-fixed {width: 100%;height: 100%;object-fit: cover;display: block;transition: transform 0.5s ease;}.media-row-content-envelope-fixed {display: flex;flex-direction: column;align-items: flex-start;}.media-row-heading-title-fixed {font-size: 1.18rem;font-weight: 700;color: #090d16;line-height: 1.35;margin: 0 0 8px 0;text-align: left;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;transition: color 0.35s ease;}.media-row-minimal-action-link-fixed {font-size: 0.85rem;font-weight: 600;color: #475569;text-decoration: none;text-transform: uppercase;letter-spacing: 0.5px;transition: color 0.35s ease, transform 0.35s ease;}/* Master Right Compact Row Hover Glow Interactions Overrides /.media-compact-row-card-fixed:hover {background-color: #ffffff;border-color: #b45309;transform: translateX(6px); / Interactive horizontal vector slide push transition */box-shadow: 0 10px 22px rgba(180, 83, 9, 0.08);}.media-compact-row-card-fixed:hover .media-row-img-node-fixed { transform: scale(1.04); }.media-compact-row-card-fixed:hover .media-row-heading-title-fixed { color: #b45309; }.media-compact-row-card-fixed:hover .media-row-minimal-action-link-fixed { color: #b45309 !important; }/* --- SCROLL REVEAL ENGINE: Staggered Upward Entrance Card-By-Card From Bottom --- /.media-scroll-cascade-rise-fixed {opacity: 0;transform: translateY(32px); / Starts pushed low down below viewport boundary limits */transition: opacity 0.75s ease,transform 0.75s cubic-bezier(0.16, 1, 0.3, 1),background-color 0.45s ease,border-color 0.45s ease,box-shadow 0.45s ease;}.media-scroll-cascade-rise-fixed.activated {opacity: 1;transform: translateY(0);}/* Computes staggered delay intervals programmatically based on structural item position sequence numbers order */.media-strip-fluid-bounds-fixed .media-scroll-cascade-rise-fixed.activated {transition-delay: calc(var(--item-sequence-order) * 100ms);}/* --- FIXED HIGH-PERFORMANCE MASTER MOBILE BREAKPOINT MATRIX --- */@media (max-width: 1024px) {.media-strip-header-row-fixed {align-items: flex-start;flex-direction: column;gap: 20px;margin-bottom: 36px;}.media-strip-header-right-fixed,.btn-media-global-archive-view-fixed {width: 100%;}.btn-media-global-archive-view-fixed {text-align: center;}/* FIXED CRITICAL RESPONSIVE RE-ENGINEERING: Drops dual grids to collapse neatly layout pops bugs code */.media-asymmetric-split-arena-fixed {grid-template-columns: 1fr;gap: 32px;align-items: stretch;}.media-stacked-rows-right-grid-fixed {justify-content: flex-start;gap: 20px;}.media-compact-row-card-fixed {flex: none; /* Relaxes grid heights distribution rules variables over linear mobile feeds lines */height: auto;}}@media (max-width: 640px) {/* Strict execution padding constraints mapped down exactly to 30px values markers rules */.stackly-media-strip-synchronized {padding: 30px 0;}.media-main-marquee-title-fixed {font-size: 1.85rem;}.media-master-content-envelope-fixed {padding: 24px 20px;}.media-master-heading-title-fixed {font-size: 1.35rem;}.media-row-card-inner-split-fixed {grid-template-columns: 1fr; /* Stacks row thumbs vertical on smartphone displays */gap: 14px;text-align: center;}.media-row-thumbnail-frame-fixed {aspect-ratio: 16 / 9;max-width: 180px;margin: 0 auto;}.media-row-content-envelope-fixed {align-items: center;}.media-row-heading-title-fixed {text-align: center;font-size: 1.1rem;-webkit-line-clamp: unset;}.media-compact-row-card-fixed:hover {transform: translateY(-4px); /* Switches horizontal push toward standard vertical spring lift over phones glass screens */}}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const mediaHeadlineNodeFixed = document.getElementById("synchronizedMediaHeadline");
+    const mediaScrollCardsPoolFixed = document.querySelectorAll(".media-scroll-cascade-rise-fixed");
+
+    // ANIMS ENGINE: Setup Scroll Intersection Observation Infrastructure Loop Controls
+    if ('IntersectionObserver' in window && mediaScrollCardsPoolFixed.length > 0) {
+        
+        // Define observer options thresholds mapping layout position parameters markers
+        const mediaObserverConfigFixed = {
+            root: null, // Scans native window viewports frames directly
+            threshold: 0.12, // Fires logic when 12% of item dimensions cross borders tracking views
+            rootMargin: "0px 0px -25px 0px"
+        };
+
+        const onMediaIntersectionObservedFixed = (entriesList, observerRef) => {
+            entriesList.forEach(entryNode => {
+                if (entryNode.isIntersecting) {
+                    
+                    // Route A: Main Title alternating word-by-word reveal compilation loops from sides
+                    if (entryNode.target.id === "synchronizedMediaHeadline") {
+                        initializeMediaWordByWordSequenceFixed();
+                    } 
+                    // Route B: Secondary cards cascade rose element-by-element from bottom sequentially
+                    else {
+                        entryNode.target.classList.add("activated");
+                    }
+                    
+                    observerRef.unobserve(entryNode.target);
+                }
+            });
+        };
+
+        const mediaScrollObserverEngineFixed = new IntersectionObserver(onMediaIntersectionObservedFixed, mediaObserverConfigFixed);
+        
+        if (mediaHeadlineNodeFixed) mediaScrollObserverEngineFixed.observe(mediaHeadlineNodeFixed);
+        mediaScrollCardsPoolFixed.forEach(cardItem => mediaScrollObserverEngineFixed.observe(cardItem));
+
+        function initializeMediaWordByWordSequenceFixed() {
+            if (mediaHeadlineNodeFixed) {
+                const rawContentTextString = mediaHeadlineNodeFixed.innerText.trim();
+                const splitWordsArray = rawContentTextString.split(/\s+/);
+                
+                mediaHeadlineNodeFixed.innerHTML = "";
+
+                splitWordsArray.forEach((wordValue, itemIndex) => {
+                    const wordSpan = document.createElement("span");
+                    wordSpan.innerText = wordValue;
+                    wordSpan.classList.add("media-split-word-node-fixed");
+
+                    // Direct sequence elements to load entry paths from alternating sides based on odd/even index evaluations
+                    if (itemIndex % 2 === 0) {
+                        wordSpan.classList.add("media-word-slide-left-in-fixed");
+                    } else {
+                        wordSpan.classList.add("media-word-slide-right-in-fixed");
+                    }
+
+                    // Assign computation stagger delays dynamically to establish fluid flows entry lines
+                    wordSpan.style.animationDelay = `${itemIndex * 60}ms`;
+                    mediaHeadlineNodeFixed.appendChild(wordSpan);
+                });
+            }
+        }
+
+    } else {
+        // Fallback pipeline support loops instantly executing displays views if historical legacy engines lack observer mechanisms support
+        mediaScrollCardsPoolFixed.forEach(legacyCard => legacyCard.classList.add("activated"));
+    }
+});
+</script>
+
+<section class="stackly-testimonials-blueprint">
+    <div class="testimonials-blueprint-container">
+        
+        <!-- Header Typography & Navigation Arrow Controls Block Row -->
+        <div class="testimonials-blueprint-header">
+            <h2 class="testimonials-word-side-headline" id="testimonialTitleTarget">
+                Our Clients' Success Stories
+            </h2>
+            
+            <!-- Interactive Slider Trigger Navigation Button Array -->
+            <div class="testimonials-slider-navigation-group">
+                <button class="testimonial-nav-arrow-btn" id="testimonialPrevTrigger" aria-label="Slide to previous testimonials pool layer">&larr;</button>
+                <button class="testimonial-nav-arrow-btn" id="testimonialNextTrigger" aria-label="Slide to next testimonials pool layer">&rarr;</button>
+            </div>
+        </div>
+
+        <!-- Slider Viewport Window Wrapper Container Area -->
+        <div class="testimonials-viewport-carousel">
+            <!-- Dynamic Translation Sliding Track Core -->
+            <div class="testimonials-slider-window-track" id="testimonialWindowTrack">
+                
+                <!-- PAGE 1: First Pair of Testimonials -->
+                <div class="testimonial-carousel-page active">
+                    <!-- Left Card: Jenny Wilson -->
+                    <div class="testimonial-feedback-card testimonial-scroll-reveal" style="--stagger-order: 1;">
+                        <div class="testimonial-card-inner-split">
+                            <div class="testimonial-client-avatar-frame">
+                                <img src="https://unsplash.com" alt="Jenny Wilson profile case file asset preview" class="testimonial-avatar-img">
+                            </div>
+                            <div class="testimonial-review-content-panel">
+                                <div class="testimonial-vector-stars-row" aria-label="Rated 5 out of 5 stars">
+                                    <span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span>
+                                </div>
+                                <p class="testimonial-client-quote-text">
+                                    "Stackly completely transformed our enterprise regulatory strategy pipelines. By merging robust traditional case parameters with their secure automated tracking dashboard layer, our governance workflows operate smoothly at zero asset liability risks."
+                                </p>
+                                <div class="testimonial-author-meta-box">
+                                    <h3 class="testimonial-author-fullname">Jenny Wilson</h3>
+                                    <span class="testimonial-author-title-tag">CEO & Founder, FinTech Distribution</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Card: Kori Anderson -->
+                    <div class="testimonial-feedback-card testimonial-scroll-reveal" style="--stagger-order: 2;">
+                        <div class="testimonial-card-inner-split">
+                            <div class="testimonial-client-avatar-frame">
+                                <img src="https://unsplash.com" alt="Kori Anderson profile case file asset preview" class="testimonial-avatar-img">
+                            </div>
+                            <div class="testimonial-review-content-panel">
+                                <div class="testimonial-vector-stars-row" aria-label="Rated 5 out of 5 stars">
+                                    <span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span>
+                                </div>
+                                <p class="testimonial-client-quote-text">
+                                    "Accessing real-time partner-level attorney advisory backing inside a unified system allowed our venture startup iterations to expand cross-border compliance safely. Their no-nonsense solution-first approach delivers absolute clarity."
+                                </p>
+                                <div class="testimonial-author-meta-box">
+                                    <h3 class="testimonial-author-fullname">Kori Anderson</h3>
+                                    <span class="testimonial-author-title-tag">Corporate General Counsel, Lightspeed Systems</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAGE 2: Next 2 Testimonials (Injected cleanly behind layout framework) -->
+                <div class="testimonial-carousel-page">
+                    <!-- Left Card: Sarah Jenkins -->
+                    <div class="testimonial-feedback-card" style="--stagger-order: 1;">
+                        <div class="testimonial-card-inner-split">
+                            <div class="testimonial-client-avatar-frame">
+                                <img src="https://unsplash.com" alt="Sarah Jenkins case preview" class="testimonial-avatar-img">
+                            </div>
+                            <div class="testimonial-review-content-panel">
+                                <div class="testimonial-vector-stars-row" aria-label="Rated 5 out of 5 stars">
+                                    <span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span>
+                                </div>
+                                <p class="testimonial-client-quote-text">
+                                    "The data compliance framework deployed by Stackly safeguarded our operations during cross-border scaling metrics expansion loops. Their risk analysis vectors are incredibly high fidelity and simple to read."
+                                </p>
+                                <div class="testimonial-author-meta-box">
+                                    <h3 class="testimonial-author-fullname">Sarah Jenkins</h3>
+                                    <span class="testimonial-author-title-tag">Director of Operations, HealthVault Bio</span>
+                                }</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Card: Marcus Vance -->
+                    <div class="testimonial-feedback-card" style="--stagger-order: 2;">
+                        <div class="testimonial-card-inner-split">
+                            <div class="testimonial-client-avatar-frame">
+                                <img src="https://unsplash.com" alt="Marcus Vance case preview" class="testimonial-avatar-img">
+                            </div>
+                            <div class="testimonial-review-content-panel">
+                                <div class="testimonial-vector-stars-row" aria-label="Rated 5 out of 5 stars">
+                                    <span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span><span class="amber-vector-star">&#9733;</span>
+                                </div>
+                                <p class="testimonial-client-quote-text">
+                                    "Negotiating critical venture capital restructuring terms became fluid once Stackly integrated their active partner pool advisory backup into our workspace panel. Exceptional, precise execution loops."
+                                </p>
+                                <div class="testimonial-author-meta-box">
+                                    <h3 class="testimonial-author-fullname">Marcus Vance</h3>
+                                    <span class="testimonial-author-title-tag">Managing Director, Vanguard Alpha Labs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- Core Presentation Tokens Framework Configuration Layout --- */
+.stackly-testimonials-blueprint {
+    width: 100%;
+    /* Strict padding limits configured exactly to user configuration rules */
+    padding: 50px 0;
+    background-color: #ffffff; /* Clean Solid Pure White Canvas Backdrop Panel Surface Layer Layout */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.testimonials-blueprint-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* --- Section Header Arrangement Content Positioning Row --- */
+.testimonials-blueprint-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    gap: 24px;
+}
+
+.testimonials-word-side-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 4.5vw, 2.8rem);
+    font-weight: 700;
+    color: #090d16; /* Deep Obsidian Legal Navy text color */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 4px;
+    max-width: 720px;
+}
+
+/* Inline text items tokens wrappers injected programmatically by runtime javascript */
+.testimonial-split-word-node {
+    display: inline-block;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    animation-fill-mode: forwards;
+}
+
+.slide-word-left { transform: translateX(-35px); animation-name: testimonialEntryFromLeft; }
+.slide-word-right { transform: translateX(35px); animation-name: testimonialEntryFromRight; }
+
+@keyframes testimonialEntryFromLeft { to { opacity: 1; transform: translateX(0); } }
+@keyframes testimonialEntryFromRight { to { opacity: 1; transform: translateX(0); } }
+
+/* --- Navigation Arrow Interaction Controls --- */
+.testimonials-slider-navigation-group {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+}
+
+.testimonial-nav-arrow-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0; /* Crisp thin round border ring matching layout reference */
+    color: #090d16;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    outline: none;
+    box-shadow: 0 2px 4px rgba(9, 13, 22, 0.02);
+}
+
+.testimonial-nav-arrow-btn:hover {
+    border-color: #b45309; /* Executive Warm Amber traditional legal accent signature color */
+    color: #b45309;
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.15);
+    transform: scale(1.05);
+}
+
+.testimonial-nav-arrow-btn:active {
+    transform: scale(0.98);
+}
+
+/* --- Viewport Slide Windows Masking Box --- */
+.testimonials-viewport-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonials-slider-window-track {
+    display: flex;
+    width: 100%;
+    position: relative;
+    min-height: 340px; /* Locks structural bounds against layout pops */
+}
+
+/* --- Page Layer Management Engine Layout --- */
+.testimonial-carousel-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Exact clean 2-card system side-by-side matching screenshot */
+    gap: 32px;
+    width: 100%;
+    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(50px) scale(0.98);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1;
+}
+
+/* Active view layout state layer profiles */
+.testimonial-carousel-page.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0) scale(1);
+    position: relative; /* Restores flow boundaries height parameters constraints safely */
+    z-index: 2;
+}
+
+/* Handles exit transform directions cleanly */
+.testimonial-carousel-page.exit-left {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50px) scale(0.98);
+}
+
+/* --- High-Fidelity Testimonial Feed Card Components Design --- */
+.testimonial-feedback-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+}
+
+.testimonial-card-inner-split {
+    display: grid;
+    grid-template-columns: 0.72fr 1.28fr; /* Accurate spatial distribution scale partitioning image / data text boxes */
+    width: 100%;
+    height: 100%;
+}
+
+.testimonial-client-avatar-frame {
+    width: 100%;
+    height: 100%;
+    background-color: #090d16;
+    overflow: hidden;
+}
+
+.testimonial-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-review-content-panel {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.testimonial-vector-stars-row {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 18px;
+}
+
+.amber-vector-star {
+    font-size: 1.15rem;
+    color: #b45309; /* Warm Executive Amber Corporate Core Indicator Stars Fill */
+    line-height: 1;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-client-quote-text {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.6;
+    font-style: normal;
+    margin-bottom: 24px;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.testimonial-author-meta-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.testimonial-author-fullname {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #090d16;
+    margin: 0 0 4px 0;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.testimonial-author-title-tag {
+    font-size: 0.82rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* --- Master Hover & Glow Interaction System Configurations --- */
+.testimonial-feedback-card:hover {
+    border-color: #b45309; /* Changes frame path lines directly to crisp legal amber trace index lines */
+    transform: translateY(-6px); /* Subtle physics spring vertical lift action */
+    box-shadow: 0 15px 35px -5px rgba(180, 83, 9, 0.12), 0 0 15px rgba(180, 83, 9, 0.05);
+}
+
+.testimonial-feedback-card:hover .testimonial-avatar-img { transform: scale(1.04); }
+.testimonial-feedback-card:hover .testimonial-client-quote-text { color: #0f172a; }
+.testimonial-feedback-card:hover .amber-vector-star { transform: scale(1.1); }
+
+.testimonial-feedback-card:hover .testimonial-author-fullname {
+    color: #b45309;
+    text-shadow: 0 0 8px rgba(180, 83, 9, 0.15);
+}
+
+/* --- One-by-One Staggered Scroll Animation Reveals --- */
+.testimonial-scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.65s ease, transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.testimonial-scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.testimonial-carousel-page.active .testimonial-scroll-reveal.revealed {
+    /* Computes delay windows dynamically using structural tags variables sequence */
+    transition-delay: calc(var(--stagger-order) * 120ms);
+}
+
+/* --- Fully Responsive Hardware Media Breakpoints Matrix --- */
+@media (max-width: 1024px) {
+    .testimonial-carousel-page {
+        grid-template-columns: 1fr; /* Compresses page layouts completely down to a singular card node channel on tablets */
+        gap: 24px;
+        position: absolute;
+    }
+    
+    .testimonial-carousel-page.active {
+        position: relative;
+    }
+
+    .testimonial-card-inner-split {
+        grid-template-columns: 0.6fr 1.4fr;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Strict execution constraint implementation adapting padding bounds down exactly to 30px values markers */
+    .stackly-testimonials-blueprint { padding: 30px 0; }
+
+    .testimonials-blueprint-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 28px;
+    }
+
+    .testimonial-card-inner-split { grid-template-columns: 1fr; }
+    .testimonial-client-avatar-frame { height: 220px; }
+    .testimonial-review-content-panel { padding: 24px 20px; }
+    .testimonials-slider-navigation-group { width: 100%; justify-content: flex-end; }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const testimonialTitle = document.getElementById("testimonialTitleTarget");
+    const testimonialCards = document.querySelectorAll(".testimonial-scroll-reveal");
+    
+    // Slider Page Element Navigation Nodes Targets
+    const pages = document.querySelectorAll(".testimonial-carousel-page");
+    const nextArrowTrigger = document.getElementById("testimonialNextTrigger");
+    const prevArrowTrigger = document.getElementById("testimonialPrevTrigger");
+    let currentPageIndex = 0;
+
+    // 1. CAROUSEL ENGINE: Controls sliding active page array transitions loops
+    if (pages.length > 0 && nextArrowTrigger && prevArrowTrigger) {
+        
+        const transitionToPage = (targetPageIndex, direction) => {
+            const currentPageNode = pages[currentPageIndex];
+            const targetPageNode = pages[targetPageIndex];
+
+            // Setup exit vectors animation layout flags directions
+            if (direction === "next") {
+                currentPageNode.classList.add("exit-left");
+            }
+            
+            currentPageNode.classList.remove("active");
+            
+            // Clean slate delayed clear loops tracking exit states parameters
+            setTimeout(() => {
+                currentPageNode.classList.remove("exit-left");
+            }, 600);
+
+            // Active transition setup target node profiles variables
+            targetPageNode.classList.add("active");
+            currentPageIndex = targetPageIndex;
+        };
+
+        nextArrowTrigger.addEventListener("click", () => {
+            // Compute index limits rolling back loops safely to initial sequence frames markers bounds
+            let nextIndex = (currentPageIndex + 1) % pages.length;
+            transitionToPage(nextIndex, "next");
+        });
+
+        prevArrowTrigger.addEventListener("click", () => {
+            let prevIndex = (currentPageIndex - 1 + pages.length) % pages.length;
+            transitionToPage(prevIndex, "prev");
+        });
+    }
+
+    // 2. ANIMS ENGINE: Setup Scroll Intersection Observation Infrastructure Loop Controls
+    if ('IntersectionObserver' in window) {
+        const testimonialObserverConfig = {
+            root: null,
+            threshold: 0.12,
+            rootMargin: "0px 0px -25px 0px"
+        };
+
+        const onTestimonialIntersectionObserved = (entriesList, observerRef) => {
+            entriesList.forEach(entryNode => {
+                if (entryNode.isIntersecting) {
+                    if (entryNode.target.id === "testimonialTitleTarget") {
+                        initializeTestimonialWordByWordSequence();
+                    } else {
+                        entryNode.target.classList.add("revealed");
+                    }
+                    observerRef.unobserve(entryNode.target);
+                }
+            });
+        };
+
+        const testimonialScrollObserver = new IntersectionObserver(onTestimonialIntersectionObserved, testimonialObserverConfig);
+
+        if (testimonialTitle) testimonialScrollObserver.observe(testimonialTitle);
+        testimonialCards.forEach(cardItem => testimonialScrollObserver.observe(cardItem));
+
+        function initializeTestimonialWordByWordSequence() {
+            if (testimonialTitle) {
+                const cleanTextContent = testimonialTitle.innerText.trim();
+                const splitWordsArray = cleanTextContent.split(/\s+/);
+                
+                testimonialTitle.innerHTML = "";
+
+                splitWordsArray.forEach((wordValue, itemIndex) => {
+                    const wordSpan = document.createElement("span");
+                    wordSpan.innerText = wordValue;
+                    wordSpan.classList.add("testimonial-split-word-node");
+
+                    if (itemIndex % 2 === 0) {
+                        wordSpan.classList.add("slide-word-left");
+                    } else {
+                        wordSpan.classList.add("slide-word-right");
+                    }
+
+                    wordSpan.style.animationDelay = `${itemIndex * 60}ms`;
+                    testimonialTitle.appendChild(wordSpan);
+                });
+            }
+        }
+    } else {
+        testimonialCards.forEach(legacyCard => legacyCard.classList.add("revealed"));
+    }
+});
+
+</script>
+
+<!-- Full-Width Fluid Legal-Tech 1-Line Call-To-Action Banner Component -->
+<section class="stackly-headline-banner-fluid-strip">
+    
+    <!-- Full-Width Master Banner Card Box with Scroll Entry Reveal Fade Up -->
+    <div class="headline-banner-card-box-fluid scroll-revealed-fade-up" id="ctaBannerCardFluid1Line">
+        
+        <!-- Layer 1: Background Asset Graphic Element Image -->
+        <img src="https://unsplash.com" alt="Abstract Corporate Grid Network Blueprint Texture" class="headline-card-bg-asset-fluid" aria-hidden="true">
+        
+        <!-- Inner container houses content grids within standard readable page limits -->
+        <div class="headline-card-inner-fluid-container">
+            <div class="headline-card-inner-overlay-flex-fluid">
+                
+                <!-- Left Structural Layout Row Alignment: Combines Image and Headline into 1 Unified Line Frame -->
+                <div class="headline-combo-alignment-row-fluid">
+                    
+                    <!-- Layer 2: Foreground Graphic Shape Framing Layout Concept -->
+                    <div class="headline-foreground-thumbnail-frame-fluid">
+                        <img src="https://unsplash.com" alt="Stackly Secure Privacy Platform Node Interface Preview" class="headline-card-foreground-asset-fluid">
+                    </div>
+
+                    <!-- Single Line Main Title Configured for Word-by-Word Side Entry Scrolling Animations -->
+                    <h2 class="headline-banner-word-track-fluid" id="bannerLineHeadlineTargetFluid">
+                        Protect Your Enterprise Governance Pipelines Safely
+                    </h2>
+
+                </div>
+
+                <!-- Right Structural Layout Row Alignment: Floating Action CTA Trigger Key Button Link -->
+                <div class="headline-action-floating-box-fluid">
+                    <a href="#intake" class="btn-headline-banner-floating-fluid">Initialize Consultation &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* --- Core Banner Section Fluid Interface Layout Design --- */
+.stackly-headline-banner-fluid-strip {
+    width: 100%;
+    /* Strict execution padding constraints mapped exactly to user layout specs */
+    padding: 50px 0;
+    background-color: #ffffff; /* Solid White Backdrop Canvas Layer */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* --- Full-Width Master Banner Card Block Container with Scroll Entry --- */
+.headline-banner-card-box-fluid {
+    position: relative;
+    width: 100%; /* Spans 100% full viewport width edge-to-edge */
+    min-height: 140px; /* Specialized slim 1-line framing boundary scale footprint layout */
+    background-color: #090d16; /* Deep obsidian primary backdrop */
+    overflow: hidden;
+    border-top: 1px solid rgba(148, 163, 184, 0.15);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+    box-sizing: border-box;
+    opacity: 0; /* Managed smoothly by Scroll entry observer hooks triggers */
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.headline-banner-card-box-fluid.activated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Layer 1: Production background imagery fluid metrics configuration */
+.headline-card-bg-asset-fluid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1; /* Subtle technical backdrop texture watermark overlay line grids */
+    z-index: 1;
+    pointer-events: none;
+    transition: transform 0.5s ease;
+}
+
+/* Content inner width governance tracker bounds container */
+.headline-card-inner-fluid-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.headline-card-inner-overlay-flex-fluid {
+    position: relative;
+    width: 100%;
+    padding: 40px 0; /* Vertical breathing gap balances within full width bands layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Locks 1-line rows content elements symmetrical along center axes tracking */
+    gap: 32px;
+    z-index: 2; /* Forces layout panels above background texture layer nodes */
+    box-sizing: border-box;
+}
+
+/* --- Left Column Content Alignment System Tracks --- */
+.headline-combo-alignment-row-fluid {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex: 1;
+}
+
+/* Layer 2: Foreground Graphic framing layout configurations mimicking user screenshots asset nodes */
+.headline-foreground-thumbnail-frame-fluid {
+    width: 56px;
+    height: 56px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.headline-card-foreground-asset-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Pure word-by-word reveal typography text strings entries settings from alternating sides */
+.headline-banner-word-track-fluid {
+    font-size: 1.75rem; /* Proportional locked compact medium text scale headline architecture scaling */
+    font-weight: 700;
+    color: #ffffff; /* Crisp high contrast white typography text headers layers */
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 4px;
+}
+
+/* Inline text items tokens wrappers injected programmatically via runtime javascript */
+.headline-split-word-span-fluid {
+    display: inline-block;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation-duration: 0.55s;
+    animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    animation-fill-mode: forwards;
+}
+
+.word-enter-left-slide-fluid { transform: translateX(-30px); animation-name: headlineSlideFromLeftFluid; }
+.word-enter-right-slide-fluid { transform: translateX(30px); animation-name: headlineSlideFromRightFluid; }
+
+@keyframes headlineSlideFromLeftFluid { to { opacity: 1; transform: translateX(0); } }
+@keyframes headlineSlideFromRightFluid { to { opacity: 1; transform: translateX(0); } }
+
+/* --- Right Column Actions: Floating Key CTA Action Trigger Component Profile --- */
+.headline-action-floating-box-fluid {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.btn-headline-banner-floating-fluid {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b45309; /* Warm Executive Amber Corporate Focus Highlight Tones */
+    color: #ffffff !important; /* Forces solid typography rules blocking layout overrides link cascades */
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 4px;
+    border: 1px solid #b45309;
+    white-space: nowrap;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 14px rgba(180, 83, 9, 0.3);
+}
+
+/* Modern continuous vertical float physical micro-interaction lift loops configuration setup style profiles */
+.btn-headline-banner-floating-fluid:hover {
+    background-color: #92400e;
+    border-color: #92400e;
+    transform: translateY(-4px); /* Precision physics spring motion lift execution tracking index */
+    box-shadow: 0 12px 24px rgba(180, 83, 9, 0.45), 0 0 12px rgba(180, 83, 9, 0.25);
+}
+
+.btn-headline-banner-floating-fluid:active {
+    transform: translateY(-1px);
+}
+
+/* --- Interactive Card Boundary Hover Macro Glow Transforms --- */
+.headline-banner-card-box-fluid:hover .headline-card-bg-asset-fluid {
+    transform: scale(1.02); /* Subtle fluid imagery scale zoom track metrics */
+}
+
+.headline-banner-card-box-fluid:hover .headline-foreground-thumbnail-frame-fluid {
+    transform: scale(1.06) rotate(-3deg);
+    border-color: rgba(180, 83, 9, 0.35);
+}
+
+/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- */
+@media (max-width: 992px) {
+    .headline-card-inner-overlay-flex-fluid {
+        flex-direction: column; /* Stacks display fields entirely vertical on tablet viewports to expand tracking bounds */
+        gap: 24px;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .headline-combo-alignment-row-fluid {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .headline-banner-word-track-fluid {
+        justify-content: center;
+        font-size: 1.45rem; /* Proportional scale drop preventing word splits overlaps layout metrics code */
+    }
+
+    .headline-foreground-thumbnail-frame-fluid {
+        display: none; /* Safely hides secondary inline media thumbnail frames on compact touch grids viewport layout frames */
+    }
+
+    .headline-action-floating-box-fluid,
+    .btn-headline-banner-floating-fluid {
+        width: 100%;
+    }
+
+    .btn-headline-banner-floating-fluid {
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Strict execution constraint implementation adapting padding bounds down exactly to 30px metrics rules values */
+    .stackly-headline-banner-fluid-strip {
+        padding: 30px 0;
+    }
+
+    .headline-card-inner-overlay-flex-fluid {
+        padding: 30px 0;
+    }
+
+    .headline-banner-word-track-fluid {
+        font-size: 1.35rem;
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const fluidBannerCard1Line = document.getElementById("ctaBannerCardFluid1Line");
+    const fluidHeadline1Line = document.getElementById("bannerLineHeadlineTargetFluid");
+
+    if ('IntersectionObserver' in window && fluidBannerCard1Line) {
+        
+        // Define observer options thresholds mapping layout position parameters markers
+        const fluidBannerObserverOptions = {
+            root: null, 
+            threshold: 0.15, // Fires logic when 15% of box dimensions cross screen borders tracking views
+            rootMargin: "0px 0px -20px 0px"
+        };
+
+        const onFluidBannerIntersectionDetected = (entriesList, observerRef) => {
+            entriesList.forEach(entryNode => {
+                if (entryNode.isIntersecting) {
+                    // 1. Trigger parent card panel frame base fade-up slide entrance track fluid
+                    entryNode.target.classList.add("activated");
+                    
+                    // 2. Trigger subsequently child word-by-word reveal compilation loops routines fluid
+                    initializeFluid1LineWordSequence();
+                    
+                    // Unobserve element node safely once transition lifecycle completes track paths
+                    observerRef.unobserve(entryNode.target);
+                }
+            });
+        };
+
+        const fluidBannerScrollObserver = new IntersectionObserver(onFluidBannerIntersectionDetected, fluidBannerObserverOptions);
+        fluidBannerScrollObserver.observe(fluidBannerCard1Line);
+
+        // Word tokenizer compilation engine execution routine block fluid 1-line
+        function initializeFluid1LineWordSequence() {
+            if (fluidHeadline1Line) {
+                const rawStringText = fluidHeadline1Line.innerText.trim();
+                const splitWordsMatrix = rawStringText.split(/\s+/);
+                
+                // Wipe clean default tracking shell box container surfaces layer panel 
+                fluidHeadline1Line.innerHTML = "";
+
+                splitWordsMatrix.forEach((wordValue, itemIndex) => {
+                    const wordSpanNode = document.createElement("span");
+                    wordSpanNode.innerText = wordValue;
+                    wordSpanNode.classList.add("headline-split-word-span-fluid");
+
+                    // Direct sequence elements to load entry paths from alternating sides based on odd/even index evaluations
+                    if (itemIndex % 2 === 0) {
+                        wordSpanNode.classList.add("word-enter-left-slide-fluid");
+                    } else {
+                        wordSpanNode.classList.add("word-enter-right-slide-fluid");
+                    }
+
+                    // Adds incremental microsecond intervals delays dynamically to establish the flowing side word reveal
+                    wordSpanNode.style.animationDelay = `${itemIndex * 60}ms`;
+
+                    // Push processed typography block cleanly back into DOM layout path track loop execution tree
+                    fluidHeadline1Line.appendChild(wordSpanNode);
+                });
+            }
+        }
+
+    } else {
+        // Fallback pipeline execution support loops instantly executing displays views if historical legacy engines lack observer mechanisms support
+        if (fluidBannerCard1Line) fluidBannerCard1Line.classList.add("activated");
+    }
+});
+
+</script>
+
+<!-- Isolated Brand-Aligned Corporate Footer Component Section -->
+<footer class="stackly-corporate-footer-fresh">
+    <div class="footer-fluid-bounds-fresh">
+        
+        <!-- Four Column Layout Matrix precisely mirroring user layout blueprint -->
+        <div class="footer-columns-grid-fresh">
+            
+            
+            <div class="footer-brand-column-fresh">
+                <!-- Brand logo anchor configured to trigger the scroll-to-top routine -->
+                
+                    <img src="https://unsplash.com" alt="Stackly Corporate Digital Legal Logo" class="footer-logo-img-fresh">
+                </a>
+                <p class="footer-brand-description-fresh">
+                    Engineering premium macro-balanced regulatory compliance setups and secure decentralized legal frameworks designed to fuel enterprise hardware workspace productivity and legal compute nodes alike.
+                </p>
+                <!-- 5 Vector Social Icons Array Group (Configured for 404 navigation) -->
+                <div class="footer-social-icons-row-fresh">
+                    <a href="404.html" class="footer-social-node-fresh" aria-label="Instagram Platform Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 4 0 100 2.881 1.44 4 0 000-2.881z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-node-fresh" aria-label="Facebook Platform Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-node-fresh" aria-label="X Brand Profile Platform Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-node-fresh" aria-label="LinkedIn Professional Matrix Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-node-fresh" aria-label="Secure Messenger Pipeline Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Explore Fleets Links Pool -->
+            <div class="footer-links-column-fresh">
+                <h3 class="footer-section-heading-fresh">EXPLORE FLEETS</h3>
+                <nav class="footer-links-nav-fresh">
+                    <a href="404.html" class="footer-nav-link-item-fresh">Logistics AGV</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">Kinematic Arms</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">Quadruped Sentinel</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">Bionic Rover Systems</a>
+                </nav>
+            </div>
+
+            <!-- Column 3: Network Support Pool -->
+            <div class="footer-links-column-fresh">
+                <h3 class="footer-section-heading-fresh">NETWORK SUPPORT</h3>
+                <nav class="footer-links-nav-fresh">
+                    <a href="404.html" class="footer-nav-link-item-fresh">Node Telemetry Matrices</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">Fleet Delivery Tracks</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">Help & Diagnostics Center</a>
+                    <a href="404.html" class="footer-nav-link-item-fresh">PoPW Verifications</a>
+                </nav>
+            </div>
+
+            <!-- Column 4: Headquarters Geographical Address and Input Form -->
+            <div class="footer-links-column-fresh">
+                <h3 class="footer-section-heading-fresh">HEADQUARTERS</h3>
+                
+                <div class="footer-address-block-row-fresh">
+                    <svg viewBox="0 0 24 24" class="footer-address-marker-icon-fresh" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <p class="footer-address-text-fresh">MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</p>
+                </div>
+
+                <!-- Interactive Newsletter Form Matrix Panel Layer -->
+                <form class="footer-subscription-form-panel-fresh" id="footerSubscribeFormFresh" novalidate>
+                    <div class="footer-input-field-relative-fresh">
+                        <input type="email" id="footerNodeEmailInputFresh" placeholder="Enter node operator email..." class="footer-subscribe-input-field-fresh" required>
+                        <span class="footer-validation-bubble-alert-fresh" id="footerValidationAlertTextFresh">Please fill the subscribe field</span>
+                    </div>
+                    <button type="submit" class="btn-footer-subscribe-action-fresh">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Lower Baseline Symmetrical Copyright and Compliance Layout Strip Rows Links Line -->
+        <div class="footer-baseline-strip-row-fresh">
+            <p class="footer-copyright-text-fresh">&copy; 2026 Stackly Industries. All computational hardware rights reserved.</p>
+            <div class="footer-compliance-links-group-fresh">
+                <a href="404.html" class="footer-compliance-anchor-item-fresh">Privacy Policy</a>
+                <a href="404.html" class="footer-compliance-anchor-item-fresh">Terms of Service</a>
+                <a href="404.html" class="footer-compliance-anchor-item-fresh">Cookie Governance</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<style>
+    /* --- High-End Stackly Corporate Footer Presentation Tokens Configuration Layout --- */
+.stackly-corporate-footer-fresh {
+    width: 100%;
+    background-color: #000000; /* Solid Black Backdrop Canvas Panel Surface Layer Layout */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #f8fafc; 
+    padding-top: 60px;
+    padding-bottom: 30px; 
+    box-sizing: border-box;
+    position: relative;
+    
+    /* CRITICAL FIX: Erases padding, offsets, and margin voids to tightly bind with upper section block panels */
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    display: block;
+    vertical-align: top;
+}
+
+/* Global resetting architecture block overrides adjacent element gaps */
+.stackly-headline-banner-fluid-strip,
+.stackly-cta-banner-strip-fluid,
+.stackly-corporate-footer-fresh {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+
+.footer-fluid-bounds-fresh {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* --- Four Column Structural Master Framework Layout Grid --- */
+.footer-columns-grid-fresh {
+    display: grid;
+    grid-template-columns: 1.35fr 0.85fr 0.9fr 1.15fr;
+    gap: 40px;
+    width: 100%;
+    padding-bottom: 50px; 
+    border-bottom: 1px solid rgba(148, 163, 184, 0.08); /* Clean hairline texture trace dividers boundary */
+    box-sizing: border-box;
+}
+
+/* --- Column 1: Brand Logotype Area Setup Properties --- */
+.footer-brand-column-fresh {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo-link-fresh {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    margin-bottom: 24px;
+}
+
+.footer-logo-link-fresh:hover {
+    transform: scale(0.975);
+}
+
+.footer-logo-img-fresh {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Forces white icon over black backdrop canvas */
+}
+
+.footer-brand-description-fresh {
+    font-size: 0.92rem; 
+    color: #94a3b8; /* Slate gray neutral explanatory content description */
+    line-height: 1.6;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+/* --- Sizing For 5 Vector Social Nodes Set Track Matrix --- */
+.footer-social-icons-row-fresh {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-social-node-fresh {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(148, 163, 184, 0.05);
+    border: 1px solid rgba(148, 163, 184, 0.12); /* Subtle wire ring outer framework tracing border visible in image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #94a3b8;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.footer-svg-icon-fresh {
+    width: 15px; 
+    height: 15px;
+    fill: currentColor;
+}
+
+.footer-social-node-fresh:hover {
+    background-color: #b45309; /* Warm Amber traditional legal accent */
+    border-color: #b45309;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.3);
+}
+
+/* --- Columns 2 & 3: Standard Section Header Layout Framework Navigation Link Columns --- */
+.footer-links-column-fresh {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-section-heading-fresh {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+/* Horizontal Red Sections Accent Track Line Tracer directly mirroring user blueprint layout screenshot rules */
+.footer-section-heading-fresh::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #b45309; 
+    border-radius: 4px;
+}
+
+.footer-links-nav-fresh {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+}
+
+.footer-nav-link-item-fresh {
+    font-size: 0.92rem;
+    color: #94a3b8;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    text-align: left;
+    width: max-content;
+}
+
+.footer-nav-link-item-fresh:hover {
+    color: #b45309; 
+    padding-left: 4px;
+}
+
+/* --- Column 4: Geographical Marker Alignment Elements Context System --- */
+.footer-address-block-row-fresh {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.footer-address-marker-icon-fresh {
+    width: 16px;
+    height: 16px;
+    fill: #b45309; 
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.footer-address-text-fresh {
+    font-size: 0.92rem;
+    color: #94a3b8;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* --- Interactive Newsletter Input Panel Field Systems Architecture --- */
+.footer-subscription-form-panel-fresh {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(148, 163, 184, 0.04);
+    border: 1px solid rgba(148, 163, 184, 0.12); /* Clean horizontal inner border block casing layout */
+    border-radius: 6px;
+    padding: 4px;
+    box-sizing: border-box;
+    position: relative;
+    transition: border-color 0.3s ease;
+}
+
+.footer-subscription-form-panel-fresh:focus-within {
+    border-color: #b45309;
+}
+
+.footer-input-field-relative-fresh {
+    flex: 1;
+    position: relative;
+}
+
+.footer-subscribe-input-field-fresh {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 10px 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #ffffff;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.footer-subscribe-input-field-fresh::placeholder {
+    color: #4b5563; 
+}
+
+/* Dynamic Field Form Validation Prompt Dialog Alert Bubble */
+.footer-validation-bubble-alert-fresh {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 4px;
+    background-color: #ef4444; 
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+    z-index: 100;
+}
+
+.footer-validation-bubble-alert-fresh::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 14px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ef4444 transparent transparent transparent;
+}
+
+.footer-validation-bubble-alert-fresh.display-prompt {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.btn-footer-subscribe-action-fresh {
+    background-color: #ffffff; /* Stark solid white layout fill matching screenshot blueprint */
+    color: #000000 !important; 
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-footer-subscribe-action-fresh:hover {
+    background-color: #b45309;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(180, 83, 9, 0.3);
+}
+
+/* --- Lower Baseline Copyright and Compliance Matrix Layout Strip Row --- */
+.footer-baseline-strip-row-fresh {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.footer-copyright-text-fresh {
+    font-size: 0.85rem;
+    color: #4b5563; 
+    margin: 0;
+}
+
+.footer-compliance-links-group-fresh {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-compliance-anchor-item-fresh {
+    font-size: 0.85rem;
+    color: #4b5563;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.footer-compliance-anchor-item-fresh:hover {
+    color: #b45309;
+}
+
+/* --- Fully Responsive Hardware Media Breakpoints Matrix Processing --- */
+@media (max-width: 1024px) {
+    .footer-columns-grid-fresh {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    .stackly-corporate-footer-fresh {
+        padding-top: 50px; 
+        padding-bottom: 30px;
+    }
+
+    .footer-columns-grid-fresh {
+        grid-template-columns: 1fr; 
+        gap: 28px;
+        padding-bottom: 36px;
+    }
+
+    .footer-brand-column-fresh { align-items: center; text-align: center; }
+    .footer-brand-description-fresh { text-align: center; }
+    .footer-links-column-fresh { align-items: center; }
+    .footer-section-heading-fresh::after { left: 50%; transform: translateX(-50%); }
+    .footer-nav-link-item-fresh { text-align: center; width: 100%; }
+    .footer-address-block-row-fresh { justify-content: center; }
+    .footer-address-text-fresh { text-align: center; }
+
+    .footer-baseline-strip-row-fresh {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding-top: 24px;
+    }
+
+    .footer-compliance-links-group-fresh {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const footerBackToTopFresh = document.getElementById("footerBackToTopTriggerFresh");
+    const subscribeFormFresh = document.getElementById("footerSubscribeFormFresh");
+    const emailInputFieldFresh = document.getElementById("footerNodeEmailInputFresh");
+    const validationAlertBubbleFresh = document.getElementById("footerValidationAlertTextFresh");
+
+    // 1. BACK TO TOP: Triggers hardware accelerated window smooth scroll transition
+    if (footerBackToTopFresh) {
+        footerBackToTopFresh.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
+
+    // 2. VALIDATION ENGINE: Form Check Conditions before 404 routing updates
+    if (subscribeFormFresh && emailInputFieldFresh && validationAlertBubbleFresh) {
+        
+        emailInputFieldFresh.addEventListener("input", () => {
+            validationAlertBubbleFresh.classList.remove("display-prompt");
+        });
+
+        subscribeFormFresh.addEventListener("submit", (e) => {
+            e.preventDefault();
+            
+            const rawEmailValue = emailInputFieldFresh.value.trim();
+
+            if (!rawEmailValue || !emailInputFieldFresh.checkValidity()) {
+                validationAlertBubbleFresh.classList.add("display-prompt");
+                emailInputFieldFresh.focus();
+            } else {
+                validationAlertBubbleFresh.classList.remove("display-prompt");
+                subscribeFormFresh.reset();
+                window.location.href = "404.html";
+            }
+        });
+    }
+});
+
+</script>
+</body>
+</html>
