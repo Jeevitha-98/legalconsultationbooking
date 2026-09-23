@@ -25,7 +25,7 @@
                     <span class="hamburger-bar"></span>
                 </button>
                 <div class="brand-logo" onclick="refreshDashboard()" title="Refresh Dashboard">
-                    <img src="https://unsplash.com" alt="Stackly Legal Logo" class="brand-img">
+            
                     <span class="brand-text">Stackly<span>Client</span></span>
                 </div>
             </div>
@@ -41,19 +41,10 @@
                 </div>
                 
                 <!-- Profile Image Component Node with dynamic backup SVG vector system -->
-                <div class="profile-pill">
-                    <div class="profile-avatar">
-                        <img src="https://unsplash.com" 
-                             alt="Client Profile Photo" 
-                             class="profile-img"
-                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <svg xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="profile-svg-fallback" style="display: none;">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                    </div>
-                    <span class="user-greeting" id="user-display-name">Jeevi</span>
-                </div>
+              <div class="profile-pill">
+    <span class="profile-icon">👤</span>
+    <span id="user-display-name">Client</span>
+</div>
             </div>
         </header>
 
@@ -84,10 +75,10 @@
                 </nav>
                 
                 <div class="sidebar-footer">
-                    <button class="logout-btn" onclick="navigateToErrorPage()">
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        <span>Logout</span>
-                    </button>
+                  <button type="button" class="logout-btn" onclick="window.location.href='login.html';">
+    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+    <span>Logout</span>
+</button>
                 </div>
             </aside>
 
@@ -192,15 +183,24 @@
                     <div class="fee-amount">$250.00</div>
                 </div>
 
-                <button class="primary-booking-btn" onclick="executeConsultationBooking()">
-                    <i class="fa-solid fa-lock-keyhole"></i> Confirm & Book Consultation
-                </button>
+               <button type="button" class="primary-booking-btn" onclick="window.location.href='404.html';">
+    <i class="fa-solid fa-lock-keyhole"></i> Confirm &amp; Book Consultation
+</button>
                 <p class="compliance-footer-text"><i class="fa-solid fa-shield-halved"></i> Attends strictly via standard attorney-client privilege non-disclosure agreements safeguards rules.</p>
             </div>
         </div>
 
     </div>
 </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const userName = localStorage.getItem("stacklyActiveUserEmailIdentity");
+
+    document.getElementById("user-display-name").textContent =
+        userName || "Client";
+});
+</script>
 <style>
     /* Consultation Booking Advanced Component Workspace Styles */
 .booking-grid-layout {
@@ -630,7 +630,7 @@ function executeConsultationBooking() {
                 <p class="time-meta-string"><i class="fa-regular fa-clock"></i> 09:00 AM - 10:00 AM (IST) | Virtual Room Strategy Session</p>
                 
                 <div class="assigned-lawyer-row">
-                    <img src="https://unsplash.com" alt="Attorney Portrait" class="lawyer-avatar">
+                    <img src="./assests/arjun.webp" alt="Attorney Portrait" class="lawyer-avatar">
                     <div>
                         <h4 class="lawyer-name">Senior Counsel Alexander Vance, Esq.</h4>
                         <p class="lawyer-meta-title">Corporate Securities Specialist | Managing Partner</p>
@@ -643,9 +643,9 @@ function executeConsultationBooking() {
                 <button class="launch-video-btn" onclick="navigateToErrorPage()">
                     <i class="fa-solid fa-video"></i> Join Virtual Consultation Room
                 </button>
-                <button class="secondary-action-btn" onclick="triggerRescheduleDialog('Appt #L-9982')">
-                    <i class="fa-regular fa-calendar-minus"></i> Reschedule Slot
-                </button>
+                <button type="button" class="secondary-action-btn" onclick="window.location.href='404.html';">
+    <i class="fa-regular fa-calendar-minus"></i> Reschedule Slot
+</button>
             </div>
         </div>
 
@@ -668,7 +668,7 @@ function executeConsultationBooking() {
                 <p class="time-meta-string"><i class="fa-regular fa-clock"></i> 02:00 PM - 03:00 PM (IST) | Preliminary Audit Assessment</p>
                 
                 <div class="assigned-lawyer-row">
-                    <img src="https://unsplash.com" alt="Attorney Portrait" class="lawyer-avatar">
+                    <img src="./assests/rose.webp" alt="Attorney Portrait" class="lawyer-avatar">
                     <div>
                         <h4 class="lawyer-name">Elena Rostova, Esq.</h4>
                         <p class="lawyer-meta-title">Senior Intellectual Property Advisory Counsel</p>
@@ -680,9 +680,9 @@ function executeConsultationBooking() {
                 <button class="launch-video-btn waiting-state" onclick="navigateToErrorPage()">
                     <i class="fa-solid fa-lock"></i> Room Locks Until Oct 02
                 </button>
-                <button class="secondary-action-btn" onclick="triggerRescheduleDialog('Appt #L-4410')">
-                    <i class="fa-regular fa-calendar-minus"></i> Reschedule Slot
-                </button>
+              <button type="button" class="secondary-action-btn" onclick="window.location.href='404.html';">
+    <i class="fa-regular fa-calendar-minus"></i> Reschedule Slot
+</button>
             </div>
         </div>
 
@@ -705,7 +705,7 @@ function executeConsultationBooking() {
                 <p class="time-meta-string"><i class="fa-regular fa-clock"></i> Terminated Aug 14, 2026 | 1 hour billable hour exhausted</p>
                 
                 <div class="assigned-lawyer-row">
-                    <img src="https://unsplash.com" alt="Attorney Portrait" class="lawyer-avatar">
+                    <img src="./assests/aris.webp" alt="Attorney Portrait" class="lawyer-avatar">
                     <div>
                         <h4 class="lawyer-name">Senior Counsel Alexander Vance, Esq.</h4>
                         <p class="lawyer-meta-title">Corporate Securities Specialist | Managing Partner</p>
@@ -1116,9 +1116,9 @@ function triggerRescheduleDialog(appointmentReferenceId) {
     <div class="document-repository-section">
         <div class="repository-header">
             <h3><i class="fa-solid fa-folder-closed"></i> Privileged Document Repository</h3>
-            <button class="upload-trigger-btn" onclick="triggerSimulatedUpload()">
-                <i class="fa-solid fa-cloud-arrow-up"></i> Upload Evidence PDF
-            </button>
+            <button type="button" class="upload-trigger-btn" onclick="window.location.href='404.html';">
+    <i class="fa-solid fa-cloud-arrow-up"></i> Upload Evidence PDF
+</button>
         </div>
         
         <!-- Hidden file input node for simulated action triggers -->
@@ -1666,9 +1666,9 @@ function handleSimulatedFileSelection(inputElementReference) {
                         </div>
                     </div>
 
-                    <button type="submit" class="execute-payment-btn">
-                        <i class="fa-solid fa-lock"></i> Authorize Secure Deposit
-                    </button>
+                  <button type="submit" class="execute-payment-btn">
+    <i class="fa-solid fa-lock"></i> Authorize Secure Deposit
+</button>
                 </form>
 
                 <div class="trust-compliance-seal">
@@ -1995,30 +1995,27 @@ function handleSimulatedFileSelection(inputElementReference) {
 </style>
 
 <script>
-    /**
- * Processes a simulated secure escrow deposit transaction pipeline
- */
 function executeSimulatedTrustDeposit(paymentEventInstance) {
     paymentEventInstance.preventDefault();
-    
+
+    const paymentForm = document.getElementById('escrow-payment-form');
     const depositAmountValue = document.getElementById('escrow-amount').value;
-    const cardNumberValue = document.getElementById('card-num-mock').value;
-    
-    if (!depositAmountValue || depositAmountValue < 100) {
-        alert("Minimum replenishment value threshold is \$100.00.");
+
+    // Check required HTML form fields
+    if (!paymentForm.checkValidity()) {
+        paymentForm.reportValidity();
         return;
     }
 
-    // Mask string logging parameters securely
-    const trailingDigits = cardNumberValue.slice(-4) || "4410";
+    // Check minimum deposit amount
+    if (!depositAmountValue || parseFloat(depositAmountValue) < 100) {
+        alert("Minimum replenishment value threshold is $100.00.");
+        return;
+    }
 
-    // Trigger clear system processing validation modal overlay alert configurations
-    alert(`Trust Transaction Authorization:\n\nSuccess! An amount of $${parseFloat(depositAmountValue).toFixed(2)} has been allocated via card entry ending in ****${trailingDigits}.\n\nEscrow funds will register instantly within your client profile ledger balance parameters.`);
-    
-    // Flush transaction input values clean post transaction loop execution
-    document.getElementById('escrow-payment-form').reset();
+    // All fields are valid → navigate to 404
+    window.location.href = "404.html";
 }
-
 </script>
 
               <!-- Enhanced Client Assistance Center Workspace -->
@@ -2056,9 +2053,9 @@ function executeSimulatedTrustDeposit(paymentEventInstance) {
                         <textarea id="support-message" class="support-textarea-input" rows="5" placeholder="Provide background parameters, relevant exhibit file names, or invoice numbers to accelerate processing..." required></textarea>
                     </div>
 
-                    <button type="submit" class="submit-ticket-btn">
-                        <i class="fa-solid fa-shield-halved"></i> Dispatch Secure Request
-                    </button>
+                   <button type="submit" class="submit-ticket-btn">
+    <i class="fa-solid fa-shield-halved"></i> Dispatch Secure Request
+</button>
                 </form>
             </div>
         </div>
@@ -2393,39 +2390,42 @@ function executeSimulatedTrustDeposit(paymentEventInstance) {
 </style>
 
 <script>
-    /**
- * Toggles the expanded status criteria values on the FAQ accordion item rows array cleanly
+/**
+ * Toggles the expanded status criteria values on the FAQ accordion
  */
 function toggleAccordionItem(accordionElementReference) {
-    const isCurrentlyActive = accordionElementReference.classList.contains('active');
-    
-    // Programmatically collapse neighboring item states open indices 
-    accordionElementReference.parentNode.querySelectorAll('.faq-item-wrapper').forEach(item => {
-        item.classList.remove('active');
-    });
-    
-    // If targeted box row was closed, switch its active state toggled visible layer parameters
+    const isCurrentlyActive =
+        accordionElementReference.classList.contains('active');
+
+    accordionElementReference.parentNode
+        .querySelectorAll('.faq-item-wrapper')
+        .forEach(item => {
+            item.classList.remove('active');
+        });
+
     if (!isCurrentlyActive) {
         accordionElementReference.classList.add('active');
     }
 }
 
 /**
- * Handles simulated client assistance firm ticket dispatches pipelines
+ * Handles secure support ticket submission
  */
 function submitClientSupportTicket(formSubmitEventInstance) {
     formSubmitEventInstance.preventDefault();
-    
-    const selectedUrgencyValue = document.getElementById('support-urgency').value;
-    const inputtedSubjectValue = document.getElementById('support-subject').value;
-    
-    // Fire transaction status verification popup confirmations 
-    alert(`Firm Assistance Dispatch Registry:\n\nSuccess! Your high-security tracking ticket has been securely routed into your assigned attorney's support workflow matrix.\n\n[Classification]: ${selectedUrgencyValue}\n[Subject]: ${inputtedSubjectValue}\n\nOur structural legal assistant team will follow up via your secure portal profile repository channel.`);
-    
-    // Flush form layout values clean post-execution process loop parameters
-    document.getElementById('firm-support-ticket-form').reset();
-}
 
+    const supportForm =
+        document.getElementById('firm-support-ticket-form');
+
+    // Show browser's "Please fill out this field" message
+    if (!supportForm.checkValidity()) {
+        supportForm.reportValidity();
+        return;
+    }
+
+    // All required fields are filled → navigate to 404
+    window.location.href = "404.html";
+}
 </script>
             </main>
         </div>
@@ -2799,61 +2799,89 @@ body {
 
     </style>
 
-    <script>
-        let activeSectionId = 'book-consult';
+<script>
+    let activeSectionId =
+        sessionStorage.getItem('clientActiveSection') || 'book-consult';
 
-function refreshDashboard() {
-    const brandElement = document.querySelector('.brand-logo');
-    brandElement.style.opacity = '0.4';
-    setTimeout(() => {
-        brandElement.style.opacity = '1';
-        switchSection('book-consult');
-    }, 250);
-}
+    function refreshDashboard() {
+        const brandElement = document.querySelector('.brand-logo');
 
-function switchSection(sectionId) {
-    document.querySelectorAll('.dash-section').forEach(section => {
-        section.classList.add('hidden');
+        if (brandElement) {
+            brandElement.style.opacity = '0.4';
+        }
+
+        setTimeout(() => {
+            // Refresh the page while keeping the current section
+            window.location.reload();
+        }, 250);
+    }
+
+    function switchSection(sectionId) {
+
+        // Save the currently selected section
+        activeSectionId = sectionId;
+        sessionStorage.setItem('clientActiveSection', sectionId);
+
+        document.querySelectorAll('.dash-section').forEach(section => {
+            section.classList.add('hidden');
+        });
+
+        const targetSection =
+            document.getElementById(`section-${sectionId}`);
+
+        if (targetSection) {
+            targetSection.classList.remove('hidden');
+        }
+
+        document.querySelectorAll('.nav-item').forEach(button => {
+            button.classList.remove('active');
+        });
+
+        const activeItem =
+            Array.from(document.querySelectorAll('.nav-item')).find(btn => {
+                const onclickValue = btn.getAttribute('onclick');
+                return onclickValue &&
+                       onclickValue.includes(`'${sectionId}'`);
+            });
+
+        if (activeItem) {
+            activeItem.classList.add('active');
+        }
+
+        // Close sidebar after section selection
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+
+        if (sidebar && sidebar.classList.contains('open')) {
+            sidebar.classList.remove('open');
+
+            if (overlay) {
+                overlay.classList.remove('open');
+            }
+        }
+    }
+
+    function toggleSidebar() {
+        const sidebarElement = document.getElementById('sidebar');
+        const overlayElement = document.getElementById('sidebar-overlay');
+
+        if (sidebarElement) {
+            sidebarElement.classList.toggle('open');
+
+            if (overlayElement) {
+                overlayElement.classList.toggle('open');
+            }
+        }
+    }
+
+    function navigateToErrorPage() {
+        window.location.href = "404.html";
+    }
+
+    // Restore the same section after page refresh
+    document.addEventListener('DOMContentLoaded', function () {
+        switchSection(activeSectionId);
     });
-    
-    const targetSection = document.getElementById(`section-${sectionId}`);
-    if (targetSection) {
-        targetSection.classList.remove('hidden');
-    }
-    
-    document.querySelectorAll('.nav-item').forEach(button => {
-        button.classList.remove('active');
-    });
-    
-    const activeItem = Array.from(document.querySelectorAll('.nav-item')).find(btn => 
-        btn.getAttribute('onclick').includes(`'${sectionId}'`)
-    );
-    if (activeItem) {
-        activeItem.classList.add('active');
-    }
-    
-    // Auto collapse slideouts and overlay states after routing transitions complete
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('sidebar-overlay');
-    if (sidebar && sidebar.classList.contains('open')) {
-        sidebar.classList.remove('open');
-        overlay.classList.remove('open');
-    }
-}
-
-function toggleSidebar() {
-    const sidebarElement = document.getElementById('sidebar');
-    const overlayElement = document.getElementById('sidebar-overlay');
-    if (sidebarElement) {
-        sidebarElement.classList.toggle('open');
-        overlayElement.classList.toggle('open');
-    }
-}
-
-function navigateToErrorPage() {
-    window.location.href = "404.html";
-}
-
-    </script>
+</script>
 </body>
 </html>

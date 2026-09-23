@@ -127,7 +127,7 @@
         <!-- Sequential Intake Infrastructure Contact Number -->
         <div class="utility-contact-block item-stagger-fade" style="--stagger-index: 5;">
             <span class="utility-contact-tag">Intake Support Framework:</span>
-            <a href="tel:9292426868" class="utility-contact-phone">929-242-6868</a>
+            <a href="tel:9292426868" class="utility-contact-phone">+91 7010792745</a>
         </div>
 
     </div>
@@ -140,14 +140,14 @@
         
         
         <a href="javascript:window.location.reload()" class="header-logo-anchor" aria-label="Stackly Platform Home, Refresh Workspace Layout">
-            <img src="https://unsplash.com" alt="Stackly Corporate Digital Legal Logo" class="header-logo-img">
+            <img src="./assests/legal logo.webp" alt="Stackly Corporate Digital Legal Logo" class="header-logo-img">
         </a>
 
         <!-- Desktop Mode Center-Aligned Navigation Options -->
         <nav class="header-desktop-menu" role="navigation">
             <a href="index.html" class="header-nav-link">Home</a>
-            <a href="sttorney.html" class="header-nav-link">Our Attorneys</a>
-            <a href="practice.html" class="header-nav-link">Practice Areas</a>
+            <a href="attorney.html" class="header-nav-link">Our Attorneys</a>
+            <a href="practice.html" class="header-nav-link active">Practice Areas</a>
             <a href="blog.html" class="header-nav-link">Blogs</a>
             <a href="contact.html" class="header-nav-link">Contact Us</a>
         </nav>
@@ -172,7 +172,7 @@
     <nav class="header-mobile-menu">
         <a href="index.html" class="header-drawer-link">Home</a>
         <a href="attorney.html" class="header-drawer-link">Our Attorneys</a>
-        <a href="practice.html" class="header-drawer-link">Practice Areas</a>
+        <a href="practice.html" class="header-drawer-link active">Practice Areas</a>
         <a href="blog.html" class="header-drawer-link">Blogs</a>
         <a href="contact.html" class="header-drawer-link">Contact Us</a>
         <div class="header-drawer-action-wrapper">
@@ -183,36 +183,67 @@
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const headerMenuTrigger = document.getElementById("headerMenuTrigger");
-    const headerMobileDrawer = document.getElementById("headerMobileDrawer");
-    const mobileDrawerLinks = document.querySelectorAll(".header-drawer-link");
+document.addEventListener("DOMContentLoaded", () => {
+
+    const headerMenuTrigger =
+        document.getElementById("headerMenuTrigger");
+
+    const headerMobileDrawer =
+        document.getElementById("headerMobileDrawer");
+
+    const mobileDrawerLinks =
+        document.querySelectorAll(".header-drawer-link");
+
 
     if (headerMenuTrigger && headerMobileDrawer) {
-        // Intercept action controls taps metrics inputs variables execution loops
+
+        /* =====================================================
+           HAMBURGER OPEN / CLOSE
+           ===================================================== */
         headerMenuTrigger.addEventListener("click", () => {
-            const isDrawerOpenStateActive = headerMobileDrawer.classList.toggle("active-view");
-            headerMenuTrigger.classList.toggle("triggered");
 
-            // Avoid structural double-layer track viewport scrolling conflicts while mobile overlay is expanded
-            if (isDrawerOpenStateActive) {
-                document.body.style.overflow = "hidden";
-            } else {
-                document.body.style.overflow = "";
-            }
+            const isDrawerOpenStateActive =
+                headerMobileDrawer.classList.toggle("active-view");
+
+            headerMenuTrigger.classList.toggle(
+                "triggered",
+                isDrawerOpenStateActive
+            );
+
+            /* IMPORTANT:
+               Add/remove the class used by CSS
+               for background blur + scroll lock
+            */
+            document.body.classList.toggle(
+                "mobile-menu-open",
+                isDrawerOpenStateActive
+            );
+
         });
 
-        // Automatically slide panel up collapse states if target navigation selections complete execution pathing
+
+        /* =====================================================
+           CLOSE MENU AFTER NAVIGATION CLICK
+           ===================================================== */
         mobileDrawerLinks.forEach(linkItem => {
-            linkItem.addEventListener("click", () => {
-                headerMobileDrawer.classList.remove("active-view");
-                headerMenuTrigger.classList.remove("triggered");
-                document.body.style.overflow = "";
-            });
-        });
-    }
-});
 
+            linkItem.addEventListener("click", () => {
+
+                headerMobileDrawer.classList.remove("active-view");
+
+                headerMenuTrigger.classList.remove("triggered");
+
+                document.body.classList.remove(
+                    "mobile-menu-open"
+                );
+
+            });
+
+        });
+
+    }
+
+});
 </script>
 
 <!-- Refactored Practice Page Hero Section with 130px Top Padding -->
@@ -248,7 +279,7 @@
             <!-- Right Side Column: Hard-coded visual image framework panel configuration layout -->
             <div class="practice-hero-fixed-graphic-panel">
                 <div class="practice-hero-fixed-image-frame">
-                    <img src="https://unsplash.com" alt="Senior corporate defense partner holding case portfolio documentation briefs" class="practice-hero-fixed-img">
+                    <img src="./assests/wt legal.webp" alt="Senior corporate defense partner holding case portfolio documentation briefs" class="practice-hero-fixed-img">
                 </div>
             </div>
 
@@ -554,7 +585,7 @@
 
 /* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- */
 @media (max-width: 1024px) {
-    .stackly-practice-hero-canvas-fixed { padding-top: 110px; } /* Proportional reduction on responsive devices */
+    .stackly-practice-hero-canvas-fixed { padding-top: 180px; } /* Proportional reduction on responsive devices */
     .practice-hero-fixed-top-split { grid-template-columns: 1fr; gap: 40px; margin-bottom: 40px; }
     .practice-hero-fixed-graphic-panel { max-width: 580px; margin: 0 auto; }
     .practice-features-fixed-marquee-row { grid-template-columns: 1fr; gap: 20px; text-align: center; }
@@ -562,7 +593,7 @@
 }
 
 @media (max-width: 640px) {
-    .stackly-practice-hero-canvas-fixed { padding-top: 100px; }
+    .stackly-practice-hero-canvas-fixed { padding-top: 180px; }
     .practice-hero-fixed-word-headline { font-size: 1.95rem; }
     .practice-hero-fixed-action-row { flex-direction: column; align-items: stretch; width: 100%; gap: 16px; }
     .btn-fixed-amber-fill, .btn-fixed-play-link { width: 100%; justify-content: center; }
@@ -954,7 +985,7 @@
 <section class="stackly-workflow-process-strip">
     
     <!-- Layer 1: Background Asset Graphic Element Image -->
-    <img src="https://unsplash.com" alt="" class="workflow-strip-bg-asset" aria-hidden="true">
+    <img src="./assests/attorney discussion.webp" alt="" class="workflow-strip-bg-asset" aria-hidden="true">
 
     <div class="workflow-process-container">
         
@@ -1012,7 +1043,7 @@
                         <p class="step-card-inline-one-liner">Run preliminary diagnostics over your current situation.</p>
                         
                         <div class="step-active-extended-content">
-                            <img src="https://unsplash.com" alt="" class="step-internal-thumbnail-asset" aria-hidden="true">
+                            <img src="./assests/attorney discussion.webp" alt="" class="step-internal-thumbnail-asset" aria-hidden="true">
                             <p class="step-extended-paragraph-desc">
                                 Connect safely with our advisory team to map your primary operational assets and timeline requirements.
                             </p>
@@ -1033,7 +1064,7 @@
                         <p class="step-card-inline-one-liner">Draft a bespoke legal roadmap tailored to your goals.</p>
                         
                         <div class="step-active-extended-content">
-                            <img src="https://unsplash.com" alt="" class="step-internal-thumbnail-asset" aria-hidden="true">
+                            <img src="./assests/attorney 1.webp" alt="" class="step-internal-thumbnail-asset" aria-hidden="true">
                             <p class="step-extended-paragraph-desc">
                                 We design specialized architectural defense lines tailored to protect your specific commercial enterprise.
                             </p>
@@ -1054,7 +1085,7 @@
                         <p class="step-card-inline-one-liner">Precise case representation across mediation boards.</p>
                         
                         <div class="step-active-extended-content">
-                            <img src="https://unsplash.com" alt="" class="step-internal-thumbnail-asset" aria-hidden="true">
+                            <img src="./assests/document verification.webp" alt="" class="step-internal-thumbnail-asset" aria-hidden="true">
                             <p class="step-extended-paragraph-desc">
                                 Rigorous advocacy and filing pipelines deployed efficiently across courtrooms and networks.
                             </p>
@@ -1075,7 +1106,7 @@
                         <p class="step-card-inline-one-liner">Final settlement closures locking operational shields.</p>
                         
                         <div class="step-active-extended-content">
-                            <img src="https://unsplash.com" alt="" class="step-internal-thumbnail-asset" aria-hidden="true">
+                            <img src="./assests/legal statue.webp" alt="" class="step-internal-thumbnail-asset" aria-hidden="true">
                             <p class="step-extended-paragraph-desc">
                                 Securing absolute legal clarity and risk elimination parameters to conclude your timeline safely.
                             </p>
@@ -1561,7 +1592,7 @@
                 <!-- CASE CARD 1: Corporate Restructuring -->
                 <div class="case-study-profile-card case-scroll-stagger" style="--stagger-index: 1;">
                     <div class="case-card-thumbnail-box">
-                        <img src="https://unsplash.com" alt="Attorneys examining business reorganization portfolios" class="case-card-img">
+                        <img src="./assests/lawfirm.webp" alt="Attorneys examining business reorganization portfolios" class="case-card-img">
                     </div>
                     <div class="case-card-body-content">
                         <span class="case-card-category">Venture Structuring</span>
@@ -1576,7 +1607,7 @@
                 <!-- CASE CARD 2: Regulatory Tech Defense -->
                 <div class="case-study-profile-card case-scroll-stagger" style="--stagger-index: 2;">
                     <div class="case-card-thumbnail-box">
-                        <img src="https://unsplash.com" alt="Counsel conducting system audits inside secure workspace" class="case-card-img">
+                        <img src="./assests/attorney discussion.webp" alt="Counsel conducting system audits inside secure workspace" class="case-card-img">
                     </div>
                     <div class="case-card-body-content">
                         <span class="case-card-category">Compliance Risk</span>
@@ -1591,7 +1622,7 @@
                 <!-- CASE CARD 3: Intellectual Property Lock -->
                 <div class="case-study-profile-card case-scroll-stagger" style="--stagger-index: 3;">
                     <div class="case-card-thumbnail-box">
-                        <img src="https://unsplash.com" alt="Scales of justice on legal consultation desk panels" class="case-card-img">
+                        <img src="./assests/document verification.webp" alt="Scales of justice on legal consultation desk panels" class="case-card-img">
                     </div>
                     <div class="case-card-body-content">
                         <span class="case-card-category">IP Protection</span>
@@ -1606,7 +1637,7 @@
                 <!-- CASE CARD 4: Data Governance Resolution -->
                 <div class="case-study-profile-card case-scroll-stagger" style="--stagger-index: 4;">
                     <div class="case-card-thumbnail-box">
-                        <img src="https://unsplash.com" alt="Litigation lead reviewing regulatory records briefs" class="case-card-img">
+                        <img src="./assests/attorney 2.webp" alt="Litigation lead reviewing regulatory records briefs" class="case-card-img">
                     </div>
                     <div class="case-card-body-content">
                         <span class="case-card-category">Privacy Privacy</span>
@@ -2105,7 +2136,7 @@
                 </div>
                 <!-- Hidden Floating Image Target popped forward purely on hovers -->
                 <div class="works-floating-preview-thumbnail" aria-hidden="true">
-                    <img src="https://unsplash.com" alt="" class="works-preview-img-node">
+                    <img src="./assests/attorney F 1.webp" alt="" class="works-preview-img-node">
                 </div>
             </div>
 
@@ -2122,7 +2153,7 @@
                     </div>
                 </div>
                 <div class="works-floating-preview-thumbnail" aria-hidden="true">
-                    <img src="https://unsplash.com" alt="" class="works-preview-img-node">
+                    <img src="./assests/lawfirm.webp" alt="" class="works-preview-img-node">
                 </div>
             </div>
 
@@ -2139,7 +2170,7 @@
                     </div>
                 </div>
                 <div class="works-floating-preview-thumbnail" aria-hidden="true">
-                    <img src="https://unsplash.com" alt="" class="works-preview-img-node">
+                    <img src="./assests/attorney 1.webp" alt="" class="works-preview-img-node">
                 </div>
             </div>
 
@@ -2156,7 +2187,7 @@
                     </div>
                 </div>
                 <div class="works-floating-preview-thumbnail" aria-hidden="true">
-                    <img src="https://unsplash.com" alt="" class="works-preview-img-node">
+                    <img src="./assests/attorney 2.webp" alt="" class="works-preview-img-node">
                 </div>
             </div>
 
@@ -2173,7 +2204,7 @@
                     </div>
                 </div>
                 <div class="works-floating-preview-thumbnail" aria-hidden="true">
-                    <img src="https://unsplash.com" alt="" class="works-preview-img-node">
+                    <img src="./assests/document verification.webp" alt="" class="works-preview-img-node">
                 </div>
             </div>
 
@@ -2505,6 +2536,358 @@
 .directory-row-fade-up {
 opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),background-color 0.45s ease,border-color 0.45s ease,box-shadow 0.45s ease;}.directory-row-fade-up.activated {opacity: 1;transform: translateY(0);}/* Computes staggered cascading entrance sequence delay windows dynamically via inline row-index tokens variables */.works-table-framework-box .directory-row-fade-up.activated {transition-delay: calc(var(--row-index) * 100ms);}/* --- Fully Responsive Hardware Media Adaptive Breakpoints Matrix Processing --- /@media (max-width: 1024px) {.works-directory-header-row {grid-template-columns: 1fr; / Header grids stack entirely vertical on tablet viewports */gap: 20px;text-align: center;}.works-directory-header-left, .works-directory-header-right {align-items: center;text-align: center;}.works-header-action-box {width: 100%;justify-content: center;margin-top: 10px;}}@media (max-width: 768px) {.works-table-labels-row {display: none; /* Safely hides column labels row tracking text parameters on tighter mobile grids layout */}.works-row-inner-grid {grid-template-columns: 1fr; /* Compresses table lanes into a singular column layout on mobile devices */gap: 16px;padding: 24px 16px;text-align: center;}.works-row-title-heading {font-size: 1.35rem;text-align: center;}.works-row-category-container, .works-row-action-end {justify-content: center;}.works-row-date-text {text-align: center;font-size: 1.15rem;}.works-row-circle-arrow-btn {width: 100%;border-radius: 4px; /* Flattens shape to full box bars triggers for easier touch tap on mobile hardware */}.works-floating-preview-thumbnail {display: none; /* Safely drops absolute image preview boxes on mobile to prevent view clutterings codes */}.works-data-row:hover .works-row-circle-arrow-btn {transform: scale(1);}}@media (max-width: 640px) {/* Strict execution padding constraints mapped down exactly to 30px values markers rules */.stackly-works-directory-strip {padding: 30px 0;}}
 
+
+/* =========================================================
+   STACKLY WORKS DIRECTORY - RESPONSIVE ADD-ON
+   Desktop design remains unchanged
+   ========================================================= */
+
+/* ---------- TABLET ---------- */
+@media (max-width: 1024px) {
+
+    .works-directory-container {
+        max-width: 100%;
+        padding: 0 28px;
+    }
+
+    .works-directory-header-row {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 36px;
+    }
+
+    .works-directory-header-left {
+        align-items: center;
+        text-align: center;
+    }
+
+    .works-directory-header-right {
+        align-items: center;
+        text-align: center;
+    }
+
+    .works-header-description-desc {
+        max-width: 650px;
+        text-align: center;
+    }
+
+    .works-header-action-box {
+        justify-content: center;
+    }
+
+    .works-table-labels-row,
+    .works-row-inner-grid {
+        grid-template-columns: 1.3fr 1fr 0.8fr 0.35fr;
+    }
+
+    .works-row-inner-grid {
+        padding: 24px 20px;
+    }
+
+    .works-row-title-heading {
+        font-size: 1.35rem;
+    }
+
+    .works-row-date-text {
+        font-size: 1.15rem;
+    }
+
+    .works-floating-preview-thumbnail {
+        right: 65px;
+        width: 125px;
+        height: 82px;
+    }
+}
+
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+
+    .stackly-works-directory-strip {
+        padding: 42px 0;
+    }
+
+    .works-directory-container {
+        width: 100%;
+        padding: 0 18px;
+    }
+
+    /* Header */
+    .works-directory-header-row {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        margin-bottom: 32px;
+        align-items: center;
+    }
+
+    .works-directory-header-left,
+    .works-directory-header-right {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .works-eyebrow-wrapper {
+        margin-bottom: 14px;
+    }
+
+    .works-mini-pill-badge {
+        font-size: 0.62rem;
+        letter-spacing: 1.2px;
+        padding: 6px 11px;
+    }
+
+    .works-directory-main-title {
+        width: 100%;
+        justify-content: center;
+        font-size: clamp(2rem, 9vw, 2.7rem);
+        line-height: 1.15;
+        letter-spacing: -0.7px;
+        column-gap: 8px;
+        row-gap: 3px;
+        text-align: center;
+    }
+
+    .works-header-description-desc {
+        width: 100%;
+        max-width: 520px;
+        font-size: 0.88rem;
+        line-height: 1.6;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    .works-header-action-box {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btn-works-pill-see-all {
+        padding: 6px 6px 6px 20px;
+        gap: 12px;
+    }
+
+    .works-pill-label-text {
+        font-size: 0.78rem;
+    }
+
+    .works-pill-vector-circle {
+        width: 34px;
+        height: 34px;
+    }
+
+
+    /* Hide desktop table headings */
+    .works-table-labels-row {
+        display: none;
+    }
+
+    .works-table-framework-box {
+        margin-top: 8px;
+    }
+
+
+    /* Convert each row into a mobile card */
+    .works-data-row {
+        margin-bottom: 12px;
+        border: 1px solid #e2e8f0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .works-row-inner-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        padding: 22px 18px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .works-row-title-heading {
+        width: 100%;
+        font-size: 1.25rem;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .works-row-category-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .works-capsule-tag {
+        font-size: 0.65rem;
+        padding: 5px 12px;
+    }
+
+    .works-row-date-text {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .works-row-action-end {
+        width: 100%;
+        justify-content: center;
+        margin-top: 3px;
+    }
+
+    .works-row-circle-arrow-btn {
+        width: 100%;
+        height: 42px;
+        border-radius: 6px;
+        font-size: 1rem;
+    }
+
+
+    /* Disable floating desktop preview on mobile */
+    .works-floating-preview-thumbnail {
+        display: none !important;
+    }
+
+    /* Prevent hover movement on touch devices */
+    .works-data-row:hover {
+        transform: none;
+    }
+
+    .works-data-row:hover .works-row-circle-arrow-btn {
+        transform: none;
+    }
+}
+
+
+/* ---------- SMALL MOBILE ---------- */
+@media (max-width: 480px) {
+
+    .stackly-works-directory-strip {
+        padding: 32px 0;
+    }
+
+    .works-directory-container {
+        padding: 0 14px;
+    }
+
+    .works-directory-header-row {
+        gap: 18px;
+        margin-bottom: 26px;
+    }
+
+    .works-mini-pill-badge {
+        font-size: 0.57rem;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+    }
+
+    .works-directory-main-title {
+        font-size: clamp(1.8rem, 9vw, 2.25rem);
+        column-gap: 6px;
+    }
+
+    .works-header-description-desc {
+        font-size: 0.82rem;
+        line-height: 1.55;
+    }
+
+    .btn-works-pill-see-all {
+        gap: 10px;
+        padding-left: 17px;
+    }
+
+    .works-pill-label-text {
+        font-size: 0.7rem;
+    }
+
+    .works-pill-vector-circle {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+
+    .works-data-row {
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .works-row-inner-grid {
+        padding: 19px 14px;
+        gap: 11px;
+    }
+
+    .works-row-title-heading {
+        font-size: 1.1rem;
+    }
+
+    .works-capsule-tag {
+        font-size: 0.6rem;
+        padding: 5px 10px;
+    }
+
+    .works-row-date-text {
+        font-size: 0.9rem;
+    }
+
+    .works-row-circle-arrow-btn {
+        height: 40px;
+    }
+}
+
+
+/* ---------- VERY SMALL DEVICES ---------- */
+@media (max-width: 360px) {
+
+    .works-directory-container {
+        padding: 0 11px;
+    }
+
+    .works-directory-main-title {
+        font-size: 1.7rem;
+    }
+
+    .works-mini-pill-badge {
+        font-size: 0.52rem;
+    }
+
+    .works-header-description-desc {
+        font-size: 0.78rem;
+    }
+
+    .works-row-inner-grid {
+        padding: 17px 12px;
+    }
+
+    .works-row-title-heading {
+        font-size: 1.02rem;
+    }
+}
+
+
+/* ---------- ACCESSIBILITY ---------- */
+@media (prefers-reduced-motion: reduce) {
+
+    .works-split-word-span,
+    .directory-row-fade-up,
+    .works-data-row,
+    .works-floating-preview-thumbnail,
+    .btn-works-pill-see-all,
+    .works-pill-vector-circle,
+    .works-row-circle-arrow-btn {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .works-split-word-span {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .directory-row-fade-up {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
 </style>
 
 <script>
@@ -2669,12 +3052,12 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
 
                 <!-- House-shape Crop Mask Frame Area Layer -->
                 <div class="fixed-portrait-clip-container primary-crop-polygon">
-                    <img src="https://unsplash.com" alt="Corporate advisor coordinating intake strategy briefs" class="fixed-faq-img-node">
+                    <img src="./assests/legal statue.webp" alt="Corporate advisor coordinating intake strategy briefs" class="fixed-faq-img-node">
                 </div>
 
                 <!-- Squared Foreground Offset Overlapping Box Frame Area Layer -->
                 <div class="fixed-portrait-clip-container secondary-offset-square">
-                    <img src="https://unsplash.com" alt="Litigation lead reviewing regulatory compliance records profiles" class="fixed-faq-img-node">
+                    <img src="./assests/wt legal.webp" alt="Litigation lead reviewing regulatory compliance records profiles" class="fixed-faq-img-node">
                 </div>
 
             </div>
@@ -3151,7 +3534,7 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
     <div class="headline-banner-card-box-fluid scroll-revealed-fade-up" id="ctaBannerCardFluid1Line">
         
         <!-- Layer 1: Background Asset Graphic Element Image -->
-        <img src="https://unsplash.com" alt="Abstract Corporate Grid Network Blueprint Texture" class="headline-card-bg-asset-fluid" aria-hidden="true">
+        <img src="./assests/document verification.webp" alt="Abstract Corporate Grid Network Blueprint Texture" class="headline-card-bg-asset-fluid" aria-hidden="true">
         
         <!-- Inner container houses content grids within standard readable page limits -->
         <div class="headline-card-inner-fluid-container">
@@ -3162,7 +3545,7 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
                     
                     <!-- Layer 2: Foreground Graphic Shape Framing Layout Concept -->
                     <div class="headline-foreground-thumbnail-frame-fluid">
-                        <img src="https://unsplash.com" alt="Stackly Secure Privacy Platform Node Interface Preview" class="headline-card-foreground-asset-fluid">
+                        <img src="./assests/lawfirm.webp" alt="Stackly Secure Privacy Platform Node Interface Preview" class="headline-card-foreground-asset-fluid">
                     </div>
 
                     <!-- Single Line Main Title Configured for Word-by-Word Side Entry Scrolling Animations -->
@@ -3174,7 +3557,7 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
 
                 <!-- Right Structural Layout Row Alignment: Floating Action CTA Trigger Key Button Link -->
                 <div class="headline-action-floating-box-fluid">
-                    <a href="#intake" class="btn-headline-banner-floating-fluid">Initialize Consultation &rarr;</a>
+                    <a href="404.html" class="btn-headline-banner-floating-fluid">Initialize Consultation &rarr;</a>
                 </div>
 
             </div>
@@ -3474,126 +3857,115 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
 
 </script>
 
-<!-- Isolated Brand-Aligned Corporate Footer Component Section -->
-<footer class="stackly-corporate-footer-fresh">
-    <div class="footer-fluid-bounds-fresh">
+
+<!-- Fully Brand-Aligned Corporate Legal Footer Component Section -->
+<footer class="stackly-corporate-footer">
+    <div class="footer-fluid-bounds">
         
         <!-- Four Column Layout Matrix precisely mirroring user layout blueprint -->
-        <div class="footer-columns-grid-fresh">
+        <div class="footer-columns-grid">
             
             
-            <div class="footer-brand-column-fresh">
+            <div class="footer-brand-column">
                 <!-- Brand logo anchor configured to trigger the scroll-to-top routine -->
                 
-                    <img src="https://unsplash.com" alt="Stackly Corporate Digital Legal Logo" class="footer-logo-img-fresh">
+                    <img src="./assests/legal footer logo.webp" alt="Stackly Corporate Digital Legal Logo" class="footer-logo-img">
                 </a>
-                <p class="footer-brand-description-fresh">
-                    Engineering premium macro-balanced regulatory compliance setups and secure decentralized legal frameworks designed to fuel enterprise hardware workspace productivity and legal compute nodes alike.
+                <p class="footer-brand-description">
+                    Engineering premium macro-balanced regulatory compliance setups and secure decentralized legal frameworks designed to shield corporate growth parameters and govern transaction pipelines seamlessly.
                 </p>
                 <!-- 5 Vector Social Icons Array Group (Configured for 404 navigation) -->
-                <div class="footer-social-icons-row-fresh">
-                    <a href="404.html" class="footer-social-node-fresh" aria-label="Instagram Platform Link">
-                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 4 0 100 2.881 1.44 4 0 000-2.881z"/></svg>
+                <div class="footer-social-icons-row">
+                    <a href="404.html" class="footer-social-node" aria-label="Instagram Platform Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 4 0 100 2.881 1.44 4 0 000-2.881z"/></svg>
                     </a>
-                    <a href="404.html" class="footer-social-node-fresh" aria-label="Facebook Platform Link">
-                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    <a href="404.html" class="footer-social-node" aria-label="Facebook Platform Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                     </a>
-                    <a href="404.html" class="footer-social-node-fresh" aria-label="X Brand Profile Platform Link">
-                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    <a href="404.html" class="footer-social-node" aria-label="X Brand Profile Platform Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                     </a>
-                    <a href="404.html" class="footer-social-node-fresh" aria-label="LinkedIn Professional Matrix Link">
-                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <a href="404.html" class="footer-social-node" aria-label="LinkedIn Professional Matrix Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     </a>
-                    <a href="404.html" class="footer-social-node-fresh" aria-label="Secure Messenger Pipeline Link">
-                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                    <a href="404.html" class="footer-social-node" aria-label="Internal Resource Repository Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
                     </a>
                 </div>
             </div>
 
-            <!-- Column 2: Explore Fleets Links Pool -->
-            <div class="footer-links-column-fresh">
-                <h3 class="footer-section-heading-fresh">EXPLORE FLEETS</h3>
-                <nav class="footer-links-nav-fresh">
-                    <a href="404.html" class="footer-nav-link-item-fresh">Logistics AGV</a>
-                    <a href="404.html" class="footer-nav-link-item-fresh">Kinematic Arms</a>
-                    <a href="404.html" class="footer-nav-link-item-fresh">Quadruped Sentinel</a>
-                    <a href="404.html" class="footer-nav-link-item-fresh">Bionic Rover Systems</a>
+            <!-- Column 2: Legal Practice Areas -->
+            <div class="footer-links-column">
+                <h3 class="footer-section-heading">PRACTICE AREAS</h3>
+                <nav class="footer-links-nav">
+                    <a href="404.html" class="footer-nav-link-item">Corporate & Tech Law</a>
+                    <a href="404.html" class="footer-nav-link-item">Litigation Counsel</a>
+                    <a href="404.html" class="footer-nav-link-item">Venture Structuring</a>
+                    <a href="404.html" class="footer-nav-link-item">Asset & IP Protection</a>
                 </nav>
             </div>
 
-            <!-- Column 3: Network Support Pool -->
-            <div class="footer-links-column-fresh">
-                <h3 class="footer-section-heading-fresh">NETWORK SUPPORT</h3>
-                <nav class="footer-links-nav-fresh">
-                    <a href="404.html" class="footer-nav-link-item-fresh">Node Telemetry Matrices</a>
-                    <a href="404.html" class="footer-nav-link-item-fresh">Fleet Delivery Tracks</a>
-                    <a href="404.html" class="footer-nav-link-item-fresh">Help & Diagnostics Center</a>
-                    <a href="404.html" class="footer-nav-link-item-fresh">PoPW Verifications</a>
+            <!-- Column 3: Resource Centers -->
+            <div class="footer-links-column">
+                <h3 class="footer-section-heading">RESOURCE HUB</h3>
+                <nav class="footer-links-nav">
+                    <a href="404.html" class="footer-nav-link-item">Case Study Directories</a>
+                    <a href="404.html" class="footer-nav-link-item">Regulatory Updates</a>
+                    <a href="404.html" class="footer-nav-link-item">Client Intake Support</a>
+                    <a href="404.html" class="footer-nav-link-item">Partner Advisory Pools</a>
                 </nav>
             </div>
 
-            <!-- Column 4: Headquarters Geographical Address and Input Form -->
-            <div class="footer-links-column-fresh">
-                <h3 class="footer-section-heading-fresh">HEADQUARTERS</h3>
+            <!-- Column 4: Headquarters Geographical Address and Newsletter -->
+            <div class="footer-links-column">
+                <h3 class="footer-section-heading">HEADQUARTERS</h3>
                 
-                <div class="footer-address-block-row-fresh">
-                    <svg viewBox="0 0 24 24" class="footer-address-marker-icon-fresh" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                    <p class="footer-address-text-fresh">MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</p>
+                <div class="footer-address-block-row">
+                    <svg viewBox="0 0 24 24" class="footer-address-marker-icon" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <p class="footer-address-text">MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</p>
                 </div>
 
                 <!-- Interactive Newsletter Form Matrix Panel Layer -->
-                <form class="footer-subscription-form-panel-fresh" id="footerSubscribeFormFresh" novalidate>
-                    <div class="footer-input-field-relative-fresh">
-                        <input type="email" id="footerNodeEmailInputFresh" placeholder="Enter node operator email..." class="footer-subscribe-input-field-fresh" required>
-                        <span class="footer-validation-bubble-alert-fresh" id="footerValidationAlertTextFresh">Please fill the subscribe field</span>
+                <form class="footer-subscription-form-panel" id="footerSubscribeForm" novalidate>
+                    <div class="footer-input-field-relative">
+                        <input type="email" id="footerNodeEmailInput" placeholder="Enter corporate email..." class="footer-subscribe-input-field" required>
+                        <span class="footer-validation-bubble-alert" id="footerValidationAlertText">Please fill the subscribe field</span>
                     </div>
-                    <button type="submit" class="btn-footer-subscribe-action-fresh">Subscribe</button>
+                    <button type="submit" class="btn-footer-subscribe-action">Subscribe</button>
                 </form>
             </div>
 
         </div>
 
         <!-- Lower Baseline Symmetrical Copyright and Compliance Layout Strip Rows Links Line -->
-        <div class="footer-baseline-strip-row-fresh">
-            <p class="footer-copyright-text-fresh">&copy; 2026 Stackly Industries. All computational hardware rights reserved.</p>
-            <div class="footer-compliance-links-group-fresh">
-                <a href="404.html" class="footer-compliance-anchor-item-fresh">Privacy Policy</a>
-                <a href="404.html" class="footer-compliance-anchor-item-fresh">Terms of Service</a>
-                <a href="404.html" class="footer-compliance-anchor-item-fresh">Cookie Governance</a>
+        <div class="footer-baseline-strip-row">
+            <p class="footer-copyright-text">&copy; 2026 Stackly Legal Firm. All corporate advocacy rights reserved.</p>
+            <div class="footer-compliance-links-group">
+                <a href="404.html" class="footer-compliance-anchor-item">Privacy Policy</a>
+                <a href="404.html" class="footer-compliance-anchor-item">Terms of Service</a>
+                <a href="404.html" class="footer-compliance-anchor-item">Cookie Governance</a>
             </div>
         </div>
 
     </div>
 </footer>
 
+
 <style>
-    /* --- High-End Stackly Corporate Footer Presentation Tokens Configuration Layout --- */
-.stackly-corporate-footer-fresh {
+/* --- High-End Stackly Corporate Footer Presentation Tokens Configuration Layout --- */
+.stackly-corporate-footer {
     width: 100%;
     background-color: #000000; /* Solid Black Backdrop Canvas Panel Surface Layer Layout */
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    color: #f8fafc; 
+    color: #f8fafc; /* Crisp reading typography bone white color tokens scale profiles */
     padding-top: 60px;
-    padding-bottom: 30px; 
+    padding-bottom: 30px; /* Accounts for lower baseline strip alignment spatial margins boundaries */
     box-sizing: border-box;
     position: relative;
-    
-    /* CRITICAL FIX: Erases padding, offsets, and margin voids to tightly bind with upper section block panels */
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    display: block;
-    vertical-align: top;
+    border-top: 1px solid #090d16;
 }
 
-/* Global resetting architecture block overrides adjacent element gaps */
-.stackly-headline-banner-fluid-strip,
-.stackly-cta-banner-strip-fluid,
-.stackly-corporate-footer-fresh {
-    margin-bottom: 0 !important;
-    margin-top: 0 !important;
-}
-
-.footer-fluid-bounds-fresh {
+.footer-fluid-bounds {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -3602,24 +3974,25 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
 }
 
 /* --- Four Column Structural Master Framework Layout Grid --- */
-.footer-columns-grid-fresh {
+.footer-columns-grid {
     display: grid;
+    /* Implements exact mapping grid fractions matching reference blueprint screenshot layout columns proportion scales */
     grid-template-columns: 1.35fr 0.85fr 0.9fr 1.15fr;
     gap: 40px;
     width: 100%;
-    padding-bottom: 50px; 
+    padding-bottom: 50px; /* Separator threshold spatial bounds before baseline lines strip context layer */
     border-bottom: 1px solid rgba(148, 163, 184, 0.08); /* Clean hairline texture trace dividers boundary */
     box-sizing: border-box;
 }
 
 /* --- Column 1: Brand Logotype Area Setup Properties --- */
-.footer-brand-column-fresh {
+.footer-brand-column {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.footer-logo-link-fresh {
+.footer-logo-link {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
@@ -3627,33 +4000,33 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
     margin-bottom: 24px;
 }
 
-.footer-logo-link-fresh:hover {
+.footer-logo-link:hover {
     transform: scale(0.975);
 }
 
-.footer-logo-img-fresh {
+.footer-logo-img {
     height: 32px;
     width: auto;
     object-fit: contain;
-    filter: brightness(0) invert(1); /* Forces white icon over black backdrop canvas */
+    filter: brightness(0) invert(1); /* Forces branding elements layout visualization cleanly over true black backdrops */
 }
 
-.footer-brand-description-fresh {
-    font-size: 0.92rem; 
-    color: #94a3b8; /* Slate gray neutral explanatory content description */
+.footer-brand-description {
+    font-size: 0.92rem; /* Balanced uniform medium layout description scale context */
+    color: #94a3b8; /* Slate gray neutral informative explanation paragraphs layout styling */
     line-height: 1.6;
     margin-bottom: 24px;
     text-align: left;
 }
 
 /* --- Sizing For 5 Vector Social Nodes Set Track Matrix --- */
-.footer-social-icons-row-fresh {
+.footer-social-icons-row {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.footer-social-node-fresh {
+.footer-social-node {
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -3667,14 +4040,15 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.footer-svg-icon-fresh {
-    width: 15px; 
+.footer-svg-icon {
+    width: 15px; /* Precision medium sizing index for high resolution vector paths metrics */
     height: 15px;
     fill: currentColor;
 }
 
-.footer-social-node-fresh:hover {
-    background-color: #b45309; /* Warm Amber traditional legal accent */
+/* Interaction transitions illuminating vectors directly to clean white on component focus tracks */
+.footer-social-node:hover {
+    background-color: #b45309; /* Warm Amber signature focus highlight */
     border-color: #b45309;
     color: #ffffff;
     transform: translateY(-2px);
@@ -3682,13 +4056,13 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
 }
 
 /* --- Columns 2 & 3: Standard Section Header Layout Framework Navigation Link Columns --- */
-.footer-links-column-fresh {
+.footer-links-column {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.footer-section-heading-fresh {
+.footer-section-heading {
     font-size: 0.88rem;
     font-weight: 700;
     color: #ffffff;
@@ -3699,25 +4073,25 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
 }
 
 /* Horizontal Red Sections Accent Track Line Tracer directly mirroring user blueprint layout screenshot rules */
-.footer-section-heading-fresh::after {
+.footer-section-heading::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 24px;
     height: 2px;
-    background-color: #b45309; 
+    background-color: #b45309; /* Precision executive warm legal amber/red trace selector indicator */
     border-radius: 4px;
 }
 
-.footer-links-nav-fresh {
+.footer-links-nav {
     display: flex;
     flex-direction: column;
     gap: 14px;
     width: 100%;
 }
 
-.footer-nav-link-item-fresh {
+.footer-nav-link-item {
     font-size: 0.92rem;
     color: #94a3b8;
     text-decoration: none;
@@ -3726,13 +4100,13 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
     width: max-content;
 }
 
-.footer-nav-link-item-fresh:hover {
-    color: #b45309; 
+.footer-nav-link-item:hover {
+    color: #b45309; /* Amber focus glow illumination text transform lift paths shift tracking links */
     padding-left: 4px;
 }
 
 /* --- Column 4: Geographical Marker Alignment Elements Context System --- */
-.footer-address-block-row-fresh {
+.footer-address-block-row {
     display: flex;
     align-items: flex-start;
     gap: 10px;
@@ -3740,15 +4114,15 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
     width: 100%;
 }
 
-.footer-address-marker-icon-fresh {
+.footer-address-marker-icon {
     width: 16px;
     height: 16px;
-    fill: #b45309; 
+    fill: #b45309; /* Highlight accent marker fill index colors codes tracking coordinates map pointers location nodes */
     flex-shrink: 0;
     margin-top: 3px;
 }
 
-.footer-address-text-fresh {
+.footer-address-text {
     font-size: 0.92rem;
     color: #94a3b8;
     line-height: 1.5;
@@ -3756,7 +4130,7 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
 }
 
 /* --- Interactive Newsletter Input Panel Field Systems Architecture --- */
-.footer-subscription-form-panel-fresh {
+.footer-subscription-form-panel {
     display: flex;
     align-items: center;
     width: 100%;
@@ -3769,16 +4143,16 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
     transition: border-color 0.3s ease;
 }
 
-.footer-subscription-form-panel-fresh:focus-within {
+.footer-subscription-form-panel:focus-within {
     border-color: #b45309;
 }
 
-.footer-input-field-relative-fresh {
+.footer-input-field-relative {
     flex: 1;
     position: relative;
 }
 
-.footer-subscribe-input-field-fresh {
+.footer-subscribe-input-field {
     width: 100%;
     background: none;
     border: none;
@@ -3790,16 +4164,16 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
     box-sizing: border-box;
 }
 
-.footer-subscribe-input-field-fresh::placeholder {
-    color: #4b5563; 
+.footer-subscribe-input-field::placeholder {
+    color: #4b5563; /* Muted gray placeholder text parameter configuration styles codes */
 }
 
 /* Dynamic Field Form Validation Prompt Dialog Alert Bubble */
-.footer-validation-bubble-alert-fresh {
+.footer-validation-bubble-alert {
     position: absolute;
     bottom: calc(100% + 12px);
     left: 4px;
-    background-color: #ef4444; 
+    background-color: #ef4444; /* High visibility alert indicator red structural fill index color text */
     color: #ffffff;
     font-size: 0.78rem;
     font-weight: 600;
@@ -3814,7 +4188,8 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
     z-index: 100;
 }
 
-.footer-validation-bubble-alert-fresh::after {
+/* Speech indicator triangle vector pointer point element track */
+.footer-validation-bubble-alert::after {
     content: '';
     position: absolute;
     top: 100%;
@@ -3824,15 +4199,15 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
     border-color: #ef4444 transparent transparent transparent;
 }
 
-.footer-validation-bubble-alert-fresh.display-prompt {
+.footer-validation-bubble-alert.display-prompt {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
-.btn-footer-subscribe-action-fresh {
-    background-color: #ffffff; /* Stark solid white layout fill matching screenshot blueprint */
-    color: #000000 !important; 
+.btn-footer-subscribe-action {
+    background-color: #ffffff; /* Stark solid white actions triggers background fill seen in reference screenshot image */
+    color: #000000 !important; /* Sharp absolute high contrast reading fonts styles override cascades overrides */
     border: none;
     font-family: 'Inter', sans-serif;
     font-size: 0.88rem;
@@ -3844,14 +4219,14 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.btn-footer-subscribe-action-fresh:hover {
+.btn-footer-subscribe-action:hover {
     background-color: #b45309;
     color: #ffffff !important;
     box-shadow: 0 4px 12px rgba(180, 83, 9, 0.3);
 }
 
 /* --- Lower Baseline Copyright and Compliance Matrix Layout Strip Row --- */
-.footer-baseline-strip-row-fresh {
+.footer-baseline-strip-row {
     width: 100%;
     padding-top: 30px;
     display: flex;
@@ -3860,84 +4235,98 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
     box-sizing: border-box;
 }
 
-.footer-copyright-text-fresh {
+.footer-copyright-text {
     font-size: 0.85rem;
-    color: #4b5563; 
+    color: #4b5563; /* Secondary layout content documentation sub-levels font colors setup rules */
     margin: 0;
 }
 
-.footer-compliance-links-group-fresh {
+.footer-compliance-links-group {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.footer-compliance-anchor-item-fresh {
+.footer-compliance-anchor-item {
     font-size: 0.85rem;
     color: #4b5563;
     text-decoration: none;
     transition: color 0.25s ease;
 }
 
-.footer-compliance-anchor-item-fresh:hover {
+.footer-compliance-anchor-item:hover {
     color: #b45309;
 }
 
 /* --- Fully Responsive Hardware Media Breakpoints Matrix Processing --- */
 @media (max-width: 1024px) {
-    .footer-columns-grid-fresh {
-        grid-template-columns: repeat(2, 1fr); 
+    .footer-columns-grid {
+        grid-template-columns: repeat(2, 1fr); /* Matrix grid breaks down safely to dual columns avoiding truncation clipping fields */
         gap: 32px;
     }
 }
 
 @media (max-width: 640px) {
-    .stackly-corporate-footer-fresh {
+    .stackly-corporate-footer {
+        /* Strict execution constraint implementation adapting padding bounds exactly down to user requirements metrics rules values */
         padding-top: 50px; 
         padding-bottom: 30px;
     }
 
-    .footer-columns-grid-fresh {
-        grid-template-columns: 1fr; 
+    .footer-columns-grid {
+        grid-template-columns: 1fr; /* Stacks all layout blocks down into a singular clean thread on phone views */
         gap: 28px;
         padding-bottom: 36px;
     }
 
-    .footer-brand-column-fresh { align-items: center; text-align: center; }
-    .footer-brand-description-fresh { text-align: center; }
-    .footer-links-column-fresh { align-items: center; }
-    .footer-section-heading-fresh::after { left: 50%; transform: translateX(-50%); }
-    .footer-nav-link-item-fresh { text-align: center; width: 100%; }
-    .footer-address-block-row-fresh { justify-content: center; }
-    .footer-address-text-fresh { text-align: center; }
-
-    .footer-baseline-strip-row-fresh {
-        flex-direction: column;
-        gap: 16px;
+    .footer-brand-column {
+        align-items: center;
         text-align: center;
-        padding-top: 24px;
     }
 
-    .footer-compliance-links-group-fresh {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 14px;
+    .footer-brand-description {
+        text-align: center;
     }
-}
+
+    .footer-links-column {
+        align-items: center;
+    }
+
+    .footer-section-heading::after {
+        left: 50%;
+        transform: translateX(-50%); /* Keeps horizontally centered accent bars tracking text parameters along midlines on phones viewport setups */
+    }
+
+    .footer-nav-link-item {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-address-block-row {
+        justify-content: center;
+    }
+
+    .footer-address-text {
+        text-align: center;
+    }
+
+    .footer-baseline-strip-row {
+flex-direction: column;gap: 16px;text-align: center;padding-top: 24px;}.footer-compliance-links-group {justify-content: center;flex-wrap: wrap;gap: 14px;}}
 
 </style>
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const footerBackToTopFresh = document.getElementById("footerBackToTopTriggerFresh");
-    const subscribeFormFresh = document.getElementById("footerSubscribeFormFresh");
-    const emailInputFieldFresh = document.getElementById("footerNodeEmailInputFresh");
-    const validationAlertBubbleFresh = document.getElementById("footerValidationAlertTextFresh");
+  document.addEventListener("DOMContentLoaded", () => {
+    const footerBackToTop = document.getElementById("footerBackToTopTrigger");
+    const subscribeForm = document.getElementById("footerSubscribeForm");
+    const emailInputField = document.getElementById("footerNodeEmailInput");
+    const validationAlertBubble = document.getElementById("footerValidationAlertText");
 
-    // 1. BACK TO TOP: Triggers hardware accelerated window smooth scroll transition
-    if (footerBackToTopFresh) {
-        footerBackToTopFresh.addEventListener("click", (e) => {
+    // 1. ANIMATION ENGINE: Back-To-Top Smooth Scroll Routine
+    if (footerBackToTop) {
+        footerBackToTop.addEventListener("click", (e) => {
             e.preventDefault();
+            // Executes a hardware optimized window smooth scroll transition straight back to page top coordinate metrics
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
@@ -3945,30 +4334,33 @@ opacity: 0;transform: translateY(24px);transition: opacity 0.7s ease,transform 0
         });
     }
 
-    // 2. VALIDATION ENGINE: Form Check Conditions before 404 routing updates
-    if (subscribeFormFresh && emailInputFieldFresh && validationAlertBubbleFresh) {
+    // 2. VALIDATION ENGINE: Form Check Conditions lifecycle routing paths tracking
+    if (subscribeForm && emailInputField && validationAlertBubble) {
         
-        emailInputFieldFresh.addEventListener("input", () => {
-            validationAlertBubbleFresh.classList.remove("display-prompt");
+        // Clear active validation prompt states on focus input adjustments updates loops
+        emailInputField.addEventListener("input", () => {
+            validationAlertBubble.classList.remove("display-prompt");
         });
 
-        subscribeFormFresh.addEventListener("submit", (e) => {
+        subscribeForm.addEventListener("submit", (e) => {
             e.preventDefault();
             
-            const rawEmailValue = emailInputFieldFresh.value.trim();
+            const rawEmailValue = emailInputField.value.trim();
 
-            if (!rawEmailValue || !emailInputFieldFresh.checkValidity()) {
-                validationAlertBubbleFresh.classList.add("display-prompt");
-                emailInputFieldFresh.focus();
+            // Evaluate conditional checks to assess if field boundaries remain completely empty indices parameters
+            if (!rawEmailValue || !emailInputField.checkValidity()) {
+                // If form checking fails execution path, prompt the custom dialog text alert immediately
+                validationAlertBubble.classList.add("display-prompt");
+                emailInputField.focus();
             } else {
-                validationAlertBubbleFresh.classList.remove("display-prompt");
-                subscribeFormFresh.reset();
+                // If inputs successfully pass conditions limits barriers, erase alert indicators layers and execute immediate route to 404 page
+                validationAlertBubble.classList.remove("display-prompt");
+                subscribeForm.reset();
                 window.location.href = "404.html";
             }
         });
     }
 });
-
 </script>
 </body>
 </html>

@@ -25,7 +25,7 @@
                     <span class="hamburger-bar"></span>
                 </button>
                 <div class="brand-logo" onclick="refreshDashboard()" title="Refresh Dashboard">
-                    <img src="https://unsplash.com" alt="Stackly Legal Logo" class="brand-img">
+                  
                     <span class="brand-text">Stackly<span>Legal</span></span>
                 </div>
             </div>
@@ -41,19 +41,16 @@
                 </div>
                 
                 <!-- Profile Image Component Node with dynamic backup SVG vector system -->
-                <div class="profile-pill">
-                    <div class="profile-avatar">
-                        <img src="https://unsplash.com" 
-                             alt="Partner Profile Photo" 
-                             class="profile-img"
-                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <svg xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="profile-svg-fallback" style="display: none;">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                    </div>
-                    <span class="user-greeting" id="user-display-name">Jeevi</span>
-                </div>
+              <div class="profile-pill">
+    <div class="profile-avatar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+    </div>
+    <span class="user-greeting" id="user-display-name">Jeevi</span>
+</div>
             </div>
         </header>
 
@@ -84,10 +81,10 @@
                 </nav>
                 
                 <div class="sidebar-footer">
-                    <button class="logout-btn" onclick="navigateToErrorPage()">
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        <span>Logout</span>
-                    </button>
+                   <button type="button" class="logout-btn" onclick="window.location.href='login.html';">
+    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+    <span>Logout</span>
+</button>
                 </div>
             </aside>
 
@@ -139,7 +136,7 @@
             <div class="partner-table-row p-state-pending" id="booking-row-101">
                 <div class="p-col-client">
                     <div class="p-client-meta">
-                        <img src="https://unsplash.com" alt="Client Avatar" class="p-client-avatar">
+                     
                         <div>
                             <strong>Jeevi</strong>
                             <span class="p-case-tag label-corporate">Corporate Law</span>
@@ -168,7 +165,7 @@
             <div class="partner-table-row p-state-approved" id="booking-row-102">
                 <div class="p-col-client">
                     <div class="p-client-meta">
-                        <div class="p-client-avatar p-avatar-fallback"><i class="fa-solid fa-user-tie"></i></div>
+                       
                         <div>
                             <strong>Marcus Vance, Representative</strong>
                             <span class="p-case-tag label-ip">Patent & IP Rights</span>
@@ -195,8 +192,41 @@
         </div>
     </div>
 </section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const userName = localStorage.getItem("stacklyActiveUserEmailIdentity");
+    const displayName = document.getElementById("user-display-name");
 
+    if (displayName) {
+        displayName.textContent = userName || "Operator";
+    }
+});
+</script>
 <style>
+
+    .profile-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-avatar {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.profile-avatar svg {
+    width: 22px;
+    height: 22px;
+}
+
+.user-greeting {
+    white-space: nowrap;
+}
     /* Partner Intake Booking Workspace Design Configurations */
 .partner-metrics-strip {
     display: grid;
@@ -1835,8 +1865,9 @@ function processDisbursementAction(ledgerRowId, clientProfileName, dollarAmountV
                         <input type="checkbox" id="allow-same-day" checked>
                         <label for="allow-same-day">Authorize client same-day emergency intake consultation requests</label>
                     </div>
-
-                    <button type="submit" class="settings-save-btn">Save Calendar Rules</button>
+<button type="button" class="settings-save-btn" onclick="window.location.href='404.html';">
+    Save Calendar Rules
+</button>
                 </form>
             </div>
 
@@ -1853,7 +1884,9 @@ function processDisbursementAction(ledgerRowId, clientProfileName, dollarAmountV
                             <button type="button" class="settings-reveal-toggle-btn" onclick="toggleTokenFieldVisibility(this)"><i class="fa-solid fa-eye"></i></button>
                         </div>
                     </div>
-                    <button type="submit" class="settings-save-btn">Re-Authenticate Node</button>
+             <button type="button" class="settings-save-btn" onclick="window.location.href='404.html';">
+    Re-Authenticate Node
+</button>
                 </form>
             </div>
 
@@ -1889,8 +1922,9 @@ function processDisbursementAction(ledgerRowId, clientProfileName, dollarAmountV
                     </div>
                 </div>
 
-                <button class="settings-save-btn full-width-btn" onclick="saveFirmSettingsProfile(event, 'Billable Matrix Adjustments')">Update Retainer Fees</button>
-            </div>
+               <button type="button" class="settings-save-btn full-width-btn" onclick="window.location.href='404.html';">
+    Update Retainer Fees
+</button> </div>
 
             <!-- Component Card 4: Compliance Seal Box -->
             <div class="firm-compliance-seal-card">
@@ -2555,10 +2589,10 @@ body {
 
     .dash-sidebar {
         position: fixed;
-        top: 0;
+        top: 50px;
         left: 0;
         bottom: 0;
-        height: 100vh;
+        height: 90%;
         transform: translateX(-100%);
         box-shadow: 5px 0 25px rgba(0,0,0,0.15);
     }
@@ -2583,61 +2617,89 @@ body {
 
     </style>
 
-    <script>
-        let activeSectionId = 'appointments';
+   <script>
+    let activeSectionId = sessionStorage.getItem('legalActiveSection') || 'appointments';
 
-function refreshDashboard() {
-    const brandElement = document.querySelector('.brand-logo');
-    brandElement.style.opacity = '0.4';
-    setTimeout(() => {
-        brandElement.style.opacity = '1';
-        switchSection('appointments');
-    }, 250);
-}
+    function refreshDashboard() {
+        const brandElement = document.querySelector('.brand-logo');
 
-function switchSection(sectionId) {
-    document.querySelectorAll('.dash-section').forEach(section => {
-        section.classList.add('hidden');
+        if (brandElement) {
+            brandElement.style.opacity = '0.4';
+        }
+
+        setTimeout(() => {
+            if (brandElement) {
+                brandElement.style.opacity = '1';
+            }
+
+            // Refresh the current dashboard page
+            window.location.reload();
+        }, 250);
+    }
+
+    function switchSection(sectionId) {
+
+        // Remember the currently selected section
+        activeSectionId = sectionId;
+        sessionStorage.setItem('legalActiveSection', sectionId);
+
+        document.querySelectorAll('.dash-section').forEach(section => {
+            section.classList.add('hidden');
+        });
+
+        const targetSection = document.getElementById(`section-${sectionId}`);
+
+        if (targetSection) {
+            targetSection.classList.remove('hidden');
+        }
+
+        document.querySelectorAll('.nav-item').forEach(button => {
+            button.classList.remove('active');
+        });
+
+        const activeItem = Array.from(document.querySelectorAll('.nav-item')).find(btn => {
+            const onclickValue = btn.getAttribute('onclick');
+            return onclickValue && onclickValue.includes(`'${sectionId}'`);
+        });
+
+        if (activeItem) {
+            activeItem.classList.add('active');
+        }
+
+        // Auto collapse slideouts and overlay states
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+
+        if (sidebar && sidebar.classList.contains('open')) {
+            sidebar.classList.remove('open');
+
+            if (overlay) {
+                overlay.classList.remove('open');
+            }
+        }
+    }
+
+    function toggleSidebar() {
+        const sidebarElement = document.getElementById('sidebar');
+        const overlayElement = document.getElementById('sidebar-overlay');
+
+        if (sidebarElement) {
+            sidebarElement.classList.toggle('open');
+
+            if (overlayElement) {
+                overlayElement.classList.toggle('open');
+            }
+        }
+    }
+
+    function navigateToErrorPage() {
+        window.location.href = "404.html";
+    }
+
+    // Restore the previously selected section after page refresh
+    document.addEventListener('DOMContentLoaded', function () {
+        switchSection(activeSectionId);
     });
-    
-    const targetSection = document.getElementById(`section-${sectionId}`);
-    if (targetSection) {
-        targetSection.classList.remove('hidden');
-    }
-    
-    document.querySelectorAll('.nav-item').forEach(button => {
-        button.classList.remove('active');
-    });
-    
-    const activeItem = Array.from(document.querySelectorAll('.nav-item')).find(btn => 
-        btn.getAttribute('onclick').includes(`'${sectionId}'`)
-    );
-    if (activeItem) {
-        activeItem.classList.add('active');
-    }
-    
-    // Auto collapse slideouts and overlay states after routing transitions complete
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('sidebar-overlay');
-    if (sidebar && sidebar.classList.contains('open')) {
-        sidebar.classList.remove('open');
-        overlay.classList.remove('open');
-    }
-}
-
-function toggleSidebar() {
-    const sidebarElement = document.getElementById('sidebar');
-    const overlayElement = document.getElementById('sidebar-overlay');
-    if (sidebarElement) {
-        sidebarElement.classList.toggle('open');
-        overlayElement.classList.toggle('open');
-    }
-}
-
-function navigateToErrorPage() {
-    window.location.href = "404.html";
-}
-
-    </script>
+</script>
 </body>
 </html>

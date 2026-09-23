@@ -19,8 +19,9 @@ body {
     font-family: var(--font-sans);
     background-color: var(--primary-dark);
     color: var(--text-light);
-    height: 100vh;
-    overflow: hidden; /* Locks window scrolling until landing page initializes */
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* --- Responsive Layout Architecture --- */
@@ -240,6 +241,50 @@ body {
     transform: translateY(-2px); /* Micro-interaction physical vertical transform lift motion */
 }
 
+/* Active Header Navigation */
+.header-desktop-menu .header-nav-link.active {
+    color: #b45309;
+    position: relative;
+}
+
+/* Active underline */
+.header-desktop-menu .header-nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background: #b45309;
+    border-radius: 2px;
+}
+
+/* =========================================================
+   MOBILE MENU - ACTIVE NAVIGATION
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .header-mobile-menu .header-drawer-link.active {
+        color: #b45309 !important;
+        position: relative;
+        font-weight: 600;
+    }
+
+    .header-mobile-menu .header-drawer-link.active::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 35px;
+        height: 2px;
+        background-color: #b45309 !important;
+        border-radius: 2px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
 .utility-social-node:active .utility-vector-asset {
     transform: translateY(0);
 }
@@ -530,5 +575,155 @@ body {
     .header-mobile-drawer {
         top: calc(80px + 86px);
         height: calc(100vh - (80px + 86px));
+    }
+}
+
+
+/* =========================================================
+   FINAL MOBILE HAMBURGER
+   80% RIGHT DRAWER + BACKGROUND BLUR + SCROLL LOCK
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    /* ---------------------------------------------------------
+       NORMAL PAGE — SCROLL ENABLED
+       --------------------------------------------------------- */
+    html,
+    body {
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+
+    /* ---------------------------------------------------------
+       HAMBURGER DRAWER
+       --------------------------------------------------------- */
+    .header-mobile-drawer {
+        position: fixed !important;
+
+        left: auto !important;
+        right: 0 !important;
+
+        width: 80% !important;
+        height: calc(100vh - 123px) !important;
+
+        top: 123px !important;
+
+        z-index: 1100 !important;
+
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+
+        transform: translateX(100%) !important;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition:
+            transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+            opacity 0.3s ease,
+            visibility 0.3s ease;
+
+        background: #ffffff;
+    }
+
+
+    /* ---------------------------------------------------------
+       DRAWER OPEN
+       --------------------------------------------------------- */
+    .header-mobile-drawer.active-view {
+        transform: translateX(0) !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        touch-action: pan-y !important;
+    }
+
+
+    /* ---------------------------------------------------------
+       BACKGROUND OVERLAY + BLUR
+       --------------------------------------------------------- */
+    body.mobile-menu-open::before {
+        content: "";
+
+        position: fixed;
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background: rgba(9, 13, 22, 0.35);
+
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+
+        z-index: 1050;
+
+        pointer-events: auto;
+    }
+
+
+    /* ---------------------------------------------------------
+       LOCK BACKGROUND COMPLETELY
+       --------------------------------------------------------- */
+    body.mobile-menu-open {
+        overflow: hidden !important;
+
+        position: fixed !important;
+
+        width: 100% !important;
+        height: 100% !important;
+
+        touch-action: none !important;
+
+        overscroll-behavior: none !important;
+    }
+
+
+    /* ---------------------------------------------------------
+       KEEP HEADER ABOVE BLUR
+       --------------------------------------------------------- */
+    .stackly-primary-header,
+    .stackly-top-utility-strip,
+    .header-hamburger-trigger {
+        z-index: 1200 !important;
+    }
+
+
+    /* ---------------------------------------------------------
+       DRAWER CONTENT CAN STILL SCROLL
+       --------------------------------------------------------- */
+    .header-mobile-drawer.active-view,
+    .header-mobile-menu {
+        touch-action: pan-y !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .header-mobile-drawer {
+        top: 166px !important;
+
+        width: 80% !important;
+
+        height: calc(100vh - 166px) !important;
+
+        right: 0 !important;
+        left: auto !important;
+    }
+
+    .header-mobile-drawer.active-view {
+        transform: translateX(0) !important;
     }
 }

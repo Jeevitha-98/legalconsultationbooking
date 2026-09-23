@@ -127,7 +127,7 @@
         <!-- Sequential Intake Infrastructure Contact Number -->
         <div class="utility-contact-block item-stagger-fade" style="--stagger-index: 5;">
             <span class="utility-contact-tag">Intake Support Framework:</span>
-            <a href="tel:9292426868" class="utility-contact-phone">929-242-6868</a>
+            <a href="tel:9292426868" class="utility-contact-phone">+91 7010792745</a>
         </div>
 
     </div>
@@ -145,7 +145,7 @@
 
         <!-- Desktop Mode Center-Aligned Navigation Options -->
         <nav class="header-desktop-menu" role="navigation">
-            <a href="index.html" class="header-nav-link">Home</a>
+            <a href="index.html" class="header-nav-link active">Home</a>
             <a href="attorney.html" class="header-nav-link">Our Attorneys</a>
             <a href="practice.html" class="header-nav-link">Practice Areas</a>
             <a href="blog.html" class="header-nav-link">Blogs</a>
@@ -170,7 +170,7 @@
 <!-- Responsive Mobile Navigation Layer Drawer Dropdown Panel Menu Surface Area Layout Overlay Context -->
 <div class="header-mobile-drawer" id="headerMobileDrawer">
     <nav class="header-mobile-menu">
-        <a href="index.html" class="header-drawer-link">Home</a>
+        <a href="index.html" class="header-drawer-link active">Home</a>
         <a href="attorney.html" class="header-drawer-link">Our Attorneys</a>
         <a href="practice.html" class="header-drawer-link">Practice Areas</a>
         <a href="blog.html" class="header-drawer-link">Blogs</a>
@@ -182,37 +182,69 @@
 </div>
 
 
+
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const headerMenuTrigger = document.getElementById("headerMenuTrigger");
-    const headerMobileDrawer = document.getElementById("headerMobileDrawer");
-    const mobileDrawerLinks = document.querySelectorAll(".header-drawer-link");
+document.addEventListener("DOMContentLoaded", () => {
+
+    const headerMenuTrigger =
+        document.getElementById("headerMenuTrigger");
+
+    const headerMobileDrawer =
+        document.getElementById("headerMobileDrawer");
+
+    const mobileDrawerLinks =
+        document.querySelectorAll(".header-drawer-link");
+
 
     if (headerMenuTrigger && headerMobileDrawer) {
-        // Intercept action controls taps metrics inputs variables execution loops
+
+        /* =====================================================
+           HAMBURGER OPEN / CLOSE
+           ===================================================== */
         headerMenuTrigger.addEventListener("click", () => {
-            const isDrawerOpenStateActive = headerMobileDrawer.classList.toggle("active-view");
-            headerMenuTrigger.classList.toggle("triggered");
 
-            // Avoid structural double-layer track viewport scrolling conflicts while mobile overlay is expanded
-            if (isDrawerOpenStateActive) {
-                document.body.style.overflow = "hidden";
-            } else {
-                document.body.style.overflow = "";
-            }
+            const isDrawerOpenStateActive =
+                headerMobileDrawer.classList.toggle("active-view");
+
+            headerMenuTrigger.classList.toggle(
+                "triggered",
+                isDrawerOpenStateActive
+            );
+
+            /* IMPORTANT:
+               Add/remove the class used by CSS
+               for background blur + scroll lock
+            */
+            document.body.classList.toggle(
+                "mobile-menu-open",
+                isDrawerOpenStateActive
+            );
+
         });
 
-        // Automatically slide panel up collapse states if target navigation selections complete execution pathing
+
+        /* =====================================================
+           CLOSE MENU AFTER NAVIGATION CLICK
+           ===================================================== */
         mobileDrawerLinks.forEach(linkItem => {
-            linkItem.addEventListener("click", () => {
-                headerMobileDrawer.classList.remove("active-view");
-                headerMenuTrigger.classList.remove("triggered");
-                document.body.style.overflow = "";
-            });
-        });
-    }
-});
 
+            linkItem.addEventListener("click", () => {
+
+                headerMobileDrawer.classList.remove("active-view");
+
+                headerMenuTrigger.classList.remove("triggered");
+
+                document.body.classList.remove(
+                    "mobile-menu-open"
+                );
+
+            });
+
+        });
+
+    }
+
+});
 </script>
 
 <!-- Premium Split-Layout White Canvas Hero Component -->
@@ -2519,9 +2551,9 @@
                         How do you create compelling presentations that wow your colleagues and impress your managers?
                     </p>
                     <div class="blog-card-author-cluster-slate">
-                        <img src="https://unsplash.com" alt="Olivia Rhye Profile Avatar" class="author-avatar-img-slate">
+                        <img src="./assests/aris.webp" alt="Olivia Rhye Profile Avatar" class="author-avatar-img-slate">
                         <div class="author-meta-text-slate">
-                            <span class="author-profile-name-slate">Olivia Rhye</span>
+                            <span class="author-profile-name-slate">Olivian Rhye</span>
                             <span class="author-publish-date-slate">20 Jan 2025</span>
                         </div>
                     </div>
@@ -2543,7 +2575,7 @@
                         Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.
                     </p>
                     <div class="blog-card-author-cluster-slate">
-                        <img src="https://unsplash.com" alt="Phoenix Baker Profile Avatar" class="author-avatar-img-slate">
+                        <img src="./assests/arjun.webp" alt="Phoenix Baker Profile Avatar" class="author-avatar-img-slate">
                         <div class="author-meta-text-slate">
                             <span class="author-profile-name-slate">Phoenix Baker</span>
                             <span class="author-publish-date-slate">19 Jan 2025</span>
@@ -2567,7 +2599,7 @@
                         The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
                     </p>
                     <div class="blog-card-author-cluster-slate">
-                        <img src="https://unsplash.com" alt="Lana Steiner Profile Avatar" class="author-avatar-img-slate">
+                        <img src="./assests/rose.webp" alt="Lana Steiner Profile Avatar" class="author-avatar-img-slate">
                         <div class="author-meta-text-slate">
                             <span class="author-profile-name-slate">Lana Steiner</span>
                             <span class="author-publish-date-slate">18 Jan 2025</span>
@@ -3549,7 +3581,7 @@
                     <div class="testimonial-feedback-card testimonial-scroll-reveal" style="--stagger-order: 1;">
                         <div class="testimonial-card-inner-split">
                             <div class="testimonial-client-avatar-frame">
-                                <img src="https://unsplash.com" alt="Jenny Wilson profile case file asset preview" class="testimonial-avatar-img">
+                                <img src="./assests/arjun.webp" alt="Jenny Wilson profile case file asset preview" class="testimonial-avatar-img">
                             </div>
                             <div class="testimonial-review-content-panel">
                                 <div class="testimonial-vector-stars-row" aria-label="Rated 5 out of 5 stars">
@@ -3559,7 +3591,7 @@
                                     "Stackly completely transformed our enterprise regulatory strategy pipelines. By merging robust traditional case parameters with their secure automated tracking dashboard layer, our governance workflows operate smoothly at zero asset liability risks."
                                 </p>
                                 <div class="testimonial-author-meta-box">
-                                    <h3 class="testimonial-author-fullname">Jenny Wilson</h3>
+                                    <h3 class="testimonial-author-fullname">Jenna Wilson</h3>
                                     <span class="testimonial-author-title-tag">CEO & Founder, FinTech Distribution</span>
                                 </div>
                             </div>
@@ -3570,7 +3602,7 @@
                     <div class="testimonial-feedback-card testimonial-scroll-reveal" style="--stagger-order: 2;">
                         <div class="testimonial-card-inner-split">
                             <div class="testimonial-client-avatar-frame">
-                                <img src="https://unsplash.com" alt="Kori Anderson profile case file asset preview" class="testimonial-avatar-img">
+                                <img src="./assests/aris.webp" alt="Kori Anderson profile case file asset preview" class="testimonial-avatar-img">
                             </div>
                             <div class="testimonial-review-content-panel">
                                 <div class="testimonial-vector-stars-row" aria-label="Rated 5 out of 5 stars">
@@ -3594,7 +3626,7 @@
                     <div class="testimonial-feedback-card" style="--stagger-order: 1;">
                         <div class="testimonial-card-inner-split">
                             <div class="testimonial-client-avatar-frame">
-                                <img src="https://unsplash.com" alt="Sarah Jenkins case preview" class="testimonial-avatar-img">
+                                <img src="./assests/rose.webp" alt="Sarah Jenkins case preview" class="testimonial-avatar-img">
                             </div>
                             <div class="testimonial-review-content-panel">
                                 <div class="testimonial-vector-stars-row" aria-label="Rated 5 out of 5 stars">
@@ -3615,7 +3647,7 @@
                     <div class="testimonial-feedback-card" style="--stagger-order: 2;">
                         <div class="testimonial-card-inner-split">
                             <div class="testimonial-client-avatar-frame">
-                                <img src="https://unsplash.com" alt="Marcus Vance case preview" class="testimonial-avatar-img">
+                                <img src="./assests/devon mill.webp" alt="Marcus Vance case preview" class="testimonial-avatar-img">
                             </div>
                             <div class="testimonial-review-content-panel">
                                 <div class="testimonial-vector-stars-row" aria-label="Rated 5 out of 5 stars">
@@ -4073,7 +4105,7 @@
 
                 <!-- Right Structural Layout Row Alignment: Floating Action CTA Trigger Key Button Link -->
                 <div class="headline-action-floating-box-fluid">
-                    <a href="#intake" class="btn-headline-banner-floating-fluid">Initialize Consultation &rarr;</a>
+                    <a href="404.html" class="btn-headline-banner-floating-fluid">Initialize Consultation &rarr;</a>
                 </div>
 
             </div>
@@ -4373,126 +4405,114 @@
 
 </script>
 
-<!-- Isolated Brand-Aligned Corporate Footer Component Section -->
-<footer class="stackly-corporate-footer-fresh">
-    <div class="footer-fluid-bounds-fresh">
+<!-- Fully Brand-Aligned Corporate Legal Footer Component Section -->
+<footer class="stackly-corporate-footer">
+    <div class="footer-fluid-bounds">
         
         <!-- Four Column Layout Matrix precisely mirroring user layout blueprint -->
-        <div class="footer-columns-grid-fresh">
+        <div class="footer-columns-grid">
             
             
-            <div class="footer-brand-column-fresh">
+            <div class="footer-brand-column">
                 <!-- Brand logo anchor configured to trigger the scroll-to-top routine -->
                 
-                    <img src="./assests/legal footer logo.webp" alt="Stackly Corporate Digital Legal Logo" class="footer-logo-img-fresh">
+                    <img src="./assests/legal footer logo.webp" alt="Stackly Corporate Digital Legal Logo" class="footer-logo-img">
                 </a>
-                <p class="footer-brand-description-fresh">
-                    Engineering premium macro-balanced regulatory compliance setups and secure decentralized legal frameworks designed to fuel enterprise hardware workspace productivity and legal compute nodes alike.
+                <p class="footer-brand-description">
+                    Engineering premium macro-balanced regulatory compliance setups and secure decentralized legal frameworks designed to shield corporate growth parameters and govern transaction pipelines seamlessly.
                 </p>
                 <!-- 5 Vector Social Icons Array Group (Configured for 404 navigation) -->
-                <div class="footer-social-icons-row-fresh">
-                    <a href="404.html" class="footer-social-node-fresh" aria-label="Instagram Platform Link">
-                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 4 0 100 2.881 1.44 4 0 000-2.881z"/></svg>
+                <div class="footer-social-icons-row">
+                    <a href="404.html" class="footer-social-node" aria-label="Instagram Platform Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 4 0 100 2.881 1.44 4 0 000-2.881z"/></svg>
                     </a>
-                    <a href="404.html" class="footer-social-node-fresh" aria-label="Facebook Platform Link">
-                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    <a href="404.html" class="footer-social-node" aria-label="Facebook Platform Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                     </a>
-                    <a href="404.html" class="footer-social-node-fresh" aria-label="X Brand Profile Platform Link">
-                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    <a href="404.html" class="footer-social-node" aria-label="X Brand Profile Platform Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                     </a>
-                    <a href="404.html" class="footer-social-node-fresh" aria-label="LinkedIn Professional Matrix Link">
-                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <a href="404.html" class="footer-social-node" aria-label="LinkedIn Professional Matrix Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     </a>
-                    <a href="404.html" class="footer-social-node-fresh" aria-label="Secure Messenger Pipeline Link">
-                        <svg viewBox="0 0 24 24" class="footer-svg-icon-fresh"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                    <a href="404.html" class="footer-social-node" aria-label="Internal Resource Repository Link">
+                        <svg viewBox="0 0 24 24" class="footer-svg-icon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
                     </a>
                 </div>
             </div>
 
-            <!-- Column 2: Explore Fleets Links Pool -->
-            <div class="footer-links-column-fresh">
-                <h3 class="footer-section-heading-fresh">EXPLORE FLEETS</h3>
-                <nav class="footer-links-nav-fresh">
-                    <a href="404.html" class="footer-nav-link-item-fresh">Logistics AGV</a>
-                    <a href="404.html" class="footer-nav-link-item-fresh">Kinematic Arms</a>
-                    <a href="404.html" class="footer-nav-link-item-fresh">Quadruped Sentinel</a>
-                    <a href="404.html" class="footer-nav-link-item-fresh">Bionic Rover Systems</a>
+            <!-- Column 2: Legal Practice Areas -->
+            <div class="footer-links-column">
+                <h3 class="footer-section-heading">PRACTICE AREAS</h3>
+                <nav class="footer-links-nav">
+                    <a href="404.html" class="footer-nav-link-item">Corporate & Tech Law</a>
+                    <a href="404.html" class="footer-nav-link-item">Litigation Counsel</a>
+                    <a href="404.html" class="footer-nav-link-item">Venture Structuring</a>
+                    <a href="404.html" class="footer-nav-link-item">Asset & IP Protection</a>
                 </nav>
             </div>
 
-            <!-- Column 3: Network Support Pool -->
-            <div class="footer-links-column-fresh">
-                <h3 class="footer-section-heading-fresh">NETWORK SUPPORT</h3>
-                <nav class="footer-links-nav-fresh">
-                    <a href="404.html" class="footer-nav-link-item-fresh">Node Telemetry Matrices</a>
-                    <a href="404.html" class="footer-nav-link-item-fresh">Fleet Delivery Tracks</a>
-                    <a href="404.html" class="footer-nav-link-item-fresh">Help & Diagnostics Center</a>
-                    <a href="404.html" class="footer-nav-link-item-fresh">PoPW Verifications</a>
+            <!-- Column 3: Resource Centers -->
+            <div class="footer-links-column">
+                <h3 class="footer-section-heading">RESOURCE HUB</h3>
+                <nav class="footer-links-nav">
+                    <a href="404.html" class="footer-nav-link-item">Case Study Directories</a>
+                    <a href="404.html" class="footer-nav-link-item">Regulatory Updates</a>
+                    <a href="404.html" class="footer-nav-link-item">Client Intake Support</a>
+                    <a href="404.html" class="footer-nav-link-item">Partner Advisory Pools</a>
                 </nav>
             </div>
 
-            <!-- Column 4: Headquarters Geographical Address and Input Form -->
-            <div class="footer-links-column-fresh">
-                <h3 class="footer-section-heading-fresh">HEADQUARTERS</h3>
+            <!-- Column 4: Headquarters Geographical Address and Newsletter -->
+            <div class="footer-links-column">
+                <h3 class="footer-section-heading">HEADQUARTERS</h3>
                 
-                <div class="footer-address-block-row-fresh">
-                    <svg viewBox="0 0 24 24" class="footer-address-marker-icon-fresh" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                    <p class="footer-address-text-fresh">MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</p>
+                <div class="footer-address-block-row">
+                    <svg viewBox="0 0 24 24" class="footer-address-marker-icon" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <p class="footer-address-text">MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</p>
                 </div>
 
                 <!-- Interactive Newsletter Form Matrix Panel Layer -->
-                <form class="footer-subscription-form-panel-fresh" id="footerSubscribeFormFresh" novalidate>
-                    <div class="footer-input-field-relative-fresh">
-                        <input type="email" id="footerNodeEmailInputFresh" placeholder="Enter node operator email..." class="footer-subscribe-input-field-fresh" required>
-                        <span class="footer-validation-bubble-alert-fresh" id="footerValidationAlertTextFresh">Please fill the subscribe field</span>
+                <form class="footer-subscription-form-panel" id="footerSubscribeForm" novalidate>
+                    <div class="footer-input-field-relative">
+                        <input type="email" id="footerNodeEmailInput" placeholder="Enter corporate email..." class="footer-subscribe-input-field" required>
+                        <span class="footer-validation-bubble-alert" id="footerValidationAlertText">Please fill the subscribe field</span>
                     </div>
-                    <button type="submit" class="btn-footer-subscribe-action-fresh">Subscribe</button>
+                    <button type="submit" class="btn-footer-subscribe-action">Subscribe</button>
                 </form>
             </div>
 
         </div>
 
         <!-- Lower Baseline Symmetrical Copyright and Compliance Layout Strip Rows Links Line -->
-        <div class="footer-baseline-strip-row-fresh">
-            <p class="footer-copyright-text-fresh">&copy; 2026 Stackly Industries. All computational hardware rights reserved.</p>
-            <div class="footer-compliance-links-group-fresh">
-                <a href="404.html" class="footer-compliance-anchor-item-fresh">Privacy Policy</a>
-                <a href="404.html" class="footer-compliance-anchor-item-fresh">Terms of Service</a>
-                <a href="404.html" class="footer-compliance-anchor-item-fresh">Cookie Governance</a>
+        <div class="footer-baseline-strip-row">
+            <p class="footer-copyright-text">&copy; 2026 Stackly Legal Firm. All corporate advocacy rights reserved.</p>
+            <div class="footer-compliance-links-group">
+                <a href="404.html" class="footer-compliance-anchor-item">Privacy Policy</a>
+                <a href="404.html" class="footer-compliance-anchor-item">Terms of Service</a>
+                <a href="404.html" class="footer-compliance-anchor-item">Cookie Governance</a>
             </div>
         </div>
 
     </div>
 </footer>
 
+
 <style>
-    /* --- High-End Stackly Corporate Footer Presentation Tokens Configuration Layout --- */
-.stackly-corporate-footer-fresh {
+/* --- High-End Stackly Corporate Footer Presentation Tokens Configuration Layout --- */
+.stackly-corporate-footer {
     width: 100%;
     background-color: #000000; /* Solid Black Backdrop Canvas Panel Surface Layer Layout */
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    color: #f8fafc; 
+    color: #f8fafc; /* Crisp reading typography bone white color tokens scale profiles */
     padding-top: 60px;
-    padding-bottom: 30px; 
+    padding-bottom: 30px; /* Accounts for lower baseline strip alignment spatial margins boundaries */
     box-sizing: border-box;
     position: relative;
-    
-    /* CRITICAL FIX: Erases padding, offsets, and margin voids to tightly bind with upper section block panels */
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    display: block;
-    vertical-align: top;
+    border-top: 1px solid #090d16;
 }
 
-/* Global resetting architecture block overrides adjacent element gaps */
-.stackly-headline-banner-fluid-strip,
-.stackly-cta-banner-strip-fluid,
-.stackly-corporate-footer-fresh {
-    margin-bottom: 0 !important;
-    margin-top: 0 !important;
-}
-
-.footer-fluid-bounds-fresh {
+.footer-fluid-bounds {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -4501,24 +4521,25 @@
 }
 
 /* --- Four Column Structural Master Framework Layout Grid --- */
-.footer-columns-grid-fresh {
+.footer-columns-grid {
     display: grid;
+    /* Implements exact mapping grid fractions matching reference blueprint screenshot layout columns proportion scales */
     grid-template-columns: 1.35fr 0.85fr 0.9fr 1.15fr;
     gap: 40px;
     width: 100%;
-    padding-bottom: 50px; 
+    padding-bottom: 50px; /* Separator threshold spatial bounds before baseline lines strip context layer */
     border-bottom: 1px solid rgba(148, 163, 184, 0.08); /* Clean hairline texture trace dividers boundary */
     box-sizing: border-box;
 }
 
 /* --- Column 1: Brand Logotype Area Setup Properties --- */
-.footer-brand-column-fresh {
+.footer-brand-column {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.footer-logo-link-fresh {
+.footer-logo-link {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
@@ -4526,33 +4547,33 @@
     margin-bottom: 24px;
 }
 
-.footer-logo-link-fresh:hover {
+.footer-logo-link:hover {
     transform: scale(0.975);
 }
 
-.footer-logo-img-fresh {
+.footer-logo-img {
     height: 32px;
     width: auto;
     object-fit: contain;
-    filter: brightness(0) invert(1); /* Forces white icon over black backdrop canvas */
+    filter: brightness(0) invert(1); /* Forces branding elements layout visualization cleanly over true black backdrops */
 }
 
-.footer-brand-description-fresh {
-    font-size: 0.92rem; 
-    color: #94a3b8; /* Slate gray neutral explanatory content description */
+.footer-brand-description {
+    font-size: 0.92rem; /* Balanced uniform medium layout description scale context */
+    color: #94a3b8; /* Slate gray neutral informative explanation paragraphs layout styling */
     line-height: 1.6;
     margin-bottom: 24px;
     text-align: left;
 }
 
 /* --- Sizing For 5 Vector Social Nodes Set Track Matrix --- */
-.footer-social-icons-row-fresh {
+.footer-social-icons-row {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.footer-social-node-fresh {
+.footer-social-node {
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -4566,14 +4587,15 @@
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.footer-svg-icon-fresh {
-    width: 15px; 
+.footer-svg-icon {
+    width: 15px; /* Precision medium sizing index for high resolution vector paths metrics */
     height: 15px;
     fill: currentColor;
 }
 
-.footer-social-node-fresh:hover {
-    background-color: #b45309; /* Warm Amber traditional legal accent */
+/* Interaction transitions illuminating vectors directly to clean white on component focus tracks */
+.footer-social-node:hover {
+    background-color: #b45309; /* Warm Amber signature focus highlight */
     border-color: #b45309;
     color: #ffffff;
     transform: translateY(-2px);
@@ -4581,13 +4603,13 @@
 }
 
 /* --- Columns 2 & 3: Standard Section Header Layout Framework Navigation Link Columns --- */
-.footer-links-column-fresh {
+.footer-links-column {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.footer-section-heading-fresh {
+.footer-section-heading {
     font-size: 0.88rem;
     font-weight: 700;
     color: #ffffff;
@@ -4598,25 +4620,25 @@
 }
 
 /* Horizontal Red Sections Accent Track Line Tracer directly mirroring user blueprint layout screenshot rules */
-.footer-section-heading-fresh::after {
+.footer-section-heading::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 24px;
     height: 2px;
-    background-color: #b45309; 
+    background-color: #b45309; /* Precision executive warm legal amber/red trace selector indicator */
     border-radius: 4px;
 }
 
-.footer-links-nav-fresh {
+.footer-links-nav {
     display: flex;
     flex-direction: column;
     gap: 14px;
     width: 100%;
 }
 
-.footer-nav-link-item-fresh {
+.footer-nav-link-item {
     font-size: 0.92rem;
     color: #94a3b8;
     text-decoration: none;
@@ -4625,13 +4647,13 @@
     width: max-content;
 }
 
-.footer-nav-link-item-fresh:hover {
-    color: #b45309; 
+.footer-nav-link-item:hover {
+    color: #b45309; /* Amber focus glow illumination text transform lift paths shift tracking links */
     padding-left: 4px;
 }
 
 /* --- Column 4: Geographical Marker Alignment Elements Context System --- */
-.footer-address-block-row-fresh {
+.footer-address-block-row {
     display: flex;
     align-items: flex-start;
     gap: 10px;
@@ -4639,15 +4661,15 @@
     width: 100%;
 }
 
-.footer-address-marker-icon-fresh {
+.footer-address-marker-icon {
     width: 16px;
     height: 16px;
-    fill: #b45309; 
+    fill: #b45309; /* Highlight accent marker fill index colors codes tracking coordinates map pointers location nodes */
     flex-shrink: 0;
     margin-top: 3px;
 }
 
-.footer-address-text-fresh {
+.footer-address-text {
     font-size: 0.92rem;
     color: #94a3b8;
     line-height: 1.5;
@@ -4655,7 +4677,7 @@
 }
 
 /* --- Interactive Newsletter Input Panel Field Systems Architecture --- */
-.footer-subscription-form-panel-fresh {
+.footer-subscription-form-panel {
     display: flex;
     align-items: center;
     width: 100%;
@@ -4668,16 +4690,16 @@
     transition: border-color 0.3s ease;
 }
 
-.footer-subscription-form-panel-fresh:focus-within {
+.footer-subscription-form-panel:focus-within {
     border-color: #b45309;
 }
 
-.footer-input-field-relative-fresh {
+.footer-input-field-relative {
     flex: 1;
     position: relative;
 }
 
-.footer-subscribe-input-field-fresh {
+.footer-subscribe-input-field {
     width: 100%;
     background: none;
     border: none;
@@ -4689,16 +4711,16 @@
     box-sizing: border-box;
 }
 
-.footer-subscribe-input-field-fresh::placeholder {
-    color: #4b5563; 
+.footer-subscribe-input-field::placeholder {
+    color: #4b5563; /* Muted gray placeholder text parameter configuration styles codes */
 }
 
 /* Dynamic Field Form Validation Prompt Dialog Alert Bubble */
-.footer-validation-bubble-alert-fresh {
+.footer-validation-bubble-alert {
     position: absolute;
     bottom: calc(100% + 12px);
     left: 4px;
-    background-color: #ef4444; 
+    background-color: #ef4444; /* High visibility alert indicator red structural fill index color text */
     color: #ffffff;
     font-size: 0.78rem;
     font-weight: 600;
@@ -4713,7 +4735,8 @@
     z-index: 100;
 }
 
-.footer-validation-bubble-alert-fresh::after {
+/* Speech indicator triangle vector pointer point element track */
+.footer-validation-bubble-alert::after {
     content: '';
     position: absolute;
     top: 100%;
@@ -4723,15 +4746,15 @@
     border-color: #ef4444 transparent transparent transparent;
 }
 
-.footer-validation-bubble-alert-fresh.display-prompt {
+.footer-validation-bubble-alert.display-prompt {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
-.btn-footer-subscribe-action-fresh {
-    background-color: #ffffff; /* Stark solid white layout fill matching screenshot blueprint */
-    color: #000000 !important; 
+.btn-footer-subscribe-action {
+    background-color: #ffffff; /* Stark solid white actions triggers background fill seen in reference screenshot image */
+    color: #000000 !important; /* Sharp absolute high contrast reading fonts styles override cascades overrides */
     border: none;
     font-family: 'Inter', sans-serif;
     font-size: 0.88rem;
@@ -4743,14 +4766,14 @@
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.btn-footer-subscribe-action-fresh:hover {
+.btn-footer-subscribe-action:hover {
     background-color: #b45309;
     color: #ffffff !important;
     box-shadow: 0 4px 12px rgba(180, 83, 9, 0.3);
 }
 
 /* --- Lower Baseline Copyright and Compliance Matrix Layout Strip Row --- */
-.footer-baseline-strip-row-fresh {
+.footer-baseline-strip-row {
     width: 100%;
     padding-top: 30px;
     display: flex;
@@ -4759,84 +4782,98 @@
     box-sizing: border-box;
 }
 
-.footer-copyright-text-fresh {
+.footer-copyright-text {
     font-size: 0.85rem;
-    color: #4b5563; 
+    color: #4b5563; /* Secondary layout content documentation sub-levels font colors setup rules */
     margin: 0;
 }
 
-.footer-compliance-links-group-fresh {
+.footer-compliance-links-group {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.footer-compliance-anchor-item-fresh {
+.footer-compliance-anchor-item {
     font-size: 0.85rem;
     color: #4b5563;
     text-decoration: none;
     transition: color 0.25s ease;
 }
 
-.footer-compliance-anchor-item-fresh:hover {
+.footer-compliance-anchor-item:hover {
     color: #b45309;
 }
 
 /* --- Fully Responsive Hardware Media Breakpoints Matrix Processing --- */
 @media (max-width: 1024px) {
-    .footer-columns-grid-fresh {
-        grid-template-columns: repeat(2, 1fr); 
+    .footer-columns-grid {
+        grid-template-columns: repeat(2, 1fr); /* Matrix grid breaks down safely to dual columns avoiding truncation clipping fields */
         gap: 32px;
     }
 }
 
 @media (max-width: 640px) {
-    .stackly-corporate-footer-fresh {
+    .stackly-corporate-footer {
+        /* Strict execution constraint implementation adapting padding bounds exactly down to user requirements metrics rules values */
         padding-top: 50px; 
         padding-bottom: 30px;
     }
 
-    .footer-columns-grid-fresh {
-        grid-template-columns: 1fr; 
+    .footer-columns-grid {
+        grid-template-columns: 1fr; /* Stacks all layout blocks down into a singular clean thread on phone views */
         gap: 28px;
         padding-bottom: 36px;
     }
 
-    .footer-brand-column-fresh { align-items: center; text-align: center; }
-    .footer-brand-description-fresh { text-align: center; }
-    .footer-links-column-fresh { align-items: center; }
-    .footer-section-heading-fresh::after { left: 50%; transform: translateX(-50%); }
-    .footer-nav-link-item-fresh { text-align: center; width: 100%; }
-    .footer-address-block-row-fresh { justify-content: center; }
-    .footer-address-text-fresh { text-align: center; }
-
-    .footer-baseline-strip-row-fresh {
-        flex-direction: column;
-        gap: 16px;
+    .footer-brand-column {
+        align-items: center;
         text-align: center;
-        padding-top: 24px;
     }
 
-    .footer-compliance-links-group-fresh {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 14px;
+    .footer-brand-description {
+        text-align: center;
     }
-}
+
+    .footer-links-column {
+        align-items: center;
+    }
+
+    .footer-section-heading::after {
+        left: 50%;
+        transform: translateX(-50%); /* Keeps horizontally centered accent bars tracking text parameters along midlines on phones viewport setups */
+    }
+
+    .footer-nav-link-item {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-address-block-row {
+        justify-content: center;
+    }
+
+    .footer-address-text {
+        text-align: center;
+    }
+
+    .footer-baseline-strip-row {
+flex-direction: column;gap: 16px;text-align: center;padding-top: 24px;}.footer-compliance-links-group {justify-content: center;flex-wrap: wrap;gap: 14px;}}
 
 </style>
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const footerBackToTopFresh = document.getElementById("footerBackToTopTriggerFresh");
-    const subscribeFormFresh = document.getElementById("footerSubscribeFormFresh");
-    const emailInputFieldFresh = document.getElementById("footerNodeEmailInputFresh");
-    const validationAlertBubbleFresh = document.getElementById("footerValidationAlertTextFresh");
+  document.addEventListener("DOMContentLoaded", () => {
+    const footerBackToTop = document.getElementById("footerBackToTopTrigger");
+    const subscribeForm = document.getElementById("footerSubscribeForm");
+    const emailInputField = document.getElementById("footerNodeEmailInput");
+    const validationAlertBubble = document.getElementById("footerValidationAlertText");
 
-    // 1. BACK TO TOP: Triggers hardware accelerated window smooth scroll transition
-    if (footerBackToTopFresh) {
-        footerBackToTopFresh.addEventListener("click", (e) => {
+    // 1. ANIMATION ENGINE: Back-To-Top Smooth Scroll Routine
+    if (footerBackToTop) {
+        footerBackToTop.addEventListener("click", (e) => {
             e.preventDefault();
+            // Executes a hardware optimized window smooth scroll transition straight back to page top coordinate metrics
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
@@ -4844,30 +4881,33 @@
         });
     }
 
-    // 2. VALIDATION ENGINE: Form Check Conditions before 404 routing updates
-    if (subscribeFormFresh && emailInputFieldFresh && validationAlertBubbleFresh) {
+    // 2. VALIDATION ENGINE: Form Check Conditions lifecycle routing paths tracking
+    if (subscribeForm && emailInputField && validationAlertBubble) {
         
-        emailInputFieldFresh.addEventListener("input", () => {
-            validationAlertBubbleFresh.classList.remove("display-prompt");
+        // Clear active validation prompt states on focus input adjustments updates loops
+        emailInputField.addEventListener("input", () => {
+            validationAlertBubble.classList.remove("display-prompt");
         });
 
-        subscribeFormFresh.addEventListener("submit", (e) => {
+        subscribeForm.addEventListener("submit", (e) => {
             e.preventDefault();
             
-            const rawEmailValue = emailInputFieldFresh.value.trim();
+            const rawEmailValue = emailInputField.value.trim();
 
-            if (!rawEmailValue || !emailInputFieldFresh.checkValidity()) {
-                validationAlertBubbleFresh.classList.add("display-prompt");
-                emailInputFieldFresh.focus();
+            // Evaluate conditional checks to assess if field boundaries remain completely empty indices parameters
+            if (!rawEmailValue || !emailInputField.checkValidity()) {
+                // If form checking fails execution path, prompt the custom dialog text alert immediately
+                validationAlertBubble.classList.add("display-prompt");
+                emailInputField.focus();
             } else {
-                validationAlertBubbleFresh.classList.remove("display-prompt");
-                subscribeFormFresh.reset();
+                // If inputs successfully pass conditions limits barriers, erase alert indicators layers and execute immediate route to 404 page
+                validationAlertBubble.classList.remove("display-prompt");
+                subscribeForm.reset();
                 window.location.href = "404.html";
             }
         });
     }
 });
-
 </script>
 </body>
 </html>
